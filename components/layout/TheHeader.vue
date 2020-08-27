@@ -1,16 +1,16 @@
 <template>
   <nav class="flex bg-transparent w-full my-4">
     <!--ROoleEver Logo-->
-    <div class="flex">
+    <div class="flex flex-col">
       <transition name="fade">
         <span
           v-if="!showLogo"
-          class="font-semibold text-xl tracking-tight lg:hidden"
+          class="font-semibold text-xl tracking-tight md:ml-5 lg:ml-10 mb-1"
           ><nuxt-link :to="localePath('/')"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 2200 600"
-              class="w-40"
+              class="w-40 md:w-48"
             >
               <g id="Logotype_Bianco" data-name="Logotype Rosso">
                 <path
@@ -78,11 +78,17 @@
                 />
               </g></svg></nuxt-link></span
       ></transition>
+      <transition name="fade">
+        <img
+          v-if="!showLogo"
+          class="relative w-full h-1 md:h-2 slice"
+          src="https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png"
+          alt="logo line divider"
+      /></transition>
     </div>
-
-    <div class="flex md:hidden w-full justify-end mr-2">
+    <div class="flex w-full justify-end">
       <!--Mobile NavBar Button-->
-      <button class="px-3 py-2 mr-2" @click="toggleMobileNav">
+      <button class="block md:hidden px-3 py-2 mr-2" @click="toggleMobileNav">
         <svg
           class="fill-current text-primary h-5 w-5"
           viewBox="0 0 20 20"
@@ -92,17 +98,17 @@
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
       </button>
-    </div>
-    <!--Desktop Vertical Menu-->
-    <div class="hidden md:flex flex-col">
-      <nuxt-link
-        v-for="(item, index) in menuItems"
-        :key="'reference-item-' + index"
-        :to="localePath(menuItemsLinks[index].item_link)"
-        class="mt-2 text-dark-shade hover:text-dark-shade tracking-wider"
-      >
-        {{ item.item_name }}
-      </nuxt-link>
+      <!--Desktop Vertical Menu-->
+      <div class="hidden md:flex md:flex-col mt-5 mr-16 text-right">
+        <nuxt-link
+          v-for="(item, index) in menuItems"
+          :key="'reference-item-' + index"
+          :to="localePath(menuItemsLinks[index].item_link)"
+          class="mt-2 text-dark-shade hover:text-primary tracking-wider"
+        >
+          {{ item.item_name }}
+        </nuxt-link>
+      </div>
     </div>
   </nav>
 </template>
@@ -150,7 +156,14 @@ export default {
       this.$root.$emit('toggleMobileNav', open)
     },
     handleScroll(event) {
-      window.pageYOffset > 50 ? (this.showLogo = true) : (this.showLogo = false)
+      // on mobile device hide header logo sooner
+      let customOffset = 80
+      if (process.browser && this.$device.isDesktopOrTablet) {
+        customOffset = 150
+      }
+      window.pageYOffset > customOffset
+        ? (this.showLogo = true)
+        : (this.showLogo = false)
     },
   },
 }
@@ -166,5 +179,17 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media (max-width: 1023px) {
+  .slice {
+    left: -40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slice {
+    left: -50%;
+  }
 }
 </style>

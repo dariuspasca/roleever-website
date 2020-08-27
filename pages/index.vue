@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-grow align-middle bg-transparent mx-auto">
-    <div></div>
     <!-- CONTAINER -->
     <div
       class="flex flex-col md:flex-row w-full my-3 md:my-8 justify-center bg-no-repeat bg-bottom md:bg-right bg-mobile md:bg-tablet lg:bg-desktop"

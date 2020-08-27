@@ -139,6 +139,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  router: {
+    linkActiveClass: 'active-link',
+  },
   // Netlify reads a 404.html, Nuxt will load as an SPA
   generate: {
     fallback: '404.html',
