@@ -118,10 +118,7 @@
         </nuxt-link>
         <div
           v-if="index != menuItemsLinks.length - 1"
-          class="w-10/12 mx-auto my-4 h-1 bg-cover bg-no-repeat"
-          style="
-            background-image: url(https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png);
-          "
+          class="w-10/12 mx-auto my-4 h-1 bg-cover bg-no-repeat lineaDorata"
         ></div>
       </div>
     </div>

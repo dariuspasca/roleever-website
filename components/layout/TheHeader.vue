@@ -81,10 +81,7 @@
       <transition name="fade">
         <div
           v-if="showLogoDivider"
-          class="relative w-11/12 md:w-9/12 lg:w-5/12 bg-cover bg-right h-2"
-          style="
-            background-image: url(https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png);
-          "
+li          class="relative w-11/12 md:w-9/12 lg:w-5/12 bg-cover bg-right h-2 lineaDorata"
         ></div>
       </transition>
     </div>
