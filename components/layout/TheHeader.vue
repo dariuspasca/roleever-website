@@ -4,7 +4,7 @@
     <div class="flex flex-col w-4/6">
       <transition name="fade">
         <span
-          v-if="!showLogo"
+          v-if="showLogo"
           class="font-semibold text-xl tracking-tight md:ml-5 lg:ml-10 mb-1"
           ><nuxt-link :to="localePath('/')"
             ><svg
@@ -80,7 +80,7 @@
       ></transition>
       <transition name="fade">
         <div
-          v-if="!showLogo"
+          v-if="showLogoDivider"
           class="relative w-11/12 md:w-9/12 lg:w-5/12 bg-cover bg-right h-2"
           style="
             background-image: url(https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png);
@@ -95,13 +95,16 @@
         @click="toggleMobileNav"
       >
         <svg
-          class="fill-current text-primary h-5 w-5"
-          viewBox="0 0 20 20"
+          class="fill-current h-8 w-8"
           xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
         >
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          <rect width="24" height="24" fill="#fff" fill-opacity="0" />
+          <rect x="2" y="6" width="19" height="2" />
+          <rect x="6" y="11" width="15" height="2" />
+          <rect x="10" y="16" width="11" height="2" />
         </svg>
+        <title>Menu</title>
       </button>
       <!--Desktop Vertical Menu-->
       <div class="hidden md:flex md:flex-col mt-5 mr-16 text-right">
@@ -125,7 +128,8 @@ export default {
   data() {
     return {
       open: false,
-      showLogo: false,
+      showLogo: true,
+      showLogoDivider: true,
     }
   },
   computed: {
@@ -162,13 +166,19 @@ export default {
     },
     handleScroll(event) {
       // on mobile device hide header logo sooner
-      let customOffset = 80
+      let logoOffset = 80
+      let logoDividerOffset = 50
       if (process.browser && this.$device.isDesktopOrTablet) {
-        customOffset = 150
+        logoOffset = 150
+        logoDividerOffset = 100
       }
-      window.pageYOffset > customOffset
-        ? (this.showLogo = true)
-        : (this.showLogo = false)
+      window.pageYOffset > logoOffset
+        ? (this.showLogo = false)
+        : (this.showLogo = true)
+
+      window.pageYOffset > logoDividerOffset
+        ? (this.showLogoDivider = false)
+        : (this.showLogoDivider = true)
     },
   },
 }
@@ -184,17 +194,5 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
-}
-
-@media (max-width: 1023px) {
-  .slice {
-    left: -40%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .slice {
-    left: -50%;
-  }
 }
 </style>
