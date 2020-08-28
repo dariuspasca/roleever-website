@@ -14,7 +14,7 @@
     </transition>
 
     <!--Header-->
-    <div class="sticky flex h-16 md:h-auto w-full top-0 z-20">
+    <div class="sticky h-16 md:h-auto w-full top-0 z-20">
       <TheHeader />
     </div>
 

@@ -1,7 +1,7 @@
 <template>
-  <nav class="flex bg-transparent w-full my-4">
+  <nav class="flex bg-transparent w-full mt-2">
     <!--ROoleEver Logo-->
-    <div class="flex flex-col">
+    <div class="flex flex-col w-4/6">
       <transition name="fade">
         <span
           v-if="!showLogo"
@@ -79,16 +79,21 @@
               </g></svg></nuxt-link></span
       ></transition>
       <transition name="fade">
-        <img
+        <div
           v-if="!showLogo"
-          class="relative w-full h-1 md:h-2 slice"
-          src="https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png"
-          alt="logo line divider"
-      /></transition>
+          class="relative w-11/12 md:w-9/12 lg:w-5/12 bg-cover bg-right h-2"
+          style="
+            background-image: url(https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png);
+          "
+        ></div>
+      </transition>
     </div>
-    <div class="flex w-full justify-end">
+    <div class="flex w-2/6 justify-end h-16 md:h-auto">
       <!--Mobile NavBar Button-->
-      <button class="block md:hidden px-3 py-2 mr-2" @click="toggleMobileNav">
+      <button
+        class="block md:hidden px-3 mr-2 h-8 mt-2"
+        @click="toggleMobileNav"
+      >
         <svg
           class="fill-current text-primary h-5 w-5"
           viewBox="0 0 20 20"

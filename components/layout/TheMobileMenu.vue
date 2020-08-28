@@ -84,7 +84,7 @@
 
       <div class="block">
         <button
-          class="flex items-center px-3 py-2 text-white animate__animated animate__fadeInDown mr-2"
+          class="flex items-center px-3 py-2 mt-1 text-white animate__animated animate__fadeInDown mr-2"
           @click="toggleMobileNav"
         >
           <svg
