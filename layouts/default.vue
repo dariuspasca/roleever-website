@@ -19,7 +19,7 @@
     </div>
 
     <!--Content-->
-    <router-view class="z-10" />
+    <router-view class="z-10 pt-4 md:pt-0" />
 
     <!--Footer-->
     <TheFooter class="z-10" />
@@ -82,21 +82,10 @@ export default {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
 }
 .fade-enter,
 .fade-leave-to {
-  opacity: 0;
-}
-
-.fadeHeader-enter-active {
-  transition: all 1s;
-}
-.fadeHeader-leave-active {
-  transition: all 2s;
-}
-.fadeHeader-enter,
-.fadeHeader-leave-to {
   opacity: 0;
 }
 </style>
