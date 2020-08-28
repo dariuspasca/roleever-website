@@ -1,10 +1,5 @@
 <template>
-  <footer
-    class="py-5 border-t-2 border-medium bg-auto bg-center"
-    style="
-      background-image: url(https://storage.googleapis.com/roleever-public-assets/www/background_desaturated.jpg);
-    "
-  >
+  <footer class="py-5 border-t-2 border-medium bg-auto bg-center bg-footer">
     <div class="container mx-auto">
       <div class="flex flex-col md:flex-row px-5 mx-10 lg:mx-auto">
         <div class="flex flex-col w-full md:w-3/6 lg:w-2/6 my-2">
@@ -157,3 +152,17 @@ export default {
   },
 }
 </script>
+
+<style>
+@media (max-width: 767px) {
+  .bg-footer {
+    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_footer_mobile.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-footer {
+    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_footer.jpg);
+  }
+}
+</style>

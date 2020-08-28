@@ -169,7 +169,7 @@ export default {
 
 @media (max-width: 767px) {
   .bg-dungeon {
-    background-size: 160% 80%;
+    background-size: 150% 70%;
   }
 }
 

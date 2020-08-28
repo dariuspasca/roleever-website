@@ -1,9 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col w-full h-full md:min-h-screen bg-fixed bg-cover font-gitan"
-    style="
-      background-image: url(https://storage.googleapis.com/roleever-public-assets/www/background.jpg);
-    "
+    class="relative flex flex-col flex-grow w-full h-fullbg-fixed bg-cover font-gitan bg-view"
   >
     <!--Mobile Menu-->
     <transition name="fade">
@@ -89,7 +86,15 @@ export default {
   opacity: 0;
 }
 
-.fullScreen {
-  height: calc(100vh - 64px);
+@media (max-width: 767px) {
+  .bg-view {
+    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_mobile.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-view {
+    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg.jpg);
+  }
 }
 </style>
