@@ -1,47 +1,39 @@
 <template>
-  <div class="flex flex-grow align-middle bg-transparent mx-auto">
-    <!-- CONTAINER -->
-    <div
-      class="flex flex-col md:flex-row w-full my-3 md:my-8 justify-center bg-no-repeat bg-bottom md:bg-right bg-mobile md:bg-tablet lg:bg-desktop"
-      style="
-        background-image: url(https://storage.googleapis.com/roleever-public-assets/www/dungeon.png);
-      "
-    >
-      <!-- CTA CONTAINER -->
-      <div class="flex flex-col w-full md:w-6/12 my-auto">
-        <!-- ROLEEVER -->
-        <div class="flex flex-col text-center lg:text-left md:ml-3">
+  <div
+    class="flex h-full bg-no-repeat bg-cover bg-bottom md:bg-center py-20 md:py-32 lg:pt-48 bg-dungeon"
+  >
+    <div class="container mx-auto my-auto">
+      <div
+        class="flex flex-col md:flex-row w-full justify-center md:px-5 lg:px-0 md:space-x-20 lg:space-x-32"
+      >
+        <div class="text-center md:text-left my-auto">
           <h1
-            class="text-2xl md:text-5xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
+            class="text-2xl md:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
           >
             {{ content.data.title_first }}
           </h1>
           <h1
-            class="text-2xl md:text-5xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
+            class="text-2xl md:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
           >
             {{ content.data.title_second }}
           </h1>
           <p class="text-lg md:text-2xl mt-2">
             {{ content.data.heroe_text }}
           </p>
+          <the-download-button
+            class="justify-center md:justify-start py-10 md:py-0 md:pt-10"
+          />
         </div>
-        <!-- CTA -->
-        <TheDownloadButton class="justify-center lg:justify-start py-4" />
-      </div>
-      <!-- PREVIEW CONTAINER -->
-      <div
-        class="flex w-full md:w-6/12 justify-center pt-6 lg:my-auto md:pt-12"
-      >
-        <img
-          class="object-contain w-4/5 md:w-4/6 wiggle"
-          style="max-height: 500px"
-          src="https://storage.googleapis.com/roleever-public-assets/www/mockup.png"
-          alt="RoleEver App"
-        />
+        <div>
+          <img
+            class="object-contain wiggle mx-auto"
+            style="max-height: 500px"
+            src="https://storage.googleapis.com/roleever-public-assets/www/mockup.png"
+            alt="RoleEver App"
+          />
+        </div>
       </div>
     </div>
-    <!-- <h2>{{ content.data.titolo }}</h2>
-    <p>{{ $prismic.asText(content.data.heroe_text) }}</p>  -->
   </div>
 </template>
 
@@ -49,9 +41,7 @@
 import TheDownloadButton from '@/components/ui/TheDownloadButton.vue'
 
 export default {
-  components: {
-    TheDownloadButton,
-  },
+  components: { TheDownloadButton },
   data() {
     return {
       pageType: 'homepage',
@@ -171,5 +161,27 @@ export default {
 
 .wiggle {
   animation: wiggle 4.5s infinite;
+}
+
+.bg-dungeon {
+  background-image: url(https://storage.googleapis.com/roleever-public-assets/www/dungeon.png);
+}
+
+@media (max-width: 767px) {
+  .bg-dungeon {
+    background-size: 160% 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-dungeon {
+    background-size: 110% 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-dungeon {
+    background-size: 75% 50%;
+  }
 }
 </style>

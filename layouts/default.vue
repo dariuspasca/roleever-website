@@ -14,12 +14,12 @@
     </transition>
 
     <!--Header-->
-    <div class="sticky h-16 md:h-auto w-full top-0 z-20">
+    <div class="sticky h-16 w-full top-0 z-20">
       <TheHeader />
     </div>
 
     <!--Content-->
-    <router-view class="z-10 pt-4 md:pt-0" />
+    <router-view class="z-10" />
 
     <!--Footer-->
     <TheFooter class="z-10" />
@@ -87,5 +87,9 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+.fullScreen {
+  height: calc(100vh - 64px);
 }
 </style>
