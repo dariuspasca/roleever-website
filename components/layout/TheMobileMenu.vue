@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col bg-cover bg-center h-screen"
+    class="flex flex-col bg-cover bg-center h-full overflow-y-auto"
     style="
       background-image: url(https://storage.googleapis.com/roleever-public-assets/www/background.jpg);
     "
