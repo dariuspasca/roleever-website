@@ -99,24 +99,23 @@ export default {
    ** nuxt-i18n configuration
    */
   i18n: {
+    strategy: 'prefix_except_default',
+    baseUrl: 'https://roleever.com',
+    defaultLocale: 'en',
+    seo: true,
+    lazy: true,
     locales: [
       {
         name: 'English',
         code: 'en',
         iso: 'en-US',
-        file: 'en-US.js',
       },
       {
         name: 'Italiano',
         code: 'it',
         iso: 'it-IT',
-        file: 'it-IT.js',
       },
     ],
-    baseUrl: 'https://roleever.com',
-    defaultLocale: 'it',
-    seo: true,
-    lazy: true,
   },
   /*
    ** vue-toast configuration
@@ -140,7 +139,7 @@ export default {
    */
   build: {},
   router: {
-    linkActiveClass: 'active-link',
+    linkExactActiveClass: 'exact-active-link',
   },
   // Netlify reads a 404.html, Nuxt will load as an SPA
   generate: {

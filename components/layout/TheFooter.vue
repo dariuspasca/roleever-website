@@ -80,6 +80,7 @@
                   <nuxt-link
                     :to="localePath(footerItemsLinks[index].item_route)"
                     class="block hover:text-primary my-2"
+                    exact
                   >
                     {{ item.item_name }}
                   </nuxt-link>

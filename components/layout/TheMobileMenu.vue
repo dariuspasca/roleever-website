@@ -112,6 +112,7 @@
         <nuxt-link
           :to="localePath(menuItemsLinks[index].item_link)"
           class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
+          exact
           @click.native="toggleMobileNav"
         >
           {{ item.item_name }}

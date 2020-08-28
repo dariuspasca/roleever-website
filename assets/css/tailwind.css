@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.active-link {
+.active-link, .exact-active-link {
   font-weight: bold;
 }
 
