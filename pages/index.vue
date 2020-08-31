@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-grow h-full lg:h-screen bg-no-repeat bg-cover bg-bottom sm:bg-center md:bg-center lg:bg-center my-20 sm:my-40 md:my-0 lg:my-0 bg-dungeon items-center justify-center"
+    class="flex flex-grow h-full lg:h-screen bg-no-repeat bg-cover bg-bottom sm:bg-center md:bg-center lg:bg-center py-20 sm:my-40 md:py-0 lg:my-0 bg-dungeon items-center justify-center overflow-x-hidden"
   >
     <div class="container mx-auto my-auto">
       <div
@@ -165,11 +165,12 @@ export default {
 
 .bg-dungeon {
   background-image: url(https://storage.googleapis.com/roleever-public-assets/www/dungeon.png);
+  background-attachment: fixed;
 }
 
 @media (max-width: 767px) {
   .bg-dungeon {
-    background-size: 150% 70%;
+    background-size: 120% 50%;
   }
 }
 
