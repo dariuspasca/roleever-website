@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col flex-grow w-full h-fullbg-fixed bg-cover font-gitan bg-view"
+    class="relative flex flex-col w-full md:min-h-screen lg:h-full bg-fixed bg-cover font-gitan bg-view"
   >
     <!--Mobile Menu-->
     <transition name="fade">

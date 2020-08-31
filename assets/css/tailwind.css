@@ -9,3 +9,15 @@
 .lineaDorata {
   background-image: url(https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png);
 }
+
+@media (max-width: 767px) {
+  .bg-view {
+    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_mobile.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-view {
+    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg.jpg);
+  }
+}

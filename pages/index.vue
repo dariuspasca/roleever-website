@@ -1,19 +1,19 @@
 <template>
   <div
-    class="flex h-full bg-no-repeat bg-cover bg-bottom md:bg-center py-20 md:py-32 lg:pt-48 bg-dungeon"
+    class="flex flex-grow h-full lg:h-screen bg-no-repeat bg-cover bg-bottom sm:bg-center md:bg-center lg:bg-center my-20 sm:my-40 md:my-0 lg:my-0 bg-dungeon items-center justify-center"
   >
     <div class="container mx-auto my-auto">
       <div
-        class="flex flex-col md:flex-row w-full justify-center md:px-5 lg:px-0 md:space-x-20 lg:space-x-32"
+        class="flex flex-col sm:flex-row md:flex-row lg:flex-row w-full justify-center md:px-5 lg:px-0 sm:space-x-20 md:space-x-32 lg:space-x-32"
       >
         <div class="text-center md:text-left my-auto">
           <h1
-            class="text-2xl md:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
+            class="text-2xl sm:text-3xl lg:text-4xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
           >
             {{ content.data.title_first }}
           </h1>
           <h1
-            class="text-2xl md:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
+            class="text-2xl sm:text-3xl lg:text-4xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
           >
             {{ content.data.title_second }}
           </h1>

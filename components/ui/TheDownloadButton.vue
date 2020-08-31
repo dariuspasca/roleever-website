@@ -3,10 +3,10 @@
     <client-only> <TheGetLinkModal /> </client-only>
 
     <button
-      class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform hover:-translate-y-3 hover:scale-110 text-white font-normal py-2 px-4 rounded inline-flex items-center font-gitan"
+      class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform hover:-translate-y-3 hover:scale-110 text-white font-normal py-2 px-4 lg:px-10 rounded inline-flex items-center font-gitan"
     >
       <svg
-        class="fill-current w-4 h-4 mr-2"
+        class="fill-current w-4 h-4 mr-2 lg:mr-4"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
       >

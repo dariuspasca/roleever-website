@@ -1,9 +1,11 @@
 <template>
   <footer class="py-5 border-t-2 border-medium bg-auto bg-center bg-footer">
     <div class="container mx-auto">
-      <div class="flex flex-col md:flex-row px-5 mx-10 lg:mx-auto">
-        <div class="flex flex-col w-full md:w-3/6 lg:w-2/6 my-2">
-          <div class="w-10/12 lg:w-3/6">
+      <div
+        class="flex flex-col sm:flex-row md:flex-row lg:flex-row px-5 mx-10 sm:mx-auto md:mx-auto lg:mx-auto"
+      >
+        <div class="flex flex-col w-full sm:w-3/6 md:w-2/6 lg:w-2/6 my-2">
+          <div class="w-10/12 md:w-4/6 lg:w-3/6">
             <h2 class="font-semibold text-primary-shade text-2xl mb-4">
               Tutte le avventure nel tuo cellulare
             </h2>
@@ -50,9 +52,11 @@
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row w-full md:w-3/6 lg:w-4/6">
+        <div
+          class="flex flex-col md:flex-row lg:flex-row w-full sm:w-3/6 md:w-4/6 lg:w-4/6"
+        >
           <div
-            class="flex flex-row w-full lg:w-3/6 my-4 space-x-10 lg:space-x-0"
+            class="flex flex-row w-full md:w-3/6 lg:w-3/6 my-4 space-x-10 md:space-x-0 lg:space-x-0"
           >
             <div class="w-1/2">
               <p class="font-semibold text-primary-shade text-sm">Sito</p>
@@ -85,7 +89,7 @@
           </div>
 
           <div
-            class="flex flex-row w-full lg:w-3/6 mt-10 lg:my-2 space-x-10 lg:space-x-0"
+            class="flex flex-row w-full md:w-3/6 lg:w-3/6 mt-10 md:my-2 lg:my-2 space-x-10 md:space-x-0 lg:space-x-0"
           >
             <div class="w-1/2">
               <p class="font-semibold text-primary-shade text-sm">Risorse</p>

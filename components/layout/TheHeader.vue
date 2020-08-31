@@ -89,7 +89,7 @@
     <div class="flex w-2/6 justify-end h-16 md:h-auto">
       <!--Mobile NavBar Button-->
       <button
-        class="block md:hidden px-3 mr-2 h-8 mt-2"
+        class="hidden xs:block px-3 mr-2 h-8 mt-2"
         @click="toggleMobileNav"
       >
         <svg
@@ -105,7 +105,7 @@
         <title>Menu</title>
       </button>
       <!--Desktop Vertical Menu-->
-      <div class="hidden md:flex md:flex-col mt-5 mr-16 text-right">
+      <div class="xs:hidden flex flex-col mt-5 mr-16 text-right">
         <nuxt-link
           v-for="(item, index) in menuItems"
           :key="'reference-item-' + index"
@@ -184,10 +184,10 @@ export default {
 
 <style>
 .fade-enter-active {
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .fade-leave-active {
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .fade-enter,
 .fade-leave-to {

@@ -31,6 +31,7 @@
           :key="locale.code"
           class="flex flex-row space-x-2 pl-2 w-full select-none"
           :to="switchLocalePath(locale.code)"
+          @click.prevent.stop="setLocale(locale.code)"
         >
           <img
             class="h-4 w-6 my-auto"

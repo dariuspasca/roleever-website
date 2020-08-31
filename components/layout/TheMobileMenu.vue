@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="flex flex-col bg-cover bg-center h-full overflow-y-auto"
-    style="
-      background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_mobile.jpg);
-    "
-  >
+  <div class="flex flex-col bg-cover bg-center h-full overflow-y-auto bg-view">
     <div
       class="flex w-full items-center justify-between flex-wrap bg-transparent"
     >
