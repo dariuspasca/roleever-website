@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-grow h-full lg:h-screen bg-no-repeat bg-cover bg-bottom sm:bg-center md:bg-center lg:bg-center py-20 sm:my-40 md:py-0 lg:my-0 bg-dungeon items-center justify-center overflow-x-hidden"
+    class="flex flex-grow h-full lg:h-screen bg-no-repeat bg-cover bg-center py-16 sm:py-40 md:py-0 lg:py-0 bg-dungeon items-center justify-center overflow-x-hidden"
   >
     <div class="container mx-auto my-auto">
       <div
@@ -168,7 +168,13 @@ export default {
   background-attachment: fixed;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
+  .bg-dungeon {
+    background-size: 150% 35%;
+  }
+}
+
+@media (min-width: 576px) {
   .bg-dungeon {
     background-size: 120% 50%;
   }
@@ -182,7 +188,7 @@ export default {
 
 @media (min-width: 1024px) {
   .bg-dungeon {
-    background-size: 75% 50%;
+    background-size: 70% 40%;
   }
 }
 </style>
