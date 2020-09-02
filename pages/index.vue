@@ -1,7 +1,12 @@
 <template>
   <div
-    class="flex flex-grow h-full lg:h-screen bg-no-repeat bg-cover bg-center py-16 sm:py-40 md:py-0 lg:py-0 bg-dungeon items-center justify-center overflow-x-hidden"
+    class="flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 bg-dungeon items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
   >
+    <img
+      class="xs:hidden w-full lg:w-8/12 unselectable fixed"
+      src="https://storage.googleapis.com/roleever-public-assets/www/dungeon.png"
+      alt="dungeon"
+    />
     <div class="container mx-auto my-auto">
       <div
         class="flex flex-col sm:flex-row md:flex-row lg:flex-row w-full justify-center md:px-5 lg:px-0 sm:space-x-20 md:space-x-32 lg:space-x-32"
@@ -26,7 +31,12 @@
         </div>
         <div>
           <img
-            class="object-contain wiggle mx-auto"
+            class="sm:hidden md:hidden lg:hidden h-64 w-full unselectable object-cover fixed top-0 mt-64"
+            src="https://storage.googleapis.com/roleever-public-assets/www/dungeon.png"
+            alt="dungeon"
+          />
+          <img
+            class="object-contain wiggle mx-auto unselectable"
             style="max-height: 500px"
             src="https://storage.googleapis.com/roleever-public-assets/www/mockup.png"
             alt="RoleEver App"
@@ -163,32 +173,13 @@ export default {
   animation: wiggle 4.5s infinite;
 }
 
-.bg-dungeon {
-  background-image: url(https://storage.googleapis.com/roleever-public-assets/www/dungeon.png);
-  background-attachment: fixed;
-}
+.unselectable {
+  -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none; /* From IE10 only */
+  user-select: none; /* Not valid CSS yet, as of July 2012 */
 
-@media (max-width: 575px) {
-  .bg-dungeon {
-    background-size: 150% 35%;
-  }
-}
-
-@media (min-width: 576px) {
-  .bg-dungeon {
-    background-size: 120% 50%;
-  }
-}
-
-@media (min-width: 768px) {
-  .bg-dungeon {
-    background-size: 110% 75%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .bg-dungeon {
-    background-size: 70% 40%;
-  }
+  -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+  user-drag: none;
 }
 </style>
