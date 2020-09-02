@@ -167,8 +167,8 @@ export default {
       let logoOffset = 80
       let logoDividerOffset = 50
       if (process.browser && this.$device.isDesktopOrTablet) {
-        logoOffset = 150
-        logoDividerOffset = 100
+        logoOffset = 100
+        logoDividerOffset = 80
       }
       window.pageYOffset > logoOffset
         ? (this.showLogo = false)

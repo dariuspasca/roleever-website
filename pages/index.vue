@@ -2,11 +2,13 @@
   <div
     class="flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 bg-dungeon items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
   >
-    <img
-      class="xs:hidden w-full lg:w-8/12 unselectable fixed"
-      src="https://storage.googleapis.com/roleever-public-assets/www/dungeon.png"
-      alt="dungeon"
-    />
+    <span class="fixed i-hate-css">
+      <img
+        class="w-full lg:w-8/12 unselectable mx-auto"
+        src="https://storage.googleapis.com/roleever-public-assets/www/dungeon.png"
+        alt="dungeon"
+    /></span>
+
     <div class="container mx-auto my-auto">
       <div
         class="flex flex-col sm:flex-row md:flex-row lg:flex-row w-full justify-center md:px-5 lg:px-0 sm:space-x-20 md:space-x-32 lg:space-x-32"
@@ -30,11 +32,6 @@
           />
         </div>
         <div>
-          <img
-            class="sm:hidden md:hidden lg:hidden h-64 w-full unselectable object-cover fixed top-0 mt-64"
-            src="https://storage.googleapis.com/roleever-public-assets/www/dungeon.png"
-            alt="dungeon"
-          />
           <img
             class="object-contain wiggle mx-auto unselectable"
             style="max-height: 500px"
@@ -174,12 +171,21 @@ export default {
 }
 
 .unselectable {
-  -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+  -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; /* From IE10 only */
-  user-select: none; /* Not valid CSS yet, as of July 2012 */
+  user-select: none;
 
   -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
-  user-drag: none;
+}
+
+.i-hate-css {
+  width: 100%;
+}
+
+@media (max-width: 897px) {
+  .i-hate-css {
+    width: 180%;
+  }
 }
 </style>

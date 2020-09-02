@@ -3,7 +3,8 @@
     <client-only> <TheGetLinkModal /> </client-only>
 
     <button
-      class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110 text-white font-normal py-2 px-4 lg:px-10 rounded inline-flex items-center font-gitan"
+      class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110 text-white font-normal py-2 px-4 lg:px-10 rounded inline-flex items-center font-gitan focus:outline-none"
+      @click="downloadClick()"
     >
       <svg
         class="fill-current w-4 h-4 mr-2 lg:mr-4"
@@ -16,11 +17,11 @@
         <a slot="placeholder" href="www.google.com">
           {{ downloadButtonMobileText }}</a
         >
-        <a v-if="$device.isAndroid" href="#">Scarica da Play Store</a>
-        <a v-if="$device.isIos" href="#">Scarica da Apps Store</a>
-        <a v-if="$device.isDesktop" @click="$modal.show('get-link-m8')"
-          >Scarica dallo Store</a
-        >
+        <p v-if="$device.isAndroid">Scarica da Play Store</p>
+        <p v-if="$device.isIos">Scarica da Apps Store</p>
+        <p v-if="$device.isDesktop" @click="$modal.show('get-link-m8')">
+          Scarica dallo Store
+        </p>
       </client-only>
     </button>
   </div>
@@ -37,6 +38,19 @@ export default {
     return {
       downloadButtonMobileText: 'Scarica dallo Store',
     }
+  },
+  methods: {
+    downloadClick() {
+      if (this.$device.isDesktop) {
+        this.$modal.show('get-link-m8')
+      } else {
+        window.open(
+          'https://join.roleever.app/94TIf7qms9',
+          '_blank',
+          'noopener'
+        )
+      }
+    },
   },
 }
 </script>
