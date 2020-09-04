@@ -86,7 +86,13 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['nuxt-i18n', '@nuxtjs/prismic', '@nuxtjs/device', '@nuxtjs/toast'],
+  modules: [
+    'nuxt-i18n',
+    '@nuxtjs/prismic',
+    '@nuxtjs/device',
+    '@nuxtjs/toast',
+    'cookie-universal-nuxt',
+  ],
   /*
    ** Prismic configuration
    */
@@ -167,8 +173,5 @@ export default {
   server: {
     port: 8000, // default: 3000
     host: '0.0.0.0', // default: localhost
-  },
-  scrollBehavior(to, from, savedPosition) {
-    return { x: 0, y: 0 }
   },
 }

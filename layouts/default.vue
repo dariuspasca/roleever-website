@@ -2,11 +2,13 @@
   <div
     class="relative flex flex-col w-full md:min-h-screen lg:h-full bg-fixed bg-cover bg-left-top font-gitan bg-view"
   >
+    <!--The Cookie Snackbar-->
+    <the-cookie-snack v-if="!cookieConsent" class="fixed z-30 bottom-0" />
     <!--Mobile Menu-->
     <transition name="fade">
       <TheMobileMenu
         v-show="openMobileNav"
-        class="fixed w-full h-full overflow-y-scroll inset-0 z-30"
+        class="fixed w-full h-full overflow-y-scroll inset-0 z-40"
       />
     </transition>
 
@@ -27,12 +29,14 @@
 import TheHeader from '@/components/layout/TheHeader.vue'
 import TheMobileMenu from '@/components/layout/TheMobileMenu.vue'
 import TheFooter from '@/components/layout/TheFooter.vue'
+import TheCookieSnack from '@/components/ui/TheCookieSnack.vue'
 
 export default {
   components: {
     TheHeader,
     TheMobileMenu,
     TheFooter,
+    TheCookieSnack,
   },
   data() {
     return {
@@ -40,6 +44,16 @@ export default {
       scrollPositionX: 0,
       scrollPositionY: 0,
     }
+  },
+  computed: {
+    cookieConsent() {
+      const cookieRes = this.$cookies.get('cookie-consent')
+      if (cookieRes === undefined) {
+        return false
+      } else {
+        return false
+      }
+    },
   },
   mounted() {
     this.$root.$on('toggleMobileNav', (status) => {
