@@ -48,6 +48,12 @@ export default {
 
     interact(element).draggable({
       inertia: true,
+      modifiers: [
+        interact.modifiers.restrict({
+          restriction: 'parent',
+          elementRect: { left: 0, right: 1, top: 1, bottom: 1 },
+        }),
+      ],
       onmove: (event) => {
         const x = this.interactPosition.x + event.dx
         console.log(x)
