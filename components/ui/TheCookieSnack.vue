@@ -49,20 +49,32 @@ export default {
     interact(element).draggable({
       inertia: true,
       modifiers: [
+        interact.modifiers.snap({
+          targets: [interact.createSnapGrid({ x: 30, y: 30 })],
+          range: Infinity,
+          relativePoints: [{ x: 0, y: 0 }],
+        }),
         interact.modifiers.restrict({
-          restriction: 'parent',
-          elementRect: { left: 0, right: 1, top: 1, bottom: 1 },
+          restriction: element.parentNode,
+          elementRect: { top: 0, left: 0, bottom: 1, right: 0 },
+          endOnly: true,
         }),
       ],
       onmove: (event) => {
         const x = this.interactPosition.x + event.dx
-        console.log(x)
         // const y = this.interactPosition.y + event.dy
         this.interactSetPosition({ x })
       },
       onend: () => {
-        this.resetCardPosition()
-        console.log('end')
+        if (
+          this.interactPosition.x < 0 ||
+          this.interactPosition.x < window.innerWidth / 3
+        ) {
+          this.resetCardPosition()
+        } else {
+          const x = window.innerWidth + 100
+          this.interactSetPosition({ x })
+        }
       },
     })
   },
