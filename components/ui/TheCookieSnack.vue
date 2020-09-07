@@ -7,10 +7,10 @@
       ref="card"
       :style="{ transform: transformString }"
       style="touch-action: none"
-      class="flex xs:w-11/12 sm:w-5/12 md:w-4/12 lg:w-2/12 my-4 bg-medium-tint rounded-lg custom-shadow mx-4 py-1 text-dark justify-start space-x-3 align-middle sm:mr-4 md:mr-4 lg:mr-8 select-none xs:duration-300 duration-1000 cursor-default lg:px-2"
+      class="flex xs:w-11/12 sm:w-5/12 md:w-4/12 lg:w-2/12 my-4 bg-medium-tint rounded-lg custom-shadow mx-4 py-1 text-dark justify-start space-x-3 align-middle sm:mr-4 md:mr-4 lg:mr-8 select-none xs:duration-300 duration-1000 cursor-default px-2"
     >
       <div
-        class="flex items-center w-full justify-center space-x-4 cursor-default"
+        class="flex items-center w-full justify-between space-x-4 cursor-default"
       >
         <img
           class="h-16 w-auto"
@@ -105,12 +105,11 @@ export default {
     bakeCookie() {
       const x = window.innerWidth + 100
       this.interactSetPosition({ x })
-      // this.show = false
+      setTimeout(() => (this.show = false), 1500)
       // this.$cookies.set('cookie-consent', 'cookie-value', {
       //   path: '/',
       //   maxAge: 60 * 60 * 24 * 7,
       // })
-      console.log('closeButton')
     },
     interactSetPosition(coordinates) {
       const { x = 0, y = 0 } = coordinates

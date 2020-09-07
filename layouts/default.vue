@@ -3,7 +3,10 @@
     class="relative flex flex-col w-full md:min-h-screen lg:h-full bg-fixed bg-cover bg-left-top font-gitan bg-view"
   >
     <!--The Cookie Snackbar-->
-    <the-cookie-snack v-if="!cookieConsent" class="fixed z-30 bottom-0" />
+    <transition name="fade">
+      <the-cookie-snack v-if="showCookieBanner" class="fixed z-30 bottom-0" />
+    </transition>
+
     <!--Mobile Menu-->
     <transition name="fade">
       <TheMobileMenu
@@ -43,6 +46,7 @@ export default {
       openMobileNav: false,
       scrollPositionX: 0,
       scrollPositionY: 0,
+      showCookieBanner: false,
     }
   },
   computed: {
@@ -71,6 +75,9 @@ export default {
       }
       this.openMobileNav = status
     })
+  },
+  created() {
+    setTimeout(() => (this.showCookieBanner = !this.cookieConsent), 1500)
   },
   methods: {
     toggleBodyClass(addRemoveClass, className) {
