@@ -7,7 +7,7 @@
       ref="card"
       :style="{ transform: transformString }"
       style="touch-action: none"
-      class="flex xs:w-11/12 sm:w-5/12 md:w-4/12 lg:w-2/12 my-4 bg-medium-tint rounded-lg custom-shadow mx-4 py-1 text-dark justify-start space-x-3 align-middle sm:mr-4 md:mr-4 lg:mr-8 select-none xs:duration-500 duration-1000 cursor-default"
+      class="flex xs:w-11/12 sm:w-5/12 md:w-4/12 lg:w-2/12 my-4 bg-medium-tint rounded-lg custom-shadow mx-4 py-1 text-dark justify-start space-x-3 align-middle sm:mr-4 md:mr-4 lg:mr-8 select-none xs:duration-500 duration-1000 cursor-default lg:px-2"
     >
       <div
         class="flex items-center w-full justify-center space-x-4 cursor-default"
@@ -18,7 +18,7 @@
           alt="Cookie Cthlhu"
         />
         <div class="w-7/12">
-          <p>Usiamo i Cookies.</p>
+          <p class="text-base tracking-wider">Usiamo i Cookies</p>
           <p class="underline text-dark-tint">Scopri di più</p>
         </div>
         <button class="focus:outline-none right-0" @click="bakeCookie()">
