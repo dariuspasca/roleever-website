@@ -22,6 +22,7 @@
           <nuxt-link
             :to="localePath('/cookie-policy')"
             class="underline text-dark-tint hover:text-dark-shade cursor-pointer"
+            exact-active-class
             >Scopri di più</nuxt-link
           >
         </div>

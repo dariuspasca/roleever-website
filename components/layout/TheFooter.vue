@@ -72,18 +72,15 @@
             <div class="w-1/2">
               <p class="font-semibold text-primary-shade text-sm">Norme</p>
               <ul class="text-sm">
-                <li
-                  v-for="(item, index) in footerItems"
-                  :key="'reference-item-' + index"
+                <nuxt-link
+                  :to="localePath('/cookie-policy')"
+                  class="block hover:text-primary my-2"
+                  exact
                 >
-                  <nuxt-link
-                    :to="localePath(footerItemsLinks[index].item_route)"
-                    class="block hover:text-primary my-2"
-                    exact
-                  >
-                    {{ item.item_name }}
-                  </nuxt-link>
-                </li>
+                  Cookie
+                </nuxt-link>
+                <li class="my-2">Privacy</li>
+                <li class="my-2">Termini e Condizioni</li>
               </ul>
             </div>
           </div>
