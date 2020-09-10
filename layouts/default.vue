@@ -54,7 +54,7 @@ export default {
     cookieConsent() {
       const cookieRes = this.$cookies.get('cookie-consent')
       if (cookieRes === undefined) {
-        return false
+        return true
       } else {
         return false
       }

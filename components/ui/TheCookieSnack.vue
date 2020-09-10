@@ -107,10 +107,10 @@ export default {
       const x = window.innerWidth + 100
       this.interactSetPosition({ x })
       setTimeout(() => (this.show = false), 1500)
-      // this.$cookies.set('cookie-consent', 'cookie-value', {
-      //   path: '/',
-      //   maxAge: 60 * 60 * 24 * 7,
-      // })
+      this.$cookies.set('cookie-consent', 'cookie-value', {
+        path: '/',
+        maxAge: 60 * 60 * 24 * 7,
+      })
     },
     interactSetPosition(coordinates) {
       const { x = 0, y = 0 } = coordinates
