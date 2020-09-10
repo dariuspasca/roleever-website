@@ -79,8 +79,27 @@
                 >
                   Cookie
                 </nuxt-link>
-                <li class="my-2">Privacy</li>
-                <li class="my-2">Termini e Condizioni</li>
+                <nuxt-link
+                  :to="localePath('/privacy-policy')"
+                  class="block hover:text-primary my-2"
+                  exact
+                >
+                  Privacy
+                </nuxt-link>
+                <nuxt-link
+                  :to="localePath('/tos')"
+                  class="block hover:text-primary my-2"
+                  exact
+                >
+                  TOS
+                </nuxt-link>
+                <nuxt-link
+                  :to="localePath('/roleever-community-code')"
+                  class="block hover:text-primary my-2"
+                  exact
+                >
+                  Community Code
+                </nuxt-link>
               </ul>
             </div>
           </div>

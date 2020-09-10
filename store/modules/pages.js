@@ -11,6 +11,11 @@ export default {
         .filter((page) => page.type === type)
         .filter((page) => page.language === lang)
     },
+    getPageByTag: (state) => (tag, lang) => {
+      return state.pages
+        .filter((page) => page.tags === tag)
+        .filter((page) => page.language === lang)
+    },
   },
   mutations: {
     setPages(state, content) {
@@ -28,6 +33,7 @@ export default {
           for (let i = 0, len = response.results.length; i < len; i++) {
             pagesData.push({
               type: response.results[i].type,
+              tags: response.results[i].tags[1],
               language: response.results[i].lang.substring(0, 2),
               data: response.results[i].data,
             })

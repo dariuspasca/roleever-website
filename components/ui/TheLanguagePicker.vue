@@ -34,7 +34,7 @@
           @click.prevent.stop="setLocale(locale.code)"
         >
           <img
-            class="h-4 w-6 my-auto"
+            class="h-4 w-6 my-auto pointer-events-none"
             :src="require(`~/assets/images/${locale.code}.png`)"
             alt="Available language flag"
           />
