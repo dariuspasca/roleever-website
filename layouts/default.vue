@@ -35,6 +35,7 @@ import TheFooter from '@/components/layout/TheFooter.vue'
 import TheCookieSnack from '@/components/ui/TheCookieSnack.vue'
 
 export default {
+  scrollToTop: true,
   components: {
     TheHeader,
     TheMobileMenu,

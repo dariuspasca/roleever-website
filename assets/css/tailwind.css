@@ -2,7 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.active-link, .exact-active-link {
+.active-link,
+.exact-active-link {
   font-weight: bold;
 }
 
@@ -21,3 +22,4 @@
     background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg.jpg);
   }
 }
+

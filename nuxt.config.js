@@ -165,6 +165,13 @@ export default {
   build: {},
   router: {
     linkExactActiveClass: 'exact-active-link',
+    scrollBehavior(to, from, savedPosition) {
+      if (savedPosition) {
+        return savedPosition
+      } else {
+        return { x: 0, y: 0 }
+      }
+    },
   },
   // Netlify reads a 404.html, Nuxt will load as an SPA
   generate: {

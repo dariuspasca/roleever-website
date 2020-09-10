@@ -73,28 +73,28 @@
               <p class="font-semibold text-primary-shade text-sm">Norme</p>
               <ul class="text-sm">
                 <nuxt-link
-                  :to="localePath('/cookie-policy')"
+                  :to="localePath('cookie-policy')"
                   class="block hover:text-primary my-2"
                   exact
                 >
                   Cookie
                 </nuxt-link>
                 <nuxt-link
-                  :to="localePath('/privacy-policy')"
+                  :to="localePath('privacy-policy')"
                   class="block hover:text-primary my-2"
                   exact
                 >
                   Privacy
                 </nuxt-link>
                 <nuxt-link
-                  :to="localePath('/tos')"
+                  :to="localePath('tos')"
                   class="block hover:text-primary my-2"
                   exact
                 >
                   TOS
                 </nuxt-link>
                 <nuxt-link
-                  :to="localePath('/roleever-community-code')"
+                  :to="localePath('roleever-community-code')"
                   class="block hover:text-primary my-2"
                   exact
                 >

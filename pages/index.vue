@@ -139,9 +139,6 @@ export default {
           content: this.content.data.og[0].og_image.url,
         },
       ],
-      bodyAttrs: {
-        class: 'flex flex-col h-full',
-      },
     }
   },
 }
