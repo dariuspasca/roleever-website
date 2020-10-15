@@ -61,12 +61,27 @@
             <div class="w-1/2">
               <p class="font-semibold text-primary-shade text-sm">Sito</p>
               <ul class="text-sm">
-                <li class="my-2">Home</li>
-                <li class="my-2">Feature</li>
-                <li class="my-2">Community</li>
-                <li class="my-2">Roadmap</li>
-                <li class="my-2">Tutorial</li>
-                <li class="my-2">About us</li>
+                <nuxt-link
+                  :to="localePath('/')"
+                  class="block hover:text-primary my-2"
+                  exact
+                >
+                  Home
+                </nuxt-link>
+                <nuxt-link
+                  :to="localePath('features')"
+                  class="block hover:text-primary my-2"
+                  exact
+                >
+                  Features
+                </nuxt-link>
+                <nuxt-link
+                  :to="localePath('about')"
+                  class="block hover:text-primary my-2"
+                  exact
+                >
+                  About Us
+                </nuxt-link>
               </ul>
             </div>
             <div class="w-1/2">
@@ -117,10 +132,21 @@
             </div>
             <div class="w-1/2">
               <p class="font-semibold text-primary-shade text-sm">Partner</p>
-              <ul class="text-sm">
-                <li class="my-2">AlmaCube</li>
-                <li class="my-2">NanaBianca</li>
-              </ul>
+
+              <a
+                href="https://www.almacube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="my-2 text-sm block hover:text-primary-shade"
+                >AlmaCube</a
+              >
+              <a
+                href="https://nanabianca.it/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="my-2 text-sm block hover:text-primary-shade"
+                >Nana Bianca</a
+              >
             </div>
           </div>
         </div>

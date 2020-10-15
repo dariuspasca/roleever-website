@@ -11,6 +11,28 @@
   background-image: url(https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png);
 }
 
+.frame {
+  background-image: url('~assets/images/frameSkills.svg');
+  height: 200px;
+  width: 300px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '•';
+  font-size: 40px;
+  padding-right: 5px;
+  line-height: 10px;
+  vertical-align: top;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
 @media (max-width: 767px) {
   .bg-view {
     background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_mobile.jpg);
@@ -22,4 +44,3 @@
     background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg.jpg);
   }
 }
-

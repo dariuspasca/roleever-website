@@ -5,18 +5,17 @@
         <h1
           class="text-2xl sm:text-3xl lg:text-4xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal xs:w-7/12 w-8/12 mx-auto"
         >
-          Siamo giocatori di ruolo
+          {{ content.data.header }}
         </h1>
         <p class="xs:w-11/12 w-8/12 mx-auto pt-4">
-          Se non facciamo sessione ogni settimana andiamo in astinenza. Cosi,
-          abbiamo inventato RoleEver, e si, ci lavoriamo full-time!
+          {{ content.data.sub_header }}
         </p>
       </div>
       <div class="flex flex-row xs:flex-col my-auto">
         <div class="w-6/12 xs:w-full my-auto">
           <img
             class="shadow-xl mx-auto rounded-lg w-10/12 xs:11/12 h-auto my-auto"
-            src="https://storage.googleapis.com/roleever-public-assets/www/about/immagineTeam.jpg"
+            :src="content.data.team.url"
             alt="RoleEver Team"
           />
         </div>
@@ -24,14 +23,11 @@
           class="w-6/12 xs:w-full space-y-10 sm:space-y-4 text-base lg:text-lg my-auto xs:pt-8 xs:text-center xs:px-2"
         >
           <p>
-            RoleEver nasce nel 2018 da questi 3 avventurieri che hanno la folle
-            ambizione di permettere a tutti di giocare ai GdR anche nella loro
-            pausa caffè.
+            {{ content.data.team_bio_header }}
           </p>
 
           <p>
-            La passione per i GdR ci accompagna da più di dieci anni e non passa
-            giorno in cui non vediamo l'ora di ruolare ancora :D
+            {{ content.data.team_bio_sub_header }}
           </p>
         </div>
       </div>
@@ -43,20 +39,146 @@
             <h1 class="text-4xl sm:text-2xl lg:text-3xl">Nick</h1>
 
             <p>
-              Nick è uno Pseudodrago. Capo e master indiscusso di RoleEver. Non
-              fatevi ingannare dalla posa... è un burlone! Vi guiderà ovunque
-              verso le migliori avventure!
+              {{ $prismic.asText(content.data.nick_the_dragon_bio) }}
             </p>
           </div>
         </div>
         <div class="w-6/12 xs:w-full xs:order-first">
           <img
             class="mx-auto w-5/12 xs:w-9/12 sm:w-7/12 md:w-7/12 h-auto my-auto"
-            src="https://storage.googleapis.com/roleever-public-assets/www/about/nick.png"
+            :src="content.data.nick_the_dragon.url"
             alt="Nick The Dragon"
           />
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap flex-row justify-center xs:flex-col pb-10 space-x-24 xs:space-x-0 sm:space-x-10 md:space-x-4 w-full"
+      >
+        <div
+          v-for="(item, index) in content.data.member_card"
+          :key="'reference-item-' + index"
+          class="space-y-1 pb-20 xs:pb-40"
+        >
+          <img
+            class="w-9/12 h-auto mx-auto"
+            :src="
+              'https://storage.googleapis.com/roleever-public-assets/www/about/' +
+              item.card_header +
+              '.png'
+            "
+            :alt="item.card_header"
+          />
+          <h2
+            class="text-xl sm:text-2xl lg:text-2xl font-medium subpixel-antialiased tracking-wide text-center w-full capitalize"
+          >
+            {{ item.card_header }}
+          </h2>
+          <div class="flex flex-col frame bg-cover px-3 mx-auto">
+            <div class="top-0 left-0 pt-4 pl-2 h-full">
+              <prismic-rich-text :field="item.skills" class="text-sm" />
+            </div>
+            <div class="uppercase text-center font-bold bottom-0 left-0 pb-3">
+              {{ item.card_footer }}
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      pageType: 'about',
+    }
+  },
+  computed: {
+    content() {
+      return this.$store.getters.getPageByType(
+        this.pageType,
+        this.$i18n.locale
+      )[0]
+    },
+  },
+  head() {
+    return {
+      title: this.$prismic.asText(this.content.data.title),
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.roleever.com' + this.$route.path,
+        },
+      ],
+      meta: [
+        /* Twitter Cards */
+
+        {
+          name: 'twitter:card',
+          content: this.content.data.twitter_cards[0].twitter_card,
+        },
+        {
+          name: 'twitter:site',
+          content: this.content.data.twitter_cards[0].twitter_site,
+        },
+        {
+          name: 'twitter:title',
+          content: this.content.data.twitter_cards[0].twitter_title,
+        },
+        {
+          name: 'twitter:description',
+          content: this.content.data.twitter_cards[0].twitter_description,
+        },
+        {
+          name: 'twitter:image',
+          content: this.content.data.twitter_cards[0].twitter_image.url,
+        },
+
+        /* Open Graph */
+
+        {
+          name: 'og:title',
+          content: this.content.data.og[0].og_title,
+        },
+        {
+          name: 'og:type',
+          content: this.content.data.og[0].og_type,
+        },
+        {
+          name: 'og:description',
+          content: this.content.data.og[0].og_description,
+        },
+        {
+          name: 'og:locale',
+          content: this.content.data.og[0].og_locale,
+        },
+        {
+          name: 'og:locale:alternate',
+          content: this.content.data.og[0].og_locale_alternate,
+        },
+        {
+          name: 'og:locale:image',
+          content: this.content.data.og[0].og_image.url,
+        },
+        {
+          name: 'og:locale:url',
+          content: this.content.data.og[0].og_url.url,
+        },
+
+        /* Google / Schema.org  */
+
+        { itemprop: 'name', content: this.content.data.og[0].og_title },
+        {
+          itemprop: 'description',
+          content: this.content.data.og[0].og_description,
+        },
+        {
+          itemprop: 'image',
+          content: this.content.data.og[0].og_image.url,
+        },
+      ],
+    }
+  },
+}
+</script>
