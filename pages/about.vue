@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only> <TheContactUsModal /> </client-only>
     <div class="lg:container mx-auto sm:px-10 md:px-10">
       <div class="flex flex-col space-y-20">
         <div class="block mx-auto text-center py-10 xs:pb-0">
@@ -30,6 +31,12 @@
             <p>
               {{ content.data.team_bio_sub_header }}
             </p>
+            <button
+              class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white font-normal py-2 px-4 lg:px-16 text-base rounded inline-flex items-center font-gitan focus:outline-none"
+              @click="$modal.show('send-message')"
+            >
+              {{ content.data.contact_button }}
+            </button>
           </div>
         </div>
         <div class="flex flex-row xs:flex-col my-auto">
@@ -66,7 +73,7 @@
             class="space-y-1 pb-20 xs:pb-40"
           >
             <img
-              class="w-9/12 h-auto mx-auto"
+              class="w-9/12 xs:w-7/12 h-auto mx-auto"
               :src="
                 'https://storage.googleapis.com/roleever-public-assets/www/about/' +
                 item.card_header +
@@ -79,7 +86,7 @@
             >
               {{ item.card_header }}
             </h2>
-            <div class="flex flex-col frame bg-cover px-3 mx-auto">
+            <div class="flex flex-col bg-frame bg-cover px-3 mx-auto">
               <div class="top-0 left-0 pt-4 pl-2 h-full">
                 <prismic-rich-text :field="item.skills" class="text-sm" />
               </div>
@@ -91,12 +98,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="py-10 bg-cover bg-center"
-      style="
-        background-image: url(https://storage.googleapis.com/roleever-public-assets/www/about/fantasy.jpg);
-      "
-    >
+    <div class="py-10 bg-cover bg-center bg-fantasy">
       <div
         class="flex flex-wrap justify-center space-x-12 xs:space-x-4 sm:space-x-4 md:space-x-4 w-8/12 xs:w-11/12 sm:w-11/12 md:w-11/12 mx-auto"
       >
@@ -128,7 +130,12 @@
 </template>
 
 <script>
+import TheContactUsModal from '@/components/ui/TheContactUsModal.vue'
+
 export default {
+  components: {
+    TheContactUsModal,
+  },
   data() {
     return {
       pageType: 'about',
