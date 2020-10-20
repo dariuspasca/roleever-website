@@ -37,7 +37,16 @@ export default {
   data() {
     return {
       downloadButtonMobileText: 'Scarica dallo Store',
+      pageType: 'popups',
     }
+  },
+  computed: {
+    content() {
+      return this.$store.getters.getPageByType(
+        this.pageType,
+        this.$i18n.locale
+      )[0]
+    },
   },
   methods: {
     downloadClick() {

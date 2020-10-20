@@ -9,52 +9,89 @@
     height="auto"
     @before-close="beforeClose"
   >
-    <div
-      class="flex flex-row px-3 py-8"
-      lazy-background="https://storage.googleapis.com/roleever-public-assets/www/background_desaturated.jpg"
+    <v-dialog />
+    <div slot="top-right">
+      <button
+        class="text-white float-right my-3 mr-3 focus:outline-none"
+        @click="$modal.hide('get-link-m8')"
+      >
+        <svg
+          class="fill-current text-dark h-5 w-5"
+          style="enable-background: new 0 0 512 512"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"
+          />
+        </svg>
+      </button>
+    </div>
+    <h3
+      class="py-2 text-2xl text-dark-shade font-gitan font-medium ml-4 tracking-wide"
     >
+      {{ content.data.contact_welcome }}
+    </h3>
+    <div class="flex flex-row px-3 pb-6 pt-2">
       <form
         class="contact-form flex flex-col w-full px-3"
+        lazy-background="https://storage.googleapis.com/roleever-public-assets/www/background_desaturated.jpg"
         @submit.prevent="sendEmail"
       >
         <div class="flex flex-row xs:flex-col space-x-16 xs:space-x-0 xs:px-6">
           <div class="flex flex-col xs:flex-row w-5/12 xs:w-full xs:space-x-10">
             <div class="block">
-              <label class="text-sm text-dark-tint">Nome</label>
+              <label class="text-sm text-dark-tint">{{
+                content.data.contact_name
+              }}</label>
               <div class="border-b-2 border-secondary">
                 <input
                   type="text"
                   class="w-full py-1 focus:outline-none font-semibold"
                   name="user_name"
+                  required
                 />
               </div>
             </div>
             <div class="block">
-              <label class="pt-6 text-sm text-dark-tint">Email</label>
+              <label class="pt-6 text-sm text-dark-tint">{{
+                content.data.contact_email
+              }}</label>
               <div class="border-b-2 border-secondary">
                 <input
                   type="email"
                   class="w-full py-1 focus:outline-none font-semibold"
                   name="user_email"
+                  required
                 />
               </div>
             </div>
           </div>
           <div class="flex flex-col w-7/12 xs:w-full xs:pt-8 h-full">
-            <label class="text-sm text-dark-tint">Hai qualcosa da dirci?</label>
+            <label class="text-sm text-dark-tint">{{
+              content.data.contact_message
+            }}</label>
             <textarea
               name="message"
-              class="resize-none h-full font-semibold focus:outline-none placeholder-dark-shade pt-1 xs:h-48"
-              placeholder="Scrivi il tuo messaggio qui..."
+              class="resize-none h-full font-semibold focus:outline-none placeholder-dark-shade pt-1 xs:h-64"
+              :placeholder="content.data.contact_message_placeholder"
+              required
             ></textarea>
           </div>
         </div>
 
-        <input
+        <button
           type="submit"
           class="bg-primary shadow-xl py-2 px-4 rounded items-center font-gitan focus:outline-none text-white w-6/12 mx-auto mt-12"
-          value="Invia Messaggio"
-        />
+        >
+          <div v-if="isSubmitting" class="flex content-center">
+            <div class="loader"></div>
+            <p class="text-s ml-4">
+              {{ content.data.contact_button_sending }}
+            </p>
+          </div>
+          <p v-else>{{ content.data.contact_button_send }}</p>
+        </button>
       </form>
     </div>
   </modal>
@@ -68,10 +105,20 @@ export default {
     return {
       isSubmitting: false,
       messageSent: false,
+      pageType: 'popups',
     }
   },
+  computed: {
+    content() {
+      return this.$store.getters.getPageByType(
+        this.pageType,
+        this.$i18n.locale
+      )[0]
+    },
+  },
   methods: {
-    sendEmail: (e) => {
+    sendEmail(e) {
+      this.isSubmitting = true
       emailjs
         .sendForm(
           'service_h5u262a',
@@ -81,57 +128,34 @@ export default {
         )
         .then(
           (result) => {
-            console.log('SUCCESS!', result.status, result.text)
+            this.isSubmitting = false
+            this.messageSent = true
+            this.$modal.hide('send-message')
           },
           (error) => {
-            console.log('FAILED...', error)
+            // eslint-disable-next-line no-console
+            console.log('Message failed to be sent with internal error:', error)
+            this.isSubmitting = false
+            this.$modal.show('dialog', {
+              text: this.content.data.error_general,
+              buttons: [
+                {
+                  title: 'OK 💩',
+                },
+              ],
+            })
           }
         )
     },
-    submitForm(e) {
-      this.isSubmitting = true
-      e.preventDefault()
-      // Disable submit button while submitting
-      this.messageSent = false
-      // POST request using fetch with async/await
-      const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        mode: 'cors',
-        body: JSON.stringify({ To: this.phone }),
-      }
-      fetch(
-        'https://en2xtnm78plvhln.m.pipedream.net?pipedream_response=1',
-        requestOptions
-      ).then((response) => {
-        this.isSubmitting = false
-        // check for error response
-        if (response.status === 400) {
-          // get error message from body or default to response status
-          this.$modal.show('dialog', {
-            text: 'Qualcosa è andato storto! Riprova più tardi...',
-            buttons: [
-              {
-                title: 'OK 💩',
-              },
-            ],
-          })
-        } else {
-          this.phone = null
-          this.linkSent = true
-          this.$modal.hide('send-message')
-        }
-      })
-    },
     beforeClose() {
-      this.phone = null
-      if (this.linkSent) {
-        this.$toasted.show('🎉 &nbsp; Messaggio inviato', {
+      if (this.messageSent) {
+        this.$toasted.show(this.content.data.message_sent, {
           className: 'myToast',
           theme: 'toasted-primary',
           position: 'bottom-right',
           duration: 5000,
         })
+        this.messageSent = false
       }
     },
   },
