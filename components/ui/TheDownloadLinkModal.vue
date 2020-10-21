@@ -43,8 +43,8 @@
               name="phone"
               autocomplete="tel"
               pattern="^\+[1-9]\d{1,14}$"
-              :placeholder="content.data.send_link_phone_placeholder"
-              title="(Es: +39 xxx xxxx)"
+              :placeholder="$t('download_modal.phone_placeholder')"
+              :title="$t('download_modal.phone_placeholder')"
               required
             />
             <button
@@ -53,14 +53,16 @@
             >
               <div v-if="isSubmitting" class="flex content-center">
                 <div class="loader"></div>
-                <p class="text-s ml-4">{{ content.data.sending_link }}</p>
+                <p class="text-s ml-4">
+                  {{ $t('download_modal.button_sending') }}
+                </p>
               </div>
-              <p v-else>{{ content.data.send_link }}</p>
+              <p v-else>{{ $t('download_modal.button_send') }}</p>
             </button>
           </div>
 
           <p class="text-left text-sm text-dark">
-            {{ content.data.sent_link_message }}
+            {{ $t('download_modal.information') }}
           </p>
         </form>
       </div>
@@ -68,7 +70,7 @@
         <h3
           class="text-xl font-normal subpixel-antialiased uppercase tracking-widest text-center text-dark"
         >
-          {{ content.data.sent_link_or }}
+          {{ $t('download_modal.or') }}
         </h3>
         <img
           class="w-auto h-32 mx-auto my-8 border-8 border-white"
@@ -87,16 +89,7 @@ export default {
       phone: null,
       isSubmitting: false,
       linkSent: false,
-      pageType: 'popups',
     }
-  },
-  computed: {
-    content() {
-      return this.$store.getters.getPageByType(
-        this.pageType,
-        this.$i18n.locale
-      )[0]
-    },
   },
   methods: {
     submitForm(e) {
@@ -120,7 +113,7 @@ export default {
         if (response.status === 400) {
           // get error message from body or default to response status
           this.$modal.show('dialog', {
-            text: this.content.data.error_general,
+            text: this.$t('error_generic'),
             buttons: [
               {
                 title: 'OK 💩',
@@ -137,7 +130,7 @@ export default {
     beforeClose() {
       this.phone = null
       if (this.linkSent) {
-        this.$toasted.show(this.content.data.link_sent, {
+        this.$toasted.show(this.$t('download_modal.link_sent'), {
           className: 'myToast',
           theme: 'toasted-primary',
           position: 'bottom-right',

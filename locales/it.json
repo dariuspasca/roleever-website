@@ -1,0 +1,26 @@
+{
+  "contact_form": {
+    "hello": "Ciao!",
+    "name": "Nome",
+    "email": "Indirizzo e-mail",
+    "message": "Hai qualcosa da dirci?",
+    "message_placeholder": "Scrivi il tuo messaggio qui...",
+    "button_send": "Invia messaggio",
+    "button_sending": "Invio messaggio...",
+    "message_sent": "🎉 &nbsp; Messaggio inviato"
+  },
+  "download_modal": {
+    "phone_placeholder": "Il tuo numero (Es: +39 xxx xxxx)",
+    "button_send": "Invia link",
+    "button_sending": "Invio link...",
+    "information": "Riceverai un link al Google Play Store oppure Apple App Store. NO SPAM!",
+    "link_sent": "🎉 &nbsp; Link inviato",
+    "or": "OPPURE"
+  },
+  "download_button": {
+    "appstore": "Scarica da Apple App Store",
+    "playstore": "Scarica da Google Play Store",
+    "store": "Scarica dallo Store"
+  },
+  "error_generic": "Qualcosa è andato storto! Riprova più tardi..."
+}

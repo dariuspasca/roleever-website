@@ -15,12 +15,14 @@
       </svg>
       <client-only>
         <a slot="placeholder" href="www.google.com">
-          {{ downloadButtonMobileText }}</a
+          {{ $t('download_button.store') }}</a
         >
-        <p v-if="$device.isAndroid">Scarica da Play Store</p>
-        <p v-if="$device.isIos">Scarica da Apps Store</p>
+        <p v-if="$device.isAndroid">
+          {{ $t('download_button.playstore') }}
+        </p>
+        <p v-if="$device.isIos">{{ $t('download_button.appstore') }}</p>
         <p v-if="$device.isDesktop" @click="$modal.show('get-link-m8')">
-          Scarica dallo Store
+          {{ $t('download_button.store') }}
         </p>
       </client-only>
     </button>
@@ -33,20 +35,6 @@ import TheGetLinkModal from '@/components/ui/TheDownloadLinkModal.vue'
 export default {
   components: {
     TheGetLinkModal,
-  },
-  data() {
-    return {
-      downloadButtonMobileText: 'Scarica dallo Store',
-      pageType: 'popups',
-    }
-  },
-  computed: {
-    content() {
-      return this.$store.getters.getPageByType(
-        this.pageType,
-        this.$i18n.locale
-      )[0]
-    },
   },
   methods: {
     downloadClick() {

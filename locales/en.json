@@ -1,0 +1,26 @@
+{
+  "contact_form": {
+    "hello": "Hello!",
+    "name": "Name",
+    "email": "E-mail address",
+    "message": "Do you have something to tell us?",
+    "message_placeholder": "Write your message here ...",
+    "button_send": "Send message",
+    "button_sending": "Sending message ....",
+    "message_sent": "🎉 &nbsp; Message sent"
+  },
+  "download_modal": {
+    "phone_placeholder": "Your phone number (Ex: +1 xxx xxxxxxxx)",
+    "button_send": "Send link",
+    "button_sending": "Sending link...",
+    "information": "You will receive a link to the Google Play Store or Apple App Store. NO SPAM!",
+    "link_sent": "🎉 &nbsp; Link sent",
+    "or": "OR"
+  },
+  "download_button": {
+    "appstore": "Get from Apple App Store",
+    "playstore": "Get from Google Play Store",
+    "store": "Get from Store"
+  },
+  "error_generic": "Something went wrong! Try again later..."
+}

@@ -110,16 +110,19 @@ export default {
     defaultLocale: 'en',
     seo: true,
     lazy: true,
+    langDir: '/locales/',
     locales: [
       {
         name: 'English',
         code: 'en',
         iso: 'en-US',
+        file: 'en.json',
       },
       {
         name: 'Italiano',
         code: 'it',
         iso: 'it-IT',
+        file: 'it.json',
       },
     ],
     detectBrowserLanguage: {

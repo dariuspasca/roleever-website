@@ -30,7 +30,7 @@
     <h3
       class="py-2 text-2xl text-dark-shade font-gitan font-medium ml-4 tracking-wide"
     >
-      {{ content.data.contact_welcome }}
+      {{ $t('contact_form.hello') }}
     </h3>
     <div class="flex flex-row px-3 pb-6 pt-2">
       <form
@@ -42,7 +42,7 @@
           <div class="flex flex-col xs:flex-row w-5/12 xs:w-full xs:space-x-10">
             <div class="block">
               <label class="text-sm text-dark-tint">{{
-                content.data.contact_name
+                $t('contact_form.name')
               }}</label>
               <div class="border-b-2 border-secondary">
                 <input
@@ -55,7 +55,7 @@
             </div>
             <div class="block">
               <label class="pt-6 text-sm text-dark-tint">{{
-                content.data.contact_email
+                $t('contact_form.email')
               }}</label>
               <div class="border-b-2 border-secondary">
                 <input
@@ -69,12 +69,12 @@
           </div>
           <div class="flex flex-col w-7/12 xs:w-full xs:pt-8 h-full">
             <label class="text-sm text-dark-tint">{{
-              content.data.contact_message
+              $t('contact_form.message')
             }}</label>
             <textarea
               name="message"
               class="resize-none h-full font-semibold focus:outline-none placeholder-dark-shade pt-1 xs:h-64"
-              :placeholder="content.data.contact_message_placeholder"
+              :placeholder="$t('contact_form.message_placeholder')"
               required
             ></textarea>
           </div>
@@ -87,10 +87,10 @@
           <div v-if="isSubmitting" class="flex content-center">
             <div class="loader"></div>
             <p class="text-s ml-4">
-              {{ content.data.contact_button_sending }}
+              {{ $t('contact_form.button_sending') }}
             </p>
           </div>
-          <p v-else>{{ content.data.contact_button_send }}</p>
+          <p v-else>{{ $t('contact_form.button_send') }}</p>
         </button>
       </form>
     </div>
@@ -105,16 +105,7 @@ export default {
     return {
       isSubmitting: false,
       messageSent: false,
-      pageType: 'popups',
     }
-  },
-  computed: {
-    content() {
-      return this.$store.getters.getPageByType(
-        this.pageType,
-        this.$i18n.locale
-      )[0]
-    },
   },
   methods: {
     sendEmail(e) {
@@ -137,7 +128,7 @@ export default {
             console.log('Message failed to be sent with internal error:', error)
             this.isSubmitting = false
             this.$modal.show('dialog', {
-              text: this.content.data.error_general,
+              text: this.$t('error_generic'),
               buttons: [
                 {
                   title: 'OK 💩',
@@ -149,7 +140,7 @@ export default {
     },
     beforeClose() {
       if (this.messageSent) {
-        this.$toasted.show(this.content.data.message_sent, {
+        this.$toasted.show(this.$t('contact_form.message_sent'), {
           className: 'myToast',
           theme: 'toasted-primary',
           position: 'bottom-right',
