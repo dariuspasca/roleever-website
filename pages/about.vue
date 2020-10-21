@@ -69,7 +69,7 @@
         </div>
         <!--Team Section-->
         <div
-          class="flex flex-wrap justify-center xs:flex-col pb-10 space-x-20 xs:space-x-0 sm:space-x-10 w-full"
+          class="flex flex-wrap justify-center xs:flex-col space-x-20 xs:space-x-0 sm:space-x-10 w-full"
         >
           <!--Team Header-->
           <h1
@@ -136,13 +136,13 @@
         <div
           v-for="(item, index) in content.data.artist_card"
           :key="'reference-item-' + index"
-          class="flex flex-col justify-center pb-10 xs:w-6/12"
+          class="flex flex-col justify-center pb-10 xs:w-4/12"
         >
           <a :href="item.artist_profile.url">
             <img
               :src="item.artist_image.url"
               :alt="item.artist_name"
-              class="w-7/12 xs:w-5/12 h-auto mx-auto py-4 transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
+              class="w-7/12 h-auto mx-auto py-4 transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
           /></a>
           <h2
             class="text-xl font-base subpixel-antialiased tracking-wider text-center w-full capitalize text-white"
