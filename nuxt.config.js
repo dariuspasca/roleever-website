@@ -1,10 +1,5 @@
 export default {
   /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: 'universal',
-  /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
@@ -100,6 +95,7 @@ export default {
     endpoint: 'https://roleeverwebsite2020.cdn.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
+    preview: false,
   },
   /*
    ** nuxt-i18n configuration
