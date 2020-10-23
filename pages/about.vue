@@ -79,11 +79,11 @@
           <div
             v-for="(item, index) in content.data.member_card"
             :key="'reference-item-' + index"
-            class="space-y-1 xs:mt-24 mt-16 sm:px-8 md:px-8 px-16 xs:px-0"
+            class="space-y-1 xs:mx-12 mt-16 sm:px-8 md:px-8 px-16 xs:px-0"
           >
             <!--Card Illustration-->
             <img
-              class="w-9/12 xs:w-8/12 h-auto mx-auto"
+              class="w-9/12 h-auto mx-auto"
               :src="
                 'https://storage.googleapis.com/roleever-public-assets/www/about/' +
                 item.card_header +
@@ -109,7 +109,9 @@
           </div>
         </div>
         <!--Contact Button-->
-        <div class="flex w-2/12 xs:w-8/12 mx-auto justify-center py-10">
+        <div
+          class="flex w-2/12 xs:w-8/12 mx-auto justify-center py-12 xs:py-0 xs:pt-12 xs:pb-20"
+        >
           <button
             class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white font-normal py-2 xs:py-4 px-4 lg:px-16 text-base rounded xs:rounded-lg font-gitan focus:outline-none w-full"
             @click="$modal.show('send-message')"
