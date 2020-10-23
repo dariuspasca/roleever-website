@@ -39,7 +39,8 @@ li {
 
 @media (max-width: 767px) {
   .bg-view {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_mobile.jpg);
+    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_mobile.jpg) 
+    ;
   }
 }
 

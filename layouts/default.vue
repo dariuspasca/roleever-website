@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col w-full md:min-h-screen lg:h-full bg-fixed bg-cover bg-left-top font-gitan bg-view"
+    class="relative flex flex-col w-full md:min-h-screen min-h-full bg-fixed bg-cover bg-left-top bg-view font-gitan"
   >
     <!--The Cookie Snackbar-->
     <transition name="fade">

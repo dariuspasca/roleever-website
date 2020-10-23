@@ -6,7 +6,7 @@
         <!--Introduction Section-->
         <div class="block mx-auto text-center py-10 xs:py-0 xs:pb-0">
           <h1
-            class="text-2xl sm:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal xs:w-7/12 w-8/12 mx-auto xs:pt-10"
+            class="text-3xl sm:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal xs:w-7/12 w-8/12 mx-auto xs:pt-10"
           >
             {{ content.data.header }}
           </h1>
@@ -17,7 +17,7 @@
         <!--About Section-->
         <div class="flex flex-row xs:flex-col my-auto">
           <!--About Photo-->
-          <div class="w-6/12 xs:w-full my-auto">
+          <div class="w-6/12 xs:w-full my-auto pointer-events-none">
             <img
               class="shadow-xl mx-auto rounded-lg w-10/12 xs:11/12 h-auto my-auto"
               :src="content.data.team.url"
