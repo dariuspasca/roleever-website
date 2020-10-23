@@ -1,6 +1,5 @@
 {
   "contact_form": {
-    "hello": "Hello!",
     "name": "Name",
     "email": "E-mail address",
     "message": "Do you have something to tell us?",
