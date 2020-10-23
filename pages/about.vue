@@ -4,9 +4,9 @@
     <div class="lg:container mx-auto sm:px-10 md:px-10">
       <div class="flex flex-col space-y-20">
         <!--Introduction Section-->
-        <div class="block mx-auto text-center py-10 xs:pb-0">
+        <div class="block mx-auto text-center py-10 xs:py-0 xs:pb-0">
           <h1
-            class="text-2xl sm:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal xs:w-7/12 w-8/12 mx-auto"
+            class="text-2xl sm:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal xs:w-7/12 w-8/12 mx-auto xs:pt-10"
           >
             {{ content.data.header }}
           </h1>
@@ -61,19 +61,17 @@
           <!--Nick Image-->
           <div class="w-6/12 xs:w-full xs:order-first">
             <img
-              class="mx-auto w-5/12 xs:w-9/12 sm:w-7/12 md:w-7/12 h-auto my-auto"
+              class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 h-auto my-auto"
               :src="content.data.nick_the_dragon.url"
               alt="Nick The Dragon"
             />
           </div>
         </div>
         <!--Team Section-->
-        <div
-          class="flex flex-wrap justify-center xs:flex-col space-x-20 xs:space-x-0 sm:space-x-10 w-full"
-        >
+        <div class="flex flex-wrap xs:flex-col justify-center">
           <!--Team Header-->
           <h1
-            class="text-3xl sm:text-4xl lg:text-5xl font-medium subpixel-antialiased tracking-widest w-full text-center pb-10 pt-4"
+            class="text-3xl sm:text-4xl lg:text-5xl font-medium subpixel-antialiased tracking-widest w-full text-center pb-10 pt-4 xs:-mb-16"
           >
             {{ content.data.party_header }}
           </h1>
@@ -81,11 +79,11 @@
           <div
             v-for="(item, index) in content.data.member_card"
             :key="'reference-item-' + index"
-            class="space-y-1 xs:mb-32 sm:mb-16 md:mb-16"
+            class="space-y-1 xs:mt-24 mt-16 sm:px-8 md:px-8 px-16 xs:px-0"
           >
             <!--Card Illustration-->
             <img
-              class="w-9/12 xs:w-7/12 h-auto mx-auto"
+              class="w-9/12 xs:w-8/12 h-auto mx-auto"
               :src="
                 'https://storage.googleapis.com/roleever-public-assets/www/about/' +
                 item.card_header +
@@ -111,7 +109,7 @@
           </div>
         </div>
         <!--Contact Button-->
-        <div class="flex w-2/12 xs:w-8/12 mx-auto justify-center pb-10">
+        <div class="flex w-2/12 xs:w-8/12 mx-auto justify-center py-10">
           <button
             class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white font-normal py-2 xs:py-4 px-4 lg:px-16 text-base rounded xs:rounded-lg font-gitan focus:outline-none w-full"
             @click="$modal.show('send-message')"
