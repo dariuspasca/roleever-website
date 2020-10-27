@@ -49,7 +49,7 @@
           <div class="w-6/12 xs:w-full space-y-10 text-lg my-auto">
             <!--Nick Bio-->
             <div
-              class="w-8/12 xs:w-11/12 sm:w-11/12 h-full my-auto space-y-4 float-right xs:float-none xs:text-center"
+              class="w-8/12 xs:w-11/12 sm:w-10/12 md:w-9/12 h-full my-auto space-y-4 float-right xs:float-none xs:text-center xs:mx-auto"
             >
               <h1 class="text-4xl sm:text-2xl lg:text-3xl">Nick</h1>
 
@@ -59,7 +59,7 @@
             </div>
           </div>
           <!--Nick Image-->
-          <div class="w-6/12 xs:w-full xs:order-first">
+          <div class="w-6/12 xs:w-full xs:order-first lg:-ml-16">
             <img
               class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 h-auto my-auto"
               :src="content.data.nick_the_dragon.url"
@@ -71,7 +71,7 @@
         <div class="flex flex-wrap xs:flex-col justify-center">
           <!--Team Header-->
           <h1
-            class="text-3xl sm:text-4xl lg:text-5xl font-medium subpixel-antialiased tracking-widest w-full text-center pb-10 pt-4 xs:-mb-16"
+            class="text-3xl sm:text-4xl lg:text-5xl font-medium subpixel-antialiased w-full text-center pb-10 pt-4 xs:-mb-16"
           >
             {{ content.data.party_header }}
           </h1>
@@ -79,7 +79,7 @@
           <div
             v-for="(item, index) in content.data.member_card"
             :key="'reference-item-' + index"
-            class="space-y-1 xs:mx-12 mt-16 sm:px-8 md:px-8 px-16 xs:px-0"
+            class="space-y-1 mt-16 sm:px-4 md:px-8 px-16 xs:px-8"
           >
             <!--Card Illustration-->
             <img
@@ -93,14 +93,14 @@
             />
             <!--Card Name-->
             <h2
-              class="text-xl sm:text-2xl lg:text-2xl font-medium subpixel-antialiased tracking-wider text-center w-full capitalize"
+              class="text-3xl font-medium subpixel-antialiased tracking-wider text-center w-full capitalize"
             >
               {{ item.card_header }}
             </h2>
             <!--Skills Section-->
             <div class="flex flex-col bg-frame bg-cover px-3 mx-auto">
               <div class="top-0 left-0 pt-4 pl-2 h-full">
-                <prismic-rich-text :field="item.skills" class="text-sm" />
+                <prismic-rich-text :field="item.skills" class="text-base" />
               </div>
               <div class="uppercase text-center font-bold bottom-0 left-0 pb-3">
                 {{ item.card_footer }}
@@ -125,7 +125,7 @@
     <div class="py-10 bg-cover bg-center bg-fantasy">
       <!--Artits Header-->
       <h1
-        class="text-3xl sm:text-4xl lg:text-5xl font-medium subpixel-antialiased tracking-widest text-white w-full text-center pb-10 pt-4"
+        class="text-3xl sm:text-4xl lg:text-5xl font-medium subpixel-antialiased text-white w-full text-center pb-10 pt-4 text-shadow"
       >
         {{ content.data.artists_header }}
       </h1>
@@ -145,7 +145,7 @@
               class="w-7/12 h-auto mx-auto py-4 transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
           /></a>
           <h2
-            class="text-xl font-base subpixel-antialiased tracking-wider text-center w-full capitalize text-white"
+            class="text-xl font-base subpixel-antialiased tracking-wider text-center w-full capitalize text-white text-shadow"
           >
             {{ item.artist_name }}
           </h2>

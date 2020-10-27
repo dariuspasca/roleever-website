@@ -13,8 +13,8 @@
 
 .bg-frame {
   background-image: url('~assets/images/frameSkills.svg');
-  height: 230px;
-  width: 250px;
+  height: 250px;
+  width: 300px;
 }
 
 .bg-fantasy {
@@ -48,4 +48,8 @@ li {
   .bg-view {
     background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg.jpg);
   }
+}
+
+.text-shadow {
+  text-shadow: 0px 3px 6px #00000066;
 }
