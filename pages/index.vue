@@ -13,7 +13,7 @@
       <div
         class="flex flex-col sm:flex-row md:flex-row lg:flex-row w-full justify-center md:px-5 lg:px-0 sm:space-x-20 md:space-x-32 lg:space-x-32"
       >
-        <div class="text-center md:text-left my-auto">
+        <div class="xs:text-center sm:text-center text-left my-auto">
           <h1
             class="text-2xl sm:text-3xl lg:text-4xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
           >
@@ -28,7 +28,7 @@
             {{ content.data.heroe_text }}
           </p>
           <the-download-button
-            class="justify-center md:justify-start py-10 md:py-0 md:pt-10"
+            class="xs:justify-center sm:justify-center justify-start py-10 md:py-0 md:pt-10"
           />
         </div>
         <div>
