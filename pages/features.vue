@@ -3,7 +3,7 @@
     <!--Introduction Section-->
     <div class="container mx-auto text-center">
       <h1
-        class="text-5xl xs:text-3xl sm:text-3xl md:text-4xlfont-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto xs:pt-10"
+        class="text-5xl xs:text-3xl sm:text-3xl md:text-4xlfont-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto pt-10"
       >
         Ruola come vuoi!
       </h1>
