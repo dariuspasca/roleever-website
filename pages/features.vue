@@ -3,7 +3,7 @@
     <!--Introduction Section-->
     <div class="container mx-auto text-center">
       <h1
-        class="text-3xl sm:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto xs:pt-10"
+        class="text-5xl xs:text-3xl sm:text-3xl md:text-4xlfont-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto xs:pt-10"
       >
         Ruola come vuoi!
       </h1>
@@ -156,17 +156,25 @@
       </div>
     </div>
     <!--More Section-->
-    <div class="flex w-full py-10">
+    <div class="flex flex-col w-full py-20 space-y-4">
+      <!--Nick Section-->
+      <img
+        class="w-3/12 xs:w-8/12 sm:w-5/12 h-auto float-left -ml-10 absolute xs:relative sm:relative mt-10 md:mt-48 xs:mx-auto sm:mx-auto"
+        src="https://storage.googleapis.com/roleever-public-assets/www/features/nick.png"
+        alt="Chat Preview"
+      />
       <div class="flex flex-col w-8/12 xs:w-11/12 sm:w-10/12 md:w-9/12 mx-auto">
         <!--Header-->
-        <div class="flex w-8/12 xs:w-full mb-20 justify-end xs:justify-center">
+        <div
+          class="flex w-8/12 xs:w-full sm:w-full mb-20 justify-end xs:justify-center sm:justify-center xs:text-center sm:text-center"
+        >
           <h1
-            class="text-3xl sm:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal"
+            class="text-5xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal"
           >
             E tanto, ma TANTO altro!
           </h1>
         </div>
-        <div class="flex flex-col space-y-20 xs:space-y-10">
+        <div class="flex flex-col space-y-10 xs:space-y-10">
           <!--First Column-->
           <div
             class="flex flex-row xs:flex-col w-full justify-center xs:justify-start space-x-20 xs:space-x-0 xs:space-y-10"
@@ -175,7 +183,7 @@
             <div class="w-4/12 xs:w-full float-right xs:float-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-16 w-16 text-primary-shade fill-current"
+                class="h-12 w-12 text-primary-shade fill-current"
                 viewBox="0 0 48 48"
               >
                 <path fill="none" d="M0 0h48v48H0z" />
@@ -210,7 +218,7 @@
             <div class="w-4/12 xs:w-full float-left xs:float-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-16 w-16 text-primary-shade fill-current"
+                class="h-12 w-12 text-primary-shade fill-current"
                 viewBox="0 0 48 48"
               >
                 <path fill="none" d="M0 0h48v48H0z" />
@@ -240,7 +248,7 @@
             <div class="w-4/12 xs:w-full float-right xs:float-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-16 w-16 text-primary-shade fill-current"
+                class="h-12 w-12 text-primary-shade fill-current"
                 viewBox="0 0 48 48"
               >
                 <path fill="none" d="M0 0h48v48H0z" />
@@ -268,7 +276,7 @@
             <div class="w-4/12 xs:w-full float-left xs:float-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-16 w-16 text-primary-shade fill-current"
+                class="h-12 w-12 text-primary-shade fill-current"
                 viewBox="0 0 48 48"
               >
                 <path fill="none" d="M0 0h48v48H0z" />
