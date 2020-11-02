@@ -198,17 +198,3 @@ export default {
   },
 }
 </script>
-
-<style>
-@media (max-width: 767px) {
-  .bg-footer {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_footer_mobile.jpg);
-  }
-}
-
-@media (min-width: 768px) {
-  .bg-footer {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_footer.jpg);
-  }
-}
-</style>

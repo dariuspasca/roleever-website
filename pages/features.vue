@@ -302,6 +302,200 @@
         </div>
       </div>
     </div>
+    <!--Roadmap Section-->
+    <div class="flex flex-col w-full pt-20 space-y-20">
+      <div
+        class="lineaDorata bg-cover bg-center w-8/12 xs:w-11/12 h-2 xs:h-1 mx-auto"
+      ></div>
+      <h1
+        class="text-5xl xs:text-3xl sm:text-3xl md:text-4xlfont-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto"
+      >
+        Work in progress
+      </h1>
+      <div
+        class="flex flex-col w-7/12 xs:w-full sm:w-11/12 md:w-10/12 mx-auto -space-y-16"
+      >
+        <!--Map Card-->
+        <div class="flex w-full justify-start">
+          <div
+            class="flex flex-col w-7/12 xs:w-full sm:w-9/12 rounded-3xl shadow-xl xs:shadow-2xl bg-view bg-cover py-8 items-center space-y-4"
+            style="height: 300px"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-secondary fill-current"
+              viewBox="0 0 48 48"
+            >
+              <g data-name="Livello 2">
+                <g data-name="Livello 1 copia">
+                  <path fill="none" d="M0 0h48v48H0z" />
+                  <path
+                    d="M24 46.39a1.93 1.93 0 01-1.93-1.92v-7.2a1.93 1.93 0 013.86 0v7.2A1.93 1.93 0 0124 46.39z"
+                    fill="#706f6f"
+                  />
+                  <path
+                    d="M9.53 40.4a1.88 1.88 0 01-1.36-.57 1.91 1.91 0 010-2.72L13.25 32A1.93 1.93 0 0116 34.75l-5.09 5.08a1.92 1.92 0 01-1.38.57z"
+                    fill="#878787"
+                  />
+                  <path
+                    d="M44.47 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 010 3.86z"
+                    fill="#3c3c3b"
+                  />
+                  <path
+                    d="M38.47 40.4a1.92 1.92 0 01-1.36-.57L32 34.75A1.93 1.93 0 0134.75 32l5.08 5.09a1.93 1.93 0 01-1.36 3.29z"
+                    fill="#575756"
+                  />
+                  <path
+                    d="M24 12.66a1.94 1.94 0 01-1.93-1.93v-7.2a1.93 1.93 0 013.86 0v7.2A1.94 1.94 0 0124 12.66zM33.38 16.54A1.91 1.91 0 0132 16a1.94 1.94 0 010-2.73l5.09-5.08a1.92 1.92 0 012.72 2.72L34.75 16a1.91 1.91 0 01-1.37.54z"
+                    fill="#1d1d1b"
+                  />
+                  <path
+                    d="M10.73 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 110 3.86z"
+                    fill="#b2b2b2"
+                  />
+                  <path
+                    d="M14.62 16.54a1.91 1.91 0 01-1.37-.54l-5.08-5.11a1.92 1.92 0 012.72-2.72L16 13.25A1.94 1.94 0 0116 16a1.91 1.91 0 01-1.38.54z"
+                    fill="#c6c6c6"
+                  />
+                </g>
+              </g>
+            </svg>
+            <h3
+              class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
+            >
+              Mappa di gioco
+            </h3>
+            <p class="text-left py-2 px-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              consectetur mi in faucibus malesuada.
+            </p>
+          </div>
+        </div>
+        <!--Initiative Card-->
+        <div class="flex w-full justify-end">
+          <div
+            class="flex flex-col w-7/12 xs:w-full sm:w-9/12 rounded-3xl shadow-xl xs:shadow-2xl bg-footer bg-cover py-8 items-center space-y-4"
+            style="height: 300px"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-secondary fill-current"
+              viewBox="0 0 48 48"
+            >
+              <g data-name="Livello 2">
+                <g data-name="Livello 1 copia">
+                  <path fill="none" d="M0 0h48v48H0z" />
+                  <path
+                    d="M24 46.39a1.93 1.93 0 01-1.93-1.92v-7.2a1.93 1.93 0 013.86 0v7.2A1.93 1.93 0 0124 46.39z"
+                    fill="#706f6f"
+                  />
+                  <path
+                    d="M9.53 40.4a1.88 1.88 0 01-1.36-.57 1.91 1.91 0 010-2.72L13.25 32A1.93 1.93 0 0116 34.75l-5.09 5.08a1.92 1.92 0 01-1.38.57z"
+                    fill="#878787"
+                  />
+                  <path
+                    d="M44.47 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 010 3.86z"
+                    fill="#3c3c3b"
+                  />
+                  <path
+                    d="M38.47 40.4a1.92 1.92 0 01-1.36-.57L32 34.75A1.93 1.93 0 0134.75 32l5.08 5.09a1.93 1.93 0 01-1.36 3.29z"
+                    fill="#575756"
+                  />
+                  <path
+                    d="M24 12.66a1.94 1.94 0 01-1.93-1.93v-7.2a1.93 1.93 0 013.86 0v7.2A1.94 1.94 0 0124 12.66zM33.38 16.54A1.91 1.91 0 0132 16a1.94 1.94 0 010-2.73l5.09-5.08a1.92 1.92 0 012.72 2.72L34.75 16a1.91 1.91 0 01-1.37.54z"
+                    fill="#1d1d1b"
+                  />
+                  <path
+                    d="M10.73 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 110 3.86z"
+                    fill="#b2b2b2"
+                  />
+                  <path
+                    d="M14.62 16.54a1.91 1.91 0 01-1.37-.54l-5.08-5.11a1.92 1.92 0 012.72-2.72L16 13.25A1.94 1.94 0 0116 16a1.91 1.91 0 01-1.38.54z"
+                    fill="#c6c6c6"
+                  />
+                </g>
+              </g>
+            </svg>
+            <h3
+              class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
+            >
+              Iniziativa automatica
+            </h3>
+            <p class="text-left py-2 px-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              consectetur mi in faucibus malesuada.
+            </p>
+          </div>
+        </div>
+        <!--PNG Card-->
+        <div
+          class="flex flex-col w-full justify-center pb-20 bg-view-card-container xs:rounded-2xl xs:rounded-b-none"
+        >
+          <div
+            class="flex flex-col w-7/12 xs:w-full sm:w-9/12 rounded-3xl shadow-xl xs:shadow-none bg-view-card bg-cover py-8 items-center space-y-4"
+            style="height: 300px"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-secondary fill-current"
+              viewBox="0 0 48 48"
+            >
+              <g data-name="Livello 2">
+                <g data-name="Livello 1 copia">
+                  <path fill="none" d="M0 0h48v48H0z" />
+                  <path
+                    d="M24 46.39a1.93 1.93 0 01-1.93-1.92v-7.2a1.93 1.93 0 013.86 0v7.2A1.93 1.93 0 0124 46.39z"
+                    fill="#706f6f"
+                  />
+                  <path
+                    d="M9.53 40.4a1.88 1.88 0 01-1.36-.57 1.91 1.91 0 010-2.72L13.25 32A1.93 1.93 0 0116 34.75l-5.09 5.08a1.92 1.92 0 01-1.38.57z"
+                    fill="#878787"
+                  />
+                  <path
+                    d="M44.47 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 010 3.86z"
+                    fill="#3c3c3b"
+                  />
+                  <path
+                    d="M38.47 40.4a1.92 1.92 0 01-1.36-.57L32 34.75A1.93 1.93 0 0134.75 32l5.08 5.09a1.93 1.93 0 01-1.36 3.29z"
+                    fill="#575756"
+                  />
+                  <path
+                    d="M24 12.66a1.94 1.94 0 01-1.93-1.93v-7.2a1.93 1.93 0 013.86 0v7.2A1.94 1.94 0 0124 12.66zM33.38 16.54A1.91 1.91 0 0132 16a1.94 1.94 0 010-2.73l5.09-5.08a1.92 1.92 0 012.72 2.72L34.75 16a1.91 1.91 0 01-1.37.54z"
+                    fill="#1d1d1b"
+                  />
+                  <path
+                    d="M10.73 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 110 3.86z"
+                    fill="#b2b2b2"
+                  />
+                  <path
+                    d="M14.62 16.54a1.91 1.91 0 01-1.37-.54l-5.08-5.11a1.92 1.92 0 012.72-2.72L16 13.25A1.94 1.94 0 0116 16a1.91 1.91 0 01-1.38.54z"
+                    fill="#c6c6c6"
+                  />
+                </g>
+              </g>
+            </svg>
+            <h3
+              class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
+            >
+              PNG
+            </h3>
+            <p class="text-left py-2 px-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              consectetur mi in faucibus malesuada.
+            </p>
+          </div>
+          <div class="flex flex-col w-full items-center mt-32 xs:mt-10">
+            <h1
+              class="text-5xl xs:text-3xl sm:text-3xl md:text-4xlfont-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto xs:pt-10 pb-4"
+            >
+              Ti abbiamo convinto?
+            </h1>
+            <p>Unisciti al party</p>
+            <the-download-button class="justify-center pt-12" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
