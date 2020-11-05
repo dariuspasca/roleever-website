@@ -159,7 +159,7 @@
     <div class="flex flex-col w-full py-20 space-y-4">
       <!--Nick Section-->
       <img
-        class="w-3/12 xs:w-8/12 sm:w-5/12 h-auto float-left -ml-10 absolute xs:relative sm:relative mt-10 md:mt-48 xs:mx-auto sm:mx-auto"
+        class="w-3/12 xs:w-8/12 sm:w-5/12 h-auto float-left -ml-10 absolute xs:relative sm:relative -mt-10 md:mt-48 xs:mx-auto sm:mx-auto"
         src="https://storage.googleapis.com/roleever-public-assets/www/features/nick.png"
         alt="Chat Preview"
       />
@@ -302,6 +302,104 @@
         </div>
       </div>
     </div>
+    <!--Laboratory Section-->
+    <div
+      class="flex flex-col w-full bg-footer bg-center bg-cover border-t-2 border-b-2 border-medium pb-20 pt-40 justify-center items-center"
+    >
+      <div
+        class="flex flex-col w-4/12 mx-auto items-center -mt-24 pb-32 -space-y-6"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-24 w-24 text-primary-shade fill-current"
+          viewBox="0 0 48 48"
+        >
+          <path fill="none" d="M0 0h48v48H0z" />
+          <path
+            d="M18 25.3c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm0-1.9c-.5 0-.8.4-.8.8s.4.8.8.8.8-.4.8-.8-.3-.8-.8-.8zM16.8 26.8c-.4 0-.6-.3-.6-.6 0-.4.3-.6.6-.6.4 0 .6.3.6.6.1.4-.2.6-.6.6zm0-1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM15.5 24.4c-.8 0-1.4-.6-1.4-1.4 0-.8.6-1.4 1.4-1.4.7 0 1.4.6 1.4 1.3.1.8-.5 1.4-1.3 1.5h-.1zm0-2.6h-.1c-.7.1-1.2.6-1.1 1.3.1.7.6 1.2 1.3 1.1.7-.1 1.2-.6 1.1-1.3-.1-.6-.6-1.1-1.2-1.1zM26.4 30.3c-.7-.1-1.4-.1-2.1.1-1.1.4-2.1.9-3 1.5h-.1c-.2 0-.4-.1-.5-.3-.6-.4-1.6-1-4-.4-1 .3-2 .3-3.1.3-1.4-.2-2.8-.5-4.2-.8-1.2-.2-2.2-.8-3-1.7 0 .3-.1.6-.1.9 0 2.3.9 4.4 2.5 6 1.7 1.6 3.8 2.7 6.1 3.1 2.7.5 5.4 0 7.8-1.3 2.3-1.3 3.9-3.5 4.3-6.1 0-.4.1-.8 0-1.2-.2-.1-.4-.1-.6-.1z"
+          />
+          <path
+            d="M42 25.4v-5.6c.3-.1.5-.5.5-.8v-.8c0-.5-.4-.9-.9-.9h-.1l.3-2.7c0-.2 0-.4-.2-.6-.2-.2-.4-.3-.6-.3l-3-.2c-.2 0-.5.1-.6.2-.2.2-.2.4-.2.6l.5 2.8c-.5 0-.8.4-.8.9v1c0 .4.3.8.7.9v5.6h-3.3v-3.2h.4c.5 0 .9-.4.9-.9v-.2c0-.5-.4-.9-.9-.9h-.4l.9-3.4c0-.2 0-.3-.1-.5-.2-.2-.4-.3-.7-.2l-5 .7 1 3.4H30c-.5 0-.9.4-.9.9v.2c0 .5.4.9.9.9h.4v3.2h-2.8c-.3-.5-.6-1-1-1.4-1-1.2-2.2-2.2-3.6-3-.7-.4-1.4-.7-2.1-.9l-.4-.2c-.2 0-.4-.1-.5-.2v-.7l.4-7.1h.1c.8-.1 1.2-.4 1.3-.8l.2-2.3c0-.6-.9-1-1.8-1.2l-.2.6c.8.2 1.3.5 1.4.6-.1.2-1.3.5-3 .4-1.7-.1-2.8-.6-2.9-.8.1-.1.6-.3 1.4-.4l-.1-.6c-.2 0-.5.1-.7.1-.8.2-1.2.4-1.3.8l-.2 2.3c0 .4.3.7 1.1 1h.1l-1 7.3c0 .1 0 .2-.1.3-.1.2-.4.2-.7.3-2.6.4-5 1.6-6.9 3.4-3.3 3.3-3.8 8.5-1.1 12.3l-3.4 5.9.9.5 3.2-5.5.9.9c2 1.9 4.6 3.1 7.3 3.5.7.1 1.3.2 2 .2 2.5 0 4.9-.7 7-2 1.1-.7 2-1.6 2.8-2.6l3.1 5.4.9-.5-3.3-5.8c.7-1.2 1.2-2.5 1.4-3.9.2-1.7-.1-3.3-.8-4.9h2.3v8.8c0 1.1.9 2 2 2s2-.9 2-2v-8.8h3.3V36c0 1.2 1 2.2 2.2 2.2 1.2 0 2.2-1 2.2-2.2v-9.5h1.5v15h1v-16H42zM15.1 10.7l.1-1.5c.9.4 1.9.7 2.9.7h.9c.7 0 1.4-.1 2.1-.3l-.1 1.5c-.1.2-1.2.5-3 .4-1.7-.2-2.8-.6-2.9-.8zm13.1 20.5c-.4 2.9-2.1 5.5-4.6 7.1C21 39.9 18 40.5 15 40c-2.6-.3-5.1-1.5-7-3.3-1.9-1.8-2.9-4.2-3-6.7 0-2.4 1-4.8 2.7-6.5 1.8-1.8 4.1-2.9 6.6-3.2.4 0 .8-.2 1.1-.5.1-.2.2-.3.2-.5l.9-7.3c.5.1 1.1.2 1.6.3h1.7l-.3 7V19.9c-.3.2-.6.2-.9.2v.6h.2c.3 0 .6-.1.9-.2.2.2.5.3.8.3l.3.1c.7.2 1.4.5 2 .9 1.3.7 2.5 1.7 3.4 2.8 1.4 1.7 2.2 4.1 2 6.6zm1.9-13.9l4.3-.6h.1l-.9 3.5h-2.7l-.8-2.9zm3.6 5.2h-1v.4h1v.8h-1v.4h1v.9h-1v.4h1v.8h-1v.4h1v.8h-1v.4h1v.8h-1v.4h1v.8h-1v.4h1v.8h-1v.4h1v.8h-1v.4h1v.8h-1v.6h1v.8h-1v.4h1c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4v-13h2.8v.3zm-3.8-.9c-.2 0-.3-.1-.3-.3v-.2c0-.2.1-.3.3-.3h4.7c.2 0 .3.2.3.3v.2c0 .2-.1.3-.3.3h-4.7zm8-7.3s.1-.1.2-.1l3 .1c.1 0 .1 0 .2.1v.1l-.3 2.8h-2.7l-.4-2.9v-.1zm3.6 21.6c0 .9-.7 1.6-1.6 1.6-.9 0-1.6-.7-1.6-1.6v-16h3.3v16zm.1-16.6h-3.8-.1c-.1 0-.2-.2-.2-.3v-.8c0-.2.1-.3.3-.3h3.9c.2 0 .3.1.3.3v.8c0 .1-.1.2-.2.3h-.2z"
+          />
+          <path
+            d="M41 21h-.7v13.1h-.6V21h-1c-.1 0-.1.1-.1.1v14.4c-.1.7.4 1.4 1.1 1.5.7.1 1.4-.4 1.5-1.1V21.1c-.1 0-.1-.1-.2-.1zM19.9 8.3l-.1.3c.1 0 .2.1.2.1 0 .2-.8.3-1.7.2-.9-.1-1.7-.3-1.7-.5 0 0 .1-.1.2-.1V8l-.1-.6-.3-2h0c.7-.3 1.4-.4 2.1-.4.7-.1 1.5-.1 2.2.1L20 7.7l-.1.6zM26.6 29.3c-1.3-.9-5.2-1.8-9.8-2.1-6.1-.5-10.4.2-10.4 1 0 .2.1.4.3.6.7.8 1.7 1.3 2.7 1.5 1.4.4 2.8.7 4.2.9 1 .1 2 0 3-.3.6-.2 1.2-.3 1.9-.3.8 0 1.7.3 2.3.8.1.1.3.2.4.2 1-.6 2-1.1 3-1.5.5-.1.9-.2 1.4-.1.8 0 1.4.2 1.4 0s-.1-.5-.4-.7z"
+          />
+        </svg>
+        <h1
+          class="text-5xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal"
+        >
+          Laboratorio
+        </h1>
+      </div>
+      <div class="flex w-full items-center justify-center">
+        <!-- Back Button -->
+        <div
+          class="rounded-full h-16 w-16 flex items-center justify-center bg-primary ml-40 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-12 w-12 fill-current text-white"
+            viewBox="0 0 24 24"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </div>
+        <!--Card Wrapper-->
+        <div
+          class="flex flex-row w-8/12 sm:w-full md:w-11/12 ml-auto justify-center relative"
+        >
+          <!-- Preview -->
+          <img
+            class="absolute laboratory-preview unselectable z-30 left-0"
+            src="https://storage.googleapis.com/roleever-public-assets/www/mockup.png"
+            alt="RoleEver App"
+          />
+          <!--Card -->
+          <div
+            class="flex w-9/12 rounded-xl bg-center bg-cover bg-view shadow-xl mt-56 sm:mt-40 md:mt-48"
+          >
+            <div class="w-2/12 md:w-3/12"></div>
+
+            <div class="flex flex-row w-10/12 md:w-9/12 px-20 py-20">
+              <div class="">
+                <h3
+                  class="text-xl sm:text-xl lg:text-lg subpixel-antialiased uppercase"
+                >
+                  Per voi master
+                </h3>
+                <h2
+                  class="text-2xl sm:text-xl lg:text-3xl font-medium subpixel-antialiased"
+                >
+                  Crea il tuo sistema
+                </h2>
+                <p class="pt-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  consectetur mi in faucibus malesuada. Suspendisse cursus eros
+                  in tincidunt finibus. Vestibulum ante ipsum primis in faucibus
+                  orci luctus et ultrices posuere cubilia curae; Curabitur ut
+                  tortor lorem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Forward Button -->
+        <div
+          class="rounded-full h-16 w-16 flex items-center justify-center bg-primary mr-40 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-12 w-12 fill-current text-white z-30"
+            viewBox="0 0 24 24"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
     <!--Roadmap Section-->
     <div class="flex flex-col w-full pt-20 space-y-20">
       <div
@@ -506,3 +604,22 @@ export default {
   components: { TheDownloadButton },
 }
 </script>
+
+<style>
+.laboratory-preview {
+  width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .laboratory-preview {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .laboratory-preview {
+    width: 280px;
+  }
+}
+</style>
