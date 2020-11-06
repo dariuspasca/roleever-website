@@ -173,9 +173,10 @@
         </h1>
       </div>
       <div class="flex w-full items-center justify-center">
-        <!-- Back Button -->
+        <!-- Previous Button -->
         <div
           class="rounded-full h-16 w-16 flex items-center justify-center bg-primary ml-40 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+          @click="prev()"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -188,6 +189,8 @@
         </div>
         <!--Card Wrapper-->
         <div
+          v-for="i in [currentIndex]"
+          :key="i"
           class="flex flex-row w-8/12 sm:w-full md:w-11/12 ml-auto justify-center relative"
         >
           <!-- Preview -->
@@ -207,27 +210,26 @@
                 <h3
                   class="text-xl sm:text-xl lg:text-lg subpixel-antialiased uppercase"
                 >
-                  Per voi master
+                  {{ currentSubheader }}
                 </h3>
                 <h2
                   class="text-2xl sm:text-xl lg:text-3xl font-medium subpixel-antialiased"
                 >
-                  Crea il tuo sistema
+                  {{ currentHeader }}
                 </h2>
+
                 <p class="pt-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  consectetur mi in faucibus malesuada. Suspendisse cursus eros
-                  in tincidunt finibus. Vestibulum ante ipsum primis in faucibus
-                  orci luctus et ultrices posuere cubilia curae; Curabitur ut
-                  tortor lorem.
+                  {{ currentDescription }}
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- Forward Button -->
+
+        <!-- Next Button -->
         <div
           class="rounded-full h-16 w-16 flex items-center justify-center bg-primary mr-40 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+          @click="next()"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -585,6 +587,7 @@ export default {
   data() {
     return {
       pageType: 'features',
+      currentIndex: 0,
     }
   },
   computed: {
@@ -593,6 +596,34 @@ export default {
         this.pageType,
         this.$i18n.locale
       )[0]
+    },
+    currentSubheader() {
+      return this.content.data.laboratory_features[this.currentIndex]
+        .feature_subheader
+    },
+    currentHeader() {
+      return this.content.data.laboratory_features[this.currentIndex]
+        .feature_header
+    },
+    currentDescription() {
+      return this.content.data.laboratory_features[this.currentIndex]
+        .feature_description
+    },
+  },
+  methods: {
+    next() {
+      if (this.currentIndex > 1) {
+        this.currentIndex = 0
+      } else {
+        this.currentIndex++
+      }
+    },
+    prev() {
+      if (this.currentIndex > 0) {
+        this.currentIndex--
+      } else {
+        this.currentIndex = 2
+      }
     },
   },
   head() {
@@ -677,6 +708,23 @@ export default {
 </script>
 
 <style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.9s ease;
+  overflow: hidden;
+  visibility: visible;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+}
+
+.fade-enter,
+.fade-leave-to {
+  visibility: hidden;
+  width: 100%;
+  opacity: 0;
+}
+
 .laboratory-preview {
   width: 300px;
   height: auto;
