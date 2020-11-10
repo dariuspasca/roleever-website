@@ -15,39 +15,43 @@
       </svg>
     </div>
     <!--Card Wrapper-->
+
     <div
       class="flex flex-row w-8/12 sm:w-full md:w-11/12 ml-auto justify-center relative"
     >
       <!-- Preview -->
       <img
         class="absolute laboratory-preview unselectable z-30 left-0"
-        src="https://storage.googleapis.com/roleever-public-assets/www/mockup.png"
+        :src="currentImage"
         alt="RoleEver App"
       />
       <!--Card -->
+
       <div
         class="flex w-9/12 rounded-xl bg-center bg-cover bg-view shadow-xl mt-56 sm:mt-40 md:mt-48"
       >
         <div class="w-2/12 md:w-3/12"></div>
 
         <div class="flex flex-row w-10/12 md:w-9/12 px-20 py-20">
-          <div class="">
-            <h3
-              class="text-xl sm:text-xl lg:text-lg subpixel-antialiased uppercase"
-            >
-              {{ currentSubheader }}
-            </h3>
+          <transition-group mode="out-in">
+            <div v-for="i in [currentIndex]" :key="i">
+              <h3
+                class="text-xl sm:text-xl lg:text-lg subpixel-antialiased uppercase"
+              >
+                {{ currentSubheader }}
+              </h3>
 
-            <h2
-              class="text-2xl sm:text-xl lg:text-3xl font-medium subpixel-antialiased"
-            >
-              {{ currentHeader }}
-            </h2>
+              <h2
+                class="text-2xl sm:text-xl lg:text-3xl font-medium subpixel-antialiased"
+              >
+                {{ currentHeader }}
+              </h2>
 
-            <p class="pt-6">
-              {{ currentDescription }}
-            </p>
-          </div>
+              <p class="pt-6">
+                {{ currentDescription }}
+              </p>
+            </div>
+          </transition-group>
         </div>
       </div>
     </div>
@@ -72,7 +76,7 @@
 <script>
 export default {
   props: {
-    featuresList: { type: Object, required: true },
+    featuresList: { type: Array, required: true },
   },
   data() {
     return {
@@ -94,6 +98,10 @@ export default {
       return this.features[Math.abs(this.currentIndex) % this.features.length]
         .feature_description
     },
+    currentImage() {
+      return this.features[Math.abs(this.currentIndex) % this.features.length]
+        .feature_preview.url
+    },
   },
   mounted() {
     this.startSlide()
@@ -110,20 +118,13 @@ export default {
 </script>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.9s ease;
-  overflow: hidden;
-  visibility: visible;
-  position: absolute;
-  width: 100%;
-  opacity: 1;
+.component-fade-enter-active,
+.component-fade-leave-active {
+  transition: opacity 0.3s ease;
+  max-height: 500px;
 }
-
-.fade-enter,
-.fade-leave-to {
-  visibility: hidden;
-  width: 100%;
+.component-fade-enter, .component-fade-leave-to
+/* .component-fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
 </style>

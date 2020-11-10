@@ -172,10 +172,7 @@
           {{ content.data.laboratory_title }}
         </h1>
       </div>
-      <the-feature-slider
-        :features-list="content.data.laboratory_features"
-        class="z-10"
-      />
+      <the-feature-slider :features-list="content.data.laboratory_features" />
     </div>
     <!--More Section-->
     <div class="flex flex-col w-full py-20 space-y-4 relative">
