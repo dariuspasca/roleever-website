@@ -2,7 +2,7 @@
   <div class="flex w-full items-center justify-center relative z-20">
     <!-- Previous Button -->
     <div
-      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 transition duration-500 ease-in-out transform xs:transform-none hover:-translate-y-1 hover:scale-110 cursor-pointer xs:absolute xs:z-30 xs:left-0 xs:top-0 xs:mt-16 xs:mx-1"
+      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 sm:mx-4 md:mx-4 transition duration-500 ease-in-out transform xs:transform-none hover:-translate-y-1 hover:scale-110 cursor-pointer xs:absolute sm:absolute z-30 left-0 top-0 xs:mt-16 sm:mt-64 xs:mx-1"
       @click="prev()"
     >
       <svg
@@ -17,13 +17,13 @@
     <!--Card Wrapper-->
 
     <div
-      class="flex flex-row w-8/12 xs:w-full sm:w-10/12 md:w-11/12 ml-auto xs:mx-auto justify-center xs:justify-start relative"
+      class="flex flex-row w-8/12 xs:w-full sm:w-10/12 md:w-11/12 ml-auto xs:mx-auto sm:mr-10 md:ml-10 justify-center xs:justify-start relative"
     >
       <!-- Desktop Preview Preview -->
       <img
         class="absolute xs:hidden laboratory-preview unselectable z-30 left-0"
         :src="currentImage"
-        :alt="currentHeaderp"
+        :alt="currentHeader"
       />
       <!--Card -->
 
@@ -31,7 +31,7 @@
         class="flex flex-row xs:flex-col w-10/12 xs:w-11/12 xxl:w-9/12 rounded-xl bg-center bg-cover bg-view shadow-xl mt-56 xs:mt-10 sm:mt-40 md:mt-48 xs:mx-auto xs:pb-10 xs:pt-0 xs:px-0 z-10"
       >
         <!--Mobile Preview Feature -->
-        <div class="w-2/12 xs:w-full md:w-1/12">
+        <div class="w-2/12 xs:w-full sm:w-1/12 md:w-1/12">
           <img
             :src="currentImageMobile"
             :alt="currentHeader"
@@ -40,14 +40,14 @@
         </div>
 
         <div
-          class="flex flex-col w-10/12 xs:w-full md:w-11/12 px-20 xs:px-4 pt-20 xs:pt-2 pb-10 xs:pb-2"
+          class="flex flex-col w-10/12 xs:w-full sm:w-11/12 md:w-11/12 px-20 xs:px-4 pt-20 xs:pt-2 pb-10 xs:pb-2"
         >
           <transition name="fade" mode="out-in">
             <div
               v-for="i in [currentIndex]"
               :key="i"
-              style="height: 200px"
-              class="ml-10 xs:ml-0"
+              style="height: 250px"
+              class="ml-10 xs:ml-0 sm:ml-20 md:ml-24"
             >
               <h3
                 class="text-xl sm:text-xl lg:text-lg subpixel-antialiased uppercase"
@@ -82,7 +82,7 @@
 
     <!-- Next Button -->
     <div
-      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 transition duration-500 ease-in-out transform xs:transform-none hover:-translate-y-1 hover:scale-110 cursor-pointer xs:absolute xs:z-30 xs:right-0 xs:top-0 xs:mt-16 xs:mx-1"
+      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 sm:mx-4 md:mx-4 transition duration-500 ease-in-out transform xs:transform-none hover:-translate-y-1 hover:scale-110 cursor-pointer xs:absolute sm:absolute z-30 right-0 top-0 xs:mt-16 sm:mt-64 xs:mx-1"
       @click="next()"
     >
       <svg
@@ -160,19 +160,7 @@ export default {
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .laboratory-preview {
-    width: 250px;
-  }
-}
-
 @media (max-width: 1199px) {
-  .laboratory-preview {
-    width: 100px;
-  }
-}
-
-@media (min-width: 1200px) {
   .laboratory-preview {
     width: 250px;
   }
