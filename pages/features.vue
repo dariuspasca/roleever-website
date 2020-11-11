@@ -145,10 +145,10 @@
 
     <!--Laboratory Section-->
     <div
-      class="flex flex-col w-full bg-footer bg-center bg-cover border-t-2 border-b-2 border-medium pb-20 pt-40 justify-center items-center z-20"
+      class="flex flex-col w-full bg-footer bg-center bg-cover border-t-2 border-b-2 border-medium pb-20 pt-40 justify-center items-center"
     >
       <div
-        class="flex flex-col w-4/12 mx-auto items-center -mt-24 pb-16 -space-y-6"
+        class="flex flex-col w-4/12 mx-auto items-center -mt-24 pb-16 xs:pb-8 -space-y-6"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -610,22 +610,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.laboratory-preview {
-  width: 300px;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .laboratory-preview {
-    width: 250px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .laboratory-preview {
-    width: 280px;
-  }
-}
-</style>
