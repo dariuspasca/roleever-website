@@ -9,7 +9,7 @@
         alt="dungeon"
     /></span>
 
-    <div class="container xxxl:w-8/12 mx-auto my-auto">
+    <div class="container sm:flex sm:w-11/12 xxxl:w-8/12 mx-auto my-auto">
       <div
         class="flex flex-col sm:flex-row md:flex-row lg:flex-row w-full justify-center md:px-5 lg:px-0 sm:space-x-20 md:space-x-32 lg:space-x-32"
       >
@@ -186,7 +186,13 @@ export default {
 }
 
 .preview-image {
-  max-width: 500px;
+  max-width: 300px;
+}
+
+@media (max-width: 1199px) {
+  .preview-image {
+    max-width: 270px;
+  }
 }
 
 @media (min-width: 2160px) {

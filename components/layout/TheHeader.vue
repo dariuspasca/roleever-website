@@ -1,16 +1,17 @@
 <template>
   <nav class="flex bg-transparent w-full mt-2">
-    <!--ROoleEver Logo-->
+    <!--RoleEver Logo-->
     <div class="flex flex-col w-4/6">
       <transition name="fade">
-        <span
+        <div
           v-if="showLogo"
-          class="font-semibold text-xl tracking-tight md:ml-5 lg:ml-10 mb-1"
-          ><nuxt-link :to="localePath('/')"
+          class="flex font-semibold text-xl tracking-tight md:ml-5 lg:ml-10"
+        >
+          <nuxt-link :to="localePath('/')" class="inline-block"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 2200 600"
-              class="w-40 md:w-48"
+              class="w-40 md:w-48 xxxl:w-64"
             >
               <g id="Logotype_Bianco" data-name="Logotype Rosso">
                 <path
@@ -76,13 +77,13 @@
                   d="M377.44,252.22c0,17.55-9.4,27.89-16.92,33.53-4.71,3.45-8.47,6.58-17.24,11-2.19.94-1.88,4.39-.63,7.21,13.16,31,36.35,65.81,48,75.84,10,8.15,16.92,9.09,27.58,10,3.13.31,3.45.94,1.57,3.76A16,16,0,0,1,411,399.2c-6,1.88-12.54,2.5-23.19,2.5-21,0-36.67-4.7-51.08-23.5-14.42-18.18-26-39.8-35.73-57-3.13-4.7-7.21-7.83-12.85-7.83a52.75,52.75,0,0,0-5.95.31c-2.51.32-3.14,1.26-3.14,5,0,12.85-.62,40.11-.62,55.15,0,4.08,1.56,6.27,4.38,6.9,6.27.94,23.2,2.82,28.52,4.7,1.88.63,1.88,1.57.32,3.45-2.82,2.82-12.54,10.34-15.36,10-9.4-.94-25.7-1.88-38.23-1.88-14.42,0-40.43,1.26-53,3.76-3.76.94-4.38-.62-3.13-2.19,3.76-4.7,8.78-9.09,12.22-10.65a76.74,76.74,0,0,1,13.48-4.71c4.39-.94,5.64-2.82,6.58-5.32,3.13-11,4.07-41.37,4.07-81.48,0-40.74-1.88-61.43-3.44-67.38-1.26-4.7-2.2-5.64-6-5.64-4.7,0-16.92,1.25-26,2.82-3.13.31-3.45-1.26-2.19-2.51,2.82-3.13,10.34-10,15.35-11,16.61-4.39,56.73-11.28,87.75-11.28C368.35,201.45,377.44,229.34,377.44,252.22Zm-96.21-32.59c-1.57.62-2.51,2.19-2.51,5.32l.31,69.89c0,3.76.94,5.64,12.54,5.64,30.08,0,43.87-7.21,43.87-35.73,0-25.07-15-46.69-43.56-46.69C287.5,218.06,283.42,218.37,281.23,219.63Z"
                   fill="#8E1500"
                 />
-              </g></svg></nuxt-link></span
+              </g></svg
+          ></nuxt-link></div
       ></transition>
       <transition name="fade">
         <div
           v-if="showLogoDivider"
-          li
-          class="relative w-11/12 md:w-9/12 lg:w-5/12 bg-cover bg-right h-2 lineaDorata"
+          class="-ml-24 xs:-ml-1 sm:-ml-32 md:-ml-40 w-11/12 md:w-9/12 lg:w-5/12 xxxl:w-3/12 bg-cover bg-right h-1 xxxl:h-2 lineaDorata"
         ></div>
       </transition>
     </div>
@@ -105,12 +106,14 @@
         <title>Menu</title>
       </button>
       <!--Desktop Vertical Menu-->
-      <div class="xs:hidden flex flex-col mt-5 mr-16 text-right">
+      <div
+        class="xs:hidden flex flex-col space-y-2 xxxl:space-x-5 mt-5 mr-16 text-right"
+      >
         <nuxt-link
           v-for="(item, index) in menuItems"
           :key="'reference-item-' + index"
           :to="localePath(menuItemsLinks[index].item_link)"
-          class="mt-2 text-dark-shade hover:text-primary tracking-wider"
+          class="text-dark-shade hover:text-primary tracking-wider xxxl:text-3xl"
         >
           {{ item.item_name }}
         </nuxt-link>

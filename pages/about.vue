@@ -132,20 +132,20 @@
         {{ content.data.artists_header }}
       </h1>
       <div
-        class="flex flex-wrap justify-center xs: space-x-12 xs:space-x-0 sm:space-x-4 md:space-x-4 w-8/12 xs:w-full sm:w-11/12 md:w-11/12 xxxl:w-3/12 mx-auto"
+        class="flex flex-wrap justify-center xs: space-x-12 xs:space-x-0 sm:space-x-4 md:space-x-4 w-7/12 xs:w-full sm:w-11/12 md:w-11/12 xxxl:w-3/12 mx-auto"
       >
         <!--Artists Cards-->
         <div
           v-for="(item, index) in content.data.artist_card"
           :key="'reference-item-' + index"
-          class="flex flex-col justify-center pb-10 xs:w-4/12"
+          class="flex flex-col justify-center pb-10 xs:w-4/12 cursor-pointer"
+          @click="openLink(item.artist_profile.url)"
         >
-          <a :href="item.artist_profile.url">
-            <img
-              :src="item.artist_image.url"
-              :alt="item.artist_name"
-              class="w-7/12 h-auto mx-auto py-4 transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
-          /></a>
+          <img
+            :src="item.artist_image.url"
+            :alt="item.artist_name"
+            class="w-7/12 h-auto mx-auto py-4 transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
+          />
           <h2
             class="text-xl font-base subpixel-antialiased tracking-wider text-center w-full capitalize text-white text-shadow"
           >
@@ -175,6 +175,11 @@ export default {
         this.pageType,
         this.$i18n.locale
       )[0]
+    },
+  },
+  methods: {
+    openLink(url) {
+      window.open(url, '_blank', 'noopener')
     },
   },
   head() {
