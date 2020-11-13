@@ -3,11 +3,11 @@
     <client-only> <TheGetLinkModal /> </client-only>
 
     <button
-      class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white font-normal py-2 xs:py-4 px-4 lg:px-16 text-base rounded xs:rounded-lg xs:min-w-8/12 inline-flex items-center font-gitan focus:outline-none"
+      class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white xxxl:text-2xl font-normal py-2 xs:py-4 px-4 lg:px-16 text-base rounded xs:rounded-lg xs:min-w-8/12 inline-flex items-center font-gitan focus:outline-none"
       @click="downloadClick()"
     >
       <svg
-        class="fill-current w-4 h-4 mr-2 lg:mr-4"
+        class="fill-current w-4 xxxl:w-6 h-4 mr-2 xxxl:h-6 lg:mr-4"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
       >

@@ -1,10 +1,10 @@
 <template>
   <div>
     <client-only> <TheContactUsModal /> </client-only>
-    <div class="lg:container mx-auto sm:px-10 md:px-10">
+    <div class="lg:container xxxl:w-6/12 mx-auto sm:px-10 md:px-10">
       <div class="flex flex-col space-y-20">
         <!--Introduction Section-->
-        <div class="block mx-auto text-center py-10 xs:py-0 xs:pb-0">
+        <div class="block mx-auto text-center py-10 xxxl:py-20 xs:py-0 xs:pb-0">
           <h1
             class="text-3xl sm:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal xs:w-7/12 w-8/12 mx-auto xs:pt-10"
           >
@@ -26,7 +26,7 @@
           </div>
           <!--About Description-->
           <div
-            class="w-6/12 xs:w-full space-y-10 sm:space-y-2 text-base lg:text-lg my-auto xs:pt-8 xs:text-center xs:px-2"
+            class="w-6/12 xxxl:w-4/12 xs:w-full space-y-10 sm:space-y-2 text-base lg:text-lg my-auto xs:pt-8 xs:text-center xs:px-2"
           >
             <p>
               {{ content.data.team_bio_header }}
@@ -61,14 +61,16 @@
           <!--Nick Image-->
           <div class="w-6/12 xs:w-full xs:order-first lg:-ml-16">
             <img
-              class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 h-auto my-auto"
+              class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 xxxl:w-6/12 h-auto my-auto"
               :src="content.data.nick_the_dragon.url"
               alt="Nick The Dragon"
             />
           </div>
         </div>
         <!--Team Section-->
-        <div class="flex flex-wrap xs:flex-col justify-center">
+        <div
+          class="flex flex-wrap xs:flex-col xxxl:w-10/12 xxxl:mx-auto justify-center"
+        >
           <!--Team Header-->
           <h1
             class="text-3xl sm:text-4xl lg:text-5xl font-medium subpixel-antialiased w-full text-center pb-10 pt-4 xs:-mb-16"
@@ -130,7 +132,7 @@
         {{ content.data.artists_header }}
       </h1>
       <div
-        class="flex flex-wrap justify-center xs: space-x-12 xs:space-x-0 sm:space-x-4 md:space-x-4 w-8/12 xs:w-full sm:w-11/12 md:w-11/12 mx-auto"
+        class="flex flex-wrap justify-center xs: space-x-12 xs:space-x-0 sm:space-x-4 md:space-x-4 w-8/12 xs:w-full sm:w-11/12 md:w-11/12 xxxl:w-3/12 mx-auto"
       >
         <!--Artists Cards-->
         <div

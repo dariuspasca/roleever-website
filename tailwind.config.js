@@ -20,6 +20,7 @@ module.exports = {
         lg: { min: '1200px' }, // Desktop smallest.
         xl: { min: '1159px' }, // Desktop wide.
         xxl: { min: '1359px' }, // Desktop widescreen.
+        xxxl: { min: '2160px' }, // Desktop 4k.
       },
       colors: {
         'dark-shade': '#000000',

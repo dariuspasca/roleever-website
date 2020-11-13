@@ -9,22 +9,22 @@
         alt="dungeon"
     /></span>
 
-    <div class="container mx-auto my-auto">
+    <div class="container xxxl:w-8/12 mx-auto my-auto">
       <div
         class="flex flex-col sm:flex-row md:flex-row lg:flex-row w-full justify-center md:px-5 lg:px-0 sm:space-x-20 md:space-x-32 lg:space-x-32"
       >
         <div class="xs:text-center sm:text-center text-left my-auto">
           <h1
-            class="text-2xl sm:text-3xl lg:text-4xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
+            class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
           >
             {{ content.data.title_first }}
           </h1>
           <h1
-            class="text-2xl sm:text-3xl lg:text-4xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
+            class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
           >
             {{ content.data.title_second }}
           </h1>
-          <p class="text-lg md:text-2xl mt-2">
+          <p class="text-lg md:text-2xl xxxl:text-4xl mt-2">
             {{ content.data.heroe_text }}
           </p>
           <the-download-button
@@ -33,8 +33,7 @@
         </div>
         <div>
           <img
-            class="object-contain wiggle mx-auto unselectable"
-            style="max-height: 500px"
+            class="object-contain wiggle mx-auto unselectable preview-image"
             src="https://storage.googleapis.com/roleever-public-assets/www/mockup.png"
             alt="RoleEver App"
           />
@@ -183,6 +182,16 @@ export default {
 @media (max-width: 897px) {
   .i-hate-css {
     width: 180%;
+  }
+}
+
+.preview-image {
+  max-width: 500px;
+}
+
+@media (min-width: 2160px) {
+  .preview-image {
+    max-width: 800px;
   }
 }
 </style>

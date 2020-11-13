@@ -3,7 +3,7 @@
     <!--Introduction Section-->
     <div class="container mx-auto text-center">
       <h1
-        class="text-5xl xs:text-3xl sm:text-3xl md:text-4xlfont-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto pt-10"
+        class="text-5xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto pt-10 xxxl:pt-32"
       >
         {{ content.data.introduction_title }}
       </h1>
@@ -13,7 +13,7 @@
       <the-download-button class="justify-center py-10" />
     </div>
     <!--Chat Section-->
-    <div class="container mx-auto py-10">
+    <div class="container mx-auto xxxl:w-6/12 xxxl:mx-auto py-10">
       <div class="flex flex-row xs:flex-col">
         <!--Chat Text-->
         <div class="w-6/12 xs:w-11/12 xs:mx-auto my-auto">
@@ -60,7 +60,7 @@
     <div class="flex w-full bg-cover bg-center bg-fantasy">
       <!--Card-->
       <div
-        class="flex rounded-3xl xs:rounded-2xl shadow-2xl bg-cover bg-center bg-view my-20 py-10 xs:py-2 w-8/12 xs:w-11/12 sm:w-11/12 md:w-10/12 mx-auto"
+        class="flex rounded-3xl xs:rounded-2xl shadow-2xl bg-cover bg-center bg-view my-20 py-10 xs:py-2 w-8/12 xs:w-11/12 sm:w-11/12 md:w-10/12 xxxl:w-5/12 mx-auto"
       >
         <div class="flex flex-row xs:flex-col">
           <!--DiceRolls Preview-->
@@ -102,7 +102,7 @@
       </div>
     </div>
     <!--CharacterSheets Section-->
-    <div class="container mx-auto py-10">
+    <div class="container mx-auto xxxl:w-6/12 py-10 xxxl:py-20">
       <div class="flex flex-row xs:flex-col">
         <!--CharacterSheets Text-->
         <div class="w-6/12 xs:w-11/12 xs:mx-auto my-auto">
@@ -148,7 +148,7 @@
       class="flex flex-col w-full bg-footer bg-center bg-cover border-t-2 border-b-2 border-medium pb-20 pt-40 justify-center items-center"
     >
       <div
-        class="flex flex-col w-4/12 mx-auto items-center -mt-24 pb-16 xs:pb-8 -space-y-6"
+        class="flex flex-col w-6/12 mx-auto items-center -mt-24 pb-16 xs:pb-8 -space-y-6"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -172,17 +172,22 @@
           {{ content.data.laboratory_title }}
         </h1>
       </div>
-      <the-feature-slider :features-list="content.data.laboratory_features" />
+      <the-feature-slider
+        :features-list="content.data.laboratory_features"
+        class="w-full xxxl:w-6/12 xxxl:mx-auto"
+      />
     </div>
     <!--More Section-->
     <div class="flex flex-col w-full py-20 space-y-4 relative">
       <!--Nick Section-->
       <img
-        class="w-3/12 xs:w-8/12 sm:w-5/12 h-auto float-left -ml-24 absolute xs:relative sm:relative md:mt-48 xs:mx-auto sm:mx-auto"
+        class="w-3/12 xs:w-8/12 sm:w-5/12 xxxl:w-3/12 h-auto float-left -ml-24 absolute xs:relative sm:relative md:mt-48 xs:mx-auto sm:mx-auto xxxl:ml-0"
         src="https://storage.googleapis.com/roleever-public-assets/www/features/nick.png"
         alt="Chat Preview"
       />
-      <div class="flex flex-col w-8/12 xs:w-11/12 sm:w-10/12 md:w-9/12 mx-auto">
+      <div
+        class="flex flex-col w-8/12 xs:w-11/12 sm:w-10/12 md:w-9/12 xxxl:w-6/12 mx-auto"
+      >
         <!--Header-->
         <div
           class="flex w-8/12 xs:w-full sm:w-full mb-20 justify-end xs:justify-center sm:justify-center xs:text-center sm:text-center"
@@ -196,7 +201,7 @@
         <div class="flex flex-col space-y-10 xs:space-y-10">
           <!--First Column-->
           <div
-            class="flex flex-row xs:flex-col w-full justify-center xs:justify-start space-x-20 xs:space-x-0 xs:space-y-10"
+            class="flex flex-row xs:flex-col w-full justify-center xs:justify-start xxxl:justify-center space-x-20 xs:space-x-0 xs:space-y-10"
           >
             <!--Board Section-->
             <div class="w-4/12 xs:w-full float-right xs:float-none">
@@ -259,7 +264,7 @@
           </div>
           <!--Second Column-->
           <div
-            class="flex flex-row xs:flex-col w-full justify-center xs:justify-start space-x-20 xs:space-x-0 xs:space-y-10"
+            class="flex flex-row xs:flex-col w-full justify-center xs:justify-start xxxl:justify-center space-x-20 xs:space-x-0 xs:space-y-10"
           >
             <!--Turns Section-->
             <div class="w-4/12 xs:w-full float-right xs:float-none">
@@ -320,7 +325,7 @@
     <!--Roadmap Section-->
     <div class="flex flex-col w-full pt-20 space-y-20">
       <div
-        class="lineaDorata bg-cover bg-center w-8/12 xs:w-11/12 h-2 xs:h-1 mx-auto"
+        class="lineaDorata bg-cover bg-center w-8/12 xs:w-11/12 xxxl:w-6/12 h-2 xs:h-1 mx-auto"
       ></div>
       <h1
         class="text-5xl xs:text-3xl sm:text-3xl md:text-4xlfont-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto"
@@ -328,7 +333,7 @@
         {{ content.data.inprogress_title }}
       </h1>
       <div
-        class="flex flex-col w-7/12 xs:w-full sm:w-11/12 md:w-10/12 mx-auto -space-y-16"
+        class="flex flex-col w-7/12 xs:w-full sm:w-11/12 md:w-10/12 xxxl:w-4/12 mx-auto -space-y-16"
       >
         <!--Map Card-->
         <div class="flex w-full justify-start">
