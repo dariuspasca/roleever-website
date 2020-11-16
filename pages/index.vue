@@ -186,13 +186,7 @@ export default {
 }
 
 .preview-image {
-  max-width: 300px;
-}
-
-@media (max-width: 1199px) {
-  .preview-image {
-    max-width: 270px;
-  }
+  max-width: 270px;
 }
 
 @media (min-width: 2160px) {

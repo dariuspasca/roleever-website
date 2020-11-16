@@ -190,10 +190,11 @@
       >
         <!--Header-->
         <div
-          class="flex w-8/12 xs:w-full sm:w-full mb-20 justify-end xs:justify-center sm:justify-center xs:text-center sm:text-center"
+          class="flex flex-row w-full sm:w-full mb-20 justify-start xs:justify-center sm:justify-center xs:text-center sm:text-center"
         >
+          <div class="w-2/12 xs:hidden"></div>
           <h1
-            class="text-5xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal"
+            class="text-5xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal -ml-10 xs:ml-0"
           >
             {{ content.data.more_title }}
           </h1>
