@@ -35,6 +35,7 @@
 
     <div class="flex flex-row px-3 pb-6 pt-2">
       <form
+        id="contactForm"
         class="contact-form flex flex-col w-full px-3"
         lazy-background="https://storage.googleapis.com/roleever-public-assets/www/background_desaturated.jpg"
         @submit.prevent="submit"
@@ -115,58 +116,93 @@ export default {
     return {
       isSubmitting: false,
       messageSent: false,
-      recaptcha: {
+      hCaptcha: {
         token: null,
-        valid: false,
+        verified: false,
       },
     }
   },
   methods: {
     onCaptchaVerified(response) {
-      console.log(response)
-      this.recaptcha = {
-        token: response,
+      this.hCaptcha.token = response
+      const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token: response }),
       }
+      fetch(
+        'https://havytm2s25.execute-api.eu-central-1.amazonaws.com/prod/validate-hcaptach',
+        requestOptions
+      )
+        .then(async (response) => {
+          const data = await response.json()
+
+          // check for error response
+          if (!response.ok) {
+            // get error message from body or default to response status
+            const error = (data && data.message) || response.status
+            return Promise.reject(error)
+          }
+          if (data.body === true) {
+            this.hCaptcha.verified = true
+            this.submit()
+          }
+        })
+        .catch((error) => {
+          this.errorMessage = error
+          // eslint-disable-next-line no-console
+          console.error('There was an error!', error)
+          this.hCaptcha.verified = false
+        })
     },
     onCaptchaExpired() {
       this.isSubmitting = false
-      this.recaptcha = {
+      this.hCaptcha = {
         token: null,
-        valid: false,
+        verified: false,
       }
     },
     submit() {
-      this.$refs.invisibleHcaptcha.execute()
+      if (this.hCaptcha.verified === true && this.hCaptcha.token != null) {
+        this.sendEmail()
+      } else {
+        this.$refs.invisibleHcaptcha.execute()
+      }
     },
-    sendEmail(e) {
-      this.isSubmitting = true
-      emailjs
-        .sendForm(
-          'service_h5u262a',
-          'template_gwhqrz4',
-          e.target,
-          'user_7lTAUfZbG9mNz9kjjslNw'
-        )
-        .then(
-          (result) => {
-            this.isSubmitting = false
-            this.messageSent = true
-            this.$modal.hide('send-message')
-          },
-          (error) => {
-            // eslint-disable-next-line no-console
-            console.log('Message failed to be sent with internal error:', error)
-            this.isSubmitting = false
-            this.$modal.show('dialog', {
-              text: this.$t('error_generic'),
-              buttons: [
-                {
-                  title: 'OK 💩',
-                },
-              ],
-            })
-          }
-        )
+    sendEmail() {
+      if (!this.isSubmitting) {
+        this.isSubmitting = true
+        emailjs
+          .sendForm(
+            'service_h5u262a',
+            'template_gwhqrz4',
+            'contactForm',
+            'user_7lTAUfZbG9mNz9kjjslNw'
+          )
+          .then(
+            (result) => {
+              this.isSubmitting = false
+              this.messageSent = true
+              this.$modal.hide('send-message')
+            },
+            (error) => {
+              // eslint-disable-next-line no-console
+              console.log(
+                'Message failed to be sent with internal error:',
+                error
+              )
+              this.isSubmitting = false
+              this.$modal.show('dialog', {
+                text: this.$t('error_generic'),
+                buttons: [
+                  {
+                    title: 'OK 💩',
+                  },
+                ],
+              })
+            }
+          )
+      }
     },
     beforeClose() {
       if (this.messageSent) {
