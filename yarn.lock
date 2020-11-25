@@ -886,6 +886,11 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
+"@hcaptcha/vue-hcaptcha@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@hcaptcha/vue-hcaptcha/-/vue-hcaptcha-0.2.3.tgz#88e3347827f8d6bd924510e3127bc7aa35473fce"
+  integrity sha512-7MYeoPf8RiQgkxf1eQJBv5eFEdy2pqmLfdBz1cLoC2V+aGXNAiT6pWE6MIQR7nfO/aMB+fw87LiRR7qN76BxAA==
+
 "@interactjs/types@1.10.0":
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/@interactjs/types/-/types-1.10.0.tgz#c2232ed3ba503891349912fa74aa05aa467403e9"

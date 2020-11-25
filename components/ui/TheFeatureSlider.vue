@@ -131,9 +131,6 @@ export default {
         .feature_mobile_preview.url
     },
   },
-  mounted() {
-    this.startSlide()
-  },
   methods: {
     next() {
       this.currentIndex += 1

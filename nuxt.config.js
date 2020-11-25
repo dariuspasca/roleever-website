@@ -63,6 +63,7 @@ export default {
   plugins: [
     { src: '~/plugins/vue-js-modal', mode: 'client' },
     '~/plugins/vue-click-outside',
+    { src: '~/plugins/vue-hcaptcha', mode: 'client' },
   ],
   /*
    ** Auto import components

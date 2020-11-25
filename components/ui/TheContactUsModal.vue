@@ -37,7 +37,7 @@
       <form
         class="contact-form flex flex-col w-full px-3"
         lazy-background="https://storage.googleapis.com/roleever-public-assets/www/background_desaturated.jpg"
-        @submit.prevent="sendEmail"
+        @submit.prevent="submit"
       >
         <div class="flex flex-row xs:flex-col space-x-16 xs:space-x-0 xs:px-6">
           <div class="flex flex-col xs:flex-row w-5/12 xs:w-full xs:space-x-10">
@@ -80,7 +80,14 @@
             ></textarea>
           </div>
         </div>
-
+        <vue-hcaptcha
+          ref="invisibleHcaptcha"
+          sitekey="ef906615-f50d-42fd-9f1a-388521a03406"
+          size="invisible"
+          @verify="onCaptchaVerified"
+          @expired="onCaptchaExpired"
+          @error="onCaptchaExpired"
+        ></vue-hcaptcha>
         <button
           type="submit"
           class="bg-primary shadow-xl py-2 px-4 rounded items-center font-gitan focus:outline-none text-white w-6/12 mx-auto mt-12"
@@ -91,14 +98,16 @@
               {{ $t('contact_form.button_sending') }}
             </p>
           </div>
-          <p v-else>{{ $t('contact_form.button_send') }}</p>
+          <p v-else>
+            {{ $t('contact_form.button_send') }}
+          </p>
         </button>
       </form>
     </div>
   </modal>
 </template>
 
-<script>
+<script type="module">
 import emailjs from 'emailjs-com'
 
 export default {
@@ -106,9 +115,29 @@ export default {
     return {
       isSubmitting: false,
       messageSent: false,
+      recaptcha: {
+        token: null,
+        valid: false,
+      },
     }
   },
   methods: {
+    onCaptchaVerified(response) {
+      console.log(response)
+      this.recaptcha = {
+        token: response,
+      }
+    },
+    onCaptchaExpired() {
+      this.isSubmitting = false
+      this.recaptcha = {
+        token: null,
+        valid: false,
+      }
+    },
+    submit() {
+      this.$refs.invisibleHcaptcha.execute()
+    },
     sendEmail(e) {
       this.isSubmitting = true
       emailjs
