@@ -6,10 +6,10 @@
         <!--Introduction Section-->
         <div class="block mx-auto text-center py-10 xxxl:py-20 xs:py-0 xs:pb-0">
           <h1 class="title xs:w-7/12 w-8/12 xs:pt-10">
-            {{ content.data.header }}
+            {{ page.header }}
           </h1>
           <p class="xs:w-11/12 w-8/12 mx-auto pt-4">
-            {{ content.data.sub_header }}
+            {{ page.sub_header }}
           </p>
         </div>
         <!--About Section-->
@@ -18,7 +18,7 @@
           <div class="w-6/12 xs:w-full my-auto pointer-events-none">
             <img
               class="shadow-xl mx-auto rounded-lg w-10/12 xs:11/12 h-auto my-auto"
-              :src="content.data.team.url"
+              :src="page.team"
               alt="RoleEver Team"
             />
           </div>
@@ -27,18 +27,18 @@
             class="w-6/12 xxxl:w-4/12 xs:w-full space-y-10 sm:space-y-2 text-base lg:text-lg my-auto xs:pt-8 xs:text-center xs:px-2"
           >
             <p>
-              {{ content.data.team_bio_header }}
+              {{ page.team_bio_header }}
             </p>
 
             <p>
-              {{ content.data.team_bio_sub_header }}
+              {{ page.team_bio_sub_header }}
             </p>
             <!--Contact Button-->
             <button
               class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white font-normal py-2 xs:py-4 px-4 lg:px-16 text-base rounded xs:rounded-lg font-gitan focus:outline-none xs:w-7/12"
               @click="$modal.show('send-message')"
             >
-              {{ content.data.contact_button }}
+              {{ page.contact_button }}
             </button>
           </div>
         </div>
@@ -52,7 +52,7 @@
               <h1 class="text-4xl sm:text-2xl lg:text-3xl">Nick</h1>
 
               <p>
-                {{ $prismic.asText(content.data.nick_the_dragon_bio) }}
+                {{ page.nick_the_dragon_bio }}
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@
           <div class="w-6/12 xs:w-full xs:order-first lg:-ml-16">
             <img
               class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 xxxl:w-6/12 h-auto my-auto"
-              :src="content.data.nick_the_dragon.url"
+              :src="page.nick_the_dragon"
               alt="Nick The Dragon"
             />
           </div>
@@ -71,11 +71,11 @@
         >
           <!--Team Header-->
           <h1 class="title w-full text-center pb-10 pt-4 xs:-mb-16">
-            {{ content.data.party_header }}
+            {{ page.party_header }}
           </h1>
           <!--Team Cards-->
           <div
-            v-for="(item, index) in content.data.member_card"
+            v-for="(item, index) in page.member_card"
             :key="'reference-item-' + index"
             class="space-y-1 mt-16 sm:px-4 md:px-8 px-16 xs:px-8"
           >
@@ -98,7 +98,11 @@
             <!--Skills Section-->
             <div class="flex flex-col bg-frame bg-cover px-3 mx-auto">
               <div class="top-0 left-0 pt-4 pl-2 h-full">
-                <prismic-rich-text :field="item.skills" class="text-base" />
+                <ul>
+                  <li v-for="skill in item.skills" :key="skill">
+                    {{ skill }}
+                  </li>
+                </ul>
               </div>
               <div class="uppercase text-center font-bold bottom-0 left-0 pb-3">
                 {{ item.card_footer }}
@@ -114,7 +118,7 @@
             class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white font-normal py-2 xs:py-4 px-4 lg:px-16 text-base rounded xs:rounded-lg font-gitan focus:outline-none w-full"
             @click="$modal.show('send-message')"
           >
-            {{ content.data.contact_button }}
+            {{ page.contact_button }}
           </button>
         </div>
       </div>
@@ -123,20 +127,20 @@
     <div class="py-10 bg-cover bg-center bg-fantasy">
       <!--Artits Header-->
       <h1 class="title text-white w-full text-center pb-10 pt-4 text-shadow">
-        {{ content.data.artists_header }}
+        {{ page.artists_header }}
       </h1>
       <div
         class="flex flex-wrap justify-center xs: space-x-12 xs:space-x-0 sm:space-x-4 md:space-x-4 w-7/12 xs:w-full sm:w-11/12 md:w-11/12 xxxl:w-3/12 mx-auto"
       >
         <!--Artists Cards-->
         <div
-          v-for="(item, index) in content.data.artist_card"
+          v-for="(item, index) in page.artist_card"
           :key="'reference-item-' + index"
           class="flex flex-col justify-center pb-10 xs:w-4/12 cursor-pointer"
-          @click="openLink(item.artist_profile.url)"
+          @click="openLink(item.artist_profile)"
         >
           <img
-            :src="item.artist_image.url"
+            :src="item.artist_image"
             :alt="item.artist_name"
             class="w-7/12 h-auto mx-auto py-4 transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
           />
@@ -158,18 +162,13 @@ export default {
   components: {
     TheContactUsModal,
   },
-  data() {
+  async asyncData(context) {
+    const { $content, app } = context
+    const page = await $content(`${app.i18n.locale}/pages/about`).fetch()
+
     return {
-      pageType: 'about',
+      page,
     }
-  },
-  computed: {
-    content() {
-      return this.$store.getters.getPageByType(
-        this.pageType,
-        this.$i18n.locale
-      )[0]
-    },
   },
   methods: {
     openLink(url) {
@@ -178,7 +177,7 @@ export default {
   },
   head() {
     return {
-      title: this.$prismic.asText(this.content.data.title),
+      title: this.page.meta_header,
       link: [
         {
           rel: 'canonical',
@@ -190,66 +189,66 @@ export default {
 
         {
           name: 'twitter:card',
-          content: this.content.data.twitter_cards[0].twitter_card,
+          content: this.page.twitter_card,
         },
         {
           name: 'twitter:site',
-          content: this.content.data.twitter_cards[0].twitter_site,
+          content: this.page.twitter_site,
         },
         {
           name: 'twitter:title',
-          content: this.content.data.twitter_cards[0].twitter_title,
+          content: this.page.twitter_title,
         },
         {
           name: 'twitter:description',
-          content: this.content.data.twitter_cards[0].twitter_description,
+          content: this.page.twitter_description,
         },
         {
           name: 'twitter:image',
-          content: this.content.data.twitter_cards[0].twitter_image.url,
+          content: this.page.twitter_image,
         },
 
         /* Open Graph */
 
         {
           name: 'og:title',
-          content: this.content.data.og[0].og_title,
+          content: this.page.og_title,
         },
         {
           name: 'og:type',
-          content: this.content.data.og[0].og_type,
+          content: this.page.og_type,
         },
         {
           name: 'og:description',
-          content: this.content.data.og[0].og_description,
+          content: this.page.og_description,
         },
         {
           name: 'og:locale',
-          content: this.content.data.og[0].og_locale,
+          content: this.page.og_locale,
         },
         {
           name: 'og:locale:alternate',
-          content: this.content.data.og[0].og_locale_alternate,
+          content: this.page.og_locale_alternate,
         },
         {
           name: 'og:locale:image',
-          content: this.content.data.og[0].og_image.url,
+          content: this.page.og_image,
         },
         {
           name: 'og:locale:url',
-          content: this.content.data.og[0].og_url.url,
+          content: this.page.og_url,
         },
 
         /* Google / Schema.org  */
 
-        { itemprop: 'name', content: this.content.data.og[0].og_title },
+        { itemprop: 'name', content: this.page.og_title },
         {
           itemprop: 'description',
-          content: this.content.data.og[0].og_description,
+          content: this.page.og_description,
         },
         {
           itemprop: 'image',
-          content: this.content.data.og[0].og_image.url,
+          content: this.page.og_image,
         },
       ],
     }

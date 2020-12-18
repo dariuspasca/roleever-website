@@ -1,0 +1,91 @@
+{
+    "introduction_title": "Chat, tiri e schede",
+    "introduction_sbutitle": "Dopo ere oscure, finalmente un'app è stata forgiata per aiutare tutti gli avventurieri che da lungo tempo hanno abbandonato i GdR...",
+    "heroe": "Da oggi puoi!",
+  
+    "chat_title": "Chat",
+    "chat_description": "I giorni passati in astinenza da GdR sono finiti! Con la chat di RoleEver puoi giocare h24 in modo asincrono. Sì, anche in bagno.",
+    "chat_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/chat-placeholder.png",
+  
+    "dicerolls_title": "Tiri di dado",
+    "dicerolls_description": "Su RoleEver puoi inviare i tuoi fallimenti critici direttamente in chat! L'app si interfaccia con la tua scheda pg e i risultati vengono calcolati in automatico. Così tutti potranno vedere come, cercando di colpire il boss, cali un fendente sulla testa del chierico provocando un TPK.",
+    "dicerolls_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/tiri-placeholder.png",
+  
+    "sheets_title": "Schede PG",
+    "sheets_description": "Nessun'app esterna per le tenere le schede pg! In ogni campagna ogni giocatore puo' vedere la sua scheda aprendola dal menu di gioco.",
+    "sheets_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/scheda-placeholder.png",
+  
+    "laboratory_title": "Laboratorio",
+  
+    "laboratory_features": [
+      {
+        "feature_subheader": "Per voi master",
+        "feature_header": "Crea il tuo sistema",
+        "feature_description": "Il negozio dell'alchimista coboldo è fallito e ha deciso di affittarci il suo laboratorio. Qui puoi creare i sistemi di gioco che preferisci. Dai la forma che vuoi alle schede che useranno i tuoi giocatori e crea tutte le statistiche che servono. Questa funzionalità è costata qualche capello bianco al nostro programmatore...",
+        "feature_preview": "https://storage.googleapis.com/roleever-public-assets/www/mockup.png",
+        "feature_mobile_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/lab-mobile.jpg"
+      },
+      {
+          "feature_subheader": "Per voi master",
+          "feature_header": "Crea i tiri di gioco",
+          "feature_description": "La vostra creazione alchemica non è completa finché non aggiungete al sistema i tiri di gioco, ossia le macro che avranno a disposizione i tuoi giocatori. Potete creare qualsiasi macro integrando le statistiche delle schede, ma occhio: non siamo responsabili delle reazioni chimiche esplosive...",
+          "feature_preview": "https://storage.googleapis.com/roleever-public-assets/www/mockup_2.png",
+          "feature_mobile_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/lab-mobile_2.jpg"
+        },
+        {
+          "feature_subheader": "Per tutti",
+          "feature_header": "Condividi",
+          "feature_description": "Infine, puoi condividere il sistema che hai creato con la community. Così i master troppo impegnati ad accumulare monete d'oro nella vita reale potranno scaricare le magnifiche creazioni condivise!",
+          "feature_preview": "https://storage.googleapis.com/roleever-public-assets/www/mockup.png",
+          "feature_mobile_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/lab-mobile.jpg"
+        }
+    ],
+  
+    "more_title":"E tanto, ma TANTO altro!",
+    "lobby_title": "Non hai un gruppo di gioco? Entra nella pagina Bacheca e unisciti alle campagne aperte disponibili.",
+    "diary_title": "Diario e appunti",
+    "diary_description": "Se sei il tipo di giocatore che ama appuntarsi i progressi della campagna, RoleEver ha pensato anche a te!",
+    "turns_title":"Turni di gioco",
+    "turns_description":"Il menu dei turni ti permetterà di gestire al meglio il ritmo di gioco, senza rallentare la campagna.",
+    "reader_title": "Modalità lettore",
+    "reader_description": "Se non hai tempo per giocare, potrai leggere le storie degli altri giocatori con la Modalità Lettore.",
+  
+    "inprogress_title": "Work in progress",
+    "map_title": "Mappa di gioco",
+    "map_description": "La mappa di gioco dove usare i token è richiestissima, ma è un GS molto alto… La aggiungeremo il prima possibile!",
+    "png_title": "Gestione PNG",
+    "png_description": "Lista, schede e turni per i PNG sarà una funzionalità che migliorerà il gioco di master e giocatori.",
+    "multichat_title": "Multi-chat",
+    "multichat_description": "Stiamo studiando la possibilità di integrare più chat parallele nella stessa campagna. Così il master potrà gestire comodamente i party che si dividono oppure tiri privati con giocatori.",
+  
+    "are_you_in_title": "Ti abbiamo convinto?",
+    "are_you_in_description": "Unisciti al party",
+  
+  
+    "meta_header": "RoleEver - GdR via Chat",
+    "meta_description": "RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone",
+  
+    "og_title": "RoleEver - GdR via Chat",
+    "og_type": "website",
+    "og_description": "RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone",
+    "og_locale": "it-IT",
+    "og_locale_alternate": "en-US",
+    "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+    "og_url": "https://www.roleever.com",
+  
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@roleever",
+    "twitter_title": "RoleEver - GdR via Chat",
+    "twitter_description": "RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone",
+    "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+  
+    "twitter_ios_country": "",
+    "twitter_ios_name": "",
+    "twitter_ios_id": "",
+    "twitter_ios_url": "",
+  
+    "twitter_android_name": "",
+    "twitter_android_id": "",
+    "twitter_android_url": ""
+  }
+  

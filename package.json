@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@hcaptcha/vue-hcaptcha": "^0.2.3",
+    "@nuxt/content": "^1.11.1",
     "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/prismic": "^1.2.3",
     "@nuxtjs/toast": "^3.3.1",

@@ -83,6 +83,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxt/content',
     'nuxt-i18n',
     '@nuxtjs/prismic',
     '@nuxtjs/device',

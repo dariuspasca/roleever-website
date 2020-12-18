@@ -1,0 +1,131 @@
+{
+    "header": "Siamo giocatori di ruolo",
+    "sub_header": "Se non facciamo sessione ogni settimana andiamo in astinenza. Cosi, abbiamo inventato RoleEver, e si, ci lavoriamo full-time!",
+  
+    "contact_button": "Contattaci!",
+  
+    "team": "https://storage.googleapis.com/roleever-public-assets/www/about/immagineTeam.jpg",
+    "team_bio_header": "RoleEver nasce nel 2018 da questi 3 avventurieri che hanno la folle ambizione di permettere a tutti di giocare ai GdR anche nella loro pausa caffè.",
+  
+    "team_bio_sub_header": "La passione per i GdR ci accompagna da più di dieci anni e non passa giorno in cui non vediamo l'ora di ruolare ancora :D",
+  
+    "nick_the_dragon": "https://storage.googleapis.com/roleever-public-assets/www/about/nick.png",
+    "nick_the_dragon_bio": "Nick è uno Pseudodrago. Capo e master indiscusso di RoleEver. Non fatevi ingannare dalla posa... è un burlone! Vi guiderà ovunque verso le migliori avventure!",
+  
+    "party_header": "Il nostro party",
+  
+    "member_card": [
+      {
+        "card_header": "darius",
+        "skills": [
+          "Leader del party (CEO)",
+          "Tesoriere (gestisce le, poche, mo)",
+          "Messaggero (community manager)",
+          "Skill monkey (nessuno capisce cosa fa esattamente)"
+        ],
+        "card_footer": "abilità"
+      },
+      {
+        "card_header": "flam",
+        "skills": [
+          "Architetto (UI/UX design)",
+          "Scrivano (scrive le note di rilascio)",
+          "Mago (crea illusioni grafiche per convincere tutti a seguirci sui social)"
+        ],
+        "card_footer": "abilità"
+      },
+      {
+        "card_header": "baddo",
+        "skills": [
+          "Troll (programmatore) ",
+          "Chierico (full-stack developer)",
+          "Fabbro (produc... HEM! Corregge i bug ...)"
+        ],
+        "card_footer": "abilità"
+      },
+      {
+        "card_header": "spino",
+        "skills": [
+          "Cyber-uomo (programmatore che viene dal futuro) ",
+          "Lv.3 Troll"
+        ],
+        "card_footer": "abilità"
+      },
+      {
+        "card_header": "gennaro",
+        "skills": [
+          "Oratore (contenuti social) ",
+          "Barbaro (non caratterialmente, ma perché genera meme)",
+          "Lvl.3 Barbaro"
+        ],
+        "card_footer": "abilità"
+      }
+    ],
+  
+    "artists_header": "I nostri pittori",
+  
+    "artist_card": [
+      {
+        "artist_name": "Alberto",
+        "artist_image": "https://storage.googleapis.com/roleever-public-assets/www/about/alby.png",
+        "artist_profile": "https://www.instagram.com/dreadworks_art"
+      },
+      {
+        "artist_name": "Giulia",
+        "artist_image": "https://storage.googleapis.com/roleever-public-assets/www/about/giulia.png",
+        "artist_profile": "https://www.artstation.com/hekate01"
+      },
+      {
+        "artist_name": "Valentina",
+        "artist_image": "https://storage.googleapis.com/roleever-public-assets/www/about/vale.png",
+        "artist_profile": "https://www.artstation.com/valeer96"
+      },
+      {
+        "artist_name": "Daniel",
+        "artist_image": "https://storage.googleapis.com/roleever-public-assets/www/about/dan.png",
+        "artist_profile": "https://www.instagram.com/Dusksmile/"
+      },
+      {
+        "artist_name": "Daniele",
+        "artist_image": "https://storage.googleapis.com/roleever-public-assets/www/about/randazzo.png",
+        "artist_profile": "https://www.artstation.com/danhatter88"
+      },
+      {
+        "artist_name": "Sara",
+        "artist_image": "https://storage.googleapis.com/roleever-public-assets/www/about/sara.png",
+        "artist_profile": "https://www.instagram.com/__sarabertoli__/"
+      },
+      {
+        "artist_name": "Asia",
+        "artist_image": "https://storage.googleapis.com/roleever-public-assets/www/about/asia.png",
+        "artist_profile": "https://www.artstation.com/f_y_asia"
+      }
+    ],
+  
+    "meta_header": "RoleEver - Su di noi",
+    "meta_description": "RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone",
+  
+    "og_title": "RoleEver - GdR via Chat",
+    "og_type": "website",
+    "og_description": "RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone",
+    "og_locale": "it-IT",
+    "og_locale_alternate": "en-US",
+    "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+    "og_url": "https://www.roleever.com",
+  
+    "twitter_card": "summary_large_image",
+    "twitter_site": "@roleever",
+    "twitter_title": "RoleEver - GdR via Chat",
+    "twitter_description": "RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone",
+    "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+  
+    "twitter_ios_country": "",
+    "twitter_ios_name": "",
+    "twitter_ios_id": "",
+    "twitter_ios_url": "",
+  
+    "twitter_android_name": "",
+    "twitter_android_id": "",
+    "twitter_android_url": ""
+  }
+  

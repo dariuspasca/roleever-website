@@ -124,11 +124,11 @@ export default {
     },
     currentImage() {
       return this.features[Math.abs(this.currentIndex) % this.features.length]
-        .feature_preview.url
+        .feature_preview
     },
     currentImageMobile() {
       return this.features[Math.abs(this.currentIndex) % this.features.length]
-        .feature_mobile_preview.url
+        .feature_mobile_preview
     },
   },
   methods: {

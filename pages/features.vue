@@ -3,10 +3,10 @@
     <!--Introduction Section-->
     <div class="container mx-auto text-center">
       <h1 class="title pt-10">
-        {{ content.data.introduction_title }}
+        {{ page.introduction_title }}
       </h1>
       <p class="xs:w-full sm:w-10/12 md:w-7/12 w-5/12 mx-auto pt-4">
-        {{ content.data.introduction_subtitle }}
+        {{ page.introduction_subtitle }}
       </p>
       <the-download-button class="justify-center py-10" />
     </div>
@@ -37,10 +37,10 @@
             <h2
               class="text-2xl sm:text-3xl lg:text-4xl font-base subpixel-antialiased"
             >
-              {{ content.data.chat_title }}
+              {{ page.chat_title }}
             </h2>
             <p class="py-2 text-lg">
-              {{ content.data.chat_description }}
+              {{ page.chat_description }}
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@
         <div class="flex w-6/12 xs:w-full items-center">
           <img
             class="xs:w-11/12 sm:w-10/12 w-7/12 h-auto float-left xs:float-none ml-10 xs:mx-auto"
-            :src="content.data.chat_preview.url"
+            :src="page.chat_preview"
             alt="Chat Preview"
           />
         </div>
@@ -67,7 +67,7 @@
           >
             <img
               class="xs:w-11/12 sm:w-10/12 w-10/12 h-auto"
-              :src="content.data.dicerolls_preview.url"
+              :src="page.dicerolls_preview"
               alt="Chat Preview"
             />
           </div>
@@ -89,10 +89,10 @@
               <h2
                 class="text-2xl sm:text-3xl lg:text-4xl font-base subpixel-antialiased"
               >
-                {{ content.data.dicerolls_title }}
+                {{ page.dicerolls_title }}
               </h2>
               <p class="py-2 text-lg">
-                {{ content.data.dicerolls_description }}
+                {{ page.dicerolls_description }}
               </p>
             </div>
           </div>
@@ -123,10 +123,10 @@
             <h2
               class="text-2xl sm:text-3xl lg:text-4xl font-base subpixel-antialiased"
             >
-              {{ content.data.sheets_title }}
+              {{ page.sheets_title }}
             </h2>
             <p class="py-2 text-lg">
-              {{ content.data.sheets_description }}
+              {{ page.sheets_description }}
             </p>
           </div>
         </div>
@@ -134,7 +134,7 @@
         <div class="flex w-6/12 xs:w-full items-center">
           <img
             class="xs:w-11/12 sm:w-10/12 w-7/12 h-auto float-left xs:float-none ml-10 xs:mx-auto"
-            :src="content.data.sheets_preview.url"
+            :src="page.sheets_preview"
             alt="Chat Preview"
           />
         </div>
@@ -165,11 +165,11 @@
           />
         </svg>
         <h1 class="title">
-          {{ content.data.laboratory_title }}
+          {{ page.laboratory_title }}
         </h1>
       </div>
       <the-feature-slider
-        :features-list="content.data.laboratory_features"
+        :features-list="page.laboratory_features"
         class="w-full xxxl:w-6/12 xxxl:mx-auto"
       />
     </div>
@@ -192,7 +192,7 @@
           <h1
             class="text-5xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal -ml-10 xs:ml-0"
           >
-            {{ content.data.more_title }}
+            {{ page.more_title }}
           </h1>
         </div>
         <div class="flex flex-col space-y-10 xs:space-y-10">
@@ -228,10 +228,10 @@
               <h3
                 class="text-2xl sm:text-xl lg:text-2xl font-medium subpixel-antialiased"
               >
-                {{ content.data.lobby_title }}
+                {{ page.lobby_title }}
               </h3>
               <p class="mt-3">
-                {{ content.data.lobby_description }}
+                {{ page.lobby_description }}
               </p>
             </div>
             <!--Diary Section-->
@@ -252,10 +252,10 @@
               <h3
                 class="text-2xl sm:text-xl lg:text-2xl font-medium subpixel-antialiased"
               >
-                {{ content.data.diary_title }}
+                {{ page.diary_title }}
               </h3>
               <p class="mt-3">
-                {{ content.data.diary_description }}
+                {{ page.diary_description }}
               </p>
             </div>
           </div>
@@ -284,10 +284,10 @@
               <h3
                 class="text-2xl sm:text-xl lg:text-2xl font-medium subpixel-antialiased"
               >
-                {{ content.data.turns_title }}
+                {{ page.turns_title }}
               </h3>
               <p class="mt-3">
-                {{ content.data.turns_description }}
+                {{ page.turns_description }}
               </p>
             </div>
             <!--Reading Section-->
@@ -309,10 +309,10 @@
               <h3
                 class="text-2xl sm:text-xl lg:text-2xl font-medium subpixel-antialiased"
               >
-                {{ content.data.reader_title }}
+                {{ page.reader_title }}
               </h3>
               <p class="mt-3">
-                {{ content.data.reader_description }}
+                {{ page.reader_description }}
               </p>
             </div>
           </div>
@@ -325,7 +325,7 @@
         class="lineaDorata bg-cover bg-center w-8/12 xs:w-11/12 xxxl:w-6/12 h-2 xs:h-1 mx-auto"
       ></div>
       <h1 class="title">
-        {{ content.data.inprogress_title }}
+        {{ page.inprogress_title }}
       </h1>
       <div
         class="flex flex-col w-7/12 xs:w-full sm:w-11/12 md:w-10/12 xxxl:w-4/12 mx-auto -space-y-16"
@@ -389,10 +389,10 @@
             <h3
               class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
             >
-              {{ content.data.map_title }}
+              {{ page.map_title }}
             </h3>
             <p class="text-left py-2 px-6">
-              {{ content.data.map_description }}
+              {{ page.map_description }}
             </p>
           </div>
         </div>
@@ -454,10 +454,10 @@
             <h3
               class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
             >
-              {{ content.data.initiative_title }}
+              {{ page.png_title }}
             </h3>
             <p class="text-left py-2 px-6">
-              {{ content.data.initiative_description }}
+              {{ page.png_description }}
             </p>
           </div>
         </div>
@@ -522,17 +522,17 @@
             <h3
               class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
             >
-              {{ content.data.png_title }}
+              {{ page.multichat_title }}
             </h3>
             <p class="text-left py-2 px-6">
-              {{ content.data.png_description }}
+              {{ page.multichat_description }}
             </p>
           </div>
           <div class="flex flex-col w-full items-center mt-32 xs:mt-10">
             <h1 class="title">
-              {{ content.data.are_you_in_title }}
+              {{ page.are_you_in_title }}
             </h1>
-            <p class="text-xl">{{ content.data.are_you_in_description }}</p>
+            <p class="text-xl">{{ page.are_you_in_description }}</p>
             <the-download-button class="justify-center pt-12" />
           </div>
         </div>
@@ -547,22 +547,17 @@ import TheFeatureSlider from '@/components/ui/TheFeatureSlider.vue'
 
 export default {
   components: { TheDownloadButton, TheFeatureSlider },
-  data() {
+  async asyncData(context) {
+    const { $content, app } = context
+    const page = await $content(`${app.i18n.locale}/pages/features`).fetch()
+
     return {
-      pageType: 'features',
+      page,
     }
-  },
-  computed: {
-    content() {
-      return this.$store.getters.getPageByType(
-        this.pageType,
-        this.$i18n.locale
-      )[0]
-    },
   },
   head() {
     return {
-      title: this.$prismic.asText(this.content.data.title),
+      title: this.page.meta_header,
       link: [
         {
           rel: 'canonical',
@@ -574,66 +569,66 @@ export default {
 
         {
           name: 'twitter:card',
-          content: this.content.data.twitter_cards[0].twitter_card,
+          content: this.page.twitter_card,
         },
         {
           name: 'twitter:site',
-          content: this.content.data.twitter_cards[0].twitter_site,
+          content: this.page.twitter_site,
         },
         {
           name: 'twitter:title',
-          content: this.content.data.twitter_cards[0].twitter_title,
+          content: this.page.twitter_title,
         },
         {
           name: 'twitter:description',
-          content: this.content.data.twitter_cards[0].twitter_description,
+          content: this.page.twitter_description,
         },
         {
           name: 'twitter:image',
-          content: this.content.data.twitter_cards[0].twitter_image.url,
+          content: this.page.twitter_image,
         },
 
         /* Open Graph */
 
         {
           name: 'og:title',
-          content: this.content.data.og[0].og_title,
+          content: this.page.og_title,
         },
         {
           name: 'og:type',
-          content: this.content.data.og[0].og_type,
+          content: this.page.og_type,
         },
         {
           name: 'og:description',
-          content: this.content.data.og[0].og_description,
+          content: this.page.og_description,
         },
         {
           name: 'og:locale',
-          content: this.content.data.og[0].og_locale,
+          content: this.page.og_locale,
         },
         {
           name: 'og:locale:alternate',
-          content: this.content.data.og[0].og_locale_alternate,
+          content: this.page.og_locale_alternate,
         },
         {
           name: 'og:locale:image',
-          content: this.content.data.og[0].og_image.url,
+          content: this.page.og_image,
         },
         {
           name: 'og:locale:url',
-          content: this.content.data.og[0].og_url.url,
+          content: this.page.og_url,
         },
 
         /* Google / Schema.org  */
 
-        { itemprop: 'name', content: this.content.data.og[0].og_title },
+        { itemprop: 'name', content: this.page.og_title },
         {
           itemprop: 'description',
-          content: this.content.data.og[0].og_description,
+          content: this.page.og_description,
         },
         {
           itemprop: 'image',
-          content: this.content.data.og[0].og_image.url,
+          content: this.page.og_image,
         },
       ],
     }

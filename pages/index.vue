@@ -17,15 +17,15 @@
           <h1
             class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
           >
-            {{ content.data.title_first }}
+            {{ page.title_first }}
           </h1>
           <h1
             class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
           >
-            {{ content.data.title_second }}
+            {{ page.title_second }}
           </h1>
           <p class="text-lg md:text-2xl xxxl:text-4xl mt-2">
-            {{ content.data.heroe_text }}
+            {{ page.heroe }}
           </p>
           <the-download-button
             class="xs:justify-center sm:justify-center justify-start py-10 md:py-0 md:pt-10"
@@ -48,23 +48,17 @@ import TheDownloadButton from '@/components/ui/TheDownloadButton.vue'
 
 export default {
   components: { TheDownloadButton },
-  data() {
+  async asyncData(context) {
+    const { $content, app } = context
+    const page = await $content(`${app.i18n.locale}/pages/home`).fetch()
+
     return {
-      pageType: 'homepage',
-      hellooo: false,
+      page,
     }
-  },
-  computed: {
-    content() {
-      return this.$store.getters.getPageByType(
-        this.pageType,
-        this.$i18n.locale
-      )[0]
-    },
   },
   head() {
     return {
-      title: this.$prismic.asText(this.content.data.title),
+      title: this.page.meta_header,
       link: [
         {
           rel: 'canonical',
@@ -76,66 +70,66 @@ export default {
 
         {
           name: 'twitter:card',
-          content: this.content.data.twitter_cards[0].twitter_card,
+          content: this.page.twitter_card,
         },
         {
           name: 'twitter:site',
-          content: this.content.data.twitter_cards[0].twitter_site,
+          content: this.page.twitter_site,
         },
         {
           name: 'twitter:title',
-          content: this.content.data.twitter_cards[0].twitter_title,
+          content: this.page.twitter_title,
         },
         {
           name: 'twitter:description',
-          content: this.content.data.twitter_cards[0].twitter_description,
+          content: this.page.twitter_description,
         },
         {
           name: 'twitter:image',
-          content: this.content.data.twitter_cards[0].twitter_image.url,
+          content: this.page.twitter_image,
         },
 
         /* Open Graph */
 
         {
           name: 'og:title',
-          content: this.content.data.og[0].og_title,
+          content: this.page.og_title,
         },
         {
           name: 'og:type',
-          content: this.content.data.og[0].og_type,
+          content: this.page.og_type,
         },
         {
           name: 'og:description',
-          content: this.content.data.og[0].og_description,
+          content: this.page.og_description,
         },
         {
           name: 'og:locale',
-          content: this.content.data.og[0].og_locale,
+          content: this.page.og_locale,
         },
         {
           name: 'og:locale:alternate',
-          content: this.content.data.og[0].og_locale_alternate,
+          content: this.page.og_locale_alternate,
         },
         {
           name: 'og:locale:image',
-          content: this.content.data.og[0].og_image.url,
+          content: this.page.og_image,
         },
         {
           name: 'og:locale:url',
-          content: this.content.data.og[0].og_url.url,
+          content: this.page.og_url.url,
         },
 
         /* Google / Schema.org  */
 
-        { itemprop: 'name', content: this.content.data.og[0].og_title },
+        { itemprop: 'name', content: this.page.og_title },
         {
           itemprop: 'description',
-          content: this.content.data.og[0].og_description,
+          content: this.page.og_description,
         },
         {
           itemprop: 'image',
-          content: this.content.data.og[0].og_image.url,
+          content: this.page.og_image.url,
         },
       ],
     }
