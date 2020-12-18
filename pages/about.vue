@@ -5,9 +5,7 @@
       <div class="flex flex-col space-y-20">
         <!--Introduction Section-->
         <div class="block mx-auto text-center py-10 xxxl:py-20 xs:py-0 xs:pb-0">
-          <h1
-            class="text-3xl sm:text-3xl lg:text-5xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal xs:w-7/12 w-8/12 mx-auto xs:pt-10"
-          >
+          <h1 class="title xs:w-7/12 w-8/12 xs:pt-10">
             {{ content.data.header }}
           </h1>
           <p class="xs:w-11/12 w-8/12 mx-auto pt-4">
@@ -72,9 +70,7 @@
           class="flex flex-wrap xs:flex-col xxxl:w-10/12 xxxl:mx-auto justify-center"
         >
           <!--Team Header-->
-          <h1
-            class="text-3xl sm:text-4xl lg:text-5xl font-medium subpixel-antialiased w-full text-center pb-10 pt-4 xs:-mb-16"
-          >
+          <h1 class="title w-full text-center pb-10 pt-4 xs:-mb-16">
             {{ content.data.party_header }}
           </h1>
           <!--Team Cards-->
@@ -126,9 +122,7 @@
     <!--Artits Section-->
     <div class="py-10 bg-cover bg-center bg-fantasy">
       <!--Artits Header-->
-      <h1
-        class="text-3xl sm:text-4xl lg:text-5xl font-medium subpixel-antialiased text-white w-full text-center pb-10 pt-4 text-shadow"
-      >
+      <h1 class="title text-white w-full text-center pb-10 pt-4 text-shadow">
         {{ content.data.artists_header }}
       </h1>
       <div

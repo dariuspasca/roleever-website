@@ -2,9 +2,7 @@
   <div class="flex flex-col w-full h-full">
     <!--Introduction Section-->
     <div class="container mx-auto text-center">
-      <h1
-        class="text-5xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto pt-10 xxxl:pt-32"
-      >
+      <h1 class="title pt-10">
         {{ content.data.introduction_title }}
       </h1>
       <p class="xs:w-full sm:w-10/12 md:w-7/12 w-5/12 mx-auto pt-4">
@@ -166,9 +164,7 @@
             d="M41 21h-.7v13.1h-.6V21h-1c-.1 0-.1.1-.1.1v14.4c-.1.7.4 1.4 1.1 1.5.7.1 1.4-.4 1.5-1.1V21.1c-.1 0-.1-.1-.2-.1zM19.9 8.3l-.1.3c.1 0 .2.1.2.1 0 .2-.8.3-1.7.2-.9-.1-1.7-.3-1.7-.5 0 0 .1-.1.2-.1V8l-.1-.6-.3-2h0c.7-.3 1.4-.4 2.1-.4.7-.1 1.5-.1 2.2.1L20 7.7l-.1.6zM26.6 29.3c-1.3-.9-5.2-1.8-9.8-2.1-6.1-.5-10.4.2-10.4 1 0 .2.1.4.3.6.7.8 1.7 1.3 2.7 1.5 1.4.4 2.8.7 4.2.9 1 .1 2 0 3-.3.6-.2 1.2-.3 1.9-.3.8 0 1.7.3 2.3.8.1.1.3.2.4.2 1-.6 2-1.1 3-1.5.5-.1.9-.2 1.4-.1.8 0 1.4.2 1.4 0s-.1-.5-.4-.7z"
           />
         </svg>
-        <h1
-          class="text-5xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal"
-        >
+        <h1 class="title">
           {{ content.data.laboratory_title }}
         </h1>
       </div>
@@ -328,9 +324,7 @@
       <div
         class="lineaDorata bg-cover bg-center w-8/12 xs:w-11/12 xxxl:w-6/12 h-2 xs:h-1 mx-auto"
       ></div>
-      <h1
-        class="text-5xl xs:text-3xl sm:text-3xl md:text-4xlfont-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto"
-      >
+      <h1 class="title">
         {{ content.data.inprogress_title }}
       </h1>
       <div
@@ -344,43 +338,54 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-secondary fill-current"
+              class="h-8 w-8"
               viewBox="0 0 48 48"
             >
-              <g data-name="Livello 2">
-                <g data-name="Livello 1 copia">
-                  <path fill="none" d="M0 0h48v48H0z" />
-                  <path
-                    d="M24 46.39a1.93 1.93 0 01-1.93-1.92v-7.2a1.93 1.93 0 013.86 0v7.2A1.93 1.93 0 0124 46.39z"
-                    fill="#706f6f"
-                  />
-                  <path
-                    d="M9.53 40.4a1.88 1.88 0 01-1.36-.57 1.91 1.91 0 010-2.72L13.25 32A1.93 1.93 0 0116 34.75l-5.09 5.08a1.92 1.92 0 01-1.38.57z"
-                    fill="#878787"
-                  />
-                  <path
-                    d="M44.47 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 010 3.86z"
-                    fill="#3c3c3b"
-                  />
-                  <path
-                    d="M38.47 40.4a1.92 1.92 0 01-1.36-.57L32 34.75A1.93 1.93 0 0134.75 32l5.08 5.09a1.93 1.93 0 01-1.36 3.29z"
-                    fill="#575756"
-                  />
-                  <path
-                    d="M24 12.66a1.94 1.94 0 01-1.93-1.93v-7.2a1.93 1.93 0 013.86 0v7.2A1.94 1.94 0 0124 12.66zM33.38 16.54A1.91 1.91 0 0132 16a1.94 1.94 0 010-2.73l5.09-5.08a1.92 1.92 0 012.72 2.72L34.75 16a1.91 1.91 0 01-1.37.54z"
-                    fill="#1d1d1b"
-                  />
-                  <path
-                    d="M10.73 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 110 3.86z"
-                    fill="#b2b2b2"
-                  />
-                  <path
-                    d="M14.62 16.54a1.91 1.91 0 01-1.37-.54l-5.08-5.11a1.92 1.92 0 012.72-2.72L16 13.25A1.94 1.94 0 0116 16a1.91 1.91 0 01-1.38.54z"
-                    fill="#c6c6c6"
-                  />
-                </g>
+              <g data-name="Group 656">
+                <path
+                  data-name="Path 2311"
+                  d="M23.53 46.682a2.118 2.118 0 01-2.118-2.118v-7.908a2.118 2.118 0 014.235 0v7.908a2.118 2.118 0 01-2.117 2.118z"
+                  fill="#cbc19f"
+                />
+                <path
+                  data-name="Path 2312"
+                  d="M9.495 40.094a2.118 2.118 0 01-1.5-3.615l5.595-5.593a2.12 2.12 0 012.995 3l-5.592 5.592a2.113 2.113 0 01-1.498.616z"
+                  fill="#cac4af"
+                />
+                <path
+                  data-name="Path 2313"
+                  d="M44.153 26.058h-7.908a2.118 2.118 0 110-4.235h7.908a2.118 2.118 0 110 4.235z"
+                  fill="#cab670"
+                />
+                <path
+                  data-name="Path 2314"
+                  d="M37.565 40.094a2.111 2.111 0 01-1.5-.62l-5.59-5.588a2.121 2.121 0 113-3l5.592 5.592a2.118 2.118 0 01-1.5 3.615z"
+                  fill="#c9bb8b"
+                />
+                <path
+                  data-name="Path 2315"
+                  d="M23.53 13.344a2.118 2.118 0 01-2.118-2.118V3.318a2.118 2.118 0 014.235 0v7.908a2.118 2.118 0 01-2.117 2.118z"
+                  fill="#ccab39"
+                />
+                <path
+                  data-name="Path 2316"
+                  d="M31.975 17.616a2.118 2.118 0 01-1.5-3.615l5.593-5.593a2.12 2.12 0 012.994 3L33.47 17a2.112 2.112 0 01-1.495.616z"
+                  fill="#caaf54"
+                />
+                <path
+                  data-name="Path 2317"
+                  d="M10.815 26.058H2.907a2.118 2.118 0 110-4.235h7.908a2.118 2.118 0 110 4.235z"
+                  fill="#cac6b9"
+                />
+                <path
+                  data-name="Path 2318"
+                  d="M15.088 17.616a2.112 2.112 0 01-1.5-.62l-5.593-5.592a2.121 2.121 0 013-3l5.592 5.593a2.118 2.118 0 01-1.5 3.615z"
+                  fill="#cac8c2"
+                />
+                <path data-name="Rectangle 21" fill="none" d="M0 0h48v48H0z" />
               </g>
             </svg>
+
             <h3
               class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
             >
@@ -399,41 +404,51 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-secondary fill-current"
+              class="h-8 w-8"
               viewBox="0 0 48 48"
             >
-              <g data-name="Livello 2">
-                <g data-name="Livello 1 copia">
-                  <path fill="none" d="M0 0h48v48H0z" />
-                  <path
-                    d="M24 46.39a1.93 1.93 0 01-1.93-1.92v-7.2a1.93 1.93 0 013.86 0v7.2A1.93 1.93 0 0124 46.39z"
-                    fill="#706f6f"
-                  />
-                  <path
-                    d="M9.53 40.4a1.88 1.88 0 01-1.36-.57 1.91 1.91 0 010-2.72L13.25 32A1.93 1.93 0 0116 34.75l-5.09 5.08a1.92 1.92 0 01-1.38.57z"
-                    fill="#878787"
-                  />
-                  <path
-                    d="M44.47 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 010 3.86z"
-                    fill="#3c3c3b"
-                  />
-                  <path
-                    d="M38.47 40.4a1.92 1.92 0 01-1.36-.57L32 34.75A1.93 1.93 0 0134.75 32l5.08 5.09a1.93 1.93 0 01-1.36 3.29z"
-                    fill="#575756"
-                  />
-                  <path
-                    d="M24 12.66a1.94 1.94 0 01-1.93-1.93v-7.2a1.93 1.93 0 013.86 0v7.2A1.94 1.94 0 0124 12.66zM33.38 16.54A1.91 1.91 0 0132 16a1.94 1.94 0 010-2.73l5.09-5.08a1.92 1.92 0 012.72 2.72L34.75 16a1.91 1.91 0 01-1.37.54z"
-                    fill="#1d1d1b"
-                  />
-                  <path
-                    d="M10.73 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 110 3.86z"
-                    fill="#b2b2b2"
-                  />
-                  <path
-                    d="M14.62 16.54a1.91 1.91 0 01-1.37-.54l-5.08-5.11a1.92 1.92 0 012.72-2.72L16 13.25A1.94 1.94 0 0116 16a1.91 1.91 0 01-1.38.54z"
-                    fill="#c6c6c6"
-                  />
-                </g>
+              <g data-name="Group 656">
+                <path
+                  data-name="Path 2311"
+                  d="M23.53 46.682a2.118 2.118 0 01-2.118-2.118v-7.908a2.118 2.118 0 014.235 0v7.908a2.118 2.118 0 01-2.117 2.118z"
+                  fill="#cbc19f"
+                />
+                <path
+                  data-name="Path 2312"
+                  d="M9.495 40.094a2.118 2.118 0 01-1.5-3.615l5.595-5.593a2.12 2.12 0 012.995 3l-5.592 5.592a2.113 2.113 0 01-1.498.616z"
+                  fill="#cac4af"
+                />
+                <path
+                  data-name="Path 2313"
+                  d="M44.153 26.058h-7.908a2.118 2.118 0 110-4.235h7.908a2.118 2.118 0 110 4.235z"
+                  fill="#cab670"
+                />
+                <path
+                  data-name="Path 2314"
+                  d="M37.565 40.094a2.111 2.111 0 01-1.5-.62l-5.59-5.588a2.121 2.121 0 113-3l5.592 5.592a2.118 2.118 0 01-1.5 3.615z"
+                  fill="#c9bb8b"
+                />
+                <path
+                  data-name="Path 2315"
+                  d="M23.53 13.344a2.118 2.118 0 01-2.118-2.118V3.318a2.118 2.118 0 014.235 0v7.908a2.118 2.118 0 01-2.117 2.118z"
+                  fill="#ccab39"
+                />
+                <path
+                  data-name="Path 2316"
+                  d="M31.975 17.616a2.118 2.118 0 01-1.5-3.615l5.593-5.593a2.12 2.12 0 012.994 3L33.47 17a2.112 2.112 0 01-1.495.616z"
+                  fill="#caaf54"
+                />
+                <path
+                  data-name="Path 2317"
+                  d="M10.815 26.058H2.907a2.118 2.118 0 110-4.235h7.908a2.118 2.118 0 110 4.235z"
+                  fill="#cac6b9"
+                />
+                <path
+                  data-name="Path 2318"
+                  d="M15.088 17.616a2.112 2.112 0 01-1.5-.62l-5.593-5.592a2.121 2.121 0 013-3l5.592 5.593a2.118 2.118 0 01-1.5 3.615z"
+                  fill="#cac8c2"
+                />
+                <path data-name="Rectangle 21" fill="none" d="M0 0h48v48H0z" />
               </g>
             </svg>
             <h3
@@ -456,43 +471,54 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-secondary fill-current"
+              class="h-8 w-8"
               viewBox="0 0 48 48"
             >
-              <g data-name="Livello 2">
-                <g data-name="Livello 1 copia">
-                  <path fill="none" d="M0 0h48v48H0z" />
-                  <path
-                    d="M24 46.39a1.93 1.93 0 01-1.93-1.92v-7.2a1.93 1.93 0 013.86 0v7.2A1.93 1.93 0 0124 46.39z"
-                    fill="#706f6f"
-                  />
-                  <path
-                    d="M9.53 40.4a1.88 1.88 0 01-1.36-.57 1.91 1.91 0 010-2.72L13.25 32A1.93 1.93 0 0116 34.75l-5.09 5.08a1.92 1.92 0 01-1.38.57z"
-                    fill="#878787"
-                  />
-                  <path
-                    d="M44.47 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 010 3.86z"
-                    fill="#3c3c3b"
-                  />
-                  <path
-                    d="M38.47 40.4a1.92 1.92 0 01-1.36-.57L32 34.75A1.93 1.93 0 0134.75 32l5.08 5.09a1.93 1.93 0 01-1.36 3.29z"
-                    fill="#575756"
-                  />
-                  <path
-                    d="M24 12.66a1.94 1.94 0 01-1.93-1.93v-7.2a1.93 1.93 0 013.86 0v7.2A1.94 1.94 0 0124 12.66zM33.38 16.54A1.91 1.91 0 0132 16a1.94 1.94 0 010-2.73l5.09-5.08a1.92 1.92 0 012.72 2.72L34.75 16a1.91 1.91 0 01-1.37.54z"
-                    fill="#1d1d1b"
-                  />
-                  <path
-                    d="M10.73 25.93h-7.2a1.93 1.93 0 010-3.86h7.2a1.93 1.93 0 110 3.86z"
-                    fill="#b2b2b2"
-                  />
-                  <path
-                    d="M14.62 16.54a1.91 1.91 0 01-1.37-.54l-5.08-5.11a1.92 1.92 0 012.72-2.72L16 13.25A1.94 1.94 0 0116 16a1.91 1.91 0 01-1.38.54z"
-                    fill="#c6c6c6"
-                  />
-                </g>
+              <g data-name="Group 656">
+                <path
+                  data-name="Path 2311"
+                  d="M23.53 46.682a2.118 2.118 0 01-2.118-2.118v-7.908a2.118 2.118 0 014.235 0v7.908a2.118 2.118 0 01-2.117 2.118z"
+                  fill="#cbc19f"
+                />
+                <path
+                  data-name="Path 2312"
+                  d="M9.495 40.094a2.118 2.118 0 01-1.5-3.615l5.595-5.593a2.12 2.12 0 012.995 3l-5.592 5.592a2.113 2.113 0 01-1.498.616z"
+                  fill="#cac4af"
+                />
+                <path
+                  data-name="Path 2313"
+                  d="M44.153 26.058h-7.908a2.118 2.118 0 110-4.235h7.908a2.118 2.118 0 110 4.235z"
+                  fill="#cab670"
+                />
+                <path
+                  data-name="Path 2314"
+                  d="M37.565 40.094a2.111 2.111 0 01-1.5-.62l-5.59-5.588a2.121 2.121 0 113-3l5.592 5.592a2.118 2.118 0 01-1.5 3.615z"
+                  fill="#c9bb8b"
+                />
+                <path
+                  data-name="Path 2315"
+                  d="M23.53 13.344a2.118 2.118 0 01-2.118-2.118V3.318a2.118 2.118 0 014.235 0v7.908a2.118 2.118 0 01-2.117 2.118z"
+                  fill="#ccab39"
+                />
+                <path
+                  data-name="Path 2316"
+                  d="M31.975 17.616a2.118 2.118 0 01-1.5-3.615l5.593-5.593a2.12 2.12 0 012.994 3L33.47 17a2.112 2.112 0 01-1.495.616z"
+                  fill="#caaf54"
+                />
+                <path
+                  data-name="Path 2317"
+                  d="M10.815 26.058H2.907a2.118 2.118 0 110-4.235h7.908a2.118 2.118 0 110 4.235z"
+                  fill="#cac6b9"
+                />
+                <path
+                  data-name="Path 2318"
+                  d="M15.088 17.616a2.112 2.112 0 01-1.5-.62l-5.593-5.592a2.121 2.121 0 013-3l5.592 5.593a2.118 2.118 0 01-1.5 3.615z"
+                  fill="#cac8c2"
+                />
+                <path data-name="Rectangle 21" fill="none" d="M0 0h48v48H0z" />
               </g>
             </svg>
+
             <h3
               class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
             >
@@ -503,12 +529,10 @@
             </p>
           </div>
           <div class="flex flex-col w-full items-center mt-32 xs:mt-10">
-            <h1
-              class="text-5xl xs:text-3xl sm:text-3xl md:text-4xlfont-semibold subpixel-antialiased tracking-wide md:tracking-normal mx-auto xs:pt-10 pb-4"
-            >
+            <h1 class="title">
               {{ content.data.are_you_in_title }}
             </h1>
-            <p>{{ content.data.are_you_in_description }}</p>
+            <p class="text-xl">{{ content.data.are_you_in_description }}</p>
             <the-download-button class="justify-center pt-12" />
           </div>
         </div>

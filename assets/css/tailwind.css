@@ -2,12 +2,47 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@layer components {
+  .title {
+    @apply text-5xl font-semibold subpixel-antialiased tracking-wide mx-auto;
+  }
+  @screen xs {
+    .title {
+      @apply text-3xl;
+    }
+  }
+  @screen sm {
+    .title {
+      @apply text-3xl;
+    }
+  }
+  @screen md {
+    .title {
+      @apply text-4xl;
+    }
+  }
+  @screen xxxl {
+    .title {
+      @apply pt-32;
+    }
+  }
+  @screen md {
+    .title {
+      @apply tracking-normal;
+    }
+  }
+}
+
 .lineaDorata {
   background-image: url(https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png);
 }
 
 .bg-frame {
   background-image: url('~assets/images/frameSkills.svg');
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+
   height: 250px;
   width: 300px;
 }
