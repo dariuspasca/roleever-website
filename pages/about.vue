@@ -162,13 +162,25 @@ export default {
   components: {
     TheContactUsModal,
   },
-  async asyncData(context) {
-    const { $content, app } = context
-    const page = await $content(`${app.i18n.locale}/pages/about`).fetch()
+  async asyncData({ $content }) {
+    const pages = []
+    const pageEN = await $content(`en/pages/about`).fetch()
+    const pageIT = await $content(`it/pages/about`).fetch()
+    pages.push(pageEN)
+    pages.push(pageIT)
 
     return {
-      page,
+      pages,
     }
+  },
+  computed: {
+    page() {
+      if (this.$i18n.locale === 'en') {
+        return this.pages[0]
+      } else {
+        return this.pages[1]
+      }
+    },
   },
   methods: {
     openLink(url) {
@@ -178,12 +190,6 @@ export default {
   head() {
     return {
       title: this.page.meta_header,
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://www.roleever.com' + this.$route.path,
-        },
-      ],
       meta: [
         /* Twitter Cards */
 
@@ -221,14 +227,6 @@ export default {
         {
           name: 'og:description',
           content: this.page.og_description,
-        },
-        {
-          name: 'og:locale',
-          content: this.page.og_locale,
-        },
-        {
-          name: 'og:locale:alternate',
-          content: this.page.og_locale_alternate,
         },
         {
           name: 'og:locale:image',

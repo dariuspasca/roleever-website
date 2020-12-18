@@ -21,5 +21,26 @@
     "playstore": "Scarica da Google Play Store",
     "store": "Scarica dallo Store"
   },
-  "error_generic": "Qualcosa è andato storto! Riprova più tardi..."
+  "error_generic": "Qualcosa è andato storto! Riprova più tardi...",
+  "footer": {
+    "heroe": "Tutte le avventure nel tuo cellulare",
+    "product": "Prodotto",
+    "product_home": "Home",
+    "product_features": "Funzionalità",
+    "product_about": "About Siamo",
+    "policies": "Norme",
+    "policies_tos": "Termini e Condizioni",
+    "policies_community": "Codice Community",
+    "resources": "Risorse",
+    "resources_press": "Cartella Stampa",
+    "resources_brand": "Brandbook",
+    "resources_logos": "Loghi",
+    "partners": "Partners"
+  },
+  "header": {
+    "home": "Home",
+    "features": "Funzionalità",
+    "about": "Chi Siamo",
+    "join_us": "Unisciti a noi su"
+  }
 }

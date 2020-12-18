@@ -6,12 +6,13 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   async asyncData({ $content }) {
     const pages = []
-    const pageEN = await $content(`en/pages/tos`).fetch()
-    const pageIT = await $content(`it/pages/tos`).fetch()
+    const pageEN = await $content(`en/pages/community-code`).fetch()
+    const pageIT = await $content(`it/pages/community-code`).fetch()
     pages.push(pageEN)
     pages.push(pageIT)
 

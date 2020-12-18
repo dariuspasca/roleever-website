@@ -98,24 +98,35 @@
       </div>
     </div>
 
-    <div class="flex flex-col text-center w-full pt-10">
-      <div
-        v-for="(item, index) in menuItems"
-        :key="'reference-item-' + index"
-        class="w-full"
-      >
+    <div class="flex text-center w-full pt-10">
+      <div class="flex flex-col w-full">
         <nuxt-link
-          :to="localePath(menuItemsLinks[index].item_link)"
+          :to="localePath('/')"
           class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
-          exact
           @click.native="toggleMobileNav"
         >
-          {{ item.item_name }}
+          {{ $t('header.home') }}
         </nuxt-link>
         <div
-          v-if="index != menuItemsLinks.length - 1"
           class="w-10/12 mx-auto my-4 h-1 bg-cover bg-no-repeat lineaDorata"
         ></div>
+        <nuxt-link
+          :to="localePath('features')"
+          class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
+          @click.native="toggleMobileNav"
+        >
+          {{ $t('header.features') }}
+        </nuxt-link>
+        <div
+          class="w-10/12 mx-auto my-4 h-1 bg-cover bg-no-repeat lineaDorata"
+        ></div>
+        <nuxt-link
+          :to="localePath('about')"
+          class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
+          @click.native="toggleMobileNav"
+        >
+          {{ $t('header.about') }}
+        </nuxt-link>
       </div>
     </div>
     <div
@@ -126,7 +137,7 @@
         target="_blank"
         rel="noopener noreferrer"
         class="inline-block m-1"
-        ><p class="text-dark-shade text-xl">Join us on</p>
+        ><p class="text-dark-shade text-xl">{{ $t('header.join_us') }}</p>
         <svg
           class="w-7/12 h-auto mx-auto"
           xmlns="http://www.w3.org/2000/svg"

@@ -110,12 +110,22 @@
         class="xs:hidden flex flex-col space-y-2 xxxl:space-x-5 mt-5 mr-16 text-right"
       >
         <nuxt-link
-          v-for="(item, index) in menuItems"
-          :key="'reference-item-' + index"
-          :to="localePath(menuItemsLinks[index].item_link)"
+          :to="localePath('/')"
           class="text-dark-shade hover:text-primary tracking-wider xxxl:text-3xl"
         >
-          {{ item.item_name }}
+          {{ $t('header.home') }}
+        </nuxt-link>
+        <nuxt-link
+          :to="localePath('features')"
+          class="text-dark-shade hover:text-primary tracking-wider xxxl:text-3xl"
+        >
+          {{ $t('header.features') }}
+        </nuxt-link>
+        <nuxt-link
+          :to="localePath('about')"
+          class="text-dark-shade hover:text-primary tracking-wider xxxl:text-3xl"
+        >
+          {{ $t('header.about') }}
         </nuxt-link>
       </div>
     </div>

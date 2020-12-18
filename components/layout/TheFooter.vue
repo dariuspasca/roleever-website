@@ -7,7 +7,7 @@
         <div class="flex flex-col w-full sm:w-3/6 md:w-2/6 lg:w-2/6 my-2">
           <div class="w-10/12 md:w-4/6 lg:w-3/6">
             <h2 class="font-semibold text-primary-shade text-2xl mb-4">
-              Tutte le avventure nel tuo cellulare
+              {{ $t('footer.heroe') }}
             </h2>
             <the-language-picker />
             <div class="mt-4">
@@ -59,33 +59,37 @@
             class="flex flex-row w-full md:w-3/6 lg:w-3/6 my-4 space-x-10 md:space-x-0 lg:space-x-0"
           >
             <div class="w-1/2">
-              <p class="font-semibold text-primary-shade text-sm">Sito</p>
+              <p class="font-semibold text-primary-shade text-sm">
+                {{ $t('footer.product') }}
+              </p>
               <ul class="text-sm">
                 <nuxt-link
                   :to="localePath('/')"
                   class="block hover:text-primary my-2"
                   exact
                 >
-                  Home
+                  {{ $t('footer.product_home') }}
                 </nuxt-link>
                 <nuxt-link
                   :to="localePath('features')"
                   class="block hover:text-primary my-2"
                   exact
                 >
-                  Features
+                  {{ $t('footer.product_features') }}
                 </nuxt-link>
                 <nuxt-link
                   :to="localePath('about')"
                   class="block hover:text-primary my-2"
                   exact
                 >
-                  About Us
+                  {{ $t('footer.product_about') }}
                 </nuxt-link>
               </ul>
             </div>
             <div class="w-1/2">
-              <p class="font-semibold text-primary-shade text-sm">Norme</p>
+              <p class="font-semibold text-primary-shade text-sm">
+                {{ $t('footer.policies') }}
+              </p>
               <ul class="text-sm">
                 <nuxt-link
                   :to="localePath('cookie-policy')"
@@ -106,14 +110,14 @@
                   class="block hover:text-primary my-2"
                   exact
                 >
-                  TOS
+                  {{ $t('footer.policies_tos') }}
                 </nuxt-link>
                 <nuxt-link
-                  :to="localePath('roleever-community-code')"
+                  :to="localePath('community-code')"
                   class="block hover:text-primary my-2"
                   exact
                 >
-                  Community Code
+                  {{ $t('footer.policies_community') }}
                 </nuxt-link>
               </ul>
             </div>
@@ -123,15 +127,35 @@
             class="flex flex-row w-full md:w-3/6 lg:w-3/6 mt-10 md:my-2 lg:my-2 space-x-10 md:space-x-0 lg:space-x-0"
           >
             <div class="w-1/2">
-              <p class="font-semibold text-primary-shade text-sm">Risorse</p>
-              <ul class="text-sm">
-                <li class="my-2">Cartella Stampa</li>
-                <li class="my-2">Brandbook</li>
-                <li class="my-2">Loghi</li>
-              </ul>
+              <p class="font-semibold text-primary-shade text-sm">
+                {{ $t('footer.resources') }}
+              </p>
+              <a
+                href="https://www.roleever.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="my-2 text-sm block hover:text-primary-shade"
+                >{{ $t('footer.resources_press') }}</a
+              >
+              <a
+                href="https://www.roleever.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="my-2 text-sm block hover:text-primary-shade"
+                >{{ $t('footer.resources_brand') }}</a
+              >
+              <a
+                href="https://www.roleever.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="my-2 text-sm block hover:text-primary-shade"
+                >{{ $t('footer.resources_logos') }}</a
+              >
             </div>
             <div class="w-1/2">
-              <p class="font-semibold text-primary-shade text-sm">Partner</p>
+              <p class="font-semibold text-primary-shade text-sm">
+                {{ $t('footer.partners') }}
+              </p>
 
               <a
                 href="https://www.almacube.com/"
@@ -156,7 +180,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 import TheLanguagePicker from '@/components/ui/TheLanguagePicker.vue'
 
 export default {
@@ -172,29 +195,6 @@ export default {
     availableLocales() {
       return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
     },
-    ...mapState({
-      footerItems(state) {
-        return (
-          state.navigation.footer.find(
-            (e) => e.language === this.$i18n.locale
-          ) || state.navigation.footer[0]
-        ).data.footer_items
-      },
-      copyrightText(state) {
-        return (
-          state.navigation.footer.find(
-            (e) => e.language === this.$i18n.locale
-          ) || state.navigation.footer[0]
-        ).data.copyright
-      },
-      footerItemsLinks(state) {
-        return (
-          state.navigation.footer.find(
-            (e) => e.language === this.$i18n.locale
-          ) || state.navigation.footer[0]
-        ).data.footer_links
-      },
-    }),
   },
 }
 </script>

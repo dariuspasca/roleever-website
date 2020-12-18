@@ -21,5 +21,26 @@
     "playstore": "Get from Google Play Store",
     "store": "Get from Store"
   },
-  "error_generic": "Something went wrong! Try again later..."
+  "error_generic": "Something went wrong! Try again later...",
+  "footer": {
+    "heroe": "Tutte le avventure nel tuo cellulare",
+    "product": "Product",
+    "product_home": "Home",
+    "product_features": "Features",
+    "product_about": "About Us",
+    "policies": "Policies",
+    "policies_tos": "Terms and Conditions",
+    "policies_community": "Community Code",
+    "resources": "Resources",
+    "resources_press": "Press Kit",
+    "resources_brand": "Brandbook",
+    "resources_logos": "Logos",
+    "partners": "Partners"
+  },
+  "header": {
+    "home": "Home",
+    "features": "Features",
+    "about": "About Us",
+    "join_us": "Join us on"
+  }
 }
