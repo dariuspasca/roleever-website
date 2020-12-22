@@ -1,13 +1,12 @@
 <template>
   <div
-    class="flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 bg-dungeon items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
+    class="relative flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 bg-dungeon items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
   >
-    <span class="fixed i-hate-css">
-      <img
-        class="w-full lg:w-8/12 unselectable mx-auto"
-        src="https://storage.googleapis.com/roleever-public-assets/www/dungeon.png"
-        alt="dungeon"
-    /></span>
+    <img
+      class="fixed unselectable dungeon"
+      src="https://storage.googleapis.com/roleever-public-assets/www/dungeon.png"
+      alt="dungeon"
+    />
 
     <div class="container sm:flex sm:w-11/12 xxxl:w-8/12 mx-auto my-auto">
       <div
@@ -33,8 +32,8 @@
         </div>
         <div>
           <img
-            class="object-contain wiggle mx-auto unselectable preview-image"
-            src="https://storage.googleapis.com/roleever-public-assets/www/mockup.png"
+            class="relative mx-auto unselectable preview-image"
+            src="https://storage.googleapis.com/roleever-public-assets/www/roleEver.png"
             alt="RoleEver App"
           />
         </div>
@@ -136,28 +135,6 @@ export default {
 </script>
 
 <style>
-@keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  80% {
-    transform: rotate(0deg);
-  }
-  85% {
-    transform: rotate(5deg);
-  }
-  95% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.wiggle {
-  animation: wiggle 4.5s infinite;
-}
-
 .unselectable {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -167,23 +144,29 @@ export default {
   -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
 }
 
-.i-hate-css {
-  width: 100%;
-}
-
-@media (max-width: 897px) {
-  .i-hate-css {
-    width: 180%;
-  }
-}
-
 .preview-image {
   max-width: 270px;
+  -webkit-filter: drop-shadow(0px 3px 50px #00000040);
+  filter: drop-shadow(0px 3px 50px #00000040);
 }
 
 @media (min-width: 2160px) {
   .preview-image {
     max-width: 800px;
+  }
+}
+
+.dungeon {
+  width: 70%;
+  opacity: 0.6;
+  top: 60%;
+  right: 20%;
+  transform: translate(50%, -50%);
+}
+
+@media (max-width: 897px) {
+  .dungeon {
+    width: 180%;
   }
 }
 </style>
