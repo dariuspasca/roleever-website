@@ -55,7 +55,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/css/tailwind.css'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -144,6 +144,10 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  layoutTransition: {
+    name: 'layout',
+    mode: 'out-in',
+  },
   router: {
     linkExactActiveClass: 'exact-active-link',
   },

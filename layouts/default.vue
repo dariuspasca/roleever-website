@@ -95,33 +95,6 @@ export default {
 </script>
 
 <style>
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
-
-.active-link,
-.exact-active-link {
-  font-weight: bold;
-}
-
-.modalOpen {
-  overflow: hidden;
-  position: fixed;
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
 @media (max-width: 767px) {
   .bg-view {
     background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_mobile.jpg);

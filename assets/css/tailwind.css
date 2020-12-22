@@ -2,35 +2,22 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer components {
-  .title {
-    @apply text-5xl font-semibold subpixel-antialiased tracking-wide mx-auto;
-  }
-  @screen xs {
-    .title {
-      @apply text-3xl;
-    }
-  }
-  @screen sm {
-    .title {
-      @apply text-3xl;
-    }
-  }
-  @screen md {
-    .title {
-      @apply text-4xl;
-    }
-  }
-  @screen xxxl {
-    .title {
-      @apply pt-32;
-    }
-  }
-  @screen md {
-    .title {
-      @apply tracking-normal;
-    }
-  }
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.5s;
+}
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 
 .lineaDorata {
@@ -122,4 +109,35 @@ li {
 }
 .text-shadow {
   text-shadow: 0px 3px 6px #00000066;
+}
+
+@layer components {
+  .title {
+    @apply text-5xl font-semibold subpixel-antialiased tracking-wide mx-auto;
+  }
+  @screen xs {
+    .title {
+      @apply text-3xl;
+    }
+  }
+  @screen sm {
+    .title {
+      @apply text-3xl;
+    }
+  }
+  @screen md {
+    .title {
+      @apply text-4xl;
+    }
+  }
+  @screen xxxl {
+    .title {
+      @apply pt-32;
+    }
+  }
+  @screen md {
+    .title {
+      @apply tracking-normal;
+    }
+  }
 }
