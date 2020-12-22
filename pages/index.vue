@@ -2,15 +2,11 @@
   <div
     class="relative flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 bg-dungeon items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
   >
-    <img
-      class="fixed unselectable dungeon"
-      src="https://storage.googleapis.com/roleever-public-assets/www/dungeon.png"
-      alt="dungeon"
-    />
+    <div class="fixed dungeon bg-cover bg-no-repeat"></div>
 
     <div class="container sm:flex sm:w-11/12 xxxl:w-8/12 mx-auto my-auto">
       <div
-        class="flex flex-col sm:flex-row md:flex-row lg:flex-row w-full justify-center md:px-5 lg:px-0 sm:space-x-20 md:space-x-32 lg:space-x-32"
+        class="flex flex-col sm:flex-row md:flex-row lg:flex-row w-full justify-center md:px-5 lg:px-0 sm:space-x-10 md:space-x-32 lg:space-x-32"
       >
         <div class="xs:text-center sm:text-center text-left my-auto">
           <h1
@@ -139,9 +135,8 @@ export default {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; /* From IE10 only */
-  user-select: none;
-
   -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+  user-select: none;
 }
 
 .preview-image {
@@ -157,16 +152,38 @@ export default {
 }
 
 .dungeon {
+  background-image: url('https://storage.googleapis.com/roleever-public-assets/www/dungeon.png');
   width: 70%;
+  height: 80%;
   opacity: 0.6;
   top: 60%;
   right: 20%;
   transform: translate(50%, -50%);
 }
 
-@media (max-width: 897px) {
+@media (max-width: 767px) {
   .dungeon {
     width: 180%;
+    height: 75%;
+    right: 50%;
+    transform: translate(35%, -15%);
+  }
+}
+
+/* small smartphone */
+@media (max-width: 375px) and (max-height: 736px) {
+  .dungeon {
+    top: 75%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .dungeon {
+    width: 70%;
+    height: 50%;
+    right: 25%;
+    top: 55%;
+    transform: translate(50%, -50%);
   }
 }
 </style>

@@ -83,7 +83,7 @@
       <transition name="fade">
         <div
           v-if="showLogoDivider"
-          class="-ml-24 xs:-ml-1 sm:-ml-32 md:-ml-40 w-11/12 md:w-9/12 lg:w-5/12 xxxl:w-3/12 bg-cover bg-right h-1 xxxl:h-2 lineaDorata"
+          class="w-11/12 sm:w-8/12 md:w-9/12 lg:w-6/12 xxxl:w-3/12 -ml-10 xs:-ml-1 sm:-ml-10 md:-ml-40 bg-auto xs:bg-cover sm:bg-cover bg-right xs:h-1 sm:h-1 h-2 xxxl:h-4 lineaDorata"
         ></div>
       </transition>
     </div>

@@ -3,7 +3,7 @@
     <client-only> <TheGetLinkModal /> </client-only>
 
     <button
-      class="bg-primary shadow-xl hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white xxxl:text-2xl font-normal py-2 xs:py-4 px-4 lg:px-16 text-base rounded xs:rounded-lg xs:min-w-8/12 inline-flex items-center font-gitan focus:outline-none"
+      class="inline-flex items-center bg-primary shadow-xl hover:shadow-2xl text-white font-gitan xxxl:text-2xl py-4 px-8 lg:px-16 rounded xs:rounded-lg xs:min-w-8/12 sm:w-full focus:outline-none transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale"
       @click="downloadClick()"
     >
       <svg
@@ -14,9 +14,9 @@
         <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
       </svg>
       <client-only>
-        <a slot="placeholder" href="www.google.com">
-          {{ $t('download_button.store') }}</a
-        >
+        <p slot="placeholder">
+          {{ $t('download_button.store') }}
+        </p>
         <p v-if="$device.isAndroid">
           {{ $t('download_button.playstore') }}
         </p>

@@ -102,10 +102,10 @@
       }
     ],
   
-    "meta_header": "RoleEver - Su di noi",
+    "meta_header": "RoleEver - About Us",
     "meta_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
   
-    "og_title": "RoleEver - RPG by Chat",
+    "og_title": "RoleEver - About Us",
     "og_type": "website",
     "og_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
     "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
@@ -113,7 +113,7 @@
   
     "twitter_card": "summary_large_image",
     "twitter_site": "@roleever",
-    "twitter_title": "RoleEver - RPG by Chat",
+    "twitter_title": "RoleEver - About Us",
     "twitter_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
     "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
   
