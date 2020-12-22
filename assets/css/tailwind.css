@@ -44,6 +44,10 @@
   background-image: url(https://storage.googleapis.com/roleever-public-assets/www/about/fantasy.jpg);
 }
 
+.exact-active-link {
+  color: #8e1500;
+  font-weight: 600;
+}
 ul {
   list-style: none;
 }
