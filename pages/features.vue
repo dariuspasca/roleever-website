@@ -11,7 +11,7 @@
       <the-download-button class="justify-center py-10" />
     </div>
     <!--Chat Section-->
-    <div class="container mx-auto xxxl:w-6/12 xxxl:mx-auto py-10">
+    <div class="container mx-auto xxxl:w-6/12 xxxl:mx-auto py-20">
       <div class="flex flex-row xs:flex-col">
         <!--Chat Text-->
         <div class="w-6/12 xs:w-11/12 xs:mx-auto my-auto">
@@ -55,10 +55,10 @@
       </div>
     </div>
     <!--DiceRolls Section-->
-    <div class="flex w-full bg-cover bg-center bg-fantasy">
+    <div class="flex w-full bg-cover bg-center bg-fantasy py-10">
       <!--Card-->
       <div
-        class="flex rounded-3xl xs:rounded-2xl shadow-2xl bg-cover bg-center bg-view my-20 py-10 xs:py-2 w-8/12 xs:w-11/12 sm:w-11/12 md:w-10/12 xxxl:w-5/12 mx-auto"
+        class="flex rounded-3xl xs:rounded-2xl shadow-2xl bg-cover bg-center bg-view my-20 py-16 xs:py-2 w-8/12 xs:w-11/12 sm:w-11/12 md:w-10/12 xxxl:w-5/12 mx-auto"
       >
         <div class="flex flex-row xs:flex-col">
           <!--DiceRolls Preview-->
@@ -100,8 +100,10 @@
       </div>
     </div>
     <!--CharacterSheets Section-->
-    <div class="container mx-auto xxxl:w-6/12 py-20 xxxl:py-20">
-      <div class="flex flex-row xs:flex-col">
+    <div class="container mx-auto xxxl:w-6/12 py-32 xxxl:py-20">
+      <div
+        class="flex flex-row xs:flex-col space-x-10 xs:space-x-0 xs:space-y-10"
+      >
         <!--CharacterSheets Text-->
         <div class="w-6/12 xs:w-11/12 xs:mx-auto my-auto">
           <div
@@ -133,7 +135,7 @@
         <!--CharacterSheets Preview-->
         <div class="flex w-6/12 xs:w-full items-center">
           <img
-            class="xs:w-11/12 sm:w-10/12 w-6/12 h-auto float-left xs:float-none ml-10 xs:mx-auto img-shadow"
+            class="xs:w-10/12 sm:w-10/12 w-5/12 h-auto float-left xs:float-none ml-10 xs:mx-auto img-shadow"
             :src="page.sheets_preview"
             alt="Chat Preview"
           />

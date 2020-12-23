@@ -1,7 +1,8 @@
 <template>
   <div
-    class="relative flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 bg-dungeon items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
+    class="relative flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
   >
+    <!-- Dungeon Background -->
     <div class="fixed dungeon bg-cover bg-no-repeat"></div>
 
     <div class="container sm:flex sm:w-11/12 xxxl:w-8/12 mx-auto my-auto">
@@ -10,7 +11,7 @@
       >
         <div class="xs:text-center sm:text-center text-left my-auto">
           <h1
-            class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
+            class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal"
           >
             {{ page.title_first }}
           </h1>
@@ -127,24 +128,6 @@ export default {
 </script>
 
 <style>
-.unselectable {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; /* From IE10 only */
-  -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
-  user-select: none;
-}
-
-.preview-image {
-  max-width: 270px;
-}
-
-@media (min-width: 2160px) {
-  .preview-image {
-    max-width: 800px;
-  }
-}
-
 .dungeon {
   background-image: url('https://storage.googleapis.com/roleever-public-assets/www/dungeon.png');
   width: 70%;

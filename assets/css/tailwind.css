@@ -20,6 +20,25 @@
   opacity: 0;
 }
 
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; /* From IE10 only */
+  -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+  user-select: none;
+}
+
+.preview-image {
+  max-width: 270px;
+}
+
+@media (min-width: 2160px) {
+  .preview-image {
+    max-width: 800px;
+  }
+}
+
+
 .img-shadow {
   -webkit-filter: drop-shadow(0px 3px 50px #00000040);
   filter: drop-shadow(0px 3px 50px #00000040);
