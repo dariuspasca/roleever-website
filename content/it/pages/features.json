@@ -13,7 +13,7 @@
 
   "sheets_title": "Schede PG",
   "sheets_description": "Nessun'app esterna per le tenere le schede pg! In ogni campagna ogni giocatore puo' vedere la sua scheda aprendola dal menu di gioco.",
-  "sheets_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/scheda-placeholder.png",
+  "sheets_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/Scheda.png",
 
   "laboratory_title": "Laboratorio",
 
@@ -21,14 +21,14 @@
     {
       "feature_subheader": "Per voi master",
       "feature_header": "Crea il tuo sistema",
-      "feature_description": "Il negozio dell'alchimista coboldo è fallito e ha deciso di affittarci il suo laboratorio. Qui puoi creare i sistemi di gioco che preferisci. Dai la forma che vuoi alle schede che useranno i tuoi giocatori e crea tutte le statistiche che servono. Questa funzionalità è costata qualche capello bianco al nostro programmatore...",
+      "feature_description": "Il negozio dell'alchimista coboldo è fallito e ha deciso di affittarci il suo laboratorio. Qui puoi creare i sistemi di gioco che preferisci. Dai la forma che vuoi alle schede che useranno i tuoi giocatori e crea tutte le statistiche che servono. Questa funzionalità è costata qualche capello bianco al nostro Troll Programmatore...",
       "feature_preview": "https://storage.googleapis.com/roleever-public-assets/www/mockup.png",
       "feature_mobile_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/lab-mobile.jpg"
     },
     {
         "feature_subheader": "Per voi master",
         "feature_header": "Crea i tiri di gioco",
-        "feature_description": "La vostra creazione alchemica non è completa finché non aggiungete al sistema i tiri di gioco, ossia le macro che avranno a disposizione i tuoi giocatori. Potete creare qualsiasi macro integrando le statistiche delle schede, ma occhio: non siamo responsabili delle reazioni chimiche esplosive...",
+        "feature_description": "La vostra creazione alchemica non è completa finché non aggiungete al sistema i tiri di gioco, ossia le macro che avranno a disposizione i tuoi giocatori. Potete creare qualsiasi macro integrando le statistiche delle schede, ma occhio: non siamo legalmente responsabili delle reazioni chimiche esplosive...",
         "feature_preview": "https://storage.googleapis.com/roleever-public-assets/www/mockup_2.png",
         "feature_mobile_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/lab-mobile_2.jpg"
       },
@@ -42,13 +42,14 @@
   ],
 
   "more_title":"E tanto, ma TANTO altro!",
-  "lobby_title": "Non hai un gruppo di gioco? Entra nella pagina Bacheca e unisciti alle campagne aperte disponibili.",
+  "lobby_title": "Bacheca Storie",
+  "lobby_description": "Non hai un gruppo di gioco? Entra nella pagina Bacheca e unisciti alle campagne aperte disponibili.",
   "diary_title": "Diario e appunti",
   "diary_description": "Se sei il tipo di giocatore che ama appuntarsi i progressi della campagna, RoleEver ha pensato anche a te!",
   "turns_title":"Turni di gioco",
   "turns_description":"Il menu dei turni ti permetterà di gestire al meglio il ritmo di gioco, senza rallentare la campagna.",
   "reader_title": "Modalità lettore",
-  "reader_description": "Se non hai tempo per giocare, potrai leggere le storie degli altri giocatori con la Modalità Lettore.",
+  "reader_description": "Se non hai tempo per giocare, potrai leggere le campagne degli altri giocatori con la Modalità Lettore.",
 
   "inprogress_title": "Work in progress",
   "map_title": "Mappa di gioco",

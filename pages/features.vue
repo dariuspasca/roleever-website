@@ -100,7 +100,7 @@
       </div>
     </div>
     <!--CharacterSheets Section-->
-    <div class="container mx-auto xxxl:w-6/12 py-10 xxxl:py-20">
+    <div class="container mx-auto xxxl:w-6/12 py-20 xxxl:py-20">
       <div class="flex flex-row xs:flex-col">
         <!--CharacterSheets Text-->
         <div class="w-6/12 xs:w-11/12 xs:mx-auto my-auto">
@@ -133,7 +133,7 @@
         <!--CharacterSheets Preview-->
         <div class="flex w-6/12 xs:w-full items-center">
           <img
-            class="xs:w-11/12 sm:w-10/12 w-7/12 h-auto float-left xs:float-none ml-10 xs:mx-auto"
+            class="xs:w-11/12 sm:w-10/12 w-6/12 h-auto float-left xs:float-none ml-10 xs:mx-auto img-shadow"
             :src="page.sheets_preview"
             alt="Chat Preview"
           />

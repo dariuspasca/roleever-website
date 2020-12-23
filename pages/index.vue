@@ -14,11 +14,7 @@
           >
             {{ page.title_first }}
           </h1>
-          <h1
-            class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide uppercase md:tracking-normal"
-          >
-            {{ page.title_second }}
-          </h1>
+
           <p class="text-lg md:text-2xl xxxl:text-4xl mt-2">
             {{ page.heroe }}
           </p>
@@ -28,7 +24,7 @@
         </div>
         <div>
           <img
-            class="relative mx-auto unselectable preview-image"
+            class="relative mx-auto unselectable preview-image img-shadow"
             src="https://storage.googleapis.com/roleever-public-assets/www/roleEver.png"
             alt="RoleEver App"
           />
@@ -141,8 +137,6 @@ export default {
 
 .preview-image {
   max-width: 270px;
-  -webkit-filter: drop-shadow(0px 3px 50px #00000040);
-  filter: drop-shadow(0px 3px 50px #00000040);
 }
 
 @media (min-width: 2160px) {
