@@ -398,7 +398,7 @@
             </p>
           </div>
         </div>
-        <!--Initiative Card-->
+        <!--NPCs Card-->
         <div class="flex w-full justify-end">
           <div
             class="flex flex-col w-7/12 xs:w-full sm:w-9/12 rounded-3xl shadow-xl xs:shadow-2xl bg-footer bg-cover py-8 items-center space-y-4"
@@ -463,7 +463,7 @@
             </p>
           </div>
         </div>
-        <!--PNG Card-->
+        <!--Multi-Chat Card-->
         <div
           class="flex flex-col w-full justify-center pb-20 bg-view-card-container xs:rounded-2xl xs:rounded-b-none"
         >

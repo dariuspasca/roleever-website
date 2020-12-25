@@ -63,6 +63,7 @@ export default {
   plugins: [
     { src: '~/plugins/vue-js-modal', mode: 'client' },
     '~/plugins/vue-click-outside',
+    '~/plugins/maz-ui',
     { src: '~/plugins/vue-hcaptcha', mode: 'client' },
   ],
   /*
@@ -143,7 +144,19 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    babel: {
+      plugins: [
+        [
+          'component',
+          {
+            libraryName: 'maz-ui',
+            styleLibraryName: 'css',
+          },
+        ],
+      ],
+    },
+  },
   layoutTransition: {
     name: 'layout',
     mode: 'out-in',
