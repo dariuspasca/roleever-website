@@ -16,10 +16,10 @@
   "error": "😞 Qualcosa è andato storto! Riprova più tardi...",
   "or": "oppure",
 
-  "meta_header": "RoleEver - About Us",
+  "meta_header": "RoleEver - Download",
   "meta_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
 
-  "og_title": "RoleEver - About Us",
+  "og_title": "RoleEver - Download",
   "og_type": "website",
   "og_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
   "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
@@ -27,7 +27,7 @@
 
   "twitter_card": "summary_large_image",
   "twitter_site": "@roleever",
-  "twitter_title": "RoleEver - About Us",
+  "twitter_title": "RoleEver - Download",
   "twitter_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
   "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
 
