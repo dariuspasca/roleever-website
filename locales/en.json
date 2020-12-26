@@ -8,17 +8,6 @@
     "button_sending": "Sending message ....",
     "message_sent": "🎉 &nbsp; Message sent"
   },
-  "download_modal": {
-    "phone_code": "Country code",
-    "select_country": "Select country",
-    "phone_label": "Phone number",
-    "example": "Example",
-    "button_send": "Text me a link",
-    "button_sending": "Sending link...",
-    "information": "We will use your phone number to text you a link to install RoleEver. We don't save your phone number. NO SPAM!",
-    "link_sent": "🎉 &nbsp; Link sent",
-    "or": "OR"
-  },
   "download_button": {
     "appstore": "Get from Apple App Store",
     "playstore": "Get from Google Play Store",

@@ -1,0 +1,43 @@
+{
+  "title_first": "RPGs IN YOUR POCKET.",
+  "heroe": "Chat, dice rolls and character sheets! All in one app.",
+  
+  "header": "RoleEver - RPGs by chat",
+  "description": "Chat, dice rolls and character sheets! All in one app.",
+  "qr_header": "Get RoleEver",
+  "qr_description": "Scan the QR code with your phone to install RoleEver. Or, get it through the AppStore or Google Play",
+  "phone_code": "Country code",
+  "select_country": "Select country",
+  "phone_label": "Phone number",
+  "example": "Example",
+  "button_send": "Text me a link",
+  "button_sending": "Sending link...",
+  "information": "We will use your phone number to text you a link to install RoleEver. We don't save your phone number. NO SPAM!",
+  "success": "🎉  Success! You’ll receive a text shortly.",
+  "error": "😞 omething went wrong! Try again later...",
+  "or": "OR",
+
+  "meta_header": "RoleEver - About Us",
+  "meta_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
+
+  "og_title": "RoleEver - About Us",
+  "og_type": "website",
+  "og_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
+  "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+  "og_url": "https://www.roleever.com",
+
+  "twitter_card": "summary_large_image",
+  "twitter_site": "@roleever",
+  "twitter_title": "RoleEver - About Us",
+  "twitter_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
+  "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+
+  "twitter_ios_country": "",
+  "twitter_ios_name": "",
+  "twitter_ios_id": "",
+  "twitter_ios_url": "",
+
+  "twitter_android_name": "",
+  "twitter_android_id": "",
+  "twitter_android_url": ""
+}

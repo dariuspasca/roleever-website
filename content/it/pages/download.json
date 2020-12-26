@@ -1,0 +1,42 @@
+{
+  "title_first": "I GDR SEMPRE CON TE",
+  "heroe": "Chat, tiri e schede pg. Tutto in un'app.",
+  "header": "RoleEver - GdR via Chat",
+  "description": "Chat, tiri e schede pg. Tutto in un'app.",
+  "qr_header": "Scarica RoleEver",
+  "qr_description": "Scannerizza il codice QR con il tuo telefono per installare  RoleEver. Or, get it through the AppStore or Google Play",
+  "phone_code": "Prefisso",
+  "select_country": "Scegli paese",
+  "phone_label": "Numero di telefono",
+  "example": "Esempio",
+  "button_send": "Inviami un sms con il link",
+  "button_sending": "Invio link...",
+  "information": "Useremo il tuo numero di telefono per inviarti un messaggio con il link per installare di RoleEver. Non salviamo il tuo numero di telefono. NO SPAM!",
+  "success": "🎉  Success! You’ll receive a text shortly.",
+  "error": "😞 Qualcosa è andato storto! Riprova più tardi...",
+  "or": "oppure",
+
+  "meta_header": "RoleEver - About Us",
+  "meta_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
+
+  "og_title": "RoleEver - About Us",
+  "og_type": "website",
+  "og_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
+  "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+  "og_url": "https://www.roleever.com",
+
+  "twitter_card": "summary_large_image",
+  "twitter_site": "@roleever",
+  "twitter_title": "RoleEver - About Us",
+  "twitter_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
+  "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+
+  "twitter_ios_country": "",
+  "twitter_ios_name": "",
+  "twitter_ios_id": "",
+  "twitter_ios_url": "",
+
+  "twitter_android_name": "",
+  "twitter_android_id": "",
+  "twitter_android_url": ""
+}

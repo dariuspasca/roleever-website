@@ -1,7 +1,5 @@
 <template>
   <div class="flex w-full">
-    <client-only> <TheGetLinkModal /> </client-only>
-
     <button
       class="inline-flex items-center bg-primary shadow-xl hover:shadow-2xl text-white font-gitan xxxl:text-2xl py-4 px-8 lg:px-16 rounded xs:rounded-lg xs:min-w-8/12 focus:outline-none transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale"
       @click="downloadClick()"
@@ -21,21 +19,16 @@
           {{ $t('download_button.playstore') }}
         </p>
         <p v-if="$device.isIos">{{ $t('download_button.appstore') }}</p>
-        <p v-if="$device.isDesktop" @click="$modal.show('get-link-m8')">
+        <nuxt-link v-if="$device.isDesktop" :to="localePath('/download')">
           {{ $t('download_button.store') }}
-        </p>
+        </nuxt-link>
       </client-only>
     </button>
   </div>
 </template>
 
 <script>
-import TheGetLinkModal from '@/components/ui/TheDownloadLinkModal.vue'
-
 export default {
-  components: {
-    TheGetLinkModal,
-  },
   methods: {
     downloadClick() {
       if (this.$device.isDesktop) {

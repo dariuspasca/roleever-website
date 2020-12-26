@@ -1,25 +1,45 @@
 <template>
-  <div class="container h-screen">
+  <div class="container h-screen xs:h-full sm:mx-auto md:mx-auto">
     <div class="fixed dungeon bg-cover bg-no-repeat"></div>
     <div
-      class="relative flex flex-row h-full w-full xs:flex-col mx-auto space-x-10 xs:space-x-0 items-center justify-center"
+      class="relative flex flex-row h-full w-full xs:flex-col sm:flex-col mx-auto space-x-10 xs:space-x-0 sm:space-x-0 items-center justify-center xs:pt-10 xs:pb-20"
     >
       <!-- Preview Section -->
-      <div class="w-4/12">
+      <div
+        class="w-4/12 xs:w-full sm:w-full xs:order-last sm:order-last xs:py-10 sm:py-10"
+      >
         <img
-          class="unselectable preview-image img-shadow float-right"
+          class="unselectable preview-image img-shadow float-right xs:float-none sm:float-none xs:mx-auto sm:mx-auto"
           src="https://storage.googleapis.com/roleever-public-assets/www/roleEver.png"
           alt="RoleEver App"
         />
       </div>
-      <div class="flex flex-col w-5/12 space-y-4 xs:space-y-0 xs:space-x-10">
+      <div
+        v-if="$device.isIos || $device.isAndroid"
+        class="flex flex-col w-full justify-center items-center"
+      >
+        <h1
+          class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal"
+        >
+          {{ page.title_first }}
+        </h1>
+
+        <p class="text-lg md:text-2xl xxxl:text-4xl mt-2">
+          {{ page.heroe }}
+        </p>
+        <the-download-button class="justify-center py-4" />
+      </div>
+      <div
+        v-else
+        class="flex flex-col w-5/12 xs:w-full sm:w-full md:w-8/12 space-y-4"
+      >
         <h2
           class="text-2xl sm:text-3xl lg:text-4xl font-base subpixel-antialiased text-center"
         >
-          Scarica RoleEver
+          {{ page.header }}
         </h2>
         <p class="text-lg w-11/12 mx-auto">
-          Chat, tiri e schede pg. Tutto in un'app.
+          {{ page.description }}
         </p>
         <!-- QR Block -->
         <div
@@ -31,10 +51,11 @@
             alt="QR Code Download"
           />
           <div>
-            <h3 class="text-xl text-black">Get RoleEver</h3>
+            <h3 class="text-xl text-black">
+              {{ page.qr_header }}
+            </h3>
             <p class="text-lg py-2">
-              Scan the QR code with your phone to install the Grammarly
-              Keyboard. Or, get it through the AppStore or Google Play
+              {{ page.qr_description }}
             </p>
           </div>
         </div>
@@ -42,40 +63,60 @@
 
         <div class="flex items-center justify-center space-x-2">
           <span class="h-px bg-secondary w-full"></span>
-          <span class="font-medium text-dark-tint pb-1">
-            {{ $t('download_modal.or') }}</span
-          >
+          <span class="font-medium text-dark-tint pb-1"> {{ page.or }}</span>
           <span class="h-px bg-secondary w-full"></span>
         </div>
 
-        <!-- SMS Blcok -->
+        <!-- SMS Block -->
         <div class="flex justify-center">
-          <form class="px-8 py-4 mb-4" method="post" @submit="submitForm">
+          <form
+            class="px-8 xs:px-4 py-4 mb-4"
+            method="post"
+            @submit="submitForm"
+          >
             <div class="flex flex-col pb-2 space-y-4">
               <MazPhoneNumberInput
-                v-model="phoneNumber"
                 fetch-country
                 color="grey"
                 :translations="translationsPhoneInput"
                 @update="results = $event"
+                @clear="reset()"
+                @change="reset()"
               />
 
               <button
+                v-if="showSubmitButton"
+                :disabled="canSubmit"
                 class="flex-grow bg-primary hover:shadow-xl hover:opacity-75 text-white font-normal font-gitan py-2 px-4 rounded focus:outline-none"
                 type="submit"
               >
-                <div v-if="isSubmitting" class="flex content-center">
+                <div v-show="isSubmitting" class="flex content-center">
                   <div class="loader"></div>
                   <p class="text-s ml-4">
-                    {{ $t('download_modal.button_sending') }}
+                    {{ page.button_sending }}
                   </p>
                 </div>
-                <p v-else>{{ $t('download_modal.button_send') }}</p>
+                <p v-show="!isSubmitting">
+                  {{ page.button_send }}
+                </p>
               </button>
+
+              <p
+                v-show="!isSubmitting && linkSent"
+                class="text-success text-lg"
+              >
+                {{ page.success }}
+              </p>
+              <p
+                v-show="!isSubmitting && linkError"
+                class="text-danger text-lg"
+              >
+                {{ page.error }}
+              </p>
             </div>
 
-            <p class="text-left text-sm text-dark">
-              {{ $t('download_modal.information') }}
+            <p class="text-left text-sm text-dark mt-4">
+              {{ page.information }}
             </p>
           </form>
         </div>
@@ -85,23 +126,59 @@
 </template>
 
 <script>
-import TheFeatureSliderVue from '~/components/ui/TheFeatureSlider.vue'
+import TheDownloadButton from '@/components/ui/TheDownloadButton.vue'
+
 export default {
+  components: { TheDownloadButton },
+  async asyncData({ $content }) {
+    const pages = []
+    const pageEN = await $content(`en/pages/download`).fetch()
+    const pageIT = await $content(`it/pages/download`).fetch()
+    pages.push(pageEN)
+    pages.push(pageIT)
+
+    return {
+      pages,
+    }
+  },
   data() {
     return {
       isSubmitting: false,
       linkSent: false,
-      phoneNumber: null,
+      linkError: false,
       results: null,
     }
   },
   computed: {
+    page() {
+      if (this.$i18n.locale === 'en') {
+        return this.pages[0]
+      } else {
+        return this.pages[1]
+      }
+    },
     translationsPhoneInput() {
       return {
-        countrySelectorLabel: this.$t('download_modal.phone_code'),
-        countrySelectorError: this.$t('download_modal.select_country'),
-        phoneNumberLabel: this.$t('download_modal.phone_label'),
-        example: this.$t('download_modal.example'),
+        countrySelectorLabel: this.page.phone_code,
+        countrySelectorError: this.page.select_country,
+        phoneNumberLabel: this.page.phone_label,
+        example: this.page.example,
+      }
+    },
+    canSubmit() {
+      if (this.isSubmitting) {
+        return false
+      } else if (this.results && this.results.isValid) {
+        return false
+      } else {
+        return true
+      }
+    },
+    showSubmitButton() {
+      if (this.linkSent || this.linkError) {
+        return false
+      } else {
+        return true
       }
     },
   },
@@ -109,14 +186,13 @@ export default {
     submitForm(e) {
       this.isSubmitting = true
       e.preventDefault()
-      // Disable submit button while submitting
-      this.linkSent = false
+
       // POST request using fetch with async/await
       const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         mode: 'cors',
-        body: JSON.stringify({ To: this.phone }),
+        body: JSON.stringify({ To: this.results.formatInternational }),
       }
       fetch(
         'https://en2xtnm78plvhln.m.pipedream.net?pipedream_response=1',
@@ -125,21 +201,83 @@ export default {
         this.isSubmitting = false
         // check for error response
         if (response.status === 400) {
-          // get error message from body or default to response status
-          this.$modal.show('dialog', {
-            text: this.$t('error_generic'),
-            buttons: [
-              {
-                title: 'OK 💩',
-              },
-            ],
-          })
+          this.linkError = true
         } else {
-          this.phone = null
-          this.linkSent = TheFeatureSliderVue
+          this.linkSent = true
         }
       })
     },
+    reset() {
+      if (this.linkSent) {
+        this.linkSent = false
+      } else if (this.linkError) {
+        this.linkError = false
+      }
+    },
+  },
+  head() {
+    return {
+      title: this.page.meta_header,
+      meta: [
+        /* Twitter Cards */
+
+        {
+          name: 'twitter:card',
+          content: this.page.twitter_card,
+        },
+        {
+          name: 'twitter:site',
+          content: this.page.twitter_site,
+        },
+        {
+          name: 'twitter:title',
+          content: this.page.twitter_title,
+        },
+        {
+          name: 'twitter:description',
+          content: this.page.twitter_description,
+        },
+        {
+          name: 'twitter:image',
+          content: this.page.twitter_image,
+        },
+
+        /* Open Graph */
+
+        {
+          name: 'og:title',
+          content: this.page.og_title,
+        },
+        {
+          name: 'og:type',
+          content: this.page.og_type,
+        },
+        {
+          name: 'og:description',
+          content: this.page.og_description,
+        },
+        {
+          name: 'og:locale:image',
+          content: this.page.og_image,
+        },
+        {
+          name: 'og:locale:url',
+          content: this.page.og_url,
+        },
+
+        /* Google / Schema.org  */
+
+        { itemprop: 'name', content: this.page.og_title },
+        {
+          itemprop: 'description',
+          content: this.page.og_description,
+        },
+        {
+          itemprop: 'image',
+          content: this.page.og_image,
+        },
+      ],
+    }
   },
 }
 </script>
