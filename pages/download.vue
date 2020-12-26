@@ -57,7 +57,23 @@
                 {{ page.qr_header }}
               </h3>
               <p class="text-lg py-2">
-                {{ page.qr_description }}
+                <i18n path="qr_description" tag="p">
+                  <template v-slot:AppStore>
+                    <a
+                      class="text-primary-shade hover:underline"
+                      href="https://play.google.com/store/apps/details?id=com.RoleEver"
+                    >
+                      AppStore
+                    </a>
+                  </template>
+                  <template v-slot:GooglePlay>
+                    <a
+                      class="text-primary-shade hover:underline"
+                      href="https://play.google.com/store/apps/details?id=com.RoleEver"
+                      >Google Play</a
+                    >
+                  </template>
+                </i18n>
               </p>
             </div>
           </div>

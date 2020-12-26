@@ -13,6 +13,7 @@
     "playstore": "Scarica da Google Play Store",
     "store": "Scarica dallo Store"
   },
+  "qr_description": "Scannerizza il codice QR con il tuo telefono per installare  RoleEver. Oppure, scarica dall' {AppStore} o {GooglePlay}.",
   "error_generic": "Qualcosa è andato storto! Riprova più tardi...",
   "footer": {
     "heroe": "Tutte le avventure nel tuo cellulare",
