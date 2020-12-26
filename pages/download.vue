@@ -61,6 +61,8 @@
                   <template v-slot:AppStore>
                     <a
                       class="text-primary-shade hover:underline"
+                      target="_blank"
+                      rel="noopener"
                       href="https://play.google.com/store/apps/details?id=com.RoleEver"
                     >
                       AppStore
@@ -69,6 +71,8 @@
                   <template v-slot:GooglePlay>
                     <a
                       class="text-primary-shade hover:underline"
+                      target="_blank"
+                      rel="noopener"
                       href="https://play.google.com/store/apps/details?id=com.RoleEver"
                       >Google Play</a
                     >
