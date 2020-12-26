@@ -14,120 +14,116 @@
           alt="RoleEver App"
         />
       </div>
-      <div
-        v-if="$device.isIos || $device.isAndroid"
-        class="flex flex-col w-full justify-center items-center"
-      >
-        <h1
-          class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal"
-        >
-          {{ page.title_first }}
-        </h1>
-
-        <p class="text-lg md:text-2xl xxxl:text-4xl mt-2">
-          {{ page.heroe }}
-        </p>
-        <the-download-button class="justify-center py-4" />
-      </div>
-      <div
-        v-else
-        class="flex flex-col w-5/12 xs:w-full sm:w-full md:w-8/12 space-y-4"
-      >
-        <h2
-          class="text-2xl sm:text-3xl lg:text-4xl font-base subpixel-antialiased text-center"
-        >
-          {{ page.header }}
-        </h2>
-        <p class="text-lg w-11/12 mx-auto">
-          {{ page.description }}
-        </p>
-        <!-- QR Block -->
+      <!-- Download Button Mobile -->
+      <client-only>
         <div
-          v-if="!$device.isIos || !$device.isAndroid"
-          class="flex flex-row bg-footer shadow-lg rounded-xl py-10 px-6 space-x-4 items-start w-11/12 mx-auto"
+          v-if="$device.isIos || $device.isAndroid"
+          class="flex flex-col w-full justify-center items-center"
         >
-          <img
-            class="h-32 w-32 rounded-lg shadow-sm"
-            src="https://storage.googleapis.com/roleever-public-assets/www/qr-code.jpeg"
-            alt="QR Code Download"
-          />
-          <div>
-            <h3 class="text-xl text-black">
-              {{ page.qr_header }}
-            </h3>
-            <p class="text-lg py-2">
-              {{ page.qr_description }}
-            </p>
-          </div>
-        </div>
-        <!-- OR -->
-
-        <div
-          v-if="!$device.isIos || !$device.isAndroid"
-          class="flex items-center justify-center space-x-2"
-        >
-          <span class="h-px bg-secondary w-full"></span>
-          <span class="font-medium text-dark-tint pb-1"> {{ page.or }}</span>
-          <span class="h-px bg-secondary w-full"></span>
-        </div>
-
-        <!-- SMS Block -->
-        <div
-          v-if="!$device.isIos || !$device.isAndroid"
-          class="flex justify-center"
-        >
-          <form
-            class="px-8 xs:px-4 py-4 mb-4"
-            method="post"
-            @submit="submitForm"
+          <h1
+            class="text-2xl sm:text-3xl lg:text-4xl xxxl:text-6xl font-semibold subpixel-antialiased tracking-wide md:tracking-normal"
           >
-            <div class="flex flex-col pb-2 space-y-4">
-              <MazPhoneNumberInput
-                fetch-country
-                color="grey"
-                :translations="translationsPhoneInput"
-                @update="results = $event"
-                @clear="reset()"
-                @change="reset()"
-              />
+            {{ page.title_first }}
+          </h1>
 
-              <button
-                v-if="showSubmitButton"
-                :disabled="canSubmit"
-                class="flex-grow bg-primary hover:shadow-xl hover:opacity-75 text-white font-normal font-gitan py-2 px-4 rounded focus:outline-none"
-                type="submit"
-              >
-                <div v-show="isSubmitting" class="flex content-center">
-                  <div class="loader"></div>
-                  <p class="text-s ml-4">
-                    {{ page.button_sending }}
-                  </p>
-                </div>
-                <p v-show="!isSubmitting">
-                  {{ page.button_send }}
-                </p>
-              </button>
-
-              <p
-                v-show="!isSubmitting && linkSent"
-                class="text-success text-lg"
-              >
-                {{ page.success }}
-              </p>
-              <p
-                v-show="!isSubmitting && linkError"
-                class="text-danger text-lg"
-              >
-                {{ page.error }}
+          <p class="text-lg md:text-2xl xxxl:text-4xl mt-2">
+            {{ page.heroe }}
+          </p>
+          <the-download-button class="justify-center py-4" />
+        </div>
+        <div
+          v-else
+          class="flex flex-col w-5/12 xs:w-full sm:w-full md:w-8/12 space-y-4"
+        >
+          <h2
+            class="text-2xl sm:text-3xl lg:text-4xl font-base subpixel-antialiased text-center"
+          >
+            {{ page.header }}
+          </h2>
+          <p class="text-lg w-11/12 mx-auto">
+            {{ page.description }}
+          </p>
+          <!-- QR Block -->
+          <div
+            class="flex flex-row bg-footer shadow-lg rounded-xl py-10 px-6 space-x-4 items-start w-11/12 mx-auto"
+          >
+            <img
+              class="h-32 w-32 rounded-lg shadow-sm"
+              src="https://storage.googleapis.com/roleever-public-assets/www/qr-code.jpeg"
+              alt="QR Code Download"
+            />
+            <div>
+              <h3 class="text-xl text-black">
+                {{ page.qr_header }}
+              </h3>
+              <p class="text-lg py-2">
+                {{ page.qr_description }}
               </p>
             </div>
+          </div>
+          <!-- OR -->
 
-            <p class="text-left text-sm text-dark mt-4">
-              {{ page.information }}
-            </p>
-          </form>
+          <div class="flex items-center justify-center space-x-2">
+            <span class="h-px bg-secondary w-full"></span>
+            <span class="font-medium text-dark-tint pb-1"> {{ page.or }}</span>
+            <span class="h-px bg-secondary w-full"></span>
+          </div>
+
+          <!-- SMS Block -->
+          <div class="flex justify-center">
+            <form
+              class="px-8 xs:px-4 py-4 mb-4"
+              method="post"
+              @submit="submitForm"
+            >
+              <div class="flex flex-col pb-2 space-y-4">
+                <MazPhoneNumberInput
+                  fetch-country
+                  color="grey"
+                  :translations="translationsPhoneInput"
+                  @update="results = $event"
+                  @clear="reset()"
+                  @change="reset()"
+                />
+
+                <button
+                  v-if="showSubmitButton"
+                  :disabled="canSubmit"
+                  class="flex-grow bg-primary hover:shadow-xl hover:opacity-75 text-white font-normal font-gitan py-2 px-4 rounded focus:outline-none"
+                  type="submit"
+                >
+                  <div v-show="isSubmitting" class="flex content-center">
+                    <div class="loader"></div>
+                    <p class="text-s ml-4">
+                      {{ page.button_sending }}
+                    </p>
+                  </div>
+                  <p v-show="!isSubmitting">
+                    {{ page.button_send }}
+                  </p>
+                </button>
+
+                <p
+                  v-show="!isSubmitting && linkSent"
+                  class="text-success text-lg"
+                >
+                  {{ page.success }}
+                </p>
+                <p
+                  v-show="!isSubmitting && linkError"
+                  class="text-danger text-lg"
+                >
+                  {{ page.error }}
+                </p>
+              </div>
+
+              <p class="text-left text-sm text-dark mt-4">
+                {{ page.information }}
+              </p>
+            </form>
+          </div>
         </div>
-      </div>
+      </client-only>
     </div>
   </div>
 </template>
