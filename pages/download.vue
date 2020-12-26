@@ -43,6 +43,7 @@
         </p>
         <!-- QR Block -->
         <div
+          v-if="!$device.isIos || !$device.isAndroid"
           class="flex flex-row bg-footer shadow-lg rounded-xl py-10 px-6 space-x-4 items-start w-11/12 mx-auto"
         >
           <img
@@ -61,14 +62,20 @@
         </div>
         <!-- OR -->
 
-        <div class="flex items-center justify-center space-x-2">
+        <div
+          v-if="!$device.isIos || !$device.isAndroid"
+          class="flex items-center justify-center space-x-2"
+        >
           <span class="h-px bg-secondary w-full"></span>
           <span class="font-medium text-dark-tint pb-1"> {{ page.or }}</span>
           <span class="h-px bg-secondary w-full"></span>
         </div>
 
         <!-- SMS Block -->
-        <div class="flex justify-center">
+        <div
+          v-if="!$device.isIos || !$device.isAndroid"
+          class="flex justify-center"
+        >
           <form
             class="px-8 xs:px-4 py-4 mb-4"
             method="post"
