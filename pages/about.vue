@@ -81,7 +81,7 @@
           >
             <!--Card Illustration-->
             <img
-              class="w-9/12 h-auto mx-auto"
+              class="w-9/12 h-auto mx-auto xs:pt-20"
               :src="
                 'https://storage.googleapis.com/roleever-public-assets/www/about/' +
                 item.card_header +
@@ -98,7 +98,7 @@
             <!--Skills Section-->
             <div class="flex flex-col bg-frame bg-cover px-3 mx-auto">
               <div class="top-0 left-0 pt-4 pl-2 h-full">
-                <ul>
+                <ul class="list px-2 mt-2">
                   <li v-for="skill in item.skills" :key="skill">
                     {{ skill }}
                   </li>
@@ -253,3 +253,43 @@ export default {
   },
 }
 </script>
+
+<style>
+list {
+  list-style: none;
+}
+
+.list li:before {
+  content: '•';
+  font-size: 40px;
+  padding-right: 5px;
+  padding-top: 2px;
+  line-height: 10px;
+  vertical-align: top;
+  position: absolute;
+  left: -15px;
+}
+
+.list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 5px;
+}
+
+.bg-frame {
+  background-image: url('~assets/images/frameSkills.svg');
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+
+  height: 250px;
+  width: 300px;
+}
+
+@media (max-width: 897px) {
+  .bg-frame {
+    height: 320px;
+    max-width: 250px;
+  }
+}
+</style>

@@ -78,6 +78,13 @@
                   {{ $t('footer.product_features') }}
                 </nuxt-link>
                 <nuxt-link
+                  :to="localePath('download')"
+                  class="block hover:text-primary my-2"
+                  exact
+                >
+                  {{ $t('footer.product_download') }}
+                </nuxt-link>
+                <nuxt-link
                   :to="localePath('about')"
                   class="block hover:text-primary my-2"
                   exact

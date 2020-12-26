@@ -19,7 +19,7 @@
           {{ $t('download_button.playstore') }}
         </p>
         <p v-if="$device.isIos">{{ $t('download_button.appstore') }}</p>
-        <nuxt-link v-if="$device.isDesktop" :to="localePath('/download')">
+        <nuxt-link v-if="$device.isDesktop" :to="localePath('download')">
           {{ $t('download_button.store') }}
         </nuxt-link>
       </client-only>
