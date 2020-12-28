@@ -9,8 +9,8 @@
     "message_sent": "🎉 &nbsp; Message sent"
   },
   "download_button": {
-    "appstore": "Get from Apple App Store",
-    "playstore": "Get from Google Play Store",
+    "appstore": "Get from App Store",
+    "playstore": "Get from Play Store",
     "store": "Get from Store"
   },
   "qr_description": "Scan the QR code with your phone to install RoleEver. Or, get it through the {AppStore} or {GooglePlay}.",
