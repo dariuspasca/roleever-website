@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-grow h-full xs:h-screen lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
+    class="relative flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
   >
     <!-- Dungeon Background -->
     <div class="fixed dungeon bg-cover bg-no-repeat"></div>
@@ -24,27 +24,11 @@
           />
         </div>
         <div>
-          <picture
+          <img
             class="relative mx-auto unselectable preview-image img-shadow"
-          >
-            <source
-              :srcSet="require('~/assets/images/roleEver.png?webp')"
-              type="image/webp"
-            />
-            <source
-              :srcSet="require('~/assets/images/roleEver.png')"
-              type="image/png"
-            />
-            <img
-              class="relative mx-auto unselectable preview-image img-shadow"
-              :src="require('~/assets/images/roleEver.png')"
-            />
-          </picture>
-          <!-- <img
-            class="relative mx-auto unselectable preview-image img-shadow"
-            src="https://storage.googleapis.com/roleever-public-assets/www/roleEver.png"
+            :src="require('~/assets/images/roleEver.png')"
             alt="RoleEver App"
-          /> -->
+          />
         </div>
       </div>
     </div>
