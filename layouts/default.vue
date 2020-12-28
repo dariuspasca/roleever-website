@@ -21,7 +21,7 @@
     </div>
 
     <!--Content-->
-    <router-view class="z-10" />
+    <Nuxt class="z-10" />
 
     <!--Footer-->
     <TheFooter class="z-10" />
