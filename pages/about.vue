@@ -286,7 +286,14 @@ list {
   width: 300px;
 }
 
-@media (max-width: 897px) {
+@media (max-width: 576px) {
+  .bg-frame {
+    height: 320px;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 374px) {
   .bg-frame {
     height: 320px;
     max-width: 250px;

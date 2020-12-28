@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
+    class="relative flex flex-grow min-h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
   >
     <!-- Dungeon Background -->
     <div class="fixed dungeon bg-cover bg-no-repeat"></div>
