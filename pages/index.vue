@@ -24,11 +24,27 @@
           />
         </div>
         <div>
-          <img
+          <picture
+            class="relative mx-auto unselectable preview-image img-shadow"
+          >
+            <source
+              :srcSet="require('~/assets/images/roleEver.png?webp')"
+              type="image/webp"
+            />
+            <source
+              :srcSet="require('~/assets/images/roleEver.png')"
+              type="image/png"
+            />
+            <img
+              class="relative mx-auto unselectable preview-image img-shadow"
+              :src="require('~/assets/images/roleEver.png')"
+            />
+          </picture>
+          <!-- <img
             class="relative mx-auto unselectable preview-image img-shadow"
             src="https://storage.googleapis.com/roleever-public-assets/www/roleEver.png"
             alt="RoleEver App"
-          />
+          /> -->
         </div>
       </div>
     </div>
