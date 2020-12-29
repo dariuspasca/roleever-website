@@ -91,11 +91,13 @@ export default {
     'cookie-universal-nuxt',
     '@nuxt/image',
   ],
+  /*
+   ** nuxt-image configuration
+   */
   image: {
-    sizes: [320, 420, 768, 1024, 1200],
     providers: {
       imgix: {
-        baseURL: 'https://roleever.imgix.net',
+        baseURL: 'https://roleever-app.imgix.net',
       },
     },
   },

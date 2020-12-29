@@ -30,8 +30,10 @@
             alt="RoleEver App"
           /> -->
           <nuxt-image
-            src="imgix:/roleEver.png"
-            class="relative mx-auto unselectable preview-image img-shadow"
+            src="/previews/roleEver.png"
+            class="relative mx-auto unselectable preview-image img-shadow h-auto"
+            width="429"
+            height="818"
           />
         </div>
       </div>
