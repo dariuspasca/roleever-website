@@ -48,6 +48,7 @@
         <div class="flex w-6/12 xs:w-full items-center">
           <nuxt-picture
             :src="page.chat_preview"
+            sizes="300 (webp)"
             class="xs:w-11/12 sm:w-10/12 w-7/12 h-auto float-left xs:float-none ml-10 xs:mx-auto"
             width="835"
             height="1022"
