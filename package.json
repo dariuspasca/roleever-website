@@ -13,25 +13,21 @@
   "dependencies": {
     "@hcaptcha/vue-hcaptcha": "^0.2.4",
     "@nuxt/content": "^1.11.1",
+    "@nuxt/image": "^0.0.4",
     "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/toast": "^3.3.1",
     "@tailwindcss/typography": "^0.3.1",
     "cookie-universal-nuxt": "^2.1.4",
     "emailjs-com": "^2.6.4",
     "eslint-plugin-tailwind": "^0.2.0",
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-pngquant": "^9.0.1",
-    "imagemin-svgo": "^8.0.0",
     "interactjs": "^1.10.1",
     "maz-ui": "^2.3.0",
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.16.0",
     "v-click-outside": "^3.0.1",
-    "vue-js-modal": "^2.0.0-rc.6",
-    "webp-loader": "^0.6.0"
+    "vue-js-modal": "^2.0.0-rc.6"
   },
   "devDependencies": {
-    "@aceforth/nuxt-optimized-images": "^1.3.0",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/tailwindcss": "^3.4.2",

@@ -24,10 +24,14 @@
           />
         </div>
         <div>
-          <img
+          <!-- <img
             class="relative mx-auto unselectable preview-image img-shadow"
-            :src="require('~/assets/images/roleEver.png')"
+            src="https://storage.googleapis.com/roleever-public-assets/www/roleEver.png"
             alt="RoleEver App"
+          /> -->
+          <nuxt-image
+            src="imgix:/roleEver.png"
+            class="relative mx-auto unselectable preview-image img-shadow"
           />
         </div>
       </div>

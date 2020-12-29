@@ -61,10 +61,10 @@ export default {
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [
-    { src: '~/plugins/vue-js-modal', mode: 'client' },
     '~/plugins/vue-click-outside',
     '~/plugins/maz-ui',
     { src: '~/plugins/vue-hcaptcha', mode: 'client' },
+    { src: '~/plugins/vue-js-modal', mode: 'client' },
   ],
   /*
    ** Auto import components
@@ -79,7 +79,6 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@aceforth/nuxt-optimized-images',
   ],
   /*
    ** Nuxt.js modules
@@ -90,7 +89,16 @@ export default {
     '@nuxtjs/device',
     '@nuxtjs/toast',
     'cookie-universal-nuxt',
+    '@nuxt/image',
   ],
+  image: {
+    sizes: [320, 420, 768, 1024, 1200],
+    providers: {
+      imgix: {
+        baseURL: 'https://roleever.imgix.net',
+      },
+    },
+  },
   /*
    ** nuxt-i18n configuration
    */
