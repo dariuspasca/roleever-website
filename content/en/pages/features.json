@@ -5,15 +5,15 @@
 
   "chat_title": "Chat",
   "chat_description": "The days spent in abstinence from RPGs are over! With RoleEver chat you can play asynchronously h24. Yes, even in the bathroom.",
-  "chat_preview": "imgix:/Chat.png",
+  "chat_preview": "imgix:/features/Chat.png",
 
   "dicerolls_title": "Dice Rolls",
   "dicerolls_description": "You can share your critical failures directly in chat! The app interfaces with your character sheet and the results are calculated automatically. So everyone will see how, when trying to hit the boss, you drop a blow on the head of the cleric causing a TPK.",
-  "dicerolls_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/Tiri-Features.png",
+  "dicerolls_preview": "imgix:/features/Tiri.png",
 
   "sheets_title": "Character Sheets",
   "sheets_description": "No external app for holding character sheets! In each campaign, each player can see his sheet by opening it from the game menu.",
-  "sheets_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/Scheda.png",
+  "sheets_preview": "imgix:/features/Scheda.png",
 
   "laboratory_title": "Laboratory",
 
@@ -41,6 +41,8 @@
     }
   ],
 
+  "more_nick_title":"Nick the dragon",
+  "more_nick":"imgix:/features/Nick.png",
   "more_title": "And more, A LOT more!",
   "lobby_title": "Stories Board",
   "lobby_description": "Looking for a party? Browse the Stories Board and join one of the available campaigns.",
