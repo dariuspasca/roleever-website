@@ -186,14 +186,9 @@
       <!--Nick Section-->
       <img
         class="w-3/12 xs:w-8/12 sm:w-5/12 xxxl:w-3/12 h-auto float-left -ml-24 absolute xs:relative sm:relative md:mt-48 xs:mx-auto sm:mx-auto xxxl:ml-0"
-        src="https://storage.googleapis.com/roleever-public-assets/www/features/nick.png"
-        alt="Chat Preview"
-      />
-      <nuxt-image
-        :src="page.more_nick"
-        class="w-3/12 xs:w-8/12 sm:w-5/12 xxxl:w-3/12 h-auto float-left -ml-24 absolute xs:relative sm:relative md:mt-48 xs:mx-auto sm:mx-auto xxxl:ml-0"
         width="789"
         height="1052"
+        :src="page.more_nick"
         :alt="page.more_nick_title"
       />
       <div

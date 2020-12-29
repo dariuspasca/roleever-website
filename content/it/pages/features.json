@@ -42,7 +42,7 @@
   ],
 
   "more_nick_title":"Nick il drago",
-  "more_nick":"imgix:/features/Nick.png",
+  "more_nick":"https://roleever-app.imgix.net/features/Nick.png",
   "more_title":"E tanto, ma TANTO altro!",
   "lobby_title": "Bacheca Storie",
   "lobby_description": "Non hai un gruppo di gioco? Entra nella pagina Bacheca e unisciti alle campagne aperte disponibili.",

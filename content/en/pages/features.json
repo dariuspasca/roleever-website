@@ -42,7 +42,7 @@
   ],
 
   "more_nick_title":"Nick the dragon",
-  "more_nick":"imgix:/features/Nick.png",
+  "more_nick":"https://roleever-app.imgix.net/features/Nick.png",
   "more_title": "And more, A LOT more!",
   "lobby_title": "Stories Board",
   "lobby_description": "Looking for a party? Browse the Stories Board and join one of the available campaigns.",
