@@ -8,10 +8,12 @@
       <div
         class="w-4/12 xs:w-full sm:w-full xs:order-last sm:order-last xs:py-10 sm:py-10"
       >
-        <img
-          class="unselectable preview-image img-shadow float-right xs:float-none sm:float-none xs:mx-auto sm:mx-auto"
-          src="https://storage.googleapis.com/roleever-public-assets/www/roleEver.png"
-          alt="RoleEver App"
+        <nuxt-picture
+          src="imgix:/roleEver.png"
+          class="relative mx-auto unselectable preview-image img-shadow"
+          width="429"
+          height="818"
+          alt="RoleEver"
         />
       </div>
       <!-- Download Button Mobile -->
@@ -26,7 +28,9 @@
             {{ page.title_first }}
           </h1>
 
-          <p class="text-lg md:text-2xl xxxl:text-4xl mt-2">
+          <p
+            class="text-lg md:text-2xl xxxl:text-4xl mt-2 xs:px-2 text-center pb-2"
+          >
             {{ page.heroe }}
           </p>
           <the-download-button class="justify-center py-4" />
@@ -47,10 +51,12 @@
           <div
             class="flex flex-row bg-footer shadow-lg rounded-xl py-10 px-6 space-x-4 items-start w-11/12 mx-auto"
           >
-            <img
-              class="h-32 w-32 rounded-lg shadow-sm"
-              src="https://storage.googleapis.com/roleever-public-assets/www/qr-code.jpeg"
-              alt="QR Code Download"
+            <nuxt-picture
+              src="imgix:/qr-code.jpeg"
+              class="w-7/12 h-auto rounded-lg shadow-sm"
+              width="512"
+              height="512"
+              alt="RoleEver"
             />
             <div>
               <h3 class="text-xl text-black">
