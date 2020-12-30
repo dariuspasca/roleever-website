@@ -27,7 +27,11 @@
             {{ $t('cookies.more') }}</nuxt-link
           >
         </div>
-        <button class="focus:outline-none right-0" @click="bakeCookie()">
+        <button
+          class="focus:outline-none right-0"
+          :aria-label="$t('labels.close')"
+          @click="bakeCookie()"
+        >
           <svg class="pointer-events-none" width="24px" height="24px">
             <path
               class="pointer-events-none"

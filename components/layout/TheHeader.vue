@@ -112,18 +112,21 @@
       >
         <nuxt-link
           :to="localePath('/')"
+          :aria-label="$t('header.home')"
           class="text-dark-shade hover:text-primary tracking-wider xxxl:text-3xl"
         >
           {{ $t('header.home') }}
         </nuxt-link>
         <nuxt-link
           :to="localePath('features')"
+          :aria-label="$t('header.features')"
           class="text-dark-shade hover:text-primary tracking-wider xxxl:text-3xl"
         >
           {{ $t('header.features') }}
         </nuxt-link>
         <nuxt-link
           :to="localePath('about')"
+          :aria-label="$t('header.about')"
           class="text-dark-shade hover:text-primary tracking-wider xxxl:text-3xl"
         >
           {{ $t('header.about') }}

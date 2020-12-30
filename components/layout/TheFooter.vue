@@ -66,6 +66,7 @@
                 <li>
                   <nuxt-link
                     :to="localePath('/')"
+                    :aria-label="$t('footer.product_home')"
                     class="block hover:text-primary my-2"
                     exact
                   >
@@ -76,6 +77,7 @@
                 <li>
                   <nuxt-link
                     :to="localePath('features')"
+                    :aria-label="$t('footer.product_features')"
                     class="block hover:text-primary my-2"
                     exact
                   >
@@ -85,6 +87,7 @@
                 <li>
                   <nuxt-link
                     :to="localePath('download')"
+                    :aria-label="$t('footer.product_download')"
                     class="block hover:text-primary my-2"
                     exact
                   >
@@ -94,6 +97,7 @@
                 <li>
                   <nuxt-link
                     :to="localePath('about')"
+                    :aria-label="$t('footer.product_about')"
                     class="block hover:text-primary my-2"
                     exact
                   >
@@ -110,6 +114,7 @@
                 <li>
                   <nuxt-link
                     :to="localePath('cookie-policy')"
+                    aria-label="Cookie Policy"
                     class="block hover:text-primary my-2"
                     exact
                   >
@@ -119,6 +124,7 @@
                 <li>
                   <nuxt-link
                     :to="localePath('privacy-policy')"
+                    aria-label="Privacy Policy"
                     class="block hover:text-primary my-2"
                     exact
                   >
@@ -128,6 +134,7 @@
                 <li>
                   <nuxt-link
                     :to="localePath('tos')"
+                    :aria-label="$t('footer.policies_tos')"
                     class="block hover:text-primary my-2"
                     exact
                   >
@@ -137,6 +144,7 @@
                 <li>
                   <nuxt-link
                     :to="localePath('community-code')"
+                    :aria-label="$t('footer.policies_community')"
                     class="block hover:text-primary my-2"
                     exact
                   >
@@ -154,47 +162,76 @@
               <p class="font-semibold text-primary-shade text-sm">
                 {{ $t('footer.resources') }}
               </p>
-              <a
-                href="https://www.roleever.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="my-2 text-sm block hover:text-primary-shade"
-                >{{ $t('footer.resources_press') }}</a
-              >
-              <a
-                href="https://www.roleever.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="my-2 text-sm block hover:text-primary-shade"
-                >{{ $t('footer.resources_brand') }}</a
-              >
-              <a
-                href="https://www.roleever.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="my-2 text-sm block hover:text-primary-shade"
-                >{{ $t('footer.resources_logos') }}</a
-              >
+              <ul class="list-none">
+                <li>
+                  <a
+                    href="https://www.roleever.com/"
+                    :aria-label="$t('footer.resources_press')"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="my-2 text-sm block hover:text-primary-shade"
+                    >{{ $t('footer.resources_press') }}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.roleever.com/"
+                    :aria-label="$t('footer.resources_brand')"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="my-2 text-sm block hover:text-primary-shade"
+                    >{{ $t('footer.resources_brand') }}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.roleever.com/"
+                    :aria-label="$t('footer.resources_logos')"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="my-2 text-sm block hover:text-primary-shade"
+                    >{{ $t('footer.resources_logos') }}</a
+                  >
+                </li>
+              </ul>
             </div>
             <div class="w-1/2">
               <p class="font-semibold text-primary-shade text-sm">
                 {{ $t('footer.partners') }}
               </p>
-
-              <a
-                href="https://www.almacube.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="my-2 text-sm block hover:text-primary-shade"
-                >AlmaCube</a
-              >
-              <a
-                href="https://nanabianca.it/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="my-2 text-sm block hover:text-primary-shade"
-                >Nana Bianca</a
-              >
+              <ul class="list-none">
+                <li></li>
+                <li>
+                  <a
+                    href="https://www.almacube.com/"
+                    aria-label="AlmaCube"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="my-2 text-sm block hover:text-primary-shade"
+                    >AlmaCube</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://nanabianca.it/"
+                    aria-label="Nana Bianca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="my-2 text-sm block hover:text-primary-shade"
+                    >Nana Bianca</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.unibo.it/it/servizi-e-opportunita/imprenditorialita/start-up/Critical-Adventures"
+                    aria-label="UNIBO"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="my-2 text-sm block hover:text-primary-shade"
+                    >UNIBO</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>

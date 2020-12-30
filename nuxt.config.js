@@ -46,18 +46,12 @@ export default {
         color: '#9d9d9d',
       },
       { rel: 'manifest', href: '/site.webmanifest' },
-      {
-        as: 'style',
-        rel: 'stylesheet preload prefetch',
-        href: 'https://use.typekit.net/exi6ibq.css',
-        crossorigin: 'anonymous',
-      },
     ],
   },
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css', '~/assets/fonts/gitan.css'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins

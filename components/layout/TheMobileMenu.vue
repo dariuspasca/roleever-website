@@ -102,6 +102,7 @@
       <div class="flex flex-col w-full">
         <nuxt-link
           :to="localePath('/')"
+          :aria-label="$t('header.home')"
           class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
           @click.native="toggleMobileNav"
         >
@@ -112,6 +113,7 @@
         ></div>
         <nuxt-link
           :to="localePath('features')"
+          :aria-label="$t('header.features')"
           class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
           @click.native="toggleMobileNav"
         >
@@ -122,6 +124,7 @@
         ></div>
         <nuxt-link
           :to="localePath('about')"
+          :aria-label="$t('header.about')"
           class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
           @click.native="toggleMobileNav"
         >
