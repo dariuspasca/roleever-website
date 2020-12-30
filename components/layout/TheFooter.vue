@@ -62,35 +62,44 @@
               <p class="font-semibold text-primary-shade text-sm">
                 {{ $t('footer.product') }}
               </p>
-              <ul class="text-sm">
-                <nuxt-link
-                  :to="localePath('/')"
-                  class="block hover:text-primary my-2"
-                  exact
-                >
-                  {{ $t('footer.product_home') }}
-                </nuxt-link>
-                <nuxt-link
-                  :to="localePath('features')"
-                  class="block hover:text-primary my-2"
-                  exact
-                >
-                  {{ $t('footer.product_features') }}
-                </nuxt-link>
-                <nuxt-link
-                  :to="localePath('download')"
-                  class="block hover:text-primary my-2"
-                  exact
-                >
-                  {{ $t('footer.product_download') }}
-                </nuxt-link>
-                <nuxt-link
-                  :to="localePath('about')"
-                  class="block hover:text-primary my-2"
-                  exact
-                >
-                  {{ $t('footer.product_about') }}
-                </nuxt-link>
+              <ul class="text-sm list-none">
+                <li>
+                  <nuxt-link
+                    :to="localePath('/')"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    {{ $t('footer.product_home') }}
+                  </nuxt-link>
+                </li>
+
+                <li>
+                  <nuxt-link
+                    :to="localePath('features')"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    {{ $t('footer.product_features') }}
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link
+                    :to="localePath('download')"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    {{ $t('footer.product_download') }}
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link
+                    :to="localePath('about')"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    {{ $t('footer.product_about') }}
+                  </nuxt-link>
+                </li>
               </ul>
             </div>
             <div class="w-1/2">
@@ -98,34 +107,42 @@
                 {{ $t('footer.policies') }}
               </p>
               <ul class="text-sm">
-                <nuxt-link
-                  :to="localePath('cookie-policy')"
-                  class="block hover:text-primary my-2"
-                  exact
-                >
-                  Cookie
-                </nuxt-link>
-                <nuxt-link
-                  :to="localePath('privacy-policy')"
-                  class="block hover:text-primary my-2"
-                  exact
-                >
-                  Privacy
-                </nuxt-link>
-                <nuxt-link
-                  :to="localePath('tos')"
-                  class="block hover:text-primary my-2"
-                  exact
-                >
-                  {{ $t('footer.policies_tos') }}
-                </nuxt-link>
-                <nuxt-link
-                  :to="localePath('community-code')"
-                  class="block hover:text-primary my-2"
-                  exact
-                >
-                  {{ $t('footer.policies_community') }}
-                </nuxt-link>
+                <li>
+                  <nuxt-link
+                    :to="localePath('cookie-policy')"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    Cookie
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link
+                    :to="localePath('privacy-policy')"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    Privacy
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link
+                    :to="localePath('tos')"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    {{ $t('footer.policies_tos') }}
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link
+                    :to="localePath('community-code')"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    {{ $t('footer.policies_community') }}
+                  </nuxt-link>
+                </li>
               </ul>
             </div>
           </div>

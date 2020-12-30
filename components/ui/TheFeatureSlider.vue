@@ -54,11 +54,11 @@
               style="height: 250px"
               class="ml-10 xs:ml-0 sm:ml-20 md:ml-24"
             >
-              <h3
+              <h1
                 class="text-xl sm:text-xl lg:text-lg subpixel-antialiased uppercase"
               >
                 {{ currentSubheader }}
-              </h3>
+              </h1>
 
               <h2
                 class="text-2xl sm:text-xl lg:text-3xl font-medium subpixel-antialiased"

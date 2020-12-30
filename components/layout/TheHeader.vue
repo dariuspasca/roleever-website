@@ -91,6 +91,7 @@
       <!--Mobile NavBar Button-->
       <button
         class="hidden xs:block px-3 mr-2 h-8 mt-2"
+        :aria-label="$t('labels.menu')"
         @click="toggleMobileNav"
       >
         <svg

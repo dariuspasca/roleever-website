@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col w-full md:min-h-screen min-h-full bg-fixed bg-cover bg-left-top bg-view font-gitan"
+    class="relative flex flex-col w-full min-h-screen bg-fixed bg-cover bg-left-top bg-view font-gitan"
   >
     <!--The Cookie Snackbar-->
     <transition name="fade">
@@ -97,13 +97,13 @@ export default {
 <style>
 @media (max-width: 767px) {
   .bg-view {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_mobile.jpg);
+    background-image: url('~assets/images/background_mobile.jpg');
   }
 }
 
 @media (min-width: 768px) {
   .bg-view {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg.jpg);
+    background-image: url('~assets/images/background.jpg');
   }
 }
 </style>

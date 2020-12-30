@@ -40,5 +40,11 @@
   "cookies": {
     "inform": "We use Cookies",
     "more": "Learn more"
+  },
+  "labels": {
+    "download": "Download App",
+    "menu": "Open Menu",
+    "close": "Close",
+    "contact": "Contact Us"
   }
 }

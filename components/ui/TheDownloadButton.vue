@@ -2,6 +2,7 @@
   <div class="flex w-full">
     <button
       class="inline-flex items-center bg-primary shadow-xl hover:shadow-2xl text-white font-gitan xxxl:text-2xl py-4 px-8 lg:px-16 rounded xs:rounded-lg xs:min-w-8/12 focus:outline-none transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale"
+      :aria-label="$t('labels.download')"
       @click="downloadClick()"
     >
       <svg

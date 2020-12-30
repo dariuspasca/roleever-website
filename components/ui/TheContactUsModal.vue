@@ -17,6 +17,7 @@
       <div slot="top-right">
         <button
           class="text-dark float-right my-3 mr-3 focus:outline-none"
+          :aria-label="$t('labels.contact')"
           @click="$modal.hide('send-message')"
         >
           <svg
