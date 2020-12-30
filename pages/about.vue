@@ -16,10 +16,12 @@
         <div class="flex flex-row xs:flex-col my-auto">
           <!--About Photo-->
           <div class="w-6/12 xs:w-full my-auto pointer-events-none">
-            <img
-              class="shadow-xl mx-auto rounded-lg w-10/12 xs:11/12 h-auto my-auto"
+            <nuxt-picture
               :src="page.team"
-              alt="RoleEver Team"
+              class="shadow-xl mx-auto rounded-lg w-10/12 xs:11/12 h-auto my-auto"
+              width="900"
+              height="600"
+              :alt="page.team_title"
             />
           </div>
           <!--About Description-->
@@ -58,10 +60,12 @@
           </div>
           <!--Nick Image-->
           <div class="w-6/12 xs:w-full xs:order-first lg:-ml-16">
-            <img
-              class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 xxxl:w-6/12 h-auto my-auto"
+            <nuxt-picture
               :src="page.nick_the_dragon"
-              alt="Nick The Dragon"
+              class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 xxxl:w-6/12 h-auto my-auto"
+              width="307"
+              height="410"
+              :alt="page.nick_the_dragon_title"
             />
           </div>
         </div>
@@ -80,13 +84,11 @@
             class="space-y-1 mt-16 sm:px-4 md:px-8 px-16 xs:px-8"
           >
             <!--Card Illustration-->
-            <img
+            <nuxt-picture
+              :src="'imgix:/about/' + item.card_header + '.png'"
               class="w-9/12 h-auto mx-auto xs:pt-20"
-              :src="
-                'https://storage.googleapis.com/roleever-public-assets/www/about/' +
-                item.card_header +
-                '.png'
-              "
+              width="230"
+              height="307"
               :alt="item.card_header"
             />
             <!--Card Name-->
@@ -130,19 +132,21 @@
         {{ page.artists_header }}
       </h1>
       <div
-        class="flex flex-wrap justify-center xs: space-x-12 xs:space-x-0 sm:space-x-4 md:space-x-4 w-7/12 xs:w-full sm:w-11/12 md:w-11/12 xxxl:w-3/12 mx-auto"
+        class="flex flex-wrap justify-center xs: space-x-12 xs:space-x-0 sm:space-x-4 md:space-x-4 w-6/12 xs:w-full sm:w-11/12 md:w-11/12 xxxl:w-4/12 mx-auto pt-2"
       >
         <!--Artists Cards-->
         <div
           v-for="(item, index) in page.artist_card"
           :key="'reference-item-' + index"
-          class="flex flex-col justify-center pb-10 xs:w-4/12 cursor-pointer"
+          class="flex flex-col justify-center pb-10 xs:w-4/12 w-2/12 sm:w-3/12 md:w-3/12 xxxl:w-3/12 cursor-pointer space-y-2"
           @click="openLink(item.artist_profile)"
         >
-          <img
+          <nuxt-picture
             :src="item.artist_image"
+            class="w-7/12 h-full mx-auto transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
+            width="193"
+            height="193"
             :alt="item.artist_name"
-            class="w-7/12 h-auto mx-auto py-4 transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
           />
           <h2
             class="text-xl font-base subpixel-antialiased tracking-wider text-center w-full capitalize text-white text-shadow"

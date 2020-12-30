@@ -29,7 +29,7 @@
 }
 
 .preview-image {
-  max-width: 270px;
+  width: 270px;
 }
 
 @media (min-width: 2160px) {
@@ -38,24 +38,23 @@
   }
 }
 
-
 .img-shadow {
   -webkit-filter: drop-shadow(0px 3px 50px #00000040);
   filter: drop-shadow(0px 3px 50px #00000040);
 }
 
 .lineaDorata {
-  background-image: url(https://storage.googleapis.com/roleever-public-assets/www/LineaDorata.png);
+  background-image: url('~assets/images/LineaDorata.png');
 }
 
 @media (min-width: 1024px) {
   .lineaDorata {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/LineaDorata2.png);
+    background-image: url('~assets/images/LineaDorata2.png');
   }
 }
 
 .bg-fantasy {
-  background-image: url(https://storage.googleapis.com/roleever-public-assets/www/about/fantasy.jpg);
+  background-image: url('~assets/images/fantasy.jpg');
 }
 
 .exact-active-link {
@@ -65,13 +64,13 @@
 
 @media (max-width: 767px) {
   .bg-view {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_mobile.jpg);
+    background-image: url('~assets/images/background_mobile.jpg');
   }
 }
 
 @media (min-width: 768px) {
   .bg-view {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg.jpg);
+    background-image: url('~assets/images/background.jpg');
   }
 }
 
@@ -83,13 +82,13 @@
 
 @media (min-width: 768px) {
   .bg-view-card {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg.jpg);
+    background-image: url('~assets/images/background.jpg');
   }
 }
 
 @media (max-width: 767px) {
   .bg-view-card-container {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg.jpg);
+    background-image: url('~assets/images/background.jpg');
   }
 }
 
@@ -101,17 +100,53 @@
 
 @media (max-width: 767px) {
   .bg-footer {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_footer_mobile.jpg);
+    background-image: url('~assets/images/background_footer_mobile.jpg');
   }
 }
 
 @media (min-width: 768px) {
   .bg-footer {
-    background-image: url(https://storage.googleapis.com/roleever-public-assets/www/bg_footer.jpg);
+    background-image: url('~assets/images/background_footer.jpg');
   }
 }
 .text-shadow {
   text-shadow: 0px 3px 6px #00000066;
+}
+
+.dungeon {
+  background-image: url('~assets/images/dungeon.png');
+  width: 70%;
+  height: 80%;
+  opacity: 0.6;
+  top: 60%;
+  right: 20%;
+  transform: translate(50%, -50%);
+}
+
+@media (max-width: 767px) {
+  .dungeon {
+    width: 180%;
+    height: 75%;
+    right: 50%;
+    transform: translate(35%, -15%);
+  }
+}
+
+/* small smartphone */
+@media (max-width: 375px) and (max-height: 736px) {
+  .dungeon {
+    top: 75%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .dungeon {
+    width: 70%;
+    height: 50%;
+    right: 25%;
+    top: 55%;
+    transform: translate(50%, -50%);
+  }
 }
 
 @layer components {

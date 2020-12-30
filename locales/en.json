@@ -36,5 +36,9 @@
     "features": "Features",
     "about": "About Us",
     "join_us": "Join us on"
+  },
+  "cookies": {
+    "inform": "We use Cookies",
+    "more": "Learn more"
   }
 }

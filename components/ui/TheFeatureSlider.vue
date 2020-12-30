@@ -24,7 +24,10 @@
         class="absolute xs:hidden laboratory-preview unselectable z-30 left-0"
         :src="currentImage"
         :alt="currentHeader"
+        width="429"
+        height="818"
       />
+
       <!--Card -->
 
       <div
@@ -33,9 +36,11 @@
         <!--Mobile Preview Feature -->
         <div class="w-2/12 xs:w-full sm:w-1/12 md:w-1/12">
           <img
+            class="hidden xs:flex w-full rounded-t-xl"
             :src="currentImageMobile"
             :alt="currentHeader"
-            class="hidden xs:flex w-full rounded-t-xl"
+            width="414"
+            height="247"
           />
         </div>
 

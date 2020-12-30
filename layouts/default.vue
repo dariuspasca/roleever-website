@@ -4,7 +4,7 @@
   >
     <!--The Cookie Snackbar-->
     <transition name="fade">
-      <the-cookie-snack v-if="showCookieBanner" class="fixed z-30 bottom-0" />
+      <the-cookie-snack v-if="!showCookieBanner" class="fixed z-30 bottom-0" />
     </transition>
 
     <!--Mobile Menu-->

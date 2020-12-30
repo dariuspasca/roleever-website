@@ -24,16 +24,12 @@
           />
         </div>
         <div>
-          <!-- <img
+          <nuxt-picture
+            src="imgix:/roleEver.png"
             class="relative mx-auto unselectable preview-image img-shadow"
-            src="https://storage.googleapis.com/roleever-public-assets/www/roleEver.png"
-            alt="RoleEver App"
-          /> -->
-          <nuxt-image
-            src="/previews/roleEver.png"
-            class="relative mx-auto unselectable preview-image img-shadow h-auto"
             width="429"
             height="818"
+            alt="RoleEver"
           />
         </div>
       </div>
@@ -132,41 +128,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.dungeon {
-  background-image: url('https://storage.googleapis.com/roleever-public-assets/www/dungeon.png');
-  width: 70%;
-  height: 80%;
-  opacity: 0.6;
-  top: 60%;
-  right: 20%;
-  transform: translate(50%, -50%);
-}
-
-@media (max-width: 767px) {
-  .dungeon {
-    width: 180%;
-    height: 75%;
-    right: 50%;
-    transform: translate(35%, -15%);
-  }
-}
-
-/* small smartphone */
-@media (max-width: 375px) and (max-height: 736px) {
-  .dungeon {
-    top: 75%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .dungeon {
-    width: 70%;
-    height: 50%;
-    right: 25%;
-    top: 55%;
-    transform: translate(50%, -50%);
-  }
-}
-</style>

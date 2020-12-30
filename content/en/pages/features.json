@@ -5,7 +5,7 @@
 
   "chat_title": "Chat",
   "chat_description": "The days spent in abstinence from RPGs are over! With RoleEver chat you can play asynchronously h24. Yes, even in the bathroom.",
-  "chat_preview": "imgix:/features/Chat.webp",
+  "chat_preview": "imgix:/features/Chat.png",
 
   "dicerolls_title": "Dice Rolls",
   "dicerolls_description": "You can share your critical failures directly in chat! The app interfaces with your character sheet and the results are calculated automatically. So everyone will see how, when trying to hit the boss, you drop a blow on the head of the cleric causing a TPK.",
@@ -22,27 +22,27 @@
       "feature_subheader": "For you masters",
       "feature_header": "Create your system",
       "feature_description": "The kobold alchemist's shop went bankrupt and he decided to rent his laboratory to us. Here you can create your favorite game systems. Give the shape you want to the sheets that your players will use and create all the statistics you need. This feature cost our Troll Programmer a few white hairs...",
-      "feature_preview": "https://storage.googleapis.com/roleever-public-assets/www/mockup.png",
-      "feature_mobile_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/lab-mobile.jpg"
+      "feature_preview": "https://roleever-app.imgix.net/features/Lab-Schede.png",
+      "feature_mobile_preview": "https://roleever-app.imgix.net/features/M-Lab-Schede.jpg"
     },
     {
       "feature_subheader": "For you masters",
       "feature_header": "Create system rolls",
       "feature_description": "Your alchemical creation is not complete until you add the system rolls, ie the macros available to your players. You can create any macro by integrating the stats of the sheets, but watch out: we are not legally responsible for the explosion of any chemical reactions...",
-      "feature_preview": "https://storage.googleapis.com/roleever-public-assets/www/mockup_2.png",
-      "feature_mobile_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/lab-mobile_2.jpg"
+      "feature_preview": "https://roleever-app.imgix.net/features/Lab-Tiri.png",
+      "feature_mobile_preview": "https://roleever-app.imgix.net/features/M-Lab-Tiri.jpg"
     },
     {
       "feature_subheader": "For all",
       "feature_header": "Share",
       "feature_description": "Finally, you can share the system you created with the community. So masters who are too busy accumulating gold coins in real life will be able to download the magnificent shared creations!",
-      "feature_preview": "https://storage.googleapis.com/roleever-public-assets/www/mockup.png",
-      "feature_mobile_preview": "https://storage.googleapis.com/roleever-public-assets/www/features/lab-mobile.jpg"
+      "feature_preview": "https://roleever-app.imgix.net/features/Lab-Share.png",
+      "feature_mobile_preview": "https://roleever-app.imgix.net/features/M-Lab-Share.jpg"
     }
   ],
 
-  "more_nick_title":"Nick the dragon",
-  "more_nick":"https://roleever-app.imgix.net/features/Nick.png",
+  "more_nick_title": "Nick the dragon",
+  "more_nick": "https://roleever-app.imgix.net/features/Nick.png",
   "more_title": "And more, A LOT more!",
   "lobby_title": "Stories Board",
   "lobby_description": "Looking for a party? Browse the Stories Board and join one of the available campaigns.",

@@ -48,7 +48,6 @@
         <div class="flex w-6/12 xs:w-full items-center">
           <nuxt-picture
             :src="page.chat_preview"
-            sizes="300 (webp)"
             class="xs:w-11/12 sm:w-10/12 w-7/12 h-auto float-left xs:float-none ml-10 xs:mx-auto"
             width="835"
             height="1022"
@@ -187,10 +186,10 @@
       <!--Nick Section-->
       <img
         class="w-3/12 xs:w-8/12 sm:w-5/12 xxxl:w-3/12 h-auto float-left -ml-24 absolute xs:relative sm:relative md:mt-48 xs:mx-auto sm:mx-auto xxxl:ml-0"
-        width="789"
-        height="1052"
         :src="page.more_nick"
         :alt="page.more_nick_title"
+        width="789"
+        height="1052"
       />
       <div
         class="flex flex-col w-8/12 xs:w-11/12 sm:w-10/12 md:w-9/12 xxxl:w-6/12 mx-auto"
