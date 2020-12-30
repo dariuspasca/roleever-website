@@ -47,8 +47,10 @@ export default {
       },
       { rel: 'manifest', href: '/site.webmanifest' },
       {
-        rel: 'stylesheet',
+        as: 'style',
+        rel: 'stylesheet preload prefetch',
         href: 'https://use.typekit.net/exi6ibq.css',
+        crossorigin: 'anonymous',
       },
     ],
   },
