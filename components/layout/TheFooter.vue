@@ -59,10 +59,10 @@
             class="flex flex-row w-full md:w-3/6 lg:w-3/6 my-4 space-x-10 md:space-x-0 lg:space-x-0"
           >
             <div class="w-1/2">
-              <p class="font-semibold text-primary-shade text-sm">
+              <p class="font-semibold text-primary-shade text-sm xs:text-base">
                 {{ $t('footer.product') }}
               </p>
-              <ul class="text-sm list-none">
+              <ul class="text-sm xs:text-base list-none">
                 <li>
                   <nuxt-link
                     :to="localePath('/')"
@@ -107,10 +107,10 @@
               </ul>
             </div>
             <div class="w-1/2">
-              <p class="font-semibold text-primary-shade text-sm">
+              <p class="font-semibold text-primary-shade text-sm xs:text-base">
                 {{ $t('footer.policies') }}
               </p>
-              <ul class="text-sm">
+              <ul class="text-sm xs:text-base list-none">
                 <li>
                   <nuxt-link
                     :to="localePath('cookie-policy')"
@@ -159,17 +159,17 @@
             class="flex flex-row w-full md:w-3/6 lg:w-3/6 mt-10 md:my-2 lg:my-2 space-x-10 md:space-x-0 lg:space-x-0"
           >
             <div class="w-1/2">
-              <p class="font-semibold text-primary-shade text-sm">
+              <p class="font-semibold text-primary-shade text-sm xs:text-base">
                 {{ $t('footer.resources') }}
               </p>
-              <ul class="list-none">
+              <ul class="text-sm xs:text-base list-none">
                 <li>
                   <a
                     href="https://www.roleever.com/"
                     :aria-label="$t('footer.resources_press')"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="my-2 text-sm block hover:text-primary-shade"
+                    class="my-2 block hover:text-primary-shade"
                     >{{ $t('footer.resources_press') }}</a
                   >
                 </li>
@@ -179,7 +179,7 @@
                     :aria-label="$t('footer.resources_brand')"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="my-2 text-sm block hover:text-primary-shade"
+                    class="my-2 block hover:text-primary-shade"
                     >{{ $t('footer.resources_brand') }}</a
                   >
                 </li>
@@ -189,25 +189,24 @@
                     :aria-label="$t('footer.resources_logos')"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="my-2 text-sm block hover:text-primary-shade"
+                    class="my-2 block hover:text-primary-shade"
                     >{{ $t('footer.resources_logos') }}</a
                   >
                 </li>
               </ul>
             </div>
             <div class="w-1/2">
-              <p class="font-semibold text-primary-shade text-sm">
+              <p class="font-semibold text-primary-shade text-sm sm:text-base">
                 {{ $t('footer.partners') }}
               </p>
-              <ul class="list-none">
-                <li></li>
+              <ul class="text-sm xs:text-base list-none">
                 <li>
                   <a
                     href="https://www.almacube.com/"
                     aria-label="AlmaCube"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="my-2 text-sm block hover:text-primary-shade"
+                    class="my-2 block hover:text-primary-shade"
                     >AlmaCube</a
                   >
                 </li>
@@ -217,7 +216,7 @@
                     aria-label="Nana Bianca"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="my-2 text-sm block hover:text-primary-shade"
+                    class="my-2 block hover:text-primary-shade"
                     >Nana Bianca</a
                   >
                 </li>
@@ -227,7 +226,7 @@
                     aria-label="UNIBO"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="my-2 text-sm block hover:text-primary-shade"
+                    class="my-2 block hover:text-primary-shade"
                     >UNIBO</a
                   >
                 </li>

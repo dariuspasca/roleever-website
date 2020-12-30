@@ -7,7 +7,10 @@
           v-if="showLogo"
           class="flex font-semibold text-xl tracking-tight md:ml-5 lg:ml-10"
         >
-          <nuxt-link :to="localePath('/')" class="inline-block"
+          <nuxt-link
+            :to="localePath('/')"
+            aria-label="Home"
+            class="inline-block"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 2200 600"

@@ -396,11 +396,11 @@
               </g>
             </svg>
 
-            <h3
+            <h1
               class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
             >
               {{ page.map_title }}
-            </h3>
+            </h1>
             <p class="text-left py-2 px-6">
               {{ page.map_description }}
             </p>
@@ -461,11 +461,11 @@
                 <path data-name="Rectangle 21" fill="none" d="M0 0h48v48H0z" />
               </g>
             </svg>
-            <h3
+            <h1
               class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
             >
               {{ page.png_title }}
-            </h3>
+            </h1>
             <p class="text-left py-2 px-6">
               {{ page.png_description }}
             </p>
@@ -529,11 +529,11 @@
               </g>
             </svg>
 
-            <h3
+            <h1
               class="text-xl sm:text-xl lg:text-lg font-bold subpixel-antialiased text-secondary"
             >
               {{ page.multichat_title }}
-            </h3>
+            </h1>
             <p class="text-left py-2 px-6">
               {{ page.multichat_description }}
             </p>
