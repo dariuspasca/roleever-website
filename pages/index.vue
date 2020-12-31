@@ -24,11 +24,12 @@
           />
         </div>
         <div>
-          <nuxt-picture
-            src="imgix:/roleEver.png"
+          <img
+            src="https://roleever-app.imgix.net/roleEver.png"
             class="relative mx-auto unselectable preview-image img-shadow"
             width="429"
             height="818"
+            loading="lazy"
             alt="RoleEver"
           />
         </div>

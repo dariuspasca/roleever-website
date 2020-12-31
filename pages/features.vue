@@ -46,11 +46,12 @@
         </div>
         <!--Chat Preview-->
         <div class="flex w-6/12 xs:w-full items-center">
-          <nuxt-picture
+          <img
             :src="page.chat_preview"
             class="xs:w-11/12 sm:w-10/12 w-7/12 h-auto float-left xs:float-none ml-10 xs:mx-auto"
             width="835"
             height="1022"
+            loading="lazy"
             :alt="page.chat_title"
           />
         </div>
@@ -67,11 +68,12 @@
           <div
             class="flex w-6/12 xs:w-full xs:order-last xs:pt-6 items-center justify-center"
           >
-            <nuxt-picture
+            <img
               :src="page.dicerolls_preview"
               class="xs:w-11/12 sm:w-10/12 w-10/12 h-auto"
               width="931"
               height="889"
+              loading="lazy"
               :alt="page.dicerolls_title"
             />
           </div>
@@ -138,11 +140,12 @@
         </div>
         <!--CharacterSheets Preview-->
         <div class="flex w-6/12 xs:w-full items-center">
-          <nuxt-picture
+          <img
             :src="page.sheets_preview"
             class="xs:w-10/12 sm:w-10/12 w-5/12 h-auto float-left xs:float-none ml-10 xs:mx-auto img-shadow"
             width="415"
             height="730"
+            loading="lazy"
             :alt="page.sheets_title"
           />
         </div>
