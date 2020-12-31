@@ -1,6 +1,12 @@
 <template>
   <div class="container h-screen xs:h-full sm:mx-auto md:mx-auto">
-    <div class="fixed dungeon bg-cover bg-no-repeat"></div>
+    <!-- Dungeon Background -->
+    <span class="fixed dungeon w-full">
+      <img
+        class="w-full lg:w-8/12 unselectable mx-auto"
+        src="~assets/images/dungeon.png"
+        alt="dungeon"
+    /></span>
     <div
       class="relative flex flex-row h-full w-full xs:flex-col sm:flex-col mx-auto space-x-10 xs:space-x-0 sm:space-x-0 items-center justify-center xs:pt-10 xs:pb-20"
     >
@@ -54,7 +60,7 @@
           >
             <img
               src="https://roleever-app.imgix.net/qr-code.jpeg"
-              class="w-7/12 h-auto rounded-lg shadow-sm"
+              class="w-32 h-32 rounded-lg shadow-sm"
               width="512"
               height="512"
               loading="lazy"

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col w-full min-h-screen bg-fixed bg-cover bg-left-top bg-view font-gitan"
+    class="relative flex flex-col w-full min-h-screen bg-fixed xs:bg-scroll bg-cover bg-center bg-view font-gitan"
   >
     <!--The Cookie Snackbar-->
     <transition name="fade">
@@ -78,7 +78,9 @@ export default {
     })
   },
   created() {
-    setTimeout(() => (this.showCookieBanner = !this.cookieConsent), 1500)
+    if (this.cookieConsent) {
+      setTimeout(() => (this.showCookieBanner = true), 1500)
+    }
   },
   methods: {
     toggleBodyClass(addRemoveClass, className) {
@@ -93,17 +95,3 @@ export default {
   },
 }
 </script>
-
-<style>
-@media (max-width: 767px) {
-  .bg-view {
-    background-image: url('~assets/images/background_mobile.jpg');
-  }
-}
-
-@media (min-width: 768px) {
-  .bg-view {
-    background-image: url('~assets/images/background.jpg');
-  }
-}
-</style>

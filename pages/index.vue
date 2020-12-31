@@ -3,7 +3,12 @@
     class="relative flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
   >
     <!-- Dungeon Background -->
-    <div class="fixed dungeon bg-cover bg-no-repeat"></div>
+    <span class="fixed dungeon w-full">
+      <img
+        class="w-full lg:w-8/12 unselectable mx-auto"
+        src="~assets/images/dungeon.png"
+        alt="dungeon"
+    /></span>
 
     <div class="container sm:flex sm:w-11/12 xxxl:w-8/12 mx-auto my-auto">
       <div

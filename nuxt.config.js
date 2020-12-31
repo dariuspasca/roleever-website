@@ -84,18 +84,7 @@ export default {
     '@nuxtjs/device',
     '@nuxtjs/toast',
     'cookie-universal-nuxt',
-    '@nuxt/image',
   ],
-  /*
-   ** nuxt-image configuration
-   */
-  image: {
-    providers: {
-      imgix: {
-        baseURL: 'https://roleever-app.imgix.net',
-      },
-    },
-  },
   /*
    ** nuxt-i18n configuration
    */

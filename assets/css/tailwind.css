@@ -2,6 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html,
+body {
+  height: 100%;
+}
+
 .layout-enter-active,
 .layout-leave-active {
   transition: opacity 0.5s;
@@ -114,21 +119,23 @@
 }
 
 .dungeon {
-  background-image: url('~assets/images/dungeon.png');
-  width: 70%;
-  height: 80%;
+  width: 100%;
   opacity: 0.6;
-  top: 60%;
-  right: 20%;
-  transform: translate(50%, -50%);
 }
 
 @media (max-width: 767px) {
   .dungeon {
     width: 180%;
-    height: 75%;
-    right: 50%;
-    transform: translate(35%, -15%);
+  }
+}
+
+@media (min-width: 768px) {
+  .dungeon {
+    width: 110%;
+    height: 130%;
+    top: 90%;
+    right: 20%;
+    transform: translate(50%, -50%);
   }
 }
 
@@ -141,10 +148,10 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .dungeon {
-    width: 70%;
-    height: 50%;
-    right: 25%;
-    top: 55%;
+    width: 110%;
+    height: 90%;
+    right: 10%;
+    top: 75%;
     transform: translate(50%, -50%);
   }
 }
