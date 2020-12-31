@@ -27,7 +27,6 @@
           <nuxt-picture
             src="imgix:/roleEver.png"
             class="relative mx-auto unselectable preview-image img-shadow"
-            :lazy="false"
             width="429"
             height="818"
             alt="RoleEver"
