@@ -14,6 +14,7 @@
     "@hcaptcha/vue-hcaptcha": "^0.2.4",
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/device": "^1.2.7",
+    "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/toast": "^3.3.1",
     "@tailwindcss/typography": "^0.3.1",
     "cookie-universal-nuxt": "^2.1.4",

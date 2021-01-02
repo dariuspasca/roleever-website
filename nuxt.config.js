@@ -80,10 +80,11 @@ export default {
    */
   modules: [
     '@nuxt/content',
-    'nuxt-i18n',
     '@nuxtjs/device',
     '@nuxtjs/toast',
+    'nuxt-i18n',
     'cookie-universal-nuxt',
+    '@nuxtjs/sitemap',
   ],
   /*
    ** nuxt-i18n configuration
