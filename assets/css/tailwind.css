@@ -49,17 +49,17 @@ body {
 }
 
 .lineaDorata {
-  background-image: url('~assets/images/LineaDorata.png');
+  background-image: url('https://roleever-app.imgix.netLineaDorata.png?fm=png&auto=format&lossless=1');
 }
 
 @media (min-width: 1024px) {
   .lineaDorata {
-    background-image: url('~assets/images/LineaDorata2.png');
+    background-image: url('https://roleever-app.imgix.net/LineaDorata2.png?fm=png&auto=format&lossless=1');
   }
 }
 
 .bg-fantasy {
-  background-image: url('~assets/images/fantasy.jpg');
+  background-image: url('https://roleever-app.imgix.net/fantasy.jpg?fm=jpg&auto=format&lossless=1&q=80');
 }
 
 .exact-active-link {
@@ -69,13 +69,13 @@ body {
 
 @media (max-width: 767px) {
   .bg-view {
-    background-image: url('~assets/images/background_mobile.jpg');
+    background-image: url('https://roleever-app.imgix.net/background_mobile.jpg?fm=jpg&auto=format');
   }
 }
 
 @media (min-width: 768px) {
   .bg-view {
-    background-image: url('~assets/images/background.jpg');
+    background-image: url('https://roleever-app.imgix.net/background.jpg?fm=jpg&auto=format');
   }
 }
 
@@ -87,13 +87,13 @@ body {
 
 @media (min-width: 768px) {
   .bg-view-card {
-    background-image: url('~assets/images/background.jpg');
+    background-image: url('https://roleever-app.imgix.net/background.jpg?fm=jpg&auto=format');
   }
 }
 
 @media (max-width: 767px) {
   .bg-view-card-container {
-    background-image: url('~assets/images/background.jpg');
+    background-image: url('https://roleever-app.imgix.net/background.jpg?fm=jpg&auto=format');
   }
 }
 
@@ -105,13 +105,13 @@ body {
 
 @media (max-width: 767px) {
   .bg-footer {
-    background-image: url('~assets/images/background_footer_mobile.jpg');
+    background-image: url('https://roleever-app.imgix.net/background_footer_mobile.jpg?fm=jpg&auto=format');
   }
 }
 
 @media (min-width: 768px) {
   .bg-footer {
-    background-image: url('~assets/images/background_footer.jpg');
+    background-image: url('https://roleever-app.imgix.net/background_footer.jpg?fm=jpg&auto=format');
   }
 }
 .text-shadow {

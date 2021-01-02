@@ -24,6 +24,7 @@
         class="absolute xs:hidden laboratory-preview unselectable z-30 left-0"
         :src="currentImage"
         :alt="currentHeader"
+        loading="lazy"
         width="429"
         height="818"
       />
@@ -39,6 +40,7 @@
             class="hidden xs:flex w-full rounded-t-xl"
             :src="currentImageMobile"
             :alt="currentHeader"
+            loading="lazy"
             width="414"
             height="247"
           />

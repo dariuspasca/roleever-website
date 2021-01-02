@@ -8,7 +8,7 @@
         <img
           class="h-4 w-6 my-auto"
           :src="require(`~/assets/images/${this.$i18n.locale}.png`)"
-          alt="Current language flag"
+          :alt="this.$i18n.locale"
         />
         <span class="mb-1">{{ selectedLanguage.name }}</span>
         <svg
@@ -30,6 +30,7 @@
           v-for="locale in availableLocales"
           :key="locale.code"
           class="flex flex-row space-x-2 pl-2 w-full select-none"
+          :aria-label="$t('labels.lang')"
           :to="switchLocalePath(locale.code)"
           @click.prevent.stop="setLocale(locale.code)"
         >

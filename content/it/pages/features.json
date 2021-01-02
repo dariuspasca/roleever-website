@@ -9,7 +9,7 @@
 
   "dicerolls_title": "Tiri di dado",
   "dicerolls_description": "Su RoleEver puoi inviare i tuoi fallimenti critici direttamente in chat! L'app si interfaccia con la tua scheda pg e i risultati vengono calcolati in automatico. Così tutti potranno vedere come, cercando di colpire il boss, cali un fendente sulla testa del chierico provocando un TPK.",
-  "dicerolls_preview": "https://roleever-app.imgix.net/features/Tiri.png?fm=png&auto=format&lossless=1&q=100",
+  "dicerolls_preview": "https://roleever-app.imgix.net/features/Tiri.png?fm=png&auto=format&lossless=1&q=80",
 
   "sheets_title": "Schede PG",
   "sheets_description": "Nessun'app esterna per le tenere le schede pg! In ogni campagna ogni giocatore puo' vedere la sua scheda aprendola dal menu di gioco.",
@@ -42,7 +42,7 @@
   ],
 
   "more_nick_title": "Nick il drago",
-  "more_nick": "https://roleever-app.imgix.net/features/Nick.png?fm=png&auto=format&lossless=1&q=100",
+  "more_nick": "https://roleever-app.imgix.net/features/Nick.png?fm=png&auto=format&lossless=1&q=75",
   "more_title": "E tanto, ma TANTO altro!",
   "lobby_title": "Bacheca Storie",
   "lobby_description": "Non hai un gruppo di gioco? Entra nella pagina Bacheca e unisciti alle campagne aperte disponibili.",
