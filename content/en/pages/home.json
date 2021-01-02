@@ -2,29 +2,26 @@
   "title_first": "RPGs IN YOUR POCKET.",
   "heroe": "Chat, dice rolls and character sheets! All in one app.",
 
-  "meta_header": "RoleEver: Play by chat pen and paper RPGs",
-  "meta_description": "RoleEver is a mobile application to play pen and paper RPGs on your smartphone",
+  "meta_header": "RoleEver | Play by chat RPGs application",
+  "meta_description": "RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!",
 
-  "discover": "Discover the features",
-
-  "og_title": "RoleEver:Tabletop RPG play by chat app",
+  "og_title": "RoleEver | Play by chat RPGs application",
   "og_type": "website",
-  "og_description": "RoleEver is a mobile application to play pen and paper RPGs on your smartphone",
+  "og_description": "RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!",
   "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
   "og_url": "https://www.roleever.com",
 
   "twitter_card": "summary_large_image",
   "twitter_site": "@roleever",
-  "twitter_title": "RoleEver: Play by chat pen and paper RPGs",
-  "twitter_description": "RoleEver is a mobile application to play pen and paper RPGs on your smartphone",
+  "twitter_title": "RoleEver | Play by chat RPGs application",
+  "twitter_description": "RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!a",
   "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
 
-  "twitter_ios_country": "",
-  "twitter_ios_name": "",
-  "twitter_ios_id": "",
+  "twitter_ios_name": "RoleEver - RPGs by chat",
+  "twitter_ios_id": "1498035308",
   "twitter_ios_url": "",
 
-  "twitter_android_name": "",
-  "twitter_android_id": "",
+  "twitter_android_name": "RoleEver - RPGs by chat",
+  "twitter_android_id": "com.RoleEver",
   "twitter_android_url": ""
 }

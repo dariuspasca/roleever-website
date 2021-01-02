@@ -90,7 +90,7 @@
               :src="
                 'https://roleever-app.imgix.net/about/' +
                 item.card_header +
-                '.png'
+                '.png?fm=png&auto=format&lossless=1&q=75'
               "
               class="w-9/12 h-auto mx-auto xs:pt-20"
               width="230"

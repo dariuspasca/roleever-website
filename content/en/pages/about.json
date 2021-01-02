@@ -1,131 +1,129 @@
 {
-    "header": "We Are Roleplayers",
-    "sub_header": "If we don't have our weekly session we suffer from withdrawal symptoms. And so, we invented RoleEver, and yes, we work on it full-time!",
-  
-    "contact_button": "Contact us!",
-  
-    "team": "https://roleever-app.imgix.net/about/team.jpg",
-    "team_title": "RoleEver Team",
-    "team_bio_header": "RoleEver starts in 2018 from these 3 adventurers who have the crazy ambition to make RPGs accessible to everyone, everywhere. Even during their coffee break.",
-  
-    "team_bio_sub_header": "The passion for RPGs is strong with us! Not a day goes by without thinking to the next game session :D",
-  
-    "nick_the_dragon": "https://roleever-app.imgix.net/about/nick.png",
-    "nick_the_dragon_title": "Nick the dragon",
-    "nick_the_dragon_bio": "Nick is a Pseudodragon. Chief and undisputed master of RoleEver. Don't be fooled by the pose... he's a joker! It will guide you everywhere to the best adventures!",
-  
-    "party_header": "Our party",
-  
-    "member_card": [
-      {
-        "card_header": "darius",
-        "skills": [
-          "Party leader (CEO)",
-          "Group treasurer (manages, the few, gp)",
-          "Messenger (community manager)",
-          "Skill Monkey (no one understands what exactly he does)"
-        ],
-        "card_footer": "skills"
-      },
-      {
-        "card_header": "flam",
-        "skills": [
-          "Architect (UI/UX design)",
-          "Scribe (writes the release notes)",
-          "Wizard (creates graphic illusions to convince everyone to follow us on social networks)"
-        ],
-        "card_footer": "skills"
-      },
-      {
-        "card_header": "baddo",
-        "skills": [
-          "Troll (programmer) ",
-          "Chierico (full-stack developer)",
-          "Blacksmith (creat... HEM! Fixes bugs...)"
-        ],
-        "card_footer": "skills"
-      },
-      {
-        "card_header": "spino",
-        "skills": [
-          "Cyber-man (programmer who comes from the future) ",
-          "Lv.3 Troll"
-        ],
-        "card_footer": "skills"
-      },
-      {
-        "card_header": "gennaro",
-        "skills": [
-          "Orator (social content) ",
-          "Barbarian (not temperamentally, but because he creates memes)",
-          "Lvl.3 Barbarian"
-        ],
-        "card_footer": "skills"
-      }
-    ],
-  
-    "artists_header": "Our painters",
-  
-    "artist_card": [
-      {
-        "artist_name": "Alberto",
-        "artist_image": "https://roleever-app.imgix.net/about/alby.png",
-        "artist_profile": "https://www.instagram.com/dreadworks_art"
-      },
-      {
-        "artist_name": "Giulia",
-        "artist_image": "https://roleever-app.imgix.net/about/giulia.png",
-        "artist_profile": "https://www.artstation.com/hekate01"
-      },
-      {
-        "artist_name": "Valentina",
-        "artist_image": "https://roleever-app.imgix.net/about/vale.png",
-        "artist_profile": "https://www.artstation.com/valeer96"
-      },
-      {
-        "artist_name": "Daniel",
-        "artist_image": "https://roleever-app.imgix.net/about/dan.png",
-        "artist_profile": "https://www.instagram.com/Dusksmile/"
-      },
-      {
-        "artist_name": "Daniele",
-        "artist_image": "https://roleever-app.imgix.net/about/randazzo.png",
-        "artist_profile": "https://www.artstation.com/danhatter88"
-      },
-      {
-        "artist_name": "Sara",
-        "artist_image": "https://roleever-app.imgix.net/about/sara.png",
-        "artist_profile": "https://www.instagram.com/__sarabertoli__/"
-      },
-      {
-        "artist_name": "Asia",
-        "artist_image": "https://roleever-app.imgix.net/about/asia.png",
-        "artist_profile": "https://www.artstation.com/f_y_asia"
-      }
-    ],
-  
-    "meta_header": "RoleEver - About Us",
-    "meta_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
-  
-    "og_title": "RoleEver - About Us",
-    "og_type": "website",
-    "og_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
-    "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
-    "og_url": "https://www.roleever.com",
-  
-    "twitter_card": "summary_large_image",
-    "twitter_site": "@roleever",
-    "twitter_title": "RoleEver - About Us",
-    "twitter_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
-    "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
-  
-    "twitter_ios_country": "",
-    "twitter_ios_name": "",
-    "twitter_ios_id": "",
-    "twitter_ios_url": "",
-  
-    "twitter_android_name": "",
-    "twitter_android_id": "",
-    "twitter_android_url": ""
-  }
-  
+  "header": "We Are Roleplayers",
+  "sub_header": "If we don't have our weekly session we suffer from withdrawal symptoms. And so, we invented RoleEver, and yes, we work on it full-time!",
+
+  "contact_button": "Contact us!",
+
+  "team": "https://roleever-app.imgix.net/about/team.jpg?fm=jpg&auto=format&lossless=1&q=100",
+  "team_title": "RoleEver Team",
+  "team_bio_header": "RoleEver starts in 2018 from these 3 adventurers who have the bold ambition to make RPGs accessible to everyone, everywhere. Even during their coffee break.",
+
+  "team_bio_sub_header": "The passion for RPGs is strong with us! Not a day goes by without thinking to the next game session :D",
+
+  "nick_the_dragon": "https://roleever-app.imgix.net/about/nick.png??fm=png&auto=format&lossless=1&q=100",
+  "nick_the_dragon_title": "Nick the dragon",
+  "nick_the_dragon_bio": "Nick is a Pseudodragon. Chief and undisputed master of RoleEver. Don't be fooled by the pose... he's a joker! It will guide you everywhere to the best adventures!",
+
+  "party_header": "Our party",
+
+  "member_card": [
+    {
+      "card_header": "darius",
+      "skills": [
+        "Party leader (CEO)",
+        "Group treasurer (manages, the few, gp)",
+        "Messenger (community manager)",
+        "Skill Monkey (no one understands what exactly he does)"
+      ],
+      "card_footer": "skills"
+    },
+    {
+      "card_header": "flam",
+      "skills": [
+        "Architect (UI/UX design)",
+        "Scribe (writes the release notes)",
+        "Wizard (creates graphic illusions to convince everyone to follow us on social networks)"
+      ],
+      "card_footer": "skills"
+    },
+    {
+      "card_header": "baddo",
+      "skills": [
+        "Troll (programmer) ",
+        "Chierico (full-stack developer)",
+        "Blacksmith (creat... HEM! Fixes bugs...)"
+      ],
+      "card_footer": "skills"
+    },
+    {
+      "card_header": "spino",
+      "skills": [
+        "Cyber-man (programmer who comes from the future) ",
+        "Lv.3 Troll"
+      ],
+      "card_footer": "skills"
+    },
+    {
+      "card_header": "gennaro",
+      "skills": [
+        "Orator (social content) ",
+        "Barbarian (not temperamentally, but because he creates memes)",
+        "Lvl.3 Barbarian"
+      ],
+      "card_footer": "skills"
+    }
+  ],
+
+  "artists_header": "Our painters",
+
+  "artist_card": [
+    {
+      "artist_name": "Alberto",
+      "artist_image": "https://roleever-app.imgix.net/about/alby.png?fm=png&auto=format",
+      "artist_profile": "https://www.instagram.com/dreadworks_art"
+    },
+    {
+      "artist_name": "Giulia",
+      "artist_image": "https://roleever-app.imgix.net/about/giulia.png?fm=png&auto=format",
+      "artist_profile": "https://www.artstation.com/hekate01"
+    },
+    {
+      "artist_name": "Valentina",
+      "artist_image": "https://roleever-app.imgix.net/about/vale.png?fm=png&auto=format",
+      "artist_profile": "https://www.artstation.com/valeer96"
+    },
+    {
+      "artist_name": "Daniel",
+      "artist_image": "https://roleever-app.imgix.net/about/dan.png?fm=png&auto=format",
+      "artist_profile": "https://www.instagram.com/Dusksmile/"
+    },
+    {
+      "artist_name": "Daniele",
+      "artist_image": "https://roleever-app.imgix.net/about/randazzo.png?fm=png&auto=format",
+      "artist_profile": "https://www.artstation.com/danhatter88"
+    },
+    {
+      "artist_name": "Sara",
+      "artist_image": "https://roleever-app.imgix.net/about/sara.png?fm=png&auto=format",
+      "artist_profile": "https://www.instagram.com/__sarabertoli__/"
+    },
+    {
+      "artist_name": "Asia",
+      "artist_image": "https://roleever-app.imgix.net/about/asia.png?fm=png&auto=format",
+      "artist_profile": "https://www.artstation.com/f_y_asia"
+    }
+  ],
+
+  "meta_header": "RoleEver | The team behind the play by chat RPGs application!",
+  "meta_description": "Discover the team behind RoleEver, the adventurers with the bold ambition to make RPGs accessible to everyone, everywhere. Even during their coffee break.",
+
+  "og_title": "RoleEver | The team behind the play by chat RPGs application!",
+  "og_type": "website",
+  "og_description": "Discover the team behind RoleEver, the adventurers with the bold ambition to make RPGs accessible to everyone, everywhere. Even during their coffee break.",
+  "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+  "og_url": "https://www.roleever.com",
+
+  "twitter_card": "summary_large_image",
+  "twitter_site": "@roleever",
+  "twitter_title": "RoleEver | The team behind the play by chat RPGs application!",
+  "twitter_description": "Discover the team behind RoleEver, the adventurers with the bold ambition to make RPGs accessible to everyone, everywhere. Even during their coffee break.",
+  "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+
+  "twitter_ios_name": "RoleEver - RPGs by chat",
+  "twitter_ios_id": "1498035308",
+  "twitter_ios_url": "",
+
+  "twitter_android_name": "RoleEver - RPGs by chat",
+  "twitter_android_id": "com.RoleEver",
+  "twitter_android_url": ""
+}

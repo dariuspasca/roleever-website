@@ -15,7 +15,7 @@
         class="w-4/12 xs:w-full sm:w-full xs:order-last sm:order-last xs:py-10 sm:py-10"
       >
         <img
-          src="https://roleever-app.imgix.net/roleEver.png"
+          src="https://roleever-app.imgix.net/roleEver.png?fm=png&auto=format&lossless=1&q=100"
           class="relative mx-auto unselectable preview-image img-shadow"
           width="429"
           height="818"
@@ -59,7 +59,7 @@
             class="flex flex-row bg-footer shadow-lg rounded-xl py-10 px-6 space-x-4 items-start w-11/12 mx-auto"
           >
             <img
-              src="https://roleever-app.imgix.net/qr-code.jpeg"
+              src="https://roleever-app.imgix.net/qr-code.jpeg&auto=format"
               class="w-32 h-32 rounded-lg shadow-sm"
               width="512"
               height="512"

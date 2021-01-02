@@ -1,28 +1,24 @@
 ---
 title: Terms and Conditions
 
-meta_header: RoleEver - Terms and Conditions
-meta_description: RoleEver is an app to play tabletop RPGs on your smartphone
-
-og_title: RoleEver - RPG by Chat
+og_title: RoleEver | Terms and Conditions
 og_type: website
-og_description: RoleEver is an app to play tabletop RPGs on your smartphone
+og_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
 og_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
-twitter_site: roleever
-twitter_title: RoleEver - RPG by Chat
-twitter_description: RoleEver is an app to play tabletop RPGs on your smartphone
+twitter_site: \@roleever
+twitter_title: RoleEver | Terms and Conditions
+twitter_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
 twitter_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
 
-twitter_ios_country:
-twitter_ios_name:
-twitter_ios_id:
+twitter_ios_name: RoleEver - RPGs by chat
+twitter_ios_id: 1498035308
 twitter_ios_url:
 
-twitter_android_name:
-twitter_android_id:
+twitter_android_name: RoleEver - RPGs by chat
+twitter_android_id: com.RoleEver
 twitter_android_url:
 ---
 
@@ -36,7 +32,7 @@ The Company may terminate your account, delete your profile and any content or i
 
 ### Submitting content to the services and copyrights
 
-In all cases, you are solely responsible for all content, including but not limited to photos, profiles information, messages, comments, and other content that you upload, publish or display (hereinafter, “submit”) on or through the Services, or transmit to or share with other users. You may not submit content to the Services that you did not create or that you do not have the right to submit. 
+In all cases, you are solely responsible for all content, including but not limited to photos, profiles information, messages, comments, and other content that you upload, publish or display (hereinafter, “submit”) on or through the Services, or transmit to or share with other users. You may not submit content to the Services that you did not create or that you do not have the right to submit.
 
 You may not submit content that is not compatible with the license used by the applicable part of the Services to which you are submitting content. You understand and agree that others may, but are not obligated to, edit, delete or remove (without notice) any content from the Services, for any reason or no reason. You also represent and warrant that you own or have the necessary licenses, rights, releases, consents, and permissions to permit the Company to copy, store, publish, display, and distribute your content via the Services, in accordance with the license rules that are applicable to such content.The Services are not and shall not function as an archive. We have no liability to you or any other person for loss, damage, or destruction to your content. You are solely responsible at your sole cost and expense for creating backup copies and replacing any content you post or store on the Services or provide to us.
 

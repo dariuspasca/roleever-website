@@ -1,28 +1,24 @@
 ---
 title: Cookie Policy
 
-meta_header: RoleEver - Cookie Policy
-meta_description: RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone
-
-og_title: RoleEver - GdR via Chat
+og_title: RoleEver | Cookie Policy
 og_type: website
-og_description: RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone
+og_description: RoleEver è un applicazione per giocare ai GDR cartacei via chat dal tuo smartphone. Tutti i strumenti necessari sono disponibili per te, dalla chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro. RoleEver è disponibile su iOS e Android!
 og_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
-twitter_site: roleever
-twitter_title: RoleEver - GdR via Chat
-twitter_description: RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone
+twitter_site: \@roleever
+twitter_title: RoleEver | Cookie Policy
+twitter_description: RoleEver è un applicazione per giocare ai GDR cartacei via chat dal tuo smartphone. Tutti i strumenti necessari sono disponibili per te, dalla chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro. RoleEver è disponibile su iOS e Android!
 twitter_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
 
-twitter_ios_country:
-twitter_ios_name:
-twitter_ios_id:
+twitter_ios_name: RoleEver - GDR via chat
+twitter_ios_id: 1498035308
 twitter_ios_url:
 
-twitter_android_name:
-twitter_android_id:
+twitter_android_name: RoleEver - GDR via chat
+twitter_android_id: com.RoleEver
 twitter_android_url:
 ---
 
@@ -35,9 +31,11 @@ La policy sui cookie è valida solo per il Sito e non per altri siti a cui l’U
 I cookie sono informazioni che vengono memorizzate sul tuo computer attraverso il browser di navigazione. Questo permette ai proprietari dei siti di conservare dati come le tue preferenze e mostrarti informazioni personalizzate durante le visite successive sulle pagine web, oltre che a monitorare la tua attività sul sito.
 
 ### Cookie tecnici e cookie per fini statistici
+
 Questi cookie vengono utilizzati per tracciare le sessioni degli utenti e svolgere altre attività strettamente necessarie al funzionamento del sito, ad esempio in relazione alla distribuzione del traffico. Tali cookie sono installati direttamente dal Titolare senza l’obbligo del tuo consenso preventivo. Bloccando tali cookie potresti non visualizzare il sito in maniera ottimale.
 
 ### Cookie di terze parti
+
 Durante la navigazione sul sito potresti memorizzare cookie di terze parti, come altri servizi, siti e piattaforme di social network. Questi cookie sono da intendersi per fini statistici e di marketing, oltre che per monitorare la tua interazione con i social network. Di seguito troverai una lista di tali servizi forniti da terze parti. Se continui la navigazione sul sito e usi i nostri servizi senza cambiare le impostazioni del browser, darai tacito consenso per la memorizzazione di tali cookie.
 
 **Google Analytics** è un servizio di analisi del web fornito da Google Inc. Questo cookie permette di tracciare le campagne marketing online e monitorarne i risultati. Ci fornisce inoltre una panoramica sull’attività online dei nostri utenti e il loro comportamento durante la navigazione.Luogo di elaborazione: US – [Privacy Policy](http://www.google.com/intl/en/policies/privacy/)

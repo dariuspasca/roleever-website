@@ -1,28 +1,24 @@
 ---
 title: Community Code
 
-meta_header: RoleEver - Community Code
-meta_description: RoleEver is an app to play tabletop RPGs on your smartphone
-
-og_title: RoleEver - RPG by Chat
+og_title: RoleEver | Community Code
 og_type: website
-og_description: RoleEver is an app to play tabletop RPGs on your smartphone
+og_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
 og_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
-twitter_site: roleever
-twitter_title: RoleEver - RPG by Chat
-twitter_description: RoleEver is an app to play tabletop RPGs on your smartphone
+twitter_site: \@roleever
+twitter_title: RoleEver | Community Code
+twitter_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
 twitter_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
 
-twitter_ios_country:
-twitter_ios_name:
-twitter_ios_id:
+twitter_ios_name: RoleEver - RPGs by chat
+twitter_ios_id: 1498035308
 twitter_ios_url:
 
-twitter_android_name:
-twitter_android_id:
+twitter_android_name: RoleEver - RPGs by chat
+twitter_android_id: com.RoleEver
 twitter_android_url:
 ---
 
@@ -53,7 +49,7 @@ We ask and expect that:
 Help build the ideal community you would like to be a part of. Use common sense and the tools at your disposal to protect yourself and other players, and support them when they need help.
 
 We ask and expect that:
- 
+
 - If someone is harassing a player, speak up if you’re able. Take care not to make the situation worse, but sometimes a little support can mean a lot to your teammate.
 
 - Help maintain a positive environment; if you have witnessed or think that someone is committing an infringement, report it to us and we will take care of it.

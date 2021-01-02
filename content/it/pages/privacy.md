@@ -1,28 +1,26 @@
 ---
 title: Privacy Policy
 
-meta_header: RoleEver - Privacy Policy
-meta_description: RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone
+meta_header: RoleEver | Privacy Policy
 
-og_title: RoleEver - GdR via Chat
+og_title: RoleEver | Privacy Policy
 og_type: website
-og_description: RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone
+og_description: RoleEver è un applicazione per giocare ai GDR cartacei via chat dal tuo smartphone. Tutti i strumenti necessari sono disponibili per te, dalla chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro. RoleEver è disponibile su iOS e Android!
 og_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
-twitter_site: roleever
-twitter_title: RoleEver - GdR via Chat
-twitter_description: RoleEver è un applicazione mobile per giocare ai giochi di ruolo cartacei dal tuo smartphone
+twitter_site: \@roleever
+twitter_title: RoleEver | Privacy Policy
+twitter_description: RoleEver è un applicazione per giocare ai GDR cartacei via chat dal tuo smartphone. Tutti i strumenti necessari sono disponibili per te, dalla chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro. RoleEver è disponibile su iOS e Android!
 twitter_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
 
-twitter_ios_country:
-twitter_ios_name:
-twitter_ios_id:
+twitter_ios_name: RoleEver - GDR via chat
+twitter_ios_id: 1498035308
 twitter_ios_url:
 
-twitter_android_name:
-twitter_android_id:
+twitter_android_name: RoleEver - GDR via chat
+twitter_android_id: com.RoleEver
 twitter_android_url:
 ---
 
@@ -43,6 +41,7 @@ Crediamo fermamente che il diritto alla privacy sia un diritto fondamentale e qu
 ### Come utilizziamo le tue informazioni
 
 Utilizziamo le tue informazioni personali, inclusi i tuoi dati di registrazione e le informazioni raccolte automaticamente per:
+
 - Gestire le tue informazioni e il tuo account
 - Rispondere a domande, commenti e altre richieste
 - Marketing, ricerche di mercato e sviluppo aziendale, inclusa la segmentazione dei nostri utenti in categorie specifiche

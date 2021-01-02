@@ -15,27 +15,28 @@
   "error": "😞 Qualcosa è andato storto! Riprova più tardi...",
   "or": "oppure",
 
-  "meta_header": "RoleEver - Download",
-  "meta_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
+  "meta_header": "RoleEver | Scarica per iOS and Android",
+  "meta_description": "Scarica RoleEver per iOS o Android. Tutti i strumenti necessari per giocare ai GDR via chat a portata di mano. Chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro.",
 
-  "og_title": "RoleEver - Download",
+  "discover": "Discover the features",
+
+  "og_title": "RoleEver | Scarica per iOS and Android",
   "og_type": "website",
-  "og_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
+  "og_description": "Scarica RoleEver per iOS o Android. Tutti i strumenti necessari per giocare ai GDR via chat a portata di mano. Chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro.",
   "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
   "og_url": "https://www.roleever.com",
 
   "twitter_card": "summary_large_image",
   "twitter_site": "@roleever",
-  "twitter_title": "RoleEver - Download",
-  "twitter_description": "RoleEver is an app to play tabletop RPGs on your smartphone",
+  "twitter_title": "RoleEver | Scarica per iOS and Android",
+  "twitter_description": "Scarica RoleEver per iOS o Android. Tutti i strumenti necessari per giocare ai GDR via chat a portata di mano. Chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro.a",
   "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
 
-  "twitter_ios_country": "",
-  "twitter_ios_name": "",
-  "twitter_ios_id": "",
+  "twitter_ios_name": "RoleEver - RPGs by chat",
+  "twitter_ios_id": "1498035308",
   "twitter_ios_url": "",
 
-  "twitter_android_name": "",
-  "twitter_android_id": "",
+  "twitter_android_name": "RoleEver - RPGs by chat",
+  "twitter_android_id": "com.RoleEver",
   "twitter_android_url": ""
 }

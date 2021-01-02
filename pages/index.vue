@@ -30,7 +30,7 @@
         </div>
         <div>
           <img
-            src="https://roleever-app.imgix.net/roleEver.png"
+            src="https://roleever-app.imgix.net/roleEver.png?fm=png&auto=format&lossless=1&q=100"
             class="relative mx-auto unselectable preview-image img-shadow"
             width="429"
             height="818"
