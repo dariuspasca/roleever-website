@@ -1,0 +1,63 @@
+{
+  "voci": [
+    {
+      "voce": "Data e luogo di costituzione",
+      "valore": "09/10/2019 Bologna "
+    },
+    {
+      "voce": "Sede principale ed eventuali sedi periferiche",
+      "valore": "Sede principale: Via Ugo Foscolo 7 40123 BO "
+    },
+    {
+      "voce": "Oggetto sociale",
+      "valore": "PRODUZIONE DI SOFTWARE, CONSULENZA INFORMATICA E ATTIVITA' CONNESSE"
+    },
+    {
+      "voce": "Breve descrizione dell'attivita' svolta, comprese l'attivita' e le spese in ricerca e sviluppo",
+      "valore": "SVILUPPO E PRODUZIONE DI SOFTWARE INNOVATIVO AD ALTO CONTENUTO TECNOLOGICO PER LA DIGITALIZZAIONE DEI GIOCHI DI RUOLO CARTACEI, PER CONSENTIRE ALL'UTILIZZATORE DI GIOCARE ONLINE IN MODO ASINCRONO INDICAZIONE DELLE SPESE ALLEGATE AL PRESENTE DEPOSITO."
+    },
+    {
+      "voce": "Elenco dei soci, con trasparenza rispetto a fiduciarie, holding ove non iscritte nel registro delle imprese di cui all'articolo 8 della legge 29 dicembre 1993, n. 580, e successive modificazioni, con autocertificazione di veridicita'",
+      "valore": "FRANCESCO BADIALI, FRANCESCO FLAMIGNI, DARIUS VITO PASCA"
+    },
+    {
+      "voce": "Indicazione dei titoli di studio e delle esperienze professionali dei soci e del personale che lavora nella start-up innovativa, esclusi eventuali dati sensibili",
+      "valore": "-FRANCESCO BADIALI DIPLOMA DI ISTRUZIONE SECONDARIA SUPERIORE AD INDIRIZZO SCIENTIFICO PRESSO LICEO SCIENTIFICO 'ALESSANDRO MANZONI' - 2014 ESPERIENZE LAVORATIVE: FREELANCER - REALIZZAZIONE PORTALI WEB PER AZIENDE -FRANCESCO FLAMIGNI ATTESTATO NEMO ACADEMY: E-DESIGN - 2018 ATTESTATO NEMO ACADEMY: GRAFICA 3D - 2015 DIPLOMA DI ISTRUZIONE SECONDARIA SUPERIORE AD INDIRIZZO SCIENTIFICO PRESSO LICEO SCIENTIFICO 'ALESSANDRO MANZONI' - 2013 ESPERIENZE LAVORATIVE: GRAFICO PRESSO ASSOCIAZIONE LUDICO-CULTURALE 4TRIBES -DARIUS VITO PASCA DIPLOMA DI ISTRUZIONE SECONDARIA SUPERIORE AD INDIRIZZO 'INFORMATICA E TELECOMUNICAZIONI' PRESSO INSTITUTO TECNICO INDUSTRIALE ODONE BELLUZZI - 2014 NESSUNA ESPERIENZA LAVORATIVA."
+    },
+    {
+      "voce": "Indicazione dell'esistenza di relazioni professionali, di collaborazione o commerciali con incubatori certificati, investitori istituzionali e professionali, universita' e centri di ricerca",
+      "valore": "PROGRAMMA DI ACCELERAZIONE 'HUBBLE' FINANZIATO DA FONDAZIONE CR DI FIRENZE E PROMOSSO DA NANA BIANCA E LA FONDAZIONE PER LA RICERCA E L'INNOVAZIONE"
+    },
+    {
+      "voce": "Ultimo bilancio depositato, nello standard XBRL",
+      "valore": ""
+    },
+    {
+      "voce": "Elenco dei diritti di privativa su proprieta' industriale e intellettuale",
+      "valore": ""
+    }
+  ],
+
+  "meta_header": "RoleEver | Legal Notes",
+  "meta_description": "RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!",
+
+  "og_title": "RoleEver | Legal Notes",
+  "og_type": "website",
+  "og_description": "RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!",
+  "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+  "og_url": "https://www.roleever.com",
+
+  "twitter_card": "summary_large_image",
+  "twitter_site": "@roleever",
+  "twitter_title": "RoleEver | Legal Notes",
+  "twitter_description": "RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!a",
+  "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+
+  "twitter_ios_name": "RoleEver - RPGs by chat",
+  "twitter_ios_id": "1498035308",
+  "twitter_ios_url": "",
+
+  "twitter_android_name": "RoleEver - RPGs by chat",
+  "twitter_android_id": "com.RoleEver",
+  "twitter_android_url": ""
+}

@@ -137,6 +137,16 @@ export default {
     ],
   },
   /*
+   ** @nuxtjs/sitemap configuration
+   */
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://www.roleever.com',
+    generate: true, // Enable me when using nuxt generate
+    exclude: [],
+    routes: [],
+  },
+  /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */

@@ -150,6 +150,16 @@
                   >
                     {{ $t('footer.policies_community') }}
                   </nuxt-link>
+                   <li>
+                  <nuxt-link
+                    :to="localePath('note-legali')"
+                    :aria-label="$t('footer.policies_community')"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    {{ $t('footer.policies_legal') }}
+                  </nuxt-link>
+                </li>
                 </li>
               </ul>
             </div>
