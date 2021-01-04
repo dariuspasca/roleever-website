@@ -103,29 +103,29 @@
         <nuxt-link
           :to="localePath('/')"
           :aria-label="$t('header.home')"
-          class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
+          class="my-2 text-dark-shade hover:text-primary tracking-wider text-xl"
           @click.native="toggleMobileNav"
         >
           {{ $t('header.home') }}
         </nuxt-link>
         <div
-          class="w-10/12 mx-auto my-4 h-1 bg-cover bg-no-repeat lineaDorata"
+          class="w-10/12 mx-auto my-2 h-1 bg-cover bg-no-repeat lineaDorata"
         ></div>
         <nuxt-link
           :to="localePath('features')"
           :aria-label="$t('header.features')"
-          class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
+          class="my-2 text-dark-shade hover:text-primary tracking-wider text-xl"
           @click.native="toggleMobileNav"
         >
           {{ $t('header.features') }}
         </nuxt-link>
         <div
-          class="w-10/12 mx-auto my-4 h-1 bg-cover bg-no-repeat lineaDorata"
+          class="w-10/12 mx-auto my-2 h-1 bg-cover bg-no-repeat lineaDorata"
         ></div>
         <nuxt-link
           :to="localePath('about')"
           :aria-label="$t('header.about')"
-          class="mt-2 text-dark-shade hover:text-primary tracking-wider text-2xl"
+          class="my-2 text-dark-shade hover:text-primary tracking-wider text-xl"
           @click.native="toggleMobileNav"
         >
           {{ $t('header.about') }}

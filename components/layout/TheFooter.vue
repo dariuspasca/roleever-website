@@ -150,7 +150,9 @@
                   >
                     {{ $t('footer.policies_community') }}
                   </nuxt-link>
-                   <li>
+                </li>
+
+                <li>
                   <nuxt-link
                     :to="localePath('note-legali')"
                     :aria-label="$t('footer.policies_community')"
@@ -159,7 +161,6 @@
                   >
                     {{ $t('footer.policies_legal') }}
                   </nuxt-link>
-                </li>
                 </li>
               </ul>
             </div>
@@ -173,7 +174,7 @@
                 {{ $t('footer.resources') }}
               </p>
               <ul class="text-sm xs:text-base list-none">
-                <li>
+                <!-- <li>
                   <a
                     href="https://www.roleever.com/"
                     :aria-label="$t('footer.resources_press')"
@@ -192,7 +193,7 @@
                     class="my-2 block hover:text-primary-shade"
                     >{{ $t('footer.resources_brand') }}</a
                   >
-                </li>
+                </li> -->
                 <li>
                   <a
                     href="https://www.roleever.com/"

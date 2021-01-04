@@ -21,7 +21,7 @@
             {{ page.title_first }}
           </h1>
 
-          <p class="text-lg md:text-2xl xxxl:text-4xl mt-2">
+          <p class="text-lg md:text-2xl xxxl:text-4xl mt-2 xs:mx-1">
             {{ page.heroe }}
           </p>
           <the-download-button
