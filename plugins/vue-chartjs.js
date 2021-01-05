@@ -12,6 +12,7 @@ Vue.component('number-results-chart', {
 
 Vue.component('rolls-results-chart', {
   extends: Line,
+  // eslint-disable-next-line vue/require-prop-types
   props: ['data', 'options'],
   mounted() {
     this.renderChart(this.data, this.options)

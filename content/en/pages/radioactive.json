@@ -1,0 +1,27 @@
+{
+  "rolls_results": "Results Per Number",
+  "rolls_total": "Rolls Per Hour",
+  
+  "meta_header": "RoleEver | Radioactive Rolls",
+  "meta_description": "Scopri il team dietro a RoleEver, gli avventurieri che hanno la folle ambizione di permettere a tutti di giocare ai GdR anche nella loro pausa caffè.",
+
+  "og_title": "RoleEver | Radioactive Rolls",
+  "og_type": "website",
+  "og_description": "Scopri il team dietro a RoleEver, gli avventurieri che hanno la folle ambizione di permettere a tutti di giocare ai GdR anche nella loro pausa caffè.",
+  "og_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+  "og_url": "https://www.roleever.com",
+
+  "twitter_card": "summary_large_image",
+  "twitter_site": "@roleever",
+  "twitter_title": "RoleEver | Radioactive Rolls",
+  "twitter_description": "Scopri il team dietro a RoleEver, gli avventurieri che hanno la folle ambizione di permettere a tutti di giocare ai GdR anche nella loro pausa caffè.",
+  "twitter_image": "https://storage.googleapis.com/roleever-public-assets/www/share.jpg",
+
+  "twitter_ios_name": "RoleEver - RPGs via chat",
+  "twitter_ios_id": "1498035308",
+  "twitter_ios_url": "",
+
+  "twitter_android_name": "RoleEver - RPGs via chat",
+  "twitter_android_id": "com.RoleEver",
+  "twitter_android_url": ""
+}
