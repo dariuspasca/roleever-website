@@ -13,14 +13,15 @@
 <script>
 export default {
   async fetch() {
-    this.barChartData.datasets.data = await fetch(
-      'https://www.roleever.com/d20.json'
-    ).then((res) => res.json())
+    this.data = await fetch('https://www.roleever.com/d20.json').then((res) => {
+      res.json()
+    })
+    console.log(this.data)
   },
   data() {
     return {
       show: false,
-      mountains: [],
+      data: [],
       barChartData: {
         labels: Array.from({ length: 20 }, (_, i) => i + 1),
         datasets: [
