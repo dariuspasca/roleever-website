@@ -58,6 +58,7 @@ export default {
   plugins: [
     '~/plugins/vue-click-outside',
     '~/plugins/maz-ui',
+    { src: '~plugins/vue-chartjs.js', ssr: false },
     { src: '~/plugins/vue-hcaptcha', mode: 'client' },
     { src: '~/plugins/vue-js-modal', mode: 'client' },
   ],
@@ -83,7 +84,7 @@ export default {
     '@nuxtjs/device',
     '@nuxtjs/toast',
     'nuxt-i18n',
-    'cookie-universal-nuxt',
+    ['cookie-universal-nuxt', { alias: 'cookiz' }],
     '@nuxtjs/sitemap',
   ],
   /*
@@ -112,12 +113,7 @@ export default {
     ],
     detectBrowserLanguage: {
       useCookie: true,
-      cookieCrossOrigin: false,
-      cookieDomain: null,
       cookieKey: 'not_cthulhu',
-      cookieSecure: false,
-      alwaysRedirect: true,
-      fallbackLocale: null,
     },
   },
   /*
@@ -142,7 +138,6 @@ export default {
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://www.roleever.com',
-    generate: true, // Enable me when using nuxt generate
     exclude: [],
     routes: [],
   },

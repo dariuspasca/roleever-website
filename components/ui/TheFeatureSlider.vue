@@ -1,8 +1,9 @@
 <template>
   <div class="flex w-full items-center justify-center relative z-20">
     <!-- Previous Button -->
-    <div
-      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 sm:mx-4 md:mx-4 transition duration-500 ease-in-out transform xs:transform-none hover:-translate-y-1 hover:scale-110 cursor-pointer xs:absolute sm:absolute z-30 left-0 top-0 xs:mt-16 sm:mt-64 xs:mx-1"
+    <button
+      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 sm:mx-4 md:mx-4 transition duration-300 ease-in-out transform xs:transform-none hover:-translate-y-1 active:scale-75 hover:scale-110 lg:hover:scale-100 scale xs:absolute sm:absolute z-30 left-0 top-0 xs:mt-16 sm:mt-64 xs:mx-1 focus:outline-none"
+      aria-label="prev"
       @click="prev()"
     >
       <svg
@@ -13,7 +14,8 @@
         <path d="M0 0h24v24H0z" fill="none" />
         <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
       </svg>
-    </div>
+    </button>
+
     <!--Card Wrapper-->
 
     <div
@@ -88,8 +90,9 @@
     </div>
 
     <!-- Next Button -->
-    <div
-      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 sm:mx-4 md:mx-4 transition duration-500 ease-in-out transform xs:transform-none hover:-translate-y-1 hover:scale-110 cursor-pointer xs:absolute sm:absolute z-30 right-0 top-0 xs:mt-16 sm:mt-64 xs:mx-1"
+    <button
+      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 sm:mx-4 md:mx-4 transition duration-300 ease-in-out transform xs:transform-none hover:-translate-y-1 active:scale-75 hover:scale-110 cursor-pointer xs:absolute sm:absolute z-30 left-0 top-0 xs:mt-16 sm:mt-64 xs:mx-1 focus:outline-none"
+      aria-label="next"
       @click="next()"
     >
       <svg
@@ -100,7 +103,7 @@
         <path d="M0 0h24v24H0z" fill="none" />
         <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
       </svg>
-    </div>
+    </button>
   </div>
 </template>
 

@@ -59,7 +59,7 @@
             class="flex flex-row bg-footer shadow-lg rounded-xl py-10 px-6 space-x-4 items-start w-11/12 mx-auto"
           >
             <img
-              src="https://roleever-app.imgix.net/qr-code.jpeg&auto=format"
+              src="https://roleever-app.imgix.net/qr-code.jpeg?auto=format"
               class="w-32 h-32 rounded-lg shadow-sm"
               width="512"
               height="512"
@@ -77,7 +77,7 @@
                       class="text-primary-shade hover:underline"
                       target="_blank"
                       rel="noopener"
-                      href="https://play.google.com/store/apps/details?id=com.RoleEver"
+                      href="https://testflight.apple.com/join/BeYyEjbe"
                     >
                       AppStore
                     </a>

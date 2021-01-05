@@ -46,6 +46,8 @@ module.exports = {
       },
     },
   },
-
+  variants: {
+    scale: ['active'],
+  },
   plugins: [require('@tailwindcss/typography')],
 }

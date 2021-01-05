@@ -1,12 +1,12 @@
 <template>
   <div class="flex w-full">
     <button
-      class="inline-flex items-center bg-primary shadow-xl hover:shadow-2xl text-white font-gitan xxxl:text-2xl py-4 px-8 lg:px-16 rounded xs:rounded-lg xs:min-w-8/12 focus:outline-none transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale"
+      class="inline-flex items-center bg-primary shadow-xl text-white font-gitan xxxl:text-2xl py-4 px-8 lg:px-16 rounded xs:rounded-lg xs:min-w-8/12 focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
       :aria-label="$t('labels.download')"
       @click="downloadClick()"
     >
       <svg
-        class="fill-current w-4 xxxl:w-6 h-4 mr-2 xxxl:h-6 lg:mr-4"
+        class="fill-current w-4 xxxl:w-6 h-4 mr-2 xxxl:h-6 lg:mr-4 z-10"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
       >
@@ -16,11 +16,15 @@
         <p slot="placeholder">
           {{ $t('download_button.store') }}
         </p>
-        <p v-if="$device.isAndroid">
+        <p v-if="$device.isAndroid" class="flex">
           {{ $t('download_button.playstore') }}
         </p>
         <p v-if="$device.isIos">{{ $t('download_button.appstore') }}</p>
-        <nuxt-link v-if="$device.isDesktop" :to="localePath('download')">
+        <nuxt-link
+          v-if="$device.isDesktop"
+          :aria-label="$t('download_button.store')"
+          :to="localePath('download')"
+        >
           {{ $t('download_button.store') }}
         </nuxt-link>
       </client-only>

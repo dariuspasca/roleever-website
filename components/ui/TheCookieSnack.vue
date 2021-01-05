@@ -21,6 +21,7 @@
           <p class="text-base tracking-wider">{{ $t('cookies.inform') }}</p>
           <nuxt-link
             :to="localePath('cookie-policy')"
+            :aria-label="$t('cookies.inform')"
             class="underline text-dark-tint hover:text-dark-shade cursor-pointer"
             exact-active-class
           >
@@ -112,7 +113,7 @@ export default {
       const x = window.innerWidth + 100
       this.interactSetPosition({ x })
       setTimeout(() => (this.show = false), 1500)
-      this.$cookies.set('cookie-consent', 'cookie-value', {
+      this.$cookiz.set('cookiez', 'cookiez-yes', {
         path: '/',
         maxAge: 60 * 60 * 24 * 7,
       })
