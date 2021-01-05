@@ -83,10 +83,17 @@ export default {
     '@nuxt/content',
     '@nuxtjs/device',
     '@nuxtjs/toast',
+    '@nuxtjs/axios',
     'nuxt-i18n',
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
     '@nuxtjs/sitemap',
   ],
+  env: {
+    baseURL:
+      process.env.NODE_ENV === 'production'
+        ? 'http//roleever.com'
+        : 'http://localhost:8000',
+  },
   /*
    ** nuxt-i18n configuration
    */

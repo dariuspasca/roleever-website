@@ -13,6 +13,7 @@
   "dependencies": {
     "@hcaptcha/vue-hcaptcha": "^0.2.4",
     "@nuxt/content": "^1.11.1",
+    "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/toast": "^3.3.1",
