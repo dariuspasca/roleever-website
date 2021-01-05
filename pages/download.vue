@@ -229,7 +229,10 @@ export default {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         mode: 'cors',
-        body: JSON.stringify({ To: this.results.formatInternational }),
+        body: JSON.stringify({
+          To: this.results.formatInternational,
+          Language: this.$i18n.locale,
+        }),
       }
       fetch(
         'https://en2xtnm78plvhln.m.pipedream.net?pipedream_response=1',
