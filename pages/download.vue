@@ -15,7 +15,7 @@
         class="w-4/12 xs:w-full sm:w-full xs:order-last sm:order-last xs:py-10 sm:py-10"
       >
         <img
-          src="https://roleever-app.imgix.net/roleEver.png?fm=png&auto=format&lossless=1&q=100"
+          src="https://roleever-app.imgix.net/Screen-Chat.png?fm=png&auto=format&lossless=1&q=100"
           class="relative mx-auto unselectable preview-image img-shadow"
           width="429"
           height="818"
