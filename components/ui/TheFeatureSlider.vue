@@ -37,7 +37,9 @@
         class="flex flex-row xs:flex-col w-10/12 xs:w-11/12 xxl:w-9/12 rounded-xl bg-center bg-cover bg-view shadow-xl mt-56 xs:mt-10 sm:mt-40 md:mt-48 xs:mx-auto xs:pb-10 xs:pt-0 xs:px-0 z-10"
       >
         <!--Mobile Preview Feature -->
-        <div class="w-2/12 xs:w-full sm:w-1/12 md:w-1/12">
+        <div
+          class="w-2/12 xs:w-full sm:w-1/12 md:w-1/12 border-b-2 border-medium"
+        >
           <img
             class="hidden xs:flex w-full rounded-t-xl"
             :src="currentImageMobile"
@@ -91,7 +93,7 @@
 
     <!-- Next Button -->
     <button
-      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 sm:mx-4 md:mx-4 transition duration-300 ease-in-out transform xs:transform-none hover:-translate-y-1 active:scale-75 hover:scale-110 cursor-pointer xs:absolute sm:absolute z-30 left-0 top-0 xs:mt-16 sm:mt-64 xs:mx-1 focus:outline-none"
+      class="rounded-full h-16 xs:h-12 w-16 xs:w-12 flex items-center justify-center bg-primary mx-20 sm:mx-4 md:mx-4 transition duration-300 ease-in-out transform xs:transform-none hover:-translate-y-1 active:scale-75 hover:scale-110 cursor-pointer xs:absolute sm:absolute z-30 right-0 top-0 xs:mt-16 sm:mt-64 xs:mx-1 focus:outline-none"
       aria-label="next"
       @click="next()"
     >
