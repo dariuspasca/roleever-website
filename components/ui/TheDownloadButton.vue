@@ -1,7 +1,7 @@
 <template>
-  <div class="flex w-full">
+  <div class="inline-block max-w-9/12">
     <button
-      class="inline-flex items-center bg-primary shadow-xl text-white font-gitan xxxl:text-2xl py-4 px-8 lg:px-16 rounded xs:rounded-lg xs:min-w-8/12 focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+      class="inline-flex items-center w-full bg-primary text-white font-gitan xxxl:text-2xl py-4 px-8 lg:px-16 rounded xs:rounded-lg xs:min-w-8/12 focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl"
       :aria-label="$t('labels.download')"
       @click="downloadClick()"
     >

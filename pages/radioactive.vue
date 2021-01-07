@@ -67,8 +67,8 @@ export default {
   },
   async asyncData({ $content }) {
     const pages = []
-    const pageEN = await $content(`en/pages/radioactive`).fetch()
-    const pageIT = await $content(`it/pages/radioactive`).fetch()
+    const pageEN = await $content(`en/pages/radioactive-rolls`).fetch()
+    const pageIT = await $content(`it/pages/radioactive-rolls`).fetch()
     pages.push(pageEN)
     pages.push(pageIT)
 
