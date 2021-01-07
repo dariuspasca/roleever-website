@@ -28,6 +28,7 @@
     "nuxt-i18n": "^6.16.0",
     "v-click-outside": "^3.0.1",
     "vue-chartjs": "^3.5.1",
+    "vue-imgix": "^2.8.1",
     "vue-js-modal": "^2.0.0-rc.6"
   },
   "devDependencies": {
@@ -40,6 +41,7 @@
     "eslint-config-prettier": "^6.13.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "vue-svg-loader": "^0.16.0"
   }
 }

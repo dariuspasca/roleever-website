@@ -38,7 +38,7 @@
             </p>
             <!--Contact Button-->
             <button
-              class="bg-primary hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white font-normal py-2 xs:py-4 px-4 lg:px-16 text-base rounded xs:rounded-lg font-gitan focus:outline-none xs:w-7/12"
+              class="bg-primary hover:shadow-2xl transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-1 lg:hover:scale-100 scale text-white font-normal py-2 xs:py-4 px-16 text-base rounded xs:rounded-lg font-gitan focus:outline-none xs:w-7/12 max-w-6/12"
               @click="$modal.show('send-message')"
             >
               {{ page.contact_button }}

@@ -30,7 +30,7 @@
         </div>
         <div>
           <img
-            src="https://roleever-app.imgix.net/Screen-Chat.png?fm=png&auto=format&lossless=1&q=100"
+            src="~/assets/images/home-it.svg"
             class="relative mx-auto unselectable preview-image img-shadow"
             width="429"
             height="818"
