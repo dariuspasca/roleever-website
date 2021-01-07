@@ -50,7 +50,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css', '~/assets/fonts/gitan.css'],
+  css: [
+    '~/assets/css/tailwind.css',
+    '~/assets/fonts/gitan.css',
+    '~/assets/fonts/alegreya.css',
+  ],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
