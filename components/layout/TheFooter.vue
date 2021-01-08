@@ -174,29 +174,9 @@
                 {{ $t('footer.resources') }}
               </p>
               <ul class="text-sm xs:text-base list-none">
-                <!-- <li>
-                  <a
-                    href="https://www.roleever.com/"
-                    :aria-label="$t('footer.resources_press')"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="my-2 block hover:text-primary-shade"
-                    >{{ $t('footer.resources_press') }}</a
-                  >
-                </li>
                 <li>
                   <a
-                    href="https://www.roleever.com/"
-                    :aria-label="$t('footer.resources_brand')"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="my-2 block hover:text-primary-shade"
-                    >{{ $t('footer.resources_brand') }}</a
-                  >
-                </li> -->
-                <li>
-                  <a
-                    href="https://www.roleever.com/"
+                    href="https://drive.google.com/drive/folders/1tuUjvPiDiVXBWogKCD8AaLZZDzANNqgA"
                     :aria-label="$t('footer.resources_logos')"
                     target="_blank"
                     rel="noopener noreferrer"
