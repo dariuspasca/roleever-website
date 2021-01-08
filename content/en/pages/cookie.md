@@ -4,14 +4,14 @@ title: Cookie Policy
 og_title: RoleEver | Cookie Policy
 og_type: website
 og_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
-og_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
+og_image: https://roleever.com/share.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
 twitter_site: \@roleever
 twitter_title: RoleEver | Cookie Policy
 twitter_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
-twitter_image: https://storage.googleapis.com/roleever-public-assets/www/share.jpg
+twitter_image: https://roleever.com/share-tweet.jpg
 
 twitter_ios_name: RoleEver - RPGs by chat
 twitter_ios_id: 1498035308
