@@ -85,6 +85,7 @@ export default {
     '@nuxtjs/toast',
     '@nuxtjs/axios',
     'nuxt-i18n',
+    '@nuxtjs/google-analytics',
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
     '@nuxtjs/sitemap',
   ],
@@ -147,6 +148,12 @@ export default {
     hostname: 'https://www.roleever.com',
     exclude: [],
     routes: [],
+  },
+  /*
+   ** @nuxtjs/google-analytics configuration
+   */
+  googleAnalytics: {
+    id: 'UA-121790592-1',
   },
   /*
    ** Build configuration
