@@ -6,7 +6,7 @@
     <span class="fixed dungeon w-full">
       <img
         class="w-full lg:w-8/12 unselectable mx-auto"
-        src="https://roleever-app.imgix.net/dungeon.png?fm=png&auto=format&lossless=1&q=60"
+        src="https://roleever-app.imgix.net/dungeon.png?fm=webp&q=60"
         alt="dungeon"
     /></span>
 
