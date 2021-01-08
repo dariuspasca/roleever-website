@@ -45,8 +45,6 @@ export default {
   data() {
     return {
       openMobileNav: false,
-      scrollPositionX: 0,
-      scrollPositionY: 0,
       showCookieBanner: false,
     }
   },
@@ -63,16 +61,9 @@ export default {
   mounted() {
     this.$root.$on('toggleMobileNav', (status) => {
       if (status) {
-        if (process.browser) {
-          this.scrollPositionY = window.pageYOffset
-          this.scrollPositionX = window.pageXOffset
-        }
         this.toggleBodyClass('addClass', 'modalOpen')
       } else {
         this.toggleBodyClass('removeClass', 'modalOpen')
-        if (process.browser) {
-          window.scrollTo(this.scrollPositionX, this.scrollPositionY)
-        }
       }
       this.openMobileNav = status
     })
