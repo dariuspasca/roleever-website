@@ -4,7 +4,10 @@
     <span class="fixed dungeon w-full">
       <img
         class="w-full lg:w-8/12 unselectable mx-auto"
-        src="https://roleever-app.imgix.net/dungeon.png?fm=png&auto=format&lossless=1&q=60"
+        src="https://roleever-app.imgix.net/dungeon.png?fm=png&auto=format&q=60"
+        width="1920"
+        height="1000"
+        loading="lazy"
         alt="dungeon"
     /></span>
     <div
@@ -15,7 +18,7 @@
         class="w-4/12 xs:w-full sm:w-full xs:order-last sm:order-last xs:py-10 sm:py-10"
       >
         <img
-          src="https://roleever-app.imgix.net/Screen-Chat.png?fm=png&auto=format&lossless=1&q=100"
+          :src="page.preview"
           class="relative mx-auto unselectable preview-image img-shadow"
           width="429"
           height="818"

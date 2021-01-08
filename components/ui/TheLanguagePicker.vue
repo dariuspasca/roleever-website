@@ -7,7 +7,7 @@
       >
         <img
           class="h-4 w-6 my-auto"
-          :src="require(`~/assets/images/${this.$i18n.locale}.png`)"
+          :src="`/images/${this.$i18n.locale}.png`"
           :alt="this.$i18n.locale"
         />
         <span class="mb-1">{{ selectedLanguage.name }}</span>
@@ -36,7 +36,7 @@
         >
           <img
             class="h-4 w-6 my-auto pointer-events-none"
-            :src="require(`~/assets/images/${locale.code}.png`)"
+            :src="`/images/${locale.code}.png`"
             alt="Available language flag"
           />
           <span class="mb-1">{{ locale.name }}</span></nuxt-link

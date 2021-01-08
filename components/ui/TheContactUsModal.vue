@@ -10,10 +10,7 @@
     @before-close="beforeClose"
   >
     <v-dialog />
-    <div
-      class="flex flex-col"
-      lazy-background="https://storage.googleapis.com/roleever-public-assets/www/background_desaturated.jpg"
-    >
+    <div class="flex flex-col bg-footer bg-cover">
       <div slot="top-right">
         <button
           class="text-dark float-right my-3 mr-3 focus:outline-none"
@@ -34,11 +31,10 @@
       </div>
     </div>
 
-    <div class="flex flex-row px-3 pb-6 pt-2">
+    <div class="flex flex-row px-3 pb-6 pt-2 bg-footer bg-cover">
       <form
         id="contactForm"
         class="contact-form flex flex-col w-full px-3"
-        lazy-background="https://storage.googleapis.com/roleever-public-assets/www/background_desaturated.jpg"
         @submit.prevent="submit"
       >
         <div class="flex flex-row xs:flex-col space-x-16 xs:space-x-0 xs:px-6">
@@ -50,7 +46,7 @@
               <div class="border-b-2 border-secondary">
                 <input
                   type="text"
-                  class="w-full py-1 focus:outline-none font-semibold"
+                  class="w-full py-1 focus:outline-none font-semibold cstm"
                   name="user_name"
                   required
                 />
@@ -63,7 +59,7 @@
               <div class="border-b-2 border-secondary">
                 <input
                   type="email"
-                  class="w-full py-1 focus:outline-none font-semibold"
+                  class="w-full py-1 focus:outline-none font-semibold cstm"
                   name="user_email"
                   required
                 />
@@ -76,7 +72,7 @@
             }}</label>
             <textarea
               name="message"
-              class="resize-none h-full font-semibold focus:outline-none placeholder-dark-shade pt-1 xs:h-64"
+              class="resize-none h-full font-semibold focus:outline-none placeholder-dark-shade pt-1 xs:h-64 cstm"
               :placeholder="$t('contact_form.message_placeholder')"
               required
             ></textarea>
@@ -221,6 +217,9 @@ export default {
 </script>
 
 <style>
+.cstm {
+  background-color: transparent !important;
+}
 .myToast {
   background-color: #212121 !important;
   font-family: gitan;

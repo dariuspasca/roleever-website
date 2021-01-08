@@ -14,7 +14,7 @@
       >
         <img
           class="h-16 w-auto"
-          src="https://roleever-app.imgix.net/cthulhuCookie.png?fm=png&auto=format&lossless=1&q=80"
+          src="https://roleever-app.imgix.net/cthulhuCookie.png?fm=webp&lossless=1&q=80"
           alt="Cookie Cthlhu"
         />
         <div class="w-7/12">

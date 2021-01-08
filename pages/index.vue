@@ -30,7 +30,7 @@
         </div>
         <div>
           <img
-            src="~/assets/images/home-it.svg"
+            :src="page.preview"
             class="relative mx-auto unselectable preview-image img-shadow"
             width="429"
             height="818"

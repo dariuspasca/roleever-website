@@ -289,7 +289,7 @@ list {
 }
 
 .bg-frame {
-  background-image: url('~assets/images/frameSkills.svg');
+  background-image: url('/images/frameSkills.svg');
   -moz-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;

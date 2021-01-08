@@ -4,13 +4,13 @@
 
   "contact_button": "Contattaci!",
 
-  "team": "https://roleever-app.imgix.net/about/team.jpg?fm=jpg&auto=format&lossless=1&q=100",
+  "team": "https://roleever-app.imgix.net/about/team.jpg?fm=webp&lossless=1&q=100",
   "team_title": "RoleEver Team",
   "team_bio_header": "RoleEver nasce nel 2018 da questi 3 avventurieri che hanno la folle ambizione di permettere a tutti di giocare ai GdR anche nella loro pausa caffè.",
 
   "team_bio_sub_header": "La passione per i GdR ci accompagna da più di dieci anni e non passa giorno in cui non vediamo l'ora di ruolare ancora :D",
 
-  "nick_the_dragon": "https://roleever-app.imgix.net/about/nick.png??fm=png&auto=format&lossless=1&q=100",
+  "nick_the_dragon": "https://roleever-app.imgix.net/about/nick.png??fm=webp&lossless=1&q=100",
   "nick_the_dragon_title": "Nick il drago",
   "nick_the_dragon_bio": "Nick è uno Pseudodrago. Capo e master indiscusso di RoleEver. Non fatevi ingannare dalla posa... è un burlone! Vi guiderà ovunque verso le migliori avventure!",
 
@@ -69,37 +69,37 @@
   "artist_card": [
     {
       "artist_name": "Alberto",
-      "artist_image": "https://roleever-app.imgix.net/about/alby.png??fm=png&auto=format",
+      "artist_image": "https://roleever-app.imgix.net/about/alby.png??fm=webp",
       "artist_profile": "https://www.instagram.com/dreadworks_art"
     },
     {
       "artist_name": "Giulia",
-      "artist_image": "https://roleever-app.imgix.net/about/giulia.png??fm=png&auto=format",
+      "artist_image": "https://roleever-app.imgix.net/about/giulia.png??fm=webp",
       "artist_profile": "https://www.artstation.com/hekate01"
     },
     {
       "artist_name": "Valentina",
-      "artist_image": "https://roleever-app.imgix.net/about/vale.png??fm=png&auto=format",
+      "artist_image": "https://roleever-app.imgix.net/about/vale.png??fm=webp",
       "artist_profile": "https://www.artstation.com/valeer96"
     },
     {
       "artist_name": "Daniel",
-      "artist_image": "https://roleever-app.imgix.net/about/dan.png??fm=png&auto=format",
+      "artist_image": "https://roleever-app.imgix.net/about/dan.png??fm=webp",
       "artist_profile": "https://www.instagram.com/Dusksmile/"
     },
     {
       "artist_name": "Daniele",
-      "artist_image": "https://roleever-app.imgix.net/about/randazzo.png??fm=png&auto=format",
+      "artist_image": "https://roleever-app.imgix.net/about/randazzo.png??fm=webp",
       "artist_profile": "https://www.artstation.com/danhatter88"
     },
     {
       "artist_name": "Sara",
-      "artist_image": "https://roleever-app.imgix.net/about/sara.png?fm=png&auto=format",
+      "artist_image": "https://roleever-app.imgix.net/about/sara.png?fm=webp",
       "artist_profile": "https://www.instagram.com/__sarabertoli__/"
     },
     {
       "artist_name": "Asia",
-      "artist_image": "https://roleever-app.imgix.net/about/asia.png?fm=png&auto=format",
+      "artist_image": "https://roleever-app.imgix.net/about/asia.png?fm=webp",
       "artist_profile": "https://www.artstation.com/f_y_asia"
     }
   ],

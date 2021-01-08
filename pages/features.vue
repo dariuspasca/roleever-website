@@ -47,7 +47,7 @@
         <!--Chat Preview-->
         <div class="flex w-6/12 xs:w-full items-center">
           <img
-            src="~/assets/images/Chat-Features.svg"
+            :src="page.chat_preview"
             class="xs:w-full sm:w-10/12 w-7/12 h-auto float-left xs:float-none ml-4 xs:mx-auto"
             width="835"
             height="1022"

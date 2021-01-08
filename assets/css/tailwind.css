@@ -50,17 +50,17 @@ body {
 }
 
 .lineaDorata {
-  background-image: url('https://roleever-app.imgix.net/LineaDorata.png?fm=png&auto=format&lossless=1');
+  background-image: url('https://roleever-app.imgix.net/LineaDorata.png?fm=webp&lossless=1');
 }
 
 @media (min-width: 1024px) {
   .lineaDorata {
-    background-image: url('https://roleever-app.imgix.net/LineaDorata2.png?fm=png&auto=format&lossless=1');
+    background-image: url('https://roleever-app.imgix.net/LineaDorata2.png?fm=webp&lossless=1');
   }
 }
 
 .bg-fantasy {
-  background-image: url('https://roleever-app.imgix.net/fantasy.jpg?fm=jpg&auto=format&lossless=1&q=80');
+  background-image: url('https://roleever-app.imgix.net/fantasy.jpg?fm=webp&lossless=1&q=80');
 }
 
 .exact-active-link {
@@ -70,13 +70,13 @@ body {
 
 @media (max-width: 767px) {
   .bg-view {
-    background-image: url('https://roleever-app.imgix.net/background_mobile.jpg?fm=jpg&auto=format');
+    background-image: url('https://roleever-app.imgix.net/background_mobile.jpg?fm=webp');
   }
 }
 
 @media (min-width: 768px) {
   .bg-view {
-    background-image: url('https://roleever-app.imgix.net/background.jpg?fm=jpg&auto=format');
+    background-image: url('https://roleever-app.imgix.net/background.jpg?fm=webp');
   }
 }
 
@@ -88,13 +88,13 @@ body {
 
 @media (min-width: 768px) {
   .bg-view-card {
-    background-image: url('https://roleever-app.imgix.net/background.jpg?fm=jpg&auto=format');
+    background-image: url('https://roleever-app.imgix.net/background.jpg?fm=webp');
   }
 }
 
 @media (max-width: 767px) {
   .bg-view-card-container {
-    background-image: url('https://roleever-app.imgix.net/background.jpg?fm=jpg&auto=format');
+    background-image: url('https://roleever-app.imgix.net/background.jpg?fm=webp');
   }
 }
 
@@ -106,13 +106,13 @@ body {
 
 @media (max-width: 767px) {
   .bg-footer {
-    background-image: url('https://roleever-app.imgix.net/background_footer_mobile.jpg?fm=jpg&auto=format');
+    background-image: url('https://roleever-app.imgix.net/background_footer_mobile.jpg?fm=webp');
   }
 }
 
 @media (min-width: 768px) {
   .bg-footer {
-    background-image: url('https://roleever-app.imgix.net/background_footer.jpg?fm=jpg&auto=format');
+    background-image: url('https://roleever-app.imgix.net/background_footer.jpg?fm=webp');
   }
 }
 .text-shadow {

@@ -1,19 +1,41 @@
 <template>
-  <div class="container mx-auto min-h-screen xs:h-full py-20">
-    <number-results-chart
-      v-if="show"
-      class="w-7/12 mx-auto"
-      :data="barChartData"
-      :options="barChartOptions"
-      :height="200"
-    />
-    <rolls-results-chart
-      v-if="show"
-      class="w-7/12 mx-auto"
-      :data="lineChartData"
-      :options="lineChartOptions"
-      :height="200"
-    />
+  <div
+    class="flex flex-col w-7/12 xs:w-11/12 sm:w-10/12 md:w-10/12 mx-auto min-h-screen xs:h-full py-20 text-left"
+  >
+    <h1 class="title xs:w-7/12 w-8/12 xs:pt-10 mx-auto pb-10 text-center">
+      {{ page.title }}
+    </h1>
+    <p>
+      {{ page.description }}
+    </p>
+    <p>
+      {{ page.why_p1 }}
+      <a
+        href="https://www.fourmilab.ch/hotbits/how3.html"
+        alt="HotBits"
+        class="text-primary"
+        >HotBits</a
+      >
+      {{ page.why_p2 }}
+    </p>
+
+    <p class="py-4">
+      {{ page.monitor }}
+    </p>
+    <div class="flex flex-col w-full space-y-10 pt-20">
+      <number-results-chart
+        v-if="show"
+        class="w-full mx-auto"
+        :data="barChartData"
+        :options="barChartOptions"
+      />
+      <rolls-results-chart
+        v-if="show"
+        class="w-full mx-auto"
+        :data="lineChartData"
+        :options="lineChartOptions"
+      />
+    </div>
   </div>
 </template>
 
@@ -41,6 +63,7 @@ export default {
       show: false,
       data: null,
       barChartOptions: {
+        maintainAspectRatio: false,
         responsive: true,
         legend: {
           display: false,
@@ -75,6 +98,7 @@ export default {
         },
       },
       lineChartOptions: {
+        maintainAspectRatio: false,
         responsive: true,
         legend: {
           display: false,
