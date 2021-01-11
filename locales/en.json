@@ -48,5 +48,10 @@
     "close": "Close",
     "contact": "Contact Us",
     "lang": "Change language"
+  },
+  "radioactive": {
+    "results_since": "Since ",
+    "results_time": " UTC, based on d20 rolls only.",
+    "rolls": "d20 rolls per hour; all times UTC"
   }
 }
