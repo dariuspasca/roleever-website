@@ -39,14 +39,23 @@
           />
         </div>
         <div>
-          <img
+          <!-- <img
             :src="page.preview"
             class="relative mx-auto unselectable preview-image img-shadow"
             width="429"
             height="818"
             loading="lazy"
             alt="RoleEver"
-          />
+          /> -->
+          <video
+            src="https://storage.googleapis.com/roleever-public-assets/www/preview.mp4"
+            class="relative mx-auto preview-image img-shadow"
+            loop
+            muted
+            playinline
+            autoplay
+            width="360"
+          ></video>
         </div>
       </div>
     </div>
