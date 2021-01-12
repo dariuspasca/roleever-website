@@ -22,14 +22,21 @@
       class="flex flex-row w-8/12 xs:w-full sm:w-10/12 md:w-11/12 ml-auto xs:mx-auto sm:mr-10 md:ml-10 justify-center xs:justify-start relative"
     >
       <!-- Desktop Preview Preview -->
-      <img
-        class="absolute xs:hidden laboratory-preview unselectable z-30 left-0"
-        :src="currentImage"
-        :alt="currentHeader"
-        loading="lazy"
-        width="429"
-        height="818"
-      />
+      <picture>
+        <source
+          :srcset="currentImage + '?fm=webp&lossless=1&q=75'"
+          type="image/webp"
+        />
+        <source :srcset="currentImage + '?fm=png&q=75'" type="image/png" />
+        <img
+          class="absolute xs:hidden laboratory-preview unselectable z-30 left-0"
+          :src="currentImage"
+          :alt="currentHeader"
+          loading="lazy"
+          width="429"
+          height="818"
+        />
+      </picture>
 
       <!--Card -->
 
@@ -40,14 +47,24 @@
         <div
           class="w-2/12 xs:w-full sm:w-1/12 md:w-1/12 border-b-2 border-medium"
         >
-          <img
-            class="hidden xs:flex w-full rounded-t-xl"
-            :src="currentImageMobile"
-            :alt="currentHeader"
-            loading="lazy"
-            width="414"
-            height="247"
-          />
+          <picture>
+            <source
+              :srcset="currentImageMobile + '?fm=webp&lossless=1&q=75'"
+              type="image/webp"
+            />
+            <source
+              :srcset="currentImageMobile + '?fm=jpg&q=75'"
+              type="image/jpg"
+            />
+            <img
+              class="hidden xs:flex w-full rounded-t-xl"
+              :src="currentImageMobile"
+              :alt="currentHeader"
+              loading="lazy"
+              width="414"
+              height="247"
+            />
+          </picture>
         </div>
 
         <div

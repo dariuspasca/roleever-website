@@ -87,6 +87,13 @@ export default {
     'nuxt-i18n',
     '@nuxtjs/google-analytics',
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
+    [
+      'nuxt-modernizr',
+      {
+        'feature-detects': ['img/webp'],
+        options: ['setClasses'],
+      },
+    ],
     '@nuxtjs/sitemap',
   ],
   env: {

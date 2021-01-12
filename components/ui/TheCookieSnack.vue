@@ -12,11 +12,23 @@
       <div
         class="flex items-center w-full justify-between space-x-4 cursor-default"
       >
-        <img
-          class="h-16 w-auto"
-          src="https://roleever-app.imgix.net/cthulhuCookie.png?fm=webp&lossless=1&q=80"
-          alt="Cookie Cthlhu"
-        />
+        <picture>
+          <source
+            srcset="
+              https://roleever-app.imgix.net/cthulhuCookie.png?fm=webp&q=80
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="https://roleever-app.imgix.net/cthulhuCookie.png?q=80"
+            type="image/jpeg"
+          />
+          <img
+            class="h-16 w-auto"
+            alt="Cookie Cthlhu"
+            src="https://roleever-app.imgix.net/cthulhuCookie.png?q=80"
+          />
+        </picture>
         <div class="w-7/12">
           <p class="text-base tracking-wider">{{ $t('cookies.inform') }}</p>
           <nuxt-link

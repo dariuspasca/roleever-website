@@ -16,14 +16,24 @@
         <div class="flex flex-row xs:flex-col my-auto">
           <!--About Photo-->
           <div class="w-6/12 xs:w-full my-auto pointer-events-none">
-            <img
-              :src="page.team"
-              class="shadow-xl mx-auto rounded-lg w-10/12 xs:11/12 h-auto my-auto"
-              width="900"
-              height="600"
-              loading="lazy"
-              :alt="page.team_title"
-            />
+            <picture>
+              <source
+                :srcset="page.team_title + '?fm=webp&lossless=1&q=100'"
+                type="image/webp"
+              />
+              <source
+                :srcset="page.team_title + '?fm=jpg&q=100'"
+                type="image/jpeg"
+              />
+              <img
+                :src="page.team"
+                class="shadow-xl mx-auto rounded-lg w-10/12 xs:11/12 h-auto my-auto"
+                width="900"
+                height="600"
+                loading="lazy"
+                :alt="page.team_title"
+              />
+            </picture>
           </div>
           <!--About Description-->
           <div
@@ -61,14 +71,24 @@
           </div>
           <!--Nick Image-->
           <div class="w-6/12 xs:w-full xs:order-first lg:-ml-16">
-            <img
-              :src="page.nick_the_dragon"
-              class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 xxxl:w-6/12 h-auto my-auto"
-              width="307"
-              height="410"
-              loading="lazy"
-              :alt="page.nick_the_dragon_title"
-            />
+            <picture>
+              <source
+                :srcset="page.nick_the_dragon + '?fm=webp&lossless=1&q=100'"
+                type="image/webp"
+              />
+              <source
+                :srcset="page.nick_the_dragon + '?fm=jpg&q=100'"
+                type="image/jpeg"
+              />
+              <img
+                :src="page.nick_the_dragon"
+                class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 xxxl:w-6/12 h-auto my-auto"
+                width="307"
+                height="410"
+                loading="lazy"
+                :alt="page.nick_the_dragon_title"
+              />
+            </picture>
           </div>
         </div>
         <!--Team Section-->
@@ -86,18 +106,37 @@
             class="space-y-1 mt-16 sm:px-4 md:px-8 px-16 xs:px-8"
           >
             <!--Card Illustration-->
-            <img
-              :src="
-                'https://roleever-app.imgix.net/about/' +
-                item.card_header +
-                '.png?fm=png&auto=format&lossless=1&q=75'
-              "
-              class="w-9/12 h-auto mx-auto xs:pt-20"
-              width="230"
-              height="307"
-              loading="lazy"
-              :alt="item.card_header"
-            />
+
+            <picture>
+              <source
+                :srcset="
+                  'https://roleever-app.imgix.net/about/' +
+                  item.card_header +
+                  '.png?fm=png&auto=format&lossless=1&q=75'
+                "
+                type="image/webp"
+              />
+              <source
+                :srcset="
+                  'https://roleever-app.imgix.net/about/' +
+                  item.card_header +
+                  '.png?fm=png&q=75'
+                "
+                type="image/jpeg"
+              />
+              <img
+                :src="
+                  'https://roleever-app.imgix.net/about/' +
+                  item.card_header +
+                  '.png?q=75'
+                "
+                class="w-9/12 h-auto mx-auto xs:pt-20"
+                width="230"
+                height="307"
+                loading="lazy"
+                :alt="item.card_header"
+              />
+            </picture>
             <!--Card Name-->
             <h2
               class="text-3xl font-medium subpixel-antialiased tracking-wider text-center w-full capitalize"
@@ -148,14 +187,24 @@
           class="flex flex-col justify-center pb-10 xs:w-4/12 w-2/12 sm:w-3/12 md:w-3/12 xxxl:w-3/12 cursor-pointer space-y-2"
           @click="openLink(item.artist_profile)"
         >
-          <img
-            :src="item.artist_image"
-            class="w-7/12 h-auto mx-auto transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
-            width="193"
-            height="193"
-            loading="lazy"
-            :alt="item.artist_name"
-          />
+          <picture>
+            <source
+              :srcset="item.artist_image + '?fm=webp&q=65'"
+              type="image/webp"
+            />
+            <source
+              :srcset="item.artist_image + '?fm=jpg&q=65'"
+              type="image/jpeg"
+            />
+            <img
+              :src="item.artist_image"
+              class="w-7/12 h-auto mx-auto transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
+              width="193"
+              height="193"
+              loading="lazy"
+              :alt="item.artist_name"
+            />
+          </picture>
           <h2
             class="text-xl font-base subpixel-antialiased tracking-wider text-center w-full capitalize text-white text-shadow"
           >
