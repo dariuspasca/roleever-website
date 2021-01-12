@@ -6,14 +6,7 @@
       aria-label="prev"
       @click="prev()"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-12 w-12 fill-current text-white"
-        viewBox="0 0 24 24"
-      >
-        <path d="M0 0h24v24H0z" fill="none" />
-        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-      </svg>
+      <ChevronLeft class="h-12 w-12 fill-current text-white z-30" />
     </button>
 
     <!--Card Wrapper-->
@@ -114,20 +107,17 @@
       aria-label="next"
       @click="next()"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-12 w-12 fill-current text-white z-30"
-        viewBox="0 0 24 24"
-      >
-        <path d="M0 0h24v24H0z" fill="none" />
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
+      <ChevronRight class="h-12 w-12 fill-current text-white z-30" />
     </button>
   </div>
 </template>
 
 <script>
+import ChevronLeft from '@/assets/icons/chevron-left.svg'
+import ChevronRight from '@/assets/icons/chevron-right.svg'
+
 export default {
+  components: { ChevronLeft, ChevronRight },
   props: {
     featuresList: { type: Array, required: true },
   },

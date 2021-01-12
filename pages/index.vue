@@ -4,11 +4,21 @@
   >
     <!-- Dungeon Background -->
     <span class="fixed dungeon w-full">
-      <img
-        class="w-full lg:w-8/12 unselectable mx-auto"
-        src="https://roleever-app.imgix.net/dungeon.png?fm=webp&q=60"
-        alt="dungeon"
-    /></span>
+      <picture>
+        <source
+          srcset="https://roleever-app.imgix.net/dungeon.png?fm=webp&q=75"
+          type="image/webp"
+        />
+        <source
+          srcset="https://roleever-app.imgix.net/dungeon.png?fm=png&q=75"
+          type="image/png"
+        />
+        <img
+          class="w-full lg:w-8/12 unselectable mx-auto"
+          src="https://roleever-app.imgix.net/dungeon.png"
+          alt="dungeon"
+        /> </picture
+    ></span>
 
     <div class="container sm:flex sm:w-11/12 xxxl:w-8/12 mx-auto my-auto">
       <div

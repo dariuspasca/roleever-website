@@ -85,6 +85,7 @@ export default {
     '@nuxtjs/toast',
     '@nuxtjs/axios',
     'nuxt-i18n',
+    'nuxt-svg-loader',
     '@nuxtjs/google-analytics',
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
     [
