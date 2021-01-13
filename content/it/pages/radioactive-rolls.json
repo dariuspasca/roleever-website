@@ -4,6 +4,8 @@
   "why_p1": "Perché radioattivo? Perché il generatore di numeri casuali è alimentato da un seme generato da ",
   "why_p2": " attraverso il misuramente delle radiazioni del decadimento del Cæsium-137 e della successiva emissione di raggi gamma.",
 
+  "loading": "Caricamento...",
+
   "monitor": "Da questa pagina è possibile monitorare tutti i tiri effettuati in RoleEver nelle ultime 10 ore raggruppati per risultato e tutti i tiri effettuati da sempre raggruppati per ora. In questo modo puoi controllare il corretto funzionamento di Radioactive Roll.",
   "rolls_results": "Risultati Per Numero",
   "rolls_total": "Tiri Ogni Ora",

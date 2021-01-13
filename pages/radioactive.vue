@@ -22,27 +22,29 @@
     <p class="py-4">
       {{ page.monitor }}
     </p>
-    <div class="flex flex-col w-full pt-20">
-      <number-results-chart
-        v-if="show"
-        class="w-full mx-auto"
-        :data="barChartData"
-        :options="barChartOptions"
-      />
-      <p class="float-right text-right text-gray-600 text-xs pb-10">
-        {{ $t('radioactive.results_since') }} {{ lastUpdate
-        }}{{ $t('radioactive.results_time') }}
-      </p>
-      <rolls-results-chart
-        v-if="show"
-        class="w-full mx-auto"
-        :data="lineChartData"
-        :options="lineChartOptions"
-      />
-      <p class="float-right text-right text-gray-600 text-xs">
-        {{ $t('radioactive.rolls') }}
-      </p>
-    </div>
+    <client-only :placeholder="page.loading">
+      <div class="flex flex-col w-full pt-20">
+        <number-results-chart
+          v-if="show"
+          class="w-full mx-auto"
+          :data="barChartData"
+          :options="barChartOptions"
+        />
+        <p class="float-right text-right text-gray-600 text-xs pb-10">
+          {{ $t('radioactive.results_since') }} {{ lastUpdate
+          }}{{ $t('radioactive.results_time') }}
+        </p>
+        <rolls-results-chart
+          v-if="show"
+          class="w-full mx-auto"
+          :data="lineChartData"
+          :options="lineChartOptions"
+        />
+        <p class="float-right text-right text-gray-600 text-xs">
+          {{ $t('radioactive.rolls') }}
+        </p>
+      </div>
+    </client-only>
   </div>
 </template>
 
