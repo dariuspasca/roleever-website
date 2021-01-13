@@ -17,6 +17,9 @@
           class="w-full lg:w-8/12 unselectable mx-auto"
           src="https://roleever-app.imgix.net/dungeon.png"
           alt="dungeon"
+          width="1920"
+          height="1000"
+          loading="lazy"
         /> </picture
     ></span>
 
@@ -47,15 +50,6 @@
             loading="lazy"
             alt="RoleEver"
           />
-          <!-- <video
-            src="https://storage.googleapis.com/roleever-public-assets/www/preview.mp4"
-            class="relative mx-auto preview-image img-shadow"
-            loop
-            muted
-            playinline
-            autoplay
-            width="360"
-          ></video> -->
         </div>
       </div>
     </div>

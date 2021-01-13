@@ -53,5 +53,8 @@
     "results_since": "Since ",
     "results_time": " UTC, based on d20 rolls only.",
     "rolls": "d20 rolls per hour; all times UTC"
-  }
+  },
+  "404_message": "Ouch! Something's wrong here...",
+  "404_info": "The page you requested could not be found.",
+  "404_back": "Back to Home"
 }

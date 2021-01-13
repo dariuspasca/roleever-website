@@ -14,6 +14,9 @@
         <img
           class="w-full lg:w-8/12 unselectable mx-auto"
           src="https://roleever-app.imgix.net/dungeon.png"
+          width="1920"
+          height="1000"
+          loading="lazy"
           alt="dungeon"
         /> </picture
     ></span>

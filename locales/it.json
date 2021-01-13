@@ -53,5 +53,8 @@
     "results_since": "Dalle ore ",
     "results_time": " UTC, basato solo sui tiri del d20.",
     "rolls": "tiri con il d20 per ora; tutti gli orari in UTC"
-  }
+  },
+  "404_message": "Ahia! C'è qualcosa che non va qui...",
+  "404_info": "La pagina che hai richiesto non è stata trovata.",
+  "404_back": "Torna alla Home"
 }
