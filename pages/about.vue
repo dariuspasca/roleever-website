@@ -77,8 +77,8 @@
                 type="image/webp"
               />
               <source
-                :srcset="page.nick_the_dragon + '?fm=jpg&q=100'"
-                type="image/jpeg"
+                :srcset="page.nick_the_dragon + '?fm=png&q=100'"
+                type="image/png"
               />
               <img
                 :src="page.nick_the_dragon"
@@ -122,7 +122,7 @@
                   item.card_header +
                   '.png?fm=png&q=75'
                 "
-                type="image/jpeg"
+                type="image/png"
               />
               <img
                 :src="
@@ -193,8 +193,8 @@
               type="image/webp"
             />
             <source
-              :srcset="item.artist_image + '?fm=jpg&q=65'"
-              type="image/jpeg"
+              :srcset="item.artist_image + '?fm=png&q=65'"
+              type="image/png"
             />
             <img
               :src="item.artist_image"
