@@ -1,3 +1,4 @@
+# All crawlers welcome:
 User-agent: *
 Allow: /
 

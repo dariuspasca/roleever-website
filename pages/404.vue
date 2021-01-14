@@ -22,9 +22,9 @@
         />
       </picture>
       <div class="flex flex-col space-y-2 text-center xs:px-1 pb-4">
-        <h1 class="title xs:text-xl">{{ error.statusCode }}</h1>
+        <h1 class="title xs:text-xl">{{ $t('404_message') }}</h1>
         <h2 class="text-2xl sm:text-xl lg:text-2xl xs:text-base font-medium">
-          {{ error.message }}
+          {{ $t('404_info') }}
         </h2>
       </div>
       <nuxt-link
@@ -40,12 +40,6 @@
 
 <script>
 export default {
-  props: {
-    error: {
-      type: Object,
-      required: true,
-    },
-  },
   head() {
     return {
       title: 'Page not found | RoleEver',

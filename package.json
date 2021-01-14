@@ -25,7 +25,7 @@
     "interactjs": "^1.10.1",
     "maz-ui": "^2.3.0",
     "nuxt": "^2.14.12",
-    "nuxt-i18n": "^6.16.0",
+    "nuxt-i18n": "^6.18.0",
     "nuxt-modernizr": "^1.0.3",
     "nuxt-svg-loader": "^1.2.0",
     "v-click-outside": "^3.0.1",
