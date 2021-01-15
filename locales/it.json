@@ -39,8 +39,15 @@
     "join_us": "Unisciti a noi su"
   },
   "cookies": {
-    "inform": "Usiamo i Cookies",
-    "more": "Scopri di più"
+    "inform": "Utilizziamo i cookie per offrirti un'esperienza ottimizzata sul nostro sito web.",
+    "more": "Scopri di più",
+    "necessary": "Cookie necessari",
+    "necessary_description": "Utilizziamo questi cookie per il corretto funzionamento del sito web. È possibile bloccare o eliminare questi cookie nelle impostazioni del browser.",
+    "analytics": "Cookies analitici",
+    "analytics_description": "Utilizziamo questi cookie per riconoscere e calcolare il numero di visitatori del nostro sito Web al fine di apportare ulteriori miglioramenti quando necessario.",
+    "accept": "Accetta",
+    "manage": "Gestisci cookies",
+    "save": "Salva modifiche"
   },
   "labels": {
     "download": "Scarica App",

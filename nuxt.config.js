@@ -86,7 +86,7 @@ export default {
     '@nuxtjs/axios',
     'nuxt-i18n',
     'nuxt-svg-loader',
-    '@nuxtjs/google-analytics',
+    '@nuxtjs/gtm',
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
     [
       'nuxt-modernizr',
@@ -162,10 +162,11 @@ export default {
     routes: [],
   },
   /*
-   ** @nuxtjs/google-analytics configuration
+   ** @nuxtjs/gtm configuration
    */
-  googleAnalytics: {
-    id: 'UA-121790592-1',
+  gtm: {
+    enabled: true,
+    autoInit: false,
   },
   /*
    ** Build configuration

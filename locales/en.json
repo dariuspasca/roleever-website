@@ -39,8 +39,15 @@
     "join_us": "Join us on"
   },
   "cookies": {
-    "inform": "We use Cookies",
-    "more": "Learn more"
+    "inform": "We use Cookies to provide you with an optimised experience on our website.",
+    "more": "Learn more",
+    "necessary": "Necessary cookies",
+    "necessary_description": "We use these cookies for the proper functioning of the website. You can block or delete these cookies in your browser settings.",
+    "analytics": "Analytics cookies",
+    "analytics_description": "We use these cookies to recognise and calculate the number of visitors to our website in order to make further improvements when necessary.",
+    "accept": "Accept",
+    "manage": "Manage cookies",
+    "save": "Save changes"
   },
   "labels": {
     "download": "Download App",

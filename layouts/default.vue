@@ -54,6 +54,9 @@ export default {
       if (cookieRes === undefined) {
         return true
       } else {
+        if (cookieRes === 'cookiez-yes') {
+          this.$gtm.init('GTM-57N685N')
+        }
         return false
       }
     },
