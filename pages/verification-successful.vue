@@ -10,7 +10,7 @@
         />
         <source :srcset="page.nick + '?fm=png&q=75'" type="image/png" />
         <img
-          class="w-5/12 xs:w-9/12 unselectable mx-auto"
+          class="w-8/12 unselectable mx-auto"
           :src="page.nick"
           :alt="page.nick_title"
           width="789"
@@ -67,6 +67,63 @@ export default {
         {
           name: 'robots',
           content: 'noindex',
+        },
+        /* Twitter Cards */
+
+        {
+          name: 'twitter:card',
+          content: this.page.twitter_card,
+        },
+        {
+          name: 'twitter:site',
+          content: this.page.twitter_site,
+        },
+        {
+          name: 'twitter:title',
+          content: this.page.twitter_title,
+        },
+        {
+          name: 'twitter:description',
+          content: this.page.twitter_description,
+        },
+        {
+          name: 'twitter:image',
+          content: this.page.twitter_image,
+        },
+
+        /* Open Graph */
+
+        {
+          name: 'og:title',
+          content: this.page.og_title,
+        },
+        {
+          name: 'og:type',
+          content: this.page.og_type,
+        },
+        {
+          name: 'og:description',
+          content: this.page.og_description,
+        },
+        {
+          name: 'og:locale:image',
+          content: this.page.og_image,
+        },
+        {
+          name: 'og:locale:url',
+          content: this.page.og_url,
+        },
+
+        /* Google / Schema.org  */
+
+        { itemprop: 'name', content: this.page.og_title },
+        {
+          itemprop: 'description',
+          content: this.page.og_description,
+        },
+        {
+          itemprop: 'image',
+          content: this.page.og_image,
         },
       ],
     }
