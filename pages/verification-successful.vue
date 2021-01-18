@@ -10,7 +10,7 @@
         />
         <source :srcset="page.nick + '?fm=png&q=75'" type="image/png" />
         <img
-          class="w-8/12 xs:w-9/12 unselectable mx-auto"
+          class="w-5/12 xs:w-9/12 unselectable mx-auto"
           :src="page.nick"
           :alt="page.nick_title"
           width="789"
