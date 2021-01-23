@@ -8,7 +8,7 @@ og_image: https://roleever.com/share.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
-twitter_site: \@roleever
+twitter_site: '@RoleEverApp'
 twitter_title: RoleEver | Cookie Policy
 twitter_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
 twitter_image: https://roleever.com/share-tweet.jpg
@@ -66,4 +66,4 @@ Users have the right, at any time, to know whether their Personal Data has been 
 
 ### Contact
 
-Critical Adventures Srl, Via Ugo Foscolo 7, Bologna, 40123, Italia. Email: [contact@roleever.com](mailto:contact@roleever.com)
+Critical Adventures Srl, Via Ugo Foscolo 7, Bologna, 40123, Italia. Email: [contact@RoleEverApp.com](mailto:contact@RoleEverApp.com)

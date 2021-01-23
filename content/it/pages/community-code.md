@@ -8,7 +8,7 @@ og_image: https://roleever.com/condividi.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
-twitter_site: \@roleever
+twitter_site: '@RoleEverApp'
 twitter_title: RoleEver | Codice Community
 twitter_description: RoleEver è un applicazione per giocare ai GDR cartacei via chat dal tuo smartphone. Tutti i strumenti necessari sono disponibili per te, dalla chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro. RoleEver è disponibile su iOS e Android!
 twitter_image: https://roleever.com/condividi-tweet.jpg

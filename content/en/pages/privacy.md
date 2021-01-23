@@ -8,7 +8,7 @@ og_image: https://roleever.com/share.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
-twitter_site: \@roleever
+twitter_site: '@RoleEverApp'
 twitter_title: RoleEver | Privacy Policy
 twitter_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
 twitter_image: https://roleever.com/share-tweet.jpg
@@ -60,4 +60,4 @@ If you connect to a third-party service (such as Google, Discord, or another thi
 
 **APIs and Software Development Kits.** We may use third party APIs and software development kits (“SDKs”) as part of the functionality of our Services. APIs and SDKs may allow third parties including advertising partners to collect your personal information in order to provide content that is more relevant to you. For more information about our use of APIs and SDKs, please contact us as set forth below.
 
-f you have a complaint about how we use your personal information, please contact us via the app or send an email to [contact@roleever.com](mailto:contact@roleever.com) and we will do our best to resolve the issue.
+f you have a complaint about how we use your personal information, please contact us via the app or send an email to [contact@RoleEverApp.com](mailto:contact@RoleEverApp.com) and we will do our best to resolve the issue.

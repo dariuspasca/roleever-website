@@ -10,7 +10,7 @@ og_image: https://roleever.com/condividi.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
-twitter_site: \@roleever
+twitter_site: '@RoleEverApp'
 twitter_title: RoleEver | Privacy Policy
 twitter_description: RoleEver è un applicazione per giocare ai GDR cartacei via chat dal tuo smartphone. Tutti i strumenti necessari sono disponibili per te, dalla chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro. RoleEver è disponibile su iOS e Android!
 twitter_image: https://roleever.com/condividi-tweet.jpg
@@ -58,4 +58,4 @@ Se ti connetti a un servizio di terze parti (come Google, Discord o un'altra app
 
 **API e kit di sviluppo software.** Possiamo utilizzare API e software di terze parti kit di sviluppo ("SDK") come parte della funzionalità dei nostri Servizi. Le API e gli SDK possono consentire a terze parti, inclusi i partner pubblicitari, di raccogliere le tue informazioni personali al fine di fornire contenuti più pertinenti per te. Per ulteriori informazioni sul nostro utilizzo di API e SDK, contattaci come indicato di seguito.
 
-Se hai un reclamo su come utilizziamo le tue informazioni personali, ti preghiamo di contattarci tramite l'app o di inviare un'e-mail a [contact@roleever.com ](mailto:contact@roleever.com) e faremo del nostro meglio per risolvere il problema.
+Se hai un reclamo su come utilizziamo le tue informazioni personali, ti preghiamo di contattarci tramite l'app o di inviare un'e-mail a [contact@RoleEverApp.com ](mailto:contact@RoleEverApp.com) e faremo del nostro meglio per risolvere il problema.
