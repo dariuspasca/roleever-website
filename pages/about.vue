@@ -18,13 +18,10 @@
           <div class="w-6/12 xs:w-full my-auto pointer-events-none">
             <picture>
               <source
-                :srcset="page.team_title + '?fm=webp&lossless=1&q=100'"
+                :srcset="page.team + '?fm=webp&lossless=1&q=100'"
                 type="image/webp"
               />
-              <source
-                :srcset="page.team_title + '?fm=jpg&q=100'"
-                type="image/jpeg"
-              />
+              <source :srcset="page.team + '?fm=jpg&q=100'" type="image/jpeg" />
               <img
                 :src="page.team"
                 class="shadow-xl mx-auto rounded-lg w-10/12 xs:11/12 h-auto my-auto"
