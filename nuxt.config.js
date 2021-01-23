@@ -51,7 +51,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css', '~/assets/fonts/gitan.css'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -86,7 +86,6 @@ export default {
     '@nuxtjs/toast',
     '@nuxtjs/axios',
     'nuxt-i18n',
-    'nuxt-font-loader',
     'nuxt-svg-loader',
     '@nuxtjs/gtm',
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
@@ -105,11 +104,6 @@ export default {
       Currently both in dev and prod the bucket is the same
     */
     baseURL: 'https://roleever-public.s3.eu-west-3.amazonaws.com',
-  },
-  fontLoader: {
-    url: '/fonts/gitan.css',
-    prefetch: true,
-    preconnect: true,
   },
   /*
    ** nuxt-i18n configuration
