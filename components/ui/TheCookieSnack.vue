@@ -195,6 +195,7 @@ export default {
       }
       this.$cookiz.set('cookiez', cookieValue, {
         path: '/',
+        sameSite: true,
         maxAge: 60 * 60 * 24 * 7,
       })
     },

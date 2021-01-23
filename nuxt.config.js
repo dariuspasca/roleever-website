@@ -9,6 +9,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
+    title: 'RoleEver',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -102,10 +103,7 @@ export default {
       Url to S3 bucket
       Currently both in dev and prod the bucket is the same
     */
-    baseURL:
-      process.env.NODE_ENV === 'production'
-        ? 'https://roleever-public.s3.eu-west-3.amazonaws.com'
-        : 'https://roleever-public.s3.eu-west-3.amazonaws.com',
+    baseURL: 'https://roleever-public.s3.eu-west-3.amazonaws.com',
   },
   /*
    ** nuxt-i18n configuration

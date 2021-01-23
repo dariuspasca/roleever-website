@@ -30,7 +30,7 @@ export default {
   },
   head() {
     return {
-      title: this.page.meta_header,
+      title: this.page.og_title,
       meta: [
         /* Twitter Cards */
 
