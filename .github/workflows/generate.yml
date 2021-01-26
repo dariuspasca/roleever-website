@@ -1,19 +1,22 @@
-# This is a basic workflow to help you get started with Actions
-
-name: generate-website
+name: generate-and-deploy-website
 
 # Controls when the action will run. 
 on:
+  push:
+    branches:
+      - prod
+  pull_request:
+    branches:
+      - prod
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
@@ -36,4 +39,4 @@ jobs:
             username: 11390053@aruba.it
             password: ${{ secrets.ftp_password }}
             local-dir: ./dist/
-            server-dir: www.roleever.com/test/
+            server-dir: www.roleever.com/
