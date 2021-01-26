@@ -12,7 +12,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: [self-hosted, linux, x64, roleever-pi]
+    runs-on: [roleever-pi]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
