@@ -21,7 +21,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: install nuxtjs project dependencies
-        run: yarn install
+        run: npm install
 
       # Runs a set of commands using the runners shell
       - name: generate websitet
