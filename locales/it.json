@@ -57,7 +57,7 @@
     "lang": "Cambia lingua"
   },
   "radioactive": {
-    "results_since": "Dalle ore ",
+    "results_since": "Dal ",
     "results_time": " UTC, basato solo sui tiri del d20.",
     "rolls": "tiri con il d20 per ora; tutti gli orari in UTC"
   },
