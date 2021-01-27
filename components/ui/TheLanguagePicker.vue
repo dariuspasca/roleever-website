@@ -9,6 +9,8 @@
           class="h-4 w-6 my-auto"
           :src="`/images/${this.$i18n.locale}.png`"
           :alt="this.$i18n.locale"
+          height="48"
+          width="70"
         />
         <span class="mb-1">{{ selectedLanguage.name }}</span>
         <svg
@@ -38,6 +40,8 @@
             class="h-4 w-6 my-auto pointer-events-none"
             :src="`/images/${locale.code}.png`"
             alt="Available language flag"
+            height="48"
+            width="70"
           />
           <span class="mb-1">{{ locale.name }}</span></nuxt-link
         >

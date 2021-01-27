@@ -49,13 +49,6 @@ export default {
   head() {
     return {
       title: 'Page not found | RoleEver',
-      meta: [
-        /* Do not index */
-        {
-          name: 'robots',
-          content: 'noindex',
-        },
-      ],
     }
   },
 }

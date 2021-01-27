@@ -50,27 +50,25 @@
 
 <script>
 export default {
-  async fetch() {
-    this.data = await this.$axios
-      .get(process.env.baseURL + '/d20.json')
-      .then((res) => res.data)
-  },
-  async asyncData({ $content }) {
+  async asyncData({ $content, $axios }) {
     const pages = []
     const pageEN = await $content(`en/pages/radioactive-rolls`).fetch()
     const pageIT = await $content(`it/pages/radioactive-rolls`).fetch()
+    const data = await $axios
+      .get(process.env.baseURL + '/d20.json')
+      .then((res) => res.data)
     pages.push(pageEN)
     pages.push(pageIT)
 
     return {
       pages,
+      data,
     }
   },
 
   data() {
     return {
       show: false,
-      data: null,
       barChartOptions: {
         maintainAspectRatio: false,
         responsive: true,
@@ -153,7 +151,11 @@ export default {
       }
     },
     lastUpdate() {
-      return this.data.lastUpdate
+      if (this.$i18n.locale === 'it') {
+        return this.data.lastUpdateIt
+      } else {
+        return this.data.lastUpdate
+      }
     },
     barChartData() {
       const barChartData = {
