@@ -132,6 +132,7 @@ export default {
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'not_cthulhu',
+      onlyOnRoot: true, // Better SEO -> language detection is only attempted when the user visits the root path
     },
   },
   /*
@@ -156,7 +157,7 @@ export default {
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://www.roleever.com',
-    exclude: [],
+    exclude: ['/404/', '/note-legali/', '/verification-successful/'],
     routes: [],
   },
   /*
