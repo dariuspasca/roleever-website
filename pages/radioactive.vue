@@ -151,7 +151,7 @@ export default {
       }
     },
     lastUpdate() {
-      if (this.$i18n.locale === 'en') {
+      if (this.$i18n.locale === 'it') {
         return this.data.lastUpdateIt
       } else {
         return this.data.lastUpdate
