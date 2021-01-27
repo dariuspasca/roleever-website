@@ -86,6 +86,7 @@ export default {
     '@nuxtjs/toast',
     '@nuxtjs/axios',
     'nuxt-i18n',
+    '@nuxtjs/sitemap',
     'nuxt-svg-loader',
     '@nuxtjs/gtm',
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
@@ -96,7 +97,6 @@ export default {
         options: ['setClasses'],
       },
     ],
-    '@nuxtjs/sitemap',
   ],
   env: {
     /*
@@ -157,7 +157,15 @@ export default {
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://www.roleever.com',
-    exclude: ['/404/', '/note-legali/', '/verification-successful/'],
+    i18n: true,
+    exclude: [
+      '/404',
+      '/it/404',
+      '/it/note-legali',
+      '/note-legali',
+      '/verification-successful',
+      '/it/verification-successful',
+    ],
     routes: [],
   },
   /*
