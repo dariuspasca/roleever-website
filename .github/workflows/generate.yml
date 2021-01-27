@@ -5,9 +5,6 @@ on:
   push:
     branches:
       - prod
-  pull_request:
-    branches:
-      - prod
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -33,10 +30,10 @@ jobs:
         run: yarn generate --fail-on-error
       
       - name: 📂 Sync files
-        uses: sebastianpopp/ftp-action@releases/v2
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-            host: ${{ secrets.FTP_SERVER }}
-            user: ${{ secrets.FTP_USERNAME }}
+            server: ${{ secrets.FTP_SERVER }}
+            username: ${{ secrets.FTP_USERNAME }}
             password: ${{ secrets.FTP_PASSWORD }}
-            localDir: ./dist/
-            remoteDir: www.roleever.com/
+            local-dir: ./dist/
+            remote-dir: www.roleever.com/
