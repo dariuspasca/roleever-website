@@ -11,7 +11,7 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@hcaptcha/vue-hcaptcha": "^0.2.4",
+    "@hcaptcha/vue-hcaptcha": "^0.3.0",
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/device": "^1.2.7",
@@ -23,6 +23,7 @@
     "cookie-universal-nuxt": "^2.1.4",
     "emailjs-com": "^2.6.4",
     "eslint-plugin-tailwind": "^0.2.0",
+    "hcaptcha": "^0.0.2",
     "interactjs": "^1.10.1",
     "maz-ui": "^2.3.0",
     "nuxt": "^2.14.12",

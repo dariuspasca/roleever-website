@@ -45,7 +45,7 @@
         </p>
       </div>
       <p class="text-left text-gray-600 pt-10 -mb-10">
-        {{ $t('radioactive.last_update') }} {{ lastUpdate }}
+        {{ $t('radioactive.last_update') }} {{ lastUpdate }} UTC
       </p>
     </client-only>
   </div>

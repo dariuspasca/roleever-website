@@ -953,10 +953,10 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
-"@hcaptcha/vue-hcaptcha@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@hcaptcha/vue-hcaptcha/-/vue-hcaptcha-0.2.4.tgz#f00ba4a7725c37b8b891f918d41c022256ce8e13"
-  integrity sha512-bm4Yyp/B9TRq7mjr6E8Th2y5OjnV6HKXhonEJUdqjFQxRFD+uoJR+N3ECe+vK5YDhJdikGTd5M97aKL0e4GYYA==
+"@hcaptcha/vue-hcaptcha@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@hcaptcha/vue-hcaptcha/-/vue-hcaptcha-0.3.0.tgz#faa400d3072e2d87638a88d39ff6341c22e08904"
+  integrity sha512-V9SY1uxOJgpaM3UY/O/8lhv/uVKNasF8ZXfaELnv3U2MY5WlWO6YBl/bdGxgxQnCESmW5r5znLvYF7ZJAwI/xw==
 
 "@interactjs/types@1.10.1":
   version "1.10.1"
@@ -5514,6 +5514,11 @@ hastscript@^6.0.0:
     hast-util-parse-selector "^2.0.0"
     property-information "^5.0.0"
     space-separated-tokens "^1.0.0"
+
+hcaptcha@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/hcaptcha/-/hcaptcha-0.0.2.tgz#18f4c055a2315db9f732ac77f9d0e30026bb2eb7"
+  integrity sha512-wWOncj/sY+q8s7tV12tjn3cFNoQhSu3l/7nTJi4QkFKALQi9XnduoXrV/KFzLg5lnB+5560zSAoi9YdYPDw6Eg==
 
 he@1.2.0, he@^1.1.0, he@^1.2.0:
   version "1.2.0"

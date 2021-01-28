@@ -190,6 +190,16 @@
                     >{{ $t('footer.resources_logos') }}</a
                   >
                 </li>
+                <li>
+                  <nuxt-link
+                    :to="localePath('radioactive-roll')"
+                    aria-label="Radioactive Roll"
+                    class="block hover:text-primary my-2"
+                    exact
+                  >
+                    Radioactive Roll
+                  </nuxt-link>
+                </li>
               </ul>
             </div>
             <div class="w-1/2">
