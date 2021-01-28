@@ -31,7 +31,7 @@
           :options="barChartOptions"
         />
         <p class="float-right text-right text-gray-600 text-xs pb-10">
-          {{ $t('radioactive.results_since') }} {{ lastUpdate
+          {{ $t('radioactive.results_since') }} {{ since
           }}{{ $t('radioactive.results_time') }}
         </p>
         <rolls-results-chart
@@ -44,6 +44,9 @@
           {{ $t('radioactive.rolls') }}
         </p>
       </div>
+      <p class="text-left text-gray-600 pt-10 -mb-10">
+        {{ $t('radioactive.last_update') }} {{ lastUpdate }}
+      </p>
     </client-only>
   </div>
 </template>
@@ -150,12 +153,31 @@ export default {
         return this.pages[1]
       }
     },
+    since() {
+      const lastUpdate = new Date(this.data.lastUpdate)
+      lastUpdate.setDate(lastUpdate.getDate() - 10)
+      const locale = this.$i18n.locale === 'it' ? 'it-IT' : 'en-US'
+
+      return lastUpdate.toLocaleString(locale, {
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: this.$i18n.locale === 'en',
+      })
+    },
     lastUpdate() {
-      if (this.$i18n.locale === 'it') {
-        return this.data.lastUpdateIt
-      } else {
-        return this.data.lastUpdate
-      }
+      const lastUpdate = new Date(this.data.lastUpdate)
+      const locale = this.$i18n.locale === 'it' ? 'it-IT' : 'en-US'
+
+      return lastUpdate.toLocaleString(locale, {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: this.$i18n.locale === 'en',
+      })
     },
     barChartData() {
       const barChartData = {

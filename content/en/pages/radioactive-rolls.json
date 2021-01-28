@@ -6,7 +6,7 @@
 
   "loading": "Loading...",
   
-  "monitor": "Monitor Radioactive Roll, the RoleEver dice engine which utilizes a true random sources of entropy to generate genuine random numbers.",
+  "monitor": "From this page you can monitor all the rolls made in RoleEver in the last 7 days grouped by result and all the rolls ever made grouped by hour. This way you can make sure that the dice rolls in RoleEver are performing as intended.",
   "rolls_results": "Results Per Number",
   "rolls_total": "Rolls Per Hour",
 

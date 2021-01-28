@@ -6,7 +6,7 @@
 
   "loading": "Caricamento...",
 
-  "monitor": "Da questa pagina è possibile monitorare tutti i tiri effettuati in RoleEver nelle ultime 10 ore raggruppati per risultato e tutti i tiri effettuati da sempre raggruppati per ora. In questo modo puoi controllare il corretto funzionamento di Radioactive Roll.",
+  "monitor": "Da questa pagina è possibile monitorare tutti i tiri effettuati in RoleEver negli ultimi 7 giorni raggruppati per risultato e tutti i tiri effettuati da sempre raggruppati per ora. In questo modo puoi assicurarti che i tiri dei dadi in RoleEver funzionino come previsto.",
   "rolls_results": "Risultati Per Numero",
   "rolls_total": "Tiri Ogni Ora",
 

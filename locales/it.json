@@ -58,8 +58,9 @@
   },
   "radioactive": {
     "results_since": "Dal ",
-    "results_time": " UTC, basato solo sui tiri del d20.",
-    "rolls": "tiri con il d20 per ora; tutti gli orari in UTC"
+    "results_time": " UTC, basato solo sui tiri del d20",
+    "rolls": "tiri con il d20 per ora; tutti gli orari in UTC",
+    "last_update": "Ultimo aggiornamento "
   },
   "404_message": "Ahia! C'è qualcosa che non va qui...",
   "404_info": "La pagina che hai richiesto non è stata trovata.",
