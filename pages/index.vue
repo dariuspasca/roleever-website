@@ -42,12 +42,17 @@
           />
         </div>
         <div>
-          <img
+          <!-- <img
             :src="page.preview"
             class="relative mx-auto unselectable preview-image img-shadow"
             width="429"
             height="818"
             loading="lazy"
+            alt="RoleEver"
+          /> -->
+
+          <player
+            class="relative mx-auto unselectable preview-image"
             alt="RoleEver"
           />
         </div>
@@ -58,9 +63,10 @@
 
 <script>
 import TheDownloadButton from '@/components/ui/TheDownloadButton.vue'
+import Player from '@/components/ui/ThePlayer.vue'
 
 export default {
-  components: { TheDownloadButton },
+  components: { TheDownloadButton, Player },
   async asyncData({ $content }) {
     const pages = []
     const pageEN = await $content(`en/pages/home`).fetch()

@@ -1508,6 +1508,11 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
+"@stencil/core@^2.2.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.4.0.tgz#17b45629c8986e35dcbce3f7dab7d64beede83f2"
+  integrity sha512-gU6+Yyd6O0KrCSS/O6j8KKqmRo+/Dcs2fI0+APCpbAWK+nqhwDISpdnSEfGDCLMoAC08XOZCycBRk2K1VGnEcg==
+
 "@tailwindcss/typography@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.3.1.tgz#253ce580c8e06b6163d9a288edd24f25e1d0dfee"
@@ -1907,6 +1912,21 @@
     lodash "^4.17.15"
     semver "^7.3.2"
     tsutils "^3.17.1"
+
+"@vime/core@5.0.27":
+  version "5.0.27"
+  resolved "https://registry.yarnpkg.com/@vime/core/-/core-5.0.27.tgz#7c7f850a18bc7c62c788e59e9569e6e6527c6189"
+  integrity sha512-Dc6LwuH4lcGAyyuZseMPI/efKGoyz2YdFaFBGeZ7h9pxfZ66ELqEXMsBWMMyJqrbGqsTvCLvBjExmzdiTV/NHQ==
+  dependencies:
+    "@stencil/core" "^2.2.0"
+    stencil-wormhole "^3.2.2"
+
+"@vime/vue@^5.0.27":
+  version "5.0.27"
+  resolved "https://registry.yarnpkg.com/@vime/vue/-/vue-5.0.27.tgz#7fa9eca278d1786d94349a41ceb10f5514db6fde"
+  integrity sha512-RWyy8ZnQMWMkypa5ybQbLSUEw6aoeDiJbede4Ri049kSn5vbh74eCpivGujfOaFjFw5x0djLzN8HNZC1/NwCpA==
+  dependencies:
+    "@vime/core" "5.0.27"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
@@ -10041,6 +10061,11 @@ std-env@^2.2.1:
   integrity sha512-IjYQUinA3lg5re/YMlwlfhqNRTzMZMqE+pezevdcTaHceqx8ngEi1alX9nNCk9Sc81fy1fLDeQoaCzeiW1yBOQ==
   dependencies:
     ci-info "^1.6.0"
+
+stencil-wormhole@^3.2.2:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/stencil-wormhole/-/stencil-wormhole-3.4.0.tgz#7cdcd571a40024dcd1f944e0b18cb6a4630e84d9"
+  integrity sha512-TXqH4dUzHtJfWAVF7lU36AyeI3H/0Mj0lFJOPzWxZVb+nDmAsNlu8GUxA7zn4/DgZDNS3eenB8H1pFUkMTkgDw==
 
 stream-browserify@^2.0.1:
   version "2.0.2"
