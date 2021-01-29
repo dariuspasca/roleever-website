@@ -229,7 +229,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://www.unibo.it/it/servizi-e-opportunita/imprenditorialita/start-up/Critical-Adventures"
+                    href="https://site.unibo.it/idea/it/le-nostre-imprese-innovative-start-up-e-spin-off/critical-adventures"
                     aria-label="UNIBO"
                     target="_blank"
                     rel="noopener noreferrer"
