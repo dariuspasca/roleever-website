@@ -51,10 +51,12 @@
             alt="RoleEver"
           /> -->
 
-          <player
-            class="relative mx-auto unselectable preview-image"
-            alt="RoleEver"
-          />
+          <client-only>
+            <player
+              class="relative mx-auto unselectable preview-image"
+              alt="RoleEver"
+            />
+          </client-only>
         </div>
       </div>
     </div>
