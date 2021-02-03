@@ -204,9 +204,9 @@ export default {
   router: {
     linkExactActiveClass: 'exact-active-link',
   },
+    // Netlify reads a 404.html, Nuxt will load as an SPA
   generate: {
-    fallback: true,
-    routes: ['/', '404'],
+    fallback: '404.html',
   },
   server: {
     port: 8000, // default: 3000
