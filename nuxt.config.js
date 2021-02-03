@@ -205,7 +205,7 @@ export default {
     linkExactActiveClass: 'exact-active-link',
   },
   generate: {
-    fallback: false,
+    fallback: true,
     routes: ['/', '404'],
   },
   server: {
