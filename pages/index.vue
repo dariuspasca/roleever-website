@@ -50,11 +50,10 @@
             loading="lazy"
             alt="RoleEver"
           /> -->
-
-          <player
-            class="relative mx-auto unselectable preview-image"
-            alt="RoleEver"
-          />
+          <div class="relative mx-auto" style="width: 282px">
+            <img src="/images/frame.png" class="absolute z-20 h-full w-full" />
+            <div class="relative z-10 video-container ml-1"><player /></div>
+          </div>
         </div>
       </div>
     </div>
@@ -153,3 +152,11 @@ export default {
   },
 }
 </script>
+
+<style>
+.video-container {
+  width: 275px;
+  -webkit-clip-path: inset(0 0 0 0 round 30px);
+  clip-path: inset(0 0 0 0 round 30px);
+}
+</style>
