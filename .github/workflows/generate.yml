@@ -37,3 +37,7 @@ jobs:
             password: ${{ secrets.FTP_PASSWORD }}
             local-dir: ./dist/
             server-dir: www.roleever.com/
+            exclude: .git*
+              - images/**
+              - favicon/**
+              - media/**
