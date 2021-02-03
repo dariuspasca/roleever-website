@@ -59,7 +59,7 @@ export default {
   plugins: [
     '~/plugins/vue-click-outside',
     '~/plugins/maz-ui',
-    { src: '~/plugins/vue-vime', mode: 'client' },
+    '~/plugins/vue-vime',
     { src: '~/plugins/vue-chartjs', mode: 'client' },
     { src: '~/plugins/vue-hcaptcha', mode: 'client' },
     { src: '~/plugins/vue-js-modal', mode: 'client' },

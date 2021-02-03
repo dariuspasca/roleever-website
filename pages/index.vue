@@ -50,16 +50,12 @@
             loading="lazy"
             alt="RoleEver"
           /> -->
-          <client-only
-            ><div class="relative mx-auto" style="width: 282px">
-              <img
-                src="/images/frame.png"
-                class="absolute z-20 h-full w-full"
-              />
-              <div class="relative z-10 video-container ml-1">
-                <player />
-              </div></div
-          ></client-only>
+          <div class="relative mx-auto" style="width: 282px">
+            <img src="/images/frame.png" class="absolute z-20 h-full w-full" />
+            <div class="relative z-10 video-container ml-1">
+              <player />
+            </div>
+          </div>
         </div>
       </div>
     </div>
