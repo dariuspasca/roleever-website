@@ -59,6 +59,7 @@ export default {
   plugins: [
     '~/plugins/vue-click-outside',
     '~/plugins/maz-ui',
+    '~/plugins/vue-vime',
     { src: '~/plugins/vue-chartjs', mode: 'client' },
     { src: '~/plugins/vue-hcaptcha', mode: 'client' },
     { src: '~/plugins/vue-js-modal', mode: 'client' },
@@ -204,9 +205,9 @@ export default {
   router: {
     linkExactActiveClass: 'exact-active-link',
   },
-    // Netlify reads a 404.html, Nuxt will load as an SPA
   generate: {
-    fallback: '404.html',
+    fallback: false,
+    routes: ['/', '404'],
   },
   server: {
     port: 8000, // default: 3000

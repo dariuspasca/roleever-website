@@ -8,14 +8,3 @@
     </Hls>
   </Player>
 </template>
-
-<script>
-import { Player, Hls } from '@vime/vue'
-
-export default {
-  components: {
-    Player,
-    Hls,
-  },
-}
-</script>
