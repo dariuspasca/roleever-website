@@ -42,18 +42,24 @@
           />
         </div>
         <div>
-          <!-- <img
-            :src="page.preview"
-            class="relative mx-auto unselectable preview-image img-shadow"
-            width="429"
-            height="818"
-            loading="lazy"
-            alt="RoleEver"
-          /> -->
           <div class="relative mx-auto" style="width: 282px">
             <img src="/images/frame.png" class="absolute z-20 h-full w-full" />
-            <div class="relative z-10 video-container ml-1">
-              <player />
+            <div class="relative video-container ml-1">
+              <!-- <player /> -->
+              <video
+                muted
+                playsinline
+                autoplay
+                loop
+                width="828"
+                height="1624"
+                poster="/media/video/whatIsRoleEver.jpg"
+              >
+                <source
+                  src="/media/video/whatIsRoleEver.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </div>
         </div>
@@ -64,10 +70,9 @@
 
 <script>
 import TheDownloadButton from '@/components/ui/TheDownloadButton.vue'
-import Player from '@/components/ui/ThePlayer.vue'
 
 export default {
-  components: { TheDownloadButton, Player },
+  components: { TheDownloadButton },
   async asyncData({ $content }) {
     const pages = []
     const pageEN = await $content(`en/pages/home`).fetch()
