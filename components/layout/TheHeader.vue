@@ -34,7 +34,7 @@
       </button>
       <!--Desktop Vertical Menu-->
       <div
-        class="xs:hidden flex flex-col space-y-2 xxxl:space-x-5 mt-5 mr-16 text-right"
+        class="xs:hidden flex flex-col space-y-2 xxxl:space-x-5 mt-5 mr-16 sm:mr-5 text-right"
       >
         <nuxt-link
           :to="localePath('/')"

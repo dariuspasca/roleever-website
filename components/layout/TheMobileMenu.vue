@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-cover bg-center h-full bg-view">
+  <div class="flex flex-col bg-cover bg-center h-full bg-view overflow-auto">
     <div
       class="flex w-full items-center justify-between flex-wrap bg-transparent"
     >
@@ -54,7 +54,7 @@
       </div>
     </div>
     <div
-      class="absolute block text-center font-medium bottom-0 left-0 mx-auto w-full pb-4"
+      class="footer-discord block text-center font-medium mx-auto w-full pb-4"
     >
       <a
         href="https://discordapp.com/invite/xyBMAn9"
@@ -86,3 +86,18 @@ export default {
   },
 }
 </script>
+
+<style>
+.footer-discord {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .footer-discord {
+    position: relative;
+    padding-top: 40px;
+  }
+}
+</style>
