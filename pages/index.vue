@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-grow h-full lg:h-screen py-16 sm:py-40 md:py-0 lg:py-0 items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
+    class="relative flex flex-grow h-full md:h-screen lg:h-screen py-16 sm:py-40 lg:py-0 items-center justify-center xs:overflow-x-hidden sm:overflow-x-hidden"
   >
     <!-- Dungeon Background -->
     <span class="fixed dungeon w-full">
@@ -43,7 +43,7 @@
         </div>
         <div>
           <div class="relative mx-auto" style="width: 275px">
-            <div class="mx-auto video-container px-1">
+            <div class="mx-auto whatIsRoleEver px-1">
               <!-- <player /> -->
               <video
                 muted
@@ -160,13 +160,13 @@ export default {
 </script>
 
 <style>
-.video-container {
+.whatIsRoleEver {
   width: 275px;
   -webkit-clip-path: inset(0 0 0 0 round 30px);
   clip-path: inset(0 0 0 0 round 30px);
 }
 
-.video-container:after {
+.whatIsRoleEver:after {
   content: '';
   display: block;
   position: absolute;
