@@ -1,5 +1,6 @@
 <template>
   <div
+    v-click-outside="onClickOutside"
     class="flex w-full bg-transparent xs:justify-center justify-end overflow-y-visible"
   >
     <div
@@ -7,10 +8,12 @@
       ref="card"
       :style="{ transform: transformString }"
       style="touch-action: none"
-      class="flex flex-col w-full xs:w-10/12 my-4 px-4 bg-medium-tint rounded-lg custom-shadow mx-4 py-4 text-dark justify-start space-y-3 align-middle sm:mr-4 md:mr-4 lg:mr-8 select-none xs:duration-300 duration-1000 cursor-default"
+      class="flex flex-col w-full xs:w-10/12 my-4 mx-4 px-4 xs:py-2 py-4 bg-medium-tint rounded-lg custom-shadow text-dark justify-start space-y-3 align-middle sm:mr-4 md:mr-4 lg:mr-8 select-none xs:duration-300 duration-1000 cursor-default"
     >
       <!-- Cookie Info -->
-      <div class="flex w-full items-center space-x-4 cursor-default">
+      <div
+        class="flex w-full items-center space-x-4 xs:space-x-2 cursor-default"
+      >
         <picture>
           <source
             srcset="
@@ -32,28 +35,30 @@
           />
         </picture>
         <div>
-          <p class="text-sm">{{ $t('cookies.inform') }}</p>
-          <nuxt-link
-            :to="localePath('cookie-policy')"
-            :aria-label="$t('cookies.inform')"
-            class="underline text-dark-tint hover:text-dark-shade cursor-pointer text-sm"
-            exact-active-class
-          >
-            {{ $t('cookies.more') }}</nuxt-link
-          >
+          <p class="text-sm">
+            {{ $t('cookies.inform') }}
+            <nuxt-link
+              :to="localePath('cookie-policy')"
+              :aria-label="$t('cookies.inform')"
+              class="underline text-dark-tint hover:text-dark-shade cursor-pointer text-sm"
+              exact-active-class
+            >
+              {{ $t('cookies.more') }}</nuxt-link
+            >
+          </p>
         </div>
       </div>
       <!-- Cookie Manage/Accept Buttons -->
       <div v-show="!manageCookies" class="flex space-x-4 text-sm py-2">
         <button
-          class="focus:outline-none bg-medium rounded-md w-6/12 px-2 py-1"
+          class="focus:outline-none bg-medium rounded-md w-6/12 px-2 py-2"
           :aria-label="$t('labels.close')"
           @click="manageCookies = !manageCookies"
         >
           {{ $t('cookies.manage') }}
         </button>
         <button
-          class="focus:outline-none bg-primary rounded-md w-6/12 px-2 py-1 text-white"
+          class="focus:outline-none bg-primary rounded-md w-6/12 px-2 py-2 text-white"
           :aria-label="$t('labels.close')"
           @click="bakeCookie()"
         >
@@ -102,7 +107,7 @@
         </p>
 
         <button
-          class="focus:outline-none bg-primary rounded-md w-full px-2 py-1 text-white"
+          class="focus:outline-none bg-primary rounded-md w-full px-2 py-2 text-white"
           :aria-label="$t('labels.close')"
           @click="bakeCookie()"
         >
@@ -206,6 +211,9 @@ export default {
 
     resetCardPosition() {
       this.interactSetPosition({ x: 0, y: 0 })
+    },
+    onClickOutside(event) {
+      this.manageCookies = false
     },
   },
 }
