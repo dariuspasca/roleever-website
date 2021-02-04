@@ -42,7 +42,7 @@
           />
         </div>
         <div>
-          <div class="relative mx-auto" style="width: 275px">
+          <div class="relative mx-auto img-shadow" style="width: 275px">
             <div class="mx-auto whatIsRoleEver px-1">
               <!-- <player /> -->
               <video
