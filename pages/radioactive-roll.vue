@@ -2,9 +2,29 @@
   <div
     class="flex flex-col w-7/12 xs:w-11/12 sm:w-10/12 md:w-10/12 mx-auto min-h-screen xs:h-full py-20 text-left"
   >
-    <h1 class="title xs:w-7/12 w-8/12 xs:pt-10 mx-auto pb-10 text-center">
+    <picture>
+      <source
+        srcset="https://roleever-app.imgix.net/radioactiveRoll.png?fm=webp&q=75"
+        type="image/webp"
+      />
+      <source
+        srcset="https://roleever-app.imgix.net/radioactiveRoll.png?fm=png&q=75"
+        type="image/png"
+      />
+      <img
+        src="https://roleever-app.imgix.net/radioactiveRoll.png"
+        alt="Radioactive Roll Logo"
+        width="500"
+        height="500"
+        loading="lazy"
+        class="w-48 xs:w-40 h-auto mx-auto"
+      />
+    </picture>
+
+    <h1 class="title xs:w-11/12 w-8/12 mx-auto pb-10 text-center">
       {{ page.title }}
     </h1>
+
     <p>
       {{ page.description }}
     </p>
