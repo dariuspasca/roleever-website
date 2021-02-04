@@ -7,6 +7,11 @@ body {
   height: 100%;
 }
 
+/* Prevents scrolling when mobile menu is open */
+.menuOpen {
+  overflow: hidden;
+}
+
 .layout-enter-active,
 .layout-leave-active {
   transition: opacity 0.5s;

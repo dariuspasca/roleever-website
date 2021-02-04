@@ -4,14 +4,17 @@
   >
     <!--The Cookie Snackbar-->
     <transition name="fade">
-      <the-cookie-snack v-if="showCookieBanner" class="fixed z-30 bottom-0" />
+      <the-cookie-snack
+        v-if="showCookieBanner"
+        class="fixed xs:w-full sm:w-5/12 md:w-4/12 lg:w-3/12 xxl:w-3/12 z-30 bottom-0 right-0 xs:mx-auto"
+      />
     </transition>
 
     <!--Mobile Menu-->
     <transition name="fade">
       <TheMobileMenu
         v-show="openMobileNav"
-        class="fixed w-full h-full overflow-y-scroll inset-0 z-40"
+        class="fixed w-full h-full inset-0 z-40"
       />
     </transition>
 
@@ -64,9 +67,9 @@ export default {
   mounted() {
     this.$root.$on('toggleMobileNav', (status) => {
       if (status) {
-        this.toggleBodyClass('addClass', 'modalOpen')
+        this.toggleBodyClass('addClass', 'menuOpen')
       } else {
-        this.toggleBodyClass('removeClass', 'modalOpen')
+        this.toggleBodyClass('removeClass', 'menuOpen')
       }
       this.openMobileNav = status
     })

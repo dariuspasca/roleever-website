@@ -7,7 +7,7 @@
       ref="card"
       :style="{ transform: transformString }"
       style="touch-action: none"
-      class="flex flex-col xs:w-11/12 sm:w-5/12 md:w-4/12 lg:w-2/12 my-4 px-4 bg-medium-tint rounded-lg custom-shadow mx-4 py-4 text-dark justify-start space-y-3 align-middle sm:mr-4 md:mr-4 lg:mr-8 select-none xs:duration-300 duration-1000 cursor-default"
+      class="flex flex-col w-full xs:w-10/12 my-4 px-4 bg-medium-tint rounded-lg custom-shadow mx-4 py-4 text-dark justify-start space-y-3 align-middle sm:mr-4 md:mr-4 lg:mr-8 select-none xs:duration-300 duration-1000 cursor-default"
     >
       <!-- Cookie Info -->
       <div class="flex w-full items-center space-x-4 cursor-default">

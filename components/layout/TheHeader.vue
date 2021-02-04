@@ -63,7 +63,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 import RoleEver from '@/assets/icons/RoleEver.svg'
 import Menu from '@/assets/icons/menu.svg'
 
@@ -78,27 +77,6 @@ export default {
       showLogo: true,
       showLogoDivider: true,
     }
-  },
-  computed: {
-    availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
-    },
-    ...mapState({
-      menuItems(state) {
-        return (
-          state.navigation.header.find(
-            (e) => e.language === this.$i18n.locale
-          ) || state.navigation.header[0]
-        ).data.items
-      },
-      menuItemsLinks(state) {
-        return (
-          state.navigation.header.find(
-            (e) => e.language === this.$i18n.locale
-          ) || state.navigation.header[0]
-        ).data.items_links
-      },
-    }),
   },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)

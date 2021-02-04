@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-cover bg-center h-full overflow-y-auto bg-view">
+  <div class="flex flex-col bg-cover bg-center h-full bg-view">
     <div
       class="flex w-full items-center justify-between flex-wrap bg-transparent"
     >
@@ -69,7 +69,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 import RoleEver from '@/assets/icons/RoleEver.svg'
 import Close from '@/assets/icons/close.svg'
 import Discord from '@/assets/icons/discord.svg'
@@ -79,24 +78,6 @@ export default {
     RoleEver,
     Close,
     Discord,
-  },
-  computed: {
-    ...mapState({
-      menuItems(state) {
-        return (
-          state.navigation.header.find(
-            (e) => e.language === this.$i18n.locale
-          ) || state.navigation.header[0]
-        ).data.items
-      },
-      menuItemsLinks(state) {
-        return (
-          state.navigation.header.find(
-            (e) => e.language === this.$i18n.locale
-          ) || state.navigation.header[0]
-        ).data.items_links
-      },
-    }),
   },
   methods: {
     toggleMobileNav() {

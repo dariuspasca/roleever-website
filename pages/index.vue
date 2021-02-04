@@ -42,9 +42,8 @@
           />
         </div>
         <div>
-          <div class="relative mx-auto" style="width: 282px">
-            <img src="/images/frame.png" class="absolute z-20 h-full w-full" />
-            <div class="relative video-container ml-1">
+          <div class="relative mx-auto" style="width: 275px">
+            <div class="mx-auto video-container px-1">
               <!-- <player /> -->
               <video
                 muted
@@ -53,7 +52,7 @@
                 loop
                 width="828"
                 height="1624"
-                poster="/media/video/whatIsRoleEver.jpg"
+                poster="/images/whatIsRoleEverCover.jpg"
               >
                 <source
                   src="/media/video/whatIsRoleEver.mp4"
@@ -165,5 +164,18 @@ export default {
   width: 275px;
   -webkit-clip-path: inset(0 0 0 0 round 30px);
   clip-path: inset(0 0 0 0 round 30px);
+}
+
+.video-container:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-image: url('/images/mobile-frame.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 </style>
