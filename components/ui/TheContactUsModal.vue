@@ -53,7 +53,7 @@
               </div>
             </div>
             <div class="block">
-              <label class="pt-6 text-sm text-dark-tint">{{
+              <label class="text-sm text-dark-tint">{{
                 $t('contact_form.email')
               }}</label>
               <div class="border-b-2 border-secondary">

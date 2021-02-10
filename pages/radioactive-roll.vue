@@ -216,8 +216,8 @@ export default {
     lineChartData() {
       // Preparing time series for line chart
       const limit = 10 // show only last 10 hours data
-      const d = new Date()
-      const hour = d.getUTCHours()
+      // const d = new Date()
+      const hour = 3
 
       /*
         The JSON files contains all hours
@@ -230,9 +230,11 @@ export default {
       Otherwise we just need to splice the array and only get a number of hours within the limit
     */
       if (hours.length < limit) {
-        const res = hours.concat(
-          times.splice(times.length - hours.length, times.length)
+        const remainingHours = times.splice(
+          times.length - limit + hour,
+          times.length
         )
+        const res = remainingHours.concat(hours)
         hours = res
       } else if (hours.length > limit) {
         hours = hours.slice(Math.max(hours.length - limit, 0))
