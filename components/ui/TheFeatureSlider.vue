@@ -22,7 +22,7 @@
         />
         <source :srcset="currentImage + '?fm=png&q=75'" type="image/png" />
         <img
-          class="absolute xs:hidden laboratory-preview unselectable z-30 left-0"
+          class="absolute xs:hidden laboratory-preview unselectable z-30 left-0 img-shadow"
           :src="currentImage"
           :alt="currentHeader"
           loading="lazy"

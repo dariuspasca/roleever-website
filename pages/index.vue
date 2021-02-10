@@ -162,8 +162,8 @@ export default {
 <style>
 .whatIsRoleEver {
   width: 275px;
-  -webkit-clip-path: inset(0 0 0 0 round 30px);
-  clip-path: inset(0 0 0 0 round 30px);
+  -webkit-clip-path: inset(0 0 0 0 round 33.5px);
+  clip-path: inset(0 0 0 0 round 33.5px);
 }
 
 .whatIsRoleEver:after {
