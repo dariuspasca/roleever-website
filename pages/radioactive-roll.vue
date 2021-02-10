@@ -216,8 +216,8 @@ export default {
     lineChartData() {
       // Preparing time series for line chart
       const limit = 10 // show only last 10 hours data
-      // const d = new Date()
-      const hour = 3
+      const d = new Date()
+      const hour = d.getUTCHours()
 
       /*
         The JSON files contains all hours
