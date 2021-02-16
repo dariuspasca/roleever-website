@@ -3,14 +3,14 @@ title: Community Code
 
 og_title: RoleEver | Community Code
 og_type: website
-og_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
+og_description: RoleEver is an app to play tabletop RPGs by chat. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
 og_image: https://roleever.com/share.jpg
 og_url: https://www.roleever.com
 
 twitter_card: summary_large_image
 twitter_site: '@RoleEverApp'
 twitter_title: RoleEver | Community Code
-twitter_description: RoleEver is an application to play pen and paper RPGs by chat on your smartphone. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
+twitter_description: RoleEver is an app to play tabletop RPGs by chat. All the necessary tools to play at your fingertips. Game chat, character sheets, dice rolls, custom game systems, d&d 5e integrations and much more. RoleEver is available both on iOS and Android!
 twitter_image: https://roleever.com/share-tweet.jpg
 
 twitter_ios_name: RoleEver - RPGs by chat
