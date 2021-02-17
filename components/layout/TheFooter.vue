@@ -41,7 +41,7 @@
               </a>
 
               <a
-                href="https://discordapp.com/invite/xyBMAn9"
+                href="https://discord.gg/yqBK683NRJ"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-block m-1"
