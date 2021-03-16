@@ -168,9 +168,9 @@
         </div>
       </div>
     </div>
-    <!--Artits Section-->
+    <!--Artist Section-->
     <div class="py-10 bg-cover bg-center bg-fantasy">
-      <!--Artits Header-->
+      <!--Artist Header-->
       <h1 class="title text-white w-full text-center pb-10 pt-4 text-shadow">
         {{ page.artists_header }}
       </h1>
@@ -180,6 +180,40 @@
         <!--Artists Cards-->
         <div
           v-for="(item, index) in page.artist_card"
+          :key="'reference-item-' + index"
+          class="flex flex-col justify-center pb-10 xs:w-4/12 w-2/12 sm:w-3/12 md:w-3/12 xxxl:w-3/12 cursor-pointer space-y-2"
+          @click="openLink(item.artist_profile)"
+        >
+          <picture>
+            <source
+              :srcset="item.artist_image + '?fm=webp&q=65'"
+              type="image/webp"
+            />
+            <source
+              :srcset="item.artist_image + '?fm=png&q=65'"
+              type="image/png"
+            />
+            <img
+              :src="item.artist_image"
+              class="w-7/12 h-auto mx-auto transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"
+              width="193"
+              height="193"
+              loading="lazy"
+              :alt="item.artist_name"
+            />
+          </picture>
+          <h2
+            class="text-xl font-base subpixel-antialiased tracking-wider text-center w-full capitalize text-white text-shadow"
+          >
+            {{ item.artist_name }}
+          </h2>
+        </div>
+        <!--Bards Header-->
+        <h1 class="title text-white w-full text-center pb-10 pt-4 text-shadow">
+          {{ page.bards_header }}
+        </h1>
+        <div
+          v-for="(item, index) in page.bards_card"
           :key="'reference-item-' + index"
           class="flex flex-col justify-center pb-10 xs:w-4/12 w-2/12 sm:w-3/12 md:w-3/12 xxxl:w-3/12 cursor-pointer space-y-2"
           @click="openLink(item.artist_profile)"

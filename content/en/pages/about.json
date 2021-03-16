@@ -104,6 +104,16 @@
     }
   ],
 
+  "bards_header": "Our bard",
+
+  "bards_card": [
+    {
+      "artist_name": "Carlo",
+      "artist_image": "https://roleever-app.imgix.net/about/carlo.png",
+      "artist_profile": "https://www.carlotuzza.com"
+    }
+  ],
+
   "meta_header": "RoleEver | The team behind the play by chat RPGs application!",
   "meta_description": "Discover the team behind RoleEver, the adventurers with the bold ambition to make RPGs accessible to everyone, everywhere. Even during their coffee break.",
 

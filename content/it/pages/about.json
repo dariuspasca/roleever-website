@@ -104,6 +104,16 @@
     }
   ],
 
+  "bards_header": "Il nostro bardo",
+
+  "bards_card": [
+    {
+      "artist_name": "Carlo",
+      "artist_image": "https://roleever-app.imgix.net/about/carlo.png",
+      "artist_profile": "https://www.carlotuzza.com"
+    }
+  ],
+
   "meta_header": "RoleEver | Il team dietro all'applicazione GDR play by chat!",
   "meta_description": "Scopri il team dietro a RoleEver, gli avventurieri che hanno la folle ambizione di permettere a tutti di giocare ai GdR anche nella loro pausa caffè.",
 
