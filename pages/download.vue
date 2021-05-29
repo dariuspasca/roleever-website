@@ -90,7 +90,7 @@
                       class="text-primary-shade hover:underline"
                       target="_blank"
                       rel="noopener"
-                      href="https://testflight.apple.com/join/BeYyEjbe"
+                      href="https://apps.apple.com/us/app/roleever-rpgs-by-chat/id1498035308"
                     >
                       AppStore
                     </a>
