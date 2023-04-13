@@ -17,11 +17,6 @@
           <!--About Photo-->
           <div class="w-6/12 xs:w-full my-auto pointer-events-none">
             <picture>
-              <source
-                :srcset="page.team + '?fm=webp&lossless=1&q=100'"
-                type="image/webp"
-              />
-              <source :srcset="page.team + '?fm=jpg&q=100'" type="image/jpeg" />
               <img
                 :src="page.team"
                 class="shadow-xl mx-auto rounded-lg w-10/12 xs:11/12 h-auto my-auto"
@@ -69,14 +64,6 @@
           <!--Nick Image-->
           <div class="w-6/12 xs:w-full xs:order-first lg:-ml-16">
             <picture>
-              <source
-                :srcset="page.nick_the_dragon + '?fm=webp&lossless=1&q=100'"
-                type="image/webp"
-              />
-              <source
-                :srcset="page.nick_the_dragon + '?fm=png&q=100'"
-                type="image/png"
-              />
               <img
                 :src="page.nick_the_dragon"
                 class="mx-auto w-5/12 xs:w-10/12 sm:w-7/12 md:w-7/12 xxxl:w-6/12 h-auto my-auto"
@@ -105,28 +92,8 @@
             <!--Card Illustration-->
 
             <picture>
-              <source
-                :srcset="
-                  'https://roleever-app.imgix.net/about/' +
-                  item.card_header +
-                  '.png?fm=png&auto=format&lossless=1&q=75'
-                "
-                type="image/webp"
-              />
-              <source
-                :srcset="
-                  'https://roleever-app.imgix.net/about/' +
-                  item.card_header +
-                  '.png?fm=png&q=75'
-                "
-                type="image/png"
-              />
               <img
-                :src="
-                  'https://roleever-app.imgix.net/about/' +
-                  item.card_header +
-                  '.png?q=75'
-                "
+                :src="'/images/about/' + item.card_header + '.png'"
                 class="w-9/12 h-auto mx-auto xs:pt-20"
                 width="230"
                 height="307"
@@ -185,14 +152,6 @@
           @click="openLink(item.artist_profile)"
         >
           <picture>
-            <source
-              :srcset="item.artist_image + '?fm=webp&q=65'"
-              type="image/webp"
-            />
-            <source
-              :srcset="item.artist_image + '?fm=png&q=65'"
-              type="image/png"
-            />
             <img
               :src="item.artist_image"
               class="w-7/12 h-auto mx-auto transition delay-150 duration-300 ease-in-out transform lg:hover:-translate-y-3 lg:hover:scale-110"

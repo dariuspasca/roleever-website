@@ -15,23 +15,13 @@
         class="flex w-full items-center space-x-4 xs:space-x-2 cursor-default"
       >
         <picture>
-          <source
-            srcset="
-              https://roleever-app.imgix.net/cthulhuCookie.png?fm=webp&q=80
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="https://roleever-app.imgix.net/cthulhuCookie.png?q=80"
-            type="image/jpeg"
-          />
           <img
             class="w-48 h-auto"
             width="250"
             height="250"
             loading="lazy"
             alt="Cookie Cthlhu"
-            src="https://roleever-app.imgix.net/cthulhuCookie.png?q=80"
+            src="/images/cthulhuCookie.png"
           />
         </picture>
         <div>

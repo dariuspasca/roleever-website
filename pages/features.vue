@@ -119,14 +119,6 @@
         <!--CharacterSheets Preview-->
         <div class="flex w-6/12 xs:w-full items-center">
           <picture>
-            <source
-              :srcset="page.sheets_preview + '?fm=webp&lossless=1&q=100'"
-              type="image/webp"
-            />
-            <source
-              :srcset="page.sheets_preview + '?fm=png&q=100'"
-              type="image/png"
-            />
             <img
               :src="page.sheets_preview"
               class="xs:w-10/12 sm:w-10/12 w-7/12 h-auto float-left xs:float-none ml-10 xs:mx-auto img-shadow"
@@ -161,11 +153,6 @@
     <div class="flex flex-col w-full py-20 space-y-4 relative">
       <!--Nick Section-->
       <picture>
-        <source
-          :srcset="page.more_nick + '?fm=webp&lossless=1&q=75'"
-          type="image/webp"
-        />
-        <source :srcset="page.more_nick + '?fm=png&q=75'" type="image/png" />
         <img
           class="w-3/12 xs:w-8/12 sm:w-5/12 xxxl:w-3/12 h-auto float-left -ml-24 absolute xs:relative sm:relative md:mt-48 xs:mx-auto sm:mx-auto xxxl:ml-0"
           :src="page.more_nick"

@@ -5,15 +5,15 @@
 
   "chat_title": "Chat",
   "chat_description": "I giorni passati in astinenza da GdR sono finiti! Con la chat di RoleEver puoi giocare h24 in modo asincrono. Sì, anche in bagno.",
-  "chat_preview": "https://roleever-app.imgix.net/features/it/Chat.svg",
+  "chat_preview": "/images/features/it/chat.svg",
 
   "dicerolls_title": "Tiri di dado",
   "dicerolls_description": "Su RoleEver puoi inviare i tuoi fallimenti critici direttamente in chat! L'app si interfaccia con la tua scheda pg e i risultati vengono calcolati in automatico. Così tutti potranno vedere come, cercando di colpire il boss, cali un fendente sulla testa del chierico provocando un TPK.",
-  "dicerolls_preview": "https://roleever-app.imgix.net/features/it/Tiri-Dado.png",
+  "dicerolls_preview": "/images/features/it/tiri-dado.png",
 
   "sheets_title": "Schede PG",
   "sheets_description": "Nessun'app esterna per tenere le schede pg! In ogni campagna ogni giocatore puo' vedere la sua scheda aprendola dal menu di gioco.",
-  "sheets_preview": "https://roleever-app.imgix.net/features/it/Scheda-Personaggio.png",
+  "sheets_preview": "/images/features/it/scheda-personaggio.png",
 
   "laboratory_title": "Laboratorio",
 
@@ -22,27 +22,27 @@
       "feature_subheader": "Per voi master",
       "feature_header": "Crea il tuo sistema",
       "feature_description": "Il negozio dell'alchimista coboldo è fallito e ha deciso di affittarci il suo laboratorio. Qui puoi creare i sistemi di gioco che preferisci. Dai la forma che vuoi alle schede che useranno i tuoi giocatori e crea tutte le statistiche che servono. Questa funzionalità è costata qualche capello bianco al nostro Troll Programmatore...",
-      "feature_preview": "https://roleever-app.imgix.net/features/it/Lab-Schede.png",
-      "feature_mobile_preview": "https://roleever-app.imgix.net/features/it/M-Lab-Schede.jpg"
+      "feature_preview": "/images/features/it/lab-schede.png",
+      "feature_mobile_preview": "/images/features/it/mobile-lab-schede.jpg"
     },
     {
       "feature_subheader": "Per voi master",
       "feature_header": "Crea i tiri di gioco",
       "feature_description": "La vostra creazione alchemica non è completa finché non aggiungete al sistema i tiri di gioco, ossia le macro che avranno a disposizione i tuoi giocatori. Potete creare qualsiasi macro integrando le statistiche delle schede, ma occhio: non siamo legalmente responsabili delle reazioni chimiche esplosive...",
-      "feature_preview": "https://roleever-app.imgix.net/features/it/Lab-Tiri.png",
-      "feature_mobile_preview": "https://roleever-app.imgix.net/features/it/M-Lab-Tiri.jpg"
+      "feature_preview": "/images/features/it/lab-tiri.png",
+      "feature_mobile_preview": "/images/features/it/mobile-lab-tiri.jpg"
     },
     {
       "feature_subheader": "Per tutti",
       "feature_header": "Condividi",
       "feature_description": "Infine, puoi condividere il sistema che hai creato con la community. Così i master troppo impegnati ad accumulare monete d'oro nella vita reale potranno scaricare le magnifiche creazioni condivise!",
-      "feature_preview": "https://roleever-app.imgix.net/features/it/Lab-Condividi.png",
-      "feature_mobile_preview": "https://roleever-app.imgix.net/features/it/M-Lab-Condividi.jpg"
+      "feature_preview": "/images/features/it/lab-condividi.png",
+      "feature_mobile_preview": "/images/features/it/mobile-lab-condividi.jpg"
     }
   ],
 
   "more_nick_title": "Nick il drago",
-  "more_nick": "https://roleever-app.imgix.net/features/Nick.png",
+  "more_nick": "/images/features/Nick.png",
   "more_title": "E tanto, ma TANTO altro!",
   "lobby_title": "Bacheca Storie",
   "lobby_description": "Non hai un gruppo di gioco? Entra nella pagina Bacheca e unisciti alle campagne aperte disponibili.",

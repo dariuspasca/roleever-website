@@ -3,17 +3,9 @@
     <!-- Dungeon Background -->
     <span class="fixed dungeon w-full">
       <picture>
-        <source
-          srcset="https://roleever-app.imgix.net/dungeon.png?fm=webp&q=75"
-          type="image/webp"
-        />
-        <source
-          srcset="https://roleever-app.imgix.net/dungeon.png?fm=png&q=75"
-          type="image/png"
-        />
         <img
           class="w-full lg:w-8/12 unselectable mx-auto"
-          src="https://roleever-app.imgix.net/dungeon.png"
+          src="/images/dungeon.png"
           width="1920"
           height="1000"
           loading="lazy"
@@ -28,7 +20,7 @@
         class="w-4/12 xs:w-full sm:w-full xs:order-last sm:order-last xs:py-10 sm:py-10"
       >
         <img
-          :src="page.preview"
+          src="/images/preview.png"
           class="relative mx-auto unselectable preview-image img-shadow"
           width="429"
           height="818"
@@ -72,7 +64,7 @@
             class="flex flex-row bg-footer shadow-lg rounded-xl py-10 px-6 space-x-4 items-start w-11/12 mx-auto"
           >
             <img
-              src="https://roleever-app.imgix.net/qr-code.jpeg?auto=format"
+              src="/images/qr-code.png"
               class="w-32 h-32 rounded-lg shadow-sm"
               width="512"
               height="512"
@@ -125,7 +117,6 @@
             >
               <div class="flex flex-col pb-2 space-y-4">
                 <MazPhoneNumberInput
-                  fetch-country
                   color="grey"
                   :translations="translationsPhoneInput"
                   @update="results = $event"

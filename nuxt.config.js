@@ -98,13 +98,6 @@ export default {
     ],
     '@nuxtjs/sitemap',
   ],
-  env: {
-    /*
-      Url to S3 bucket
-      Currently both in dev and prod the bucket is the same
-    */
-    baseURL: 'https://roleever-public.s3.eu-west-3.amazonaws.com',
-  },
   /*
    ** nuxt-i18n configuration
    */

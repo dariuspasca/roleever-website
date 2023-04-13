@@ -4,17 +4,9 @@
       class="flex flex-col w-full h-full items-center justify-center my-auto space-y-4 -mt-20 xs:-mt-4"
     >
       <picture>
-        <source
-          srcset="https://roleever-app.imgix.net/error404.png?fm=webp&q=75"
-          type="image/webp"
-        />
-        <source
-          srcset="https://roleever-app.imgix.net/error404.png?fm=png&q=75"
-          type="image/png"
-        />
         <img
           class="w-8/12 xs:w-10/12 unselectable mx-auto"
-          src="https://roleever-app.imgix.net/error404.png"
+          src="/images/error404.png"
           alt="confused Nick error 404"
           width="400"
           height="400"

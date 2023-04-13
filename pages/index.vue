@@ -5,17 +5,9 @@
     <!-- Dungeon Background -->
     <span class="fixed dungeon w-full">
       <picture>
-        <source
-          srcset="https://roleever-app.imgix.net/dungeon.png?fm=webp&q=75"
-          type="image/webp"
-        />
-        <source
-          srcset="https://roleever-app.imgix.net/dungeon.png?fm=png&q=75"
-          type="image/png"
-        />
         <img
           class="w-full lg:w-8/12 unselectable mx-auto"
-          src="https://roleever-app.imgix.net/dungeon.png"
+          src="/images/dungeon.png"
           alt="dungeon"
           width="1920"
           height="1000"

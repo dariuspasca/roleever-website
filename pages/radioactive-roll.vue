@@ -3,16 +3,8 @@
     class="flex flex-col w-7/12 xs:w-11/12 sm:w-10/12 md:w-10/12 mx-auto min-h-screen xs:h-full py-20 text-left"
   >
     <picture>
-      <source
-        srcset="https://roleever-app.imgix.net/radioactiveRoll.png?fm=webp&q=75"
-        type="image/webp"
-      />
-      <source
-        srcset="https://roleever-app.imgix.net/radioactiveRoll.png?fm=png&q=75"
-        type="image/png"
-      />
       <img
-        src="https://roleever-app.imgix.net/radioactiveRoll.png"
+        src="/images/radioactiveRoll.png"
         alt="Radioactive Roll Logo"
         width="500"
         height="500"
@@ -72,14 +64,15 @@
 </template>
 
 <script>
+import data from '~/static/example-d20.json'
 export default {
   async asyncData({ $content, $axios }) {
     const pages = []
     const pageEN = await $content(`en/pages/radioactive-rolls`).fetch()
     const pageIT = await $content(`it/pages/radioactive-rolls`).fetch()
-    const data = await $axios
-      .get(process.env.baseURL + '/d20.json')
-      .then((res) => res.data)
+    // const data = await $axios
+    //   .get(process.env.baseURL + '/d20.json')
+    //   .then((res) => res.data)
     pages.push(pageEN)
     pages.push(pageIT)
 

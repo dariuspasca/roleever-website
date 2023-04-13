@@ -4,12 +4,10 @@
   "back": "Torna a RoleEver",
 
   "nick_title": "Nick il drago",
-  "nick": "https://roleever-app.imgix.net/NickYes.png",
+  "nick": "/images/NickYes.png",
 
   "meta_header": "Verifica riuscita | RoleEver",
   "meta_description": "RoleEver è un applicazione per giocare ai GDR cartacei via chat dal tuo smartphone. Tutti i strumenti necessari sono disponibili per te, dalla chat di gioco, schede personaggio, tiri di dado, integrazioni di Dungeons&Dragons 5e, sistemi personalizzati e molto altro. RoleEver è disponibile su iOS e Android!",
-
-  "preview": "https://roleever-app.imgix.net/Preview-it.svg",
 
   "og_title": "Verifica riuscita | RoleEver",
   "og_type": "website",

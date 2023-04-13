@@ -4,13 +4,13 @@
 
   "contact_button": "Contact us!",
 
-  "team": "https://roleever-app.imgix.net/about/team.jpg",
+  "team": "/images/about/team.jpg",
   "team_title": "RoleEver Team",
   "team_bio_header": "RoleEver starts in 2018 from these 3 adventurers who have the bold ambition to make RPGs accessible to everyone, everywhere. Even during their coffee break.",
 
   "team_bio_sub_header": "The passion for RPGs is strong with us! Not a day goes by without thinking to the next game session :D",
 
-  "nick_the_dragon": "https://roleever-app.imgix.net/about/nick.png",
+  "nick_the_dragon": "/images/about/nick.png",
   "nick_the_dragon_title": "Nick the dragon",
   "nick_the_dragon_bio": "Nick is a Pseudodragon. Chief and undisputed master of RoleEver. Don't be fooled by the pose... he's a joker! It will guide you everywhere to the best adventures!",
 
@@ -69,37 +69,37 @@
   "artist_card": [
     {
       "artist_name": "Alberto",
-      "artist_image": "https://roleever-app.imgix.net/about/alby.png",
+      "artist_image": "/images/about/alby.png",
       "artist_profile": "https://www.instagram.com/dreadworks_art"
     },
     {
       "artist_name": "Giulia",
-      "artist_image": "https://roleever-app.imgix.net/about/giulia.png",
+      "artist_image": "/images/about/giulia.png",
       "artist_profile": "https://www.artstation.com/hekate01"
     },
     {
       "artist_name": "Valentina",
-      "artist_image": "https://roleever-app.imgix.net/about/vale.png",
+      "artist_image": "/images/about/vale.png",
       "artist_profile": "https://www.artstation.com/valeer96"
     },
     {
       "artist_name": "Daniel",
-      "artist_image": "https://roleever-app.imgix.net/about/dan.png",
+      "artist_image": "/images/about/dan.png",
       "artist_profile": "https://www.instagram.com/Dusksmile/"
     },
     {
       "artist_name": "Daniele",
-      "artist_image": "https://roleever-app.imgix.net/about/randazzo.png",
+      "artist_image": "/images/about/randazzo.png",
       "artist_profile": "https://www.artstation.com/danhatter88"
     },
     {
       "artist_name": "Sara",
-      "artist_image": "https://roleever-app.imgix.net/about/sara.png",
+      "artist_image": "/images/about/sara.png",
       "artist_profile": "https://www.instagram.com/__sarabertoli__/"
     },
     {
       "artist_name": "Asia",
-      "artist_image": "https://roleever-app.imgix.net/about/asia.png",
+      "artist_image": "/images/about/asia.png",
       "artist_profile": "https://www.artstation.com/f_y_asia"
     }
   ],
@@ -109,7 +109,7 @@
   "bards_card": [
     {
       "artist_name": "Carlo",
-      "artist_image": "https://roleever-app.imgix.net/about/carlo.png",
+      "artist_image": "/images/about/carlo.png",
       "artist_profile": "https://www.carlotuzza.com"
     }
   ],
